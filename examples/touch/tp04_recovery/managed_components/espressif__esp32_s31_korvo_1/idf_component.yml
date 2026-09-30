@@ -1,0 +1,34 @@
+dependencies:
+  button:
+    public: true
+    version: ^4
+  esp_codec_dev:
+    public: true
+    version: ~1.5
+  esp_video:
+    public: true
+    version: ~2.2
+  espressif/esp_lcd_touch_gt1151:
+    public: false
+    version: '*'
+  espressif/esp_lvgl_port:
+    public: true
+    version: ^2
+  idf: '>=5.4'
+  led_indicator:
+    public: true
+    version: ^2
+  usb:
+    public: true
+    version: ^1
+description: Board Support Package (BSP) for ESP32-S31-Korvo-1
+repository: git://github.com/espressif/esp-bsp.git
+repository_info:
+  commit_sha: 6db6acb86a7dd56d17bf42093d2119dd9b0c14f5
+  path: bsp/esp32_s31_korvo_1
+tags:
+- bsp
+targets:
+- esp32s31
+url: https://github.com/espressif/esp-bsp/tree/master/bsp/esp32-s31-korvo-1
+version: 1.0.1

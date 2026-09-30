@@ -1,0 +1,233 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\codec\aud\aud01_clock\build\aud01_clock.elf D:\ESP32S31\examples\codec\aud\aud01_clock\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x7d (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  1 2026 14:32:38[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=40030020 size=0ffd8h ( 65496) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00020000 vaddr=2f000000 size=00018h (    24) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=296d8h (169688) map[0m
+[0;32mI (134) esp_image: segment 3: paddr=00049700 vaddr=2f000018 size=0d840h ( 55360) load[0m
+[0;32mI (146) esp_image: segment 4: paddr=00056f48 vaddr=2f00d880 size=035ach ( 13740) load[0m
+[0;32mI (154) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (154) boot: Disabling RNG early entropy source...[0m
+[0;32mI (165) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (165) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (166) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (166) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (171) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (176) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (180) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (185) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (189) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (193) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (198) oct_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (203) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (207) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (356) esp_psram: Found 16MB PSRAM device[0m
+[0;32mI (357) esp_psram: Speed: 200MHz[0m
+[0;32mI (357) cpu_start: Multicore app[0m
+[0;32mI (671) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (680) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (680) cpu_start: Pro cpu start user code[0m
+[0;32mI (680) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (682) app_init: Application information:[0m
+[0;32mI (686) app_init: Project name:     aud01_clock[0m
+[0;32mI (690) app_init: App version:      1[0m
+[0;32mI (693) app_init: Compile time:     Sep  1 2026 14:33:03[0m
+[0;32mI (698) app_init: ELF file SHA256:  15eb777f1...[0m
+[0;32mI (703) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (707) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (711) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (715) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (719) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (725) heap_init: At 2F0128A0 len 00068710 (417 KiB): RAM[0m
+[0;32mI (730) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (736) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (741) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (748) spi_flash: detected chip: generic[0m
+[0;32mI (751) spi_flash: flash io: dio[0m
+[0;32mI (755) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (761) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (767) coexist: coex firmware version: a830d28[0m
+[0;32mI (771) coexist: coexist rom version cdcf52b[0m
+[0;32mI (776) main_task: Started on CPU0[0m
+[0;32mI (791) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (792) main_task: Calling app_main()[0m
+[0;33mW (794) i2s_common: the rx channel on I2S1 is switched from master to slave for full-duplex mode[0m
+[0;32mI (824) ES8389: Work in Slave mode[0m
+[0;32mI (828) ES8389: Set internal reference signal[0m
+[0;32mI (851) ES8389: Work in Slave mode[0m
+[0;32mI (855) ES8389: Set internal reference signal[0m
+[0;32mI (857) I2S_IF: Paired data: 0x2f07ef18, current mode: playback, paired in_enable: 0, paired out_enable: 0[0m
+[0;33mW (857) i2s_common: APLL is occupied already, it is working at 73728027 Hz while the expected frequency is 73728000 Hz[0m
+[0;33mW (867) i2s_common: Trying to work at 73728027 Hz...[0m
+[0;32mI (872) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (881) I2S_IF: STD: TX, sample_rate_hz: 96000, mclk_multiple: 384, clk_src: 19[0m
+[0;32mI (907) Adev_Codec: Open codec device OK[0m
+[0;32mI (907) I2S_IF: Current mode(record) and peer mode have same sample_rate 96000, channel 2, bits_per_sample 16[0m
+[0;33mW (909) i2s_common: APLL is occupied already, it is working at 73728027 Hz while the expected frequency is 73728000 Hz[0m
+[0;33mW (919) i2s_common: Trying to work at 73728027 Hz...[0m
+[0;32mI (924) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (933) I2S_IF: STD: RX, sample_rate_hz: 96000, mclk_multiple: 384, clk_src: 19[0m
+[0;32mI (958) Adev_Codec: Open codec device OK[0m
+[0;32mI (958) aud01: AUD-01: 96000 Hz, 16 bit, stereo, block=960 frames, 30 s[0m
+[0;32mI (959) aud01: Clock: source=APLL, MCLK=36864000 Hz; Scope: WS=96000 Hz; expected BCLK about 3072000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6[0m
+[0;32mI (1971) aud01: PERF: tx_rate=90973.3 (355.4 KiB/s) rx_rate=90973.3 (355.4 KiB/s) app_cpu=104.87%; write_err=0 read_err=0 rx_rms=167.7 peak=2439 write_avg=29us max=73us read_avg=149us max=174us[0m
+[0;32mI (2969) aud01: PERF: tx_rate=90674.7 (354.2 KiB/s) rx_rate=90674.7 (354.2 KiB/s) app_cpu=104.89%; write_err=0 read_err=0 rx_rms=119.6 peak=2439 write_avg=29us max=73us read_avg=149us max=174us[0m
+[0;32mI (3977) aud01: PERF: tx_rate=90605.7 (353.9 KiB/s) rx_rate=90605.7 (353.9 KiB/s) app_cpu=104.87%; write_err=0 read_err=0 rx_rms=98.2 peak=2439 write_avg=29us max=73us read_avg=149us max=174us[0m
+[0;32mI (4976) aud01: PERF: tx_rate=90541.4 (353.7 KiB/s) rx_rate=90541.4 (353.7 KiB/s) app_cpu=104.89%; write_err=0 read_err=0 rx_rms=85.7 peak=2439 write_avg=29us max=73us read_avg=149us max=174us[0m
+[1;31mE (5959) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (5959) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (5959) task_wdt: Tasks currently running:[0m
+[1;31mE (5959) task_wdt: CPU 0: main[0m
+[1;31mE (5959) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (5959) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f81f45e  RA      : 0x2f81cd50  SP      : 0x2f016240  GP      : 0x2f00e088  
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00010000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x0000003a  S2      : 0x00000000  S3      : 0x0085238c  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000039  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x413c6162  S11     : 0xfffb6680  
+T3      : 0x00000085  T4      : 0x00000000  T5      : 0x00000080  T6      : 0x0000238c  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (6101) aud01: PERF: tx_rate=88096.8 (344.1 KiB/s) rx_rate=88096.8 (344.1 KiB/s) app_cpu=107.81%; write_err=0 read_err=0 rx_rms=77.2 peak=2439 write_avg=29us max=73us read_avg=149us max=174us[0m
+[0;32mI (6979) aud01: PERF: tx_rate=88326.7 (345.0 KiB/s) rx_rate=88326.7 (345.0 KiB/s) app_cpu=107.38%; write_err=0 read_err=0 rx_rms=71.6 peak=2439 write_avg=30us max=73us read_avg=149us max=174us[0m
+[0;32mI (7977) aud01: PERF: tx_rate=88619.7 (346.2 KiB/s) rx_rate=88619.7 (346.2 KiB/s) app_cpu=107.02%; write_err=0 read_err=0 rx_rms=66.6 peak=2439 write_avg=31us max=73us read_avg=148us max=174us[0m
+[0;32mI (8976) aud01: PERF: tx_rate=88836.0 (347.0 KiB/s) rx_rate=88836.0 (347.0 KiB/s) app_cpu=106.76%; write_err=0 read_err=0 rx_rms=62.5 peak=2439 write_avg=32us max=73us read_avg=147us max=174us[0m
+[0;32mI (9975) aud01: PERF: tx_rate=88997.8 (347.6 KiB/s) rx_rate=88997.8 (347.6 KiB/s) app_cpu=106.56%; write_err=0 read_err=0 rx_rms=59.2 peak=2439 write_avg=32us max=73us read_avg=147us max=174us[0m
+[1;31mE (10959) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (10959) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (10959) task_wdt: Tasks currently running:[0m
+[1;31mE (10959) task_wdt: CPU 0: main[0m
+[1;31mE (10959) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (10959) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f81f52a  RA      : 0x2f81cd50  SP      : 0x2f016230  GP      : 0x2f00e088  
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x0000ffff  
+S0/FP   : 0x00864375  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x0000003c  S2      : 0x00000000  S3      : 0x00010000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x0000003c  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x528a5113  S11     : 0xfff6f000  
+T3      : 0x00004300  T4      : 0x00000000  T5      : 0x00000021  T6      : 0x00004375  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (11062) aud01: PERF: tx_rate=88261.7 (344.8 KiB/s) rx_rate=88261.7 (344.8 KiB/s) app_cpu=107.46%; write_err=0 read_err=0 rx_rms=56.5 peak=2439 write_avg=33us max=73us read_avg=147us max=174us[0m
+[0;32mI (11972) aud01: PERF: tx_rate=88378.2 (345.2 KiB/s) rx_rate=88378.2 (345.2 KiB/s) app_cpu=107.25%; write_err=0 read_err=0 rx_rms=54.3 peak=2439 write_avg=33us max=73us read_avg=146us max=174us[0m
+[0;32mI (12970) aud01: PERF: tx_rate=88546.1 (345.9 KiB/s) rx_rate=88546.1 (345.9 KiB/s) app_cpu=107.05%; write_err=0 read_err=0 rx_rms=52.2 peak=2439 write_avg=34us max=73us read_avg=146us max=174us[0m
+[0;32mI (13978) aud01: PERF: tx_rate=88697.1 (346.5 KiB/s) rx_rate=88697.1 (346.5 KiB/s) app_cpu=106.87%; write_err=0 read_err=0 rx_rms=50.3 peak=2439 write_avg=34us max=73us read_avg=146us max=174us[0m
+[0;32mI (14975) aud01: PERF: tx_rate=88825.9 (347.0 KiB/s) rx_rate=88825.9 (347.0 KiB/s) app_cpu=106.72%; write_err=0 read_err=0 rx_rms=48.7 peak=2439 write_avg=34us max=73us read_avg=146us max=174us[0m
+[1;31mE (15959) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (15959) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (15959) task_wdt: Tasks currently running:[0m
+[1;31mE (15959) task_wdt: CPU 0: main[0m
+[1;31mE (15959) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (15959) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f81fd92  RA      : 0x2f81cd5c  SP      : 0x2f016240  GP      : 0x2f00e088  
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000001  T2      : 0x0000ffff  
+S0/FP   : 0x0000043a  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x000007ff  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x0000043a  A5      : 0x0000043a  
+A6      : 0x0028379d  A7      : 0x0028379d  S2      : 0xa0000000  S3      : 0x00000000  
+S4      : 0x2f07be50  S5      : 0x7547c578  S6      : 0x02aaaaaa  S7      : 0x00000987  
+S8      : 0x00145500  S9      : 0x000318b0  S10     : 0x63c1b6ca  S11     : 0xfff26f80  
+T3      : 0x00005400  T4      : 0x00000000  T5      : 0x0000001b  T6      : 0x0000379d  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (16060) aud01: PERF: tx_rate=88353.5 (345.1 KiB/s) rx_rate=88353.5 (345.1 KiB/s) app_cpu=107.30%; write_err=0 read_err=0 rx_rms=47.3 peak=2439 write_avg=34us max=73us read_avg=146us max=174us[0m
+[0;32mI (16971) aud01: PERF: tx_rate=88425.3 (345.4 KiB/s) rx_rate=88425.3 (345.4 KiB/s) app_cpu=107.15%; write_err=0 read_err=0 rx_rms=46.1 peak=2439 write_avg=34us max=73us read_avg=146us max=174us[0m
+[0;32mI (17971) aud01: PERF: tx_rate=88532.6 (345.8 KiB/s) rx_rate=88532.6 (345.8 KiB/s) app_cpu=107.03%; write_err=0 read_err=0 rx_rms=44.9 peak=2439 write_avg=34us max=73us read_avg=146us max=174us[0m
+[0;32mI (18969) aud01: PERF: tx_rate=88639.0 (346.2 KiB/s) rx_rate=88639.0 (346.2 KiB/s) app_cpu=106.90%; write_err=0 read_err=0 rx_rms=43.8 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (19977) aud01: PERF: tx_rate=88736.2 (346.6 KiB/s) rx_rate=88736.2 (346.6 KiB/s) app_cpu=106.79%; write_err=0 read_err=0 rx_rms=42.8 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[1;31mE (20959) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (20959) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (20959) task_wdt: Tasks currently running:[0m
+[1;31mE (20959) task_wdt: CPU 0: main[0m
+[1;31mE (20959) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (20959) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f81f23a  RA      : 0x2f81cdc8  SP      : 0x2f016240  GP      : 0x2f00e088  
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000001  T2      : 0x0000ffff  
+S0/FP   : 0x00000000  S1      : 0x2f0162b8  A0      : 0x00000000  A1      : 0xc0000000  
+A2      : 0x00000000  A3      : 0x41f00000  A4      : 0x40000000  A5      : 0x00000000  
+A6      : 0x004ad5bf  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00800000  
+S4      : 0x00000000  S5      : 0x41f00000  S6      : 0x00000001  S7      : 0x00000001  
+S8      : 0x00000000  S9      : 0x00041c95  S10     : 0x739b0931  S11     : 0xffedef00  
+T3      : 0x00006500  T4      : 0x00000000  T5      : 0x0000006a  T6      : 0x0000d5bf  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (21062) aud01: PERF: tx_rate=88385.3 (345.3 KiB/s) rx_rate=88385.3 (345.3 KiB/s) app_cpu=107.22%; write_err=0 read_err=0 rx_rms=41.9 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (21971) aud01: PERF: tx_rate=88447.4 (345.5 KiB/s) rx_rate=88447.4 (345.5 KiB/s) app_cpu=107.11%; write_err=0 read_err=0 rx_rms=41.1 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (22978) aud01: PERF: tx_rate=88541.4 (345.9 KiB/s) rx_rate=88541.4 (345.9 KiB/s) app_cpu=107.00%; write_err=0 read_err=0 rx_rms=40.3 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (23976) aud01: PERF: tx_rate=88624.4 (346.2 KiB/s) rx_rate=88624.4 (346.2 KiB/s) app_cpu=106.91%; write_err=0 read_err=0 rx_rms=39.6 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (24975) aud01: PERF: tx_rate=88696.9 (346.5 KiB/s) rx_rate=88696.9 (346.5 KiB/s) app_cpu=106.82%; write_err=0 read_err=0 rx_rms=38.9 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[1;31mE (25959) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (25959) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (25959) task_wdt: Tasks currently running:[0m
+[1;31mE (25959) task_wdt: CPU 0: main[0m
+[1;31mE (25959) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (25959) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f81cd76  RA      : 0x4001fe66  SP      : 0x2f016270  GP      : 0x2f00e088  
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x53800000  T2      : 0x0000ffff  
+S0/FP   : 0xffee475d  S1      : 0x2f0162b8  A0      : 0xde973d6f  A1      : 0xffee475d  
+A2      : 0x0011b8a1  A3      : 0xffee475e  A4      : 0x0011b8a2  A5      : 0x00200000  
+A6      : 0x2168c235  A7      : 0x00000001  S2      : 0xde973d6f  S3      : 0x1fe96fc7  
+S4      : 0x2f07bda4  S5      : 0x029419ea  S6      : 0x02aaaaaa  S7      : 0x00000987  
+S8      : 0x0021d680  S9      : 0x00052077  S10     : 0x850e2f14  S11     : 0xffe96e80  
+T3      : 0x00004000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (26061) aud01: PERF: tx_rate=88415.2 (345.4 KiB/s) rx_rate=88415.2 (345.4 KiB/s) app_cpu=107.17%; write_err=0 read_err=0 rx_rms=38.4 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (26972) aud01: PERF: tx_rate=88454.3 (345.5 KiB/s) rx_rate=88454.3 (345.5 KiB/s) app_cpu=107.09%; write_err=0 read_err=0 rx_rms=37.8 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (27971) aud01: PERF: tx_rate=88525.9 (345.8 KiB/s) rx_rate=88525.9 (345.8 KiB/s) app_cpu=107.01%; write_err=0 read_err=0 rx_rms=37.3 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (28969) aud01: PERF: tx_rate=88593.1 (346.1 KiB/s) rx_rate=88593.1 (346.1 KiB/s) app_cpu=106.93%; write_err=0 read_err=0 rx_rms=36.7 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (29977) aud01: PERF: tx_rate=88657.6 (346.3 KiB/s) rx_rate=88657.6 (346.3 KiB/s) app_cpu=106.86%; write_err=0 read_err=0 rx_rms=36.3 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[1;31mE (30959) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (30959) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (30959) task_wdt: Tasks currently running:[0m
+[1;31mE (30959) task_wdt: CPU 0: main[0m
+[1;31mE (30959) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (30959) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f81f83c  RA      : 0x2f81cd5c  SP      : 0x2f016250  GP      : 0x2f00e088  
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000001  T2      : 0x0000ffff  
+S0/FP   : 0x0000043b  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x000007ff  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x0000043b  A5      : 0x004865d0  
+A6      : 0x004865d0  A7      : 0x004865d0  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x2f07ba74  S5      : 0xe28f99f2  S6      : 0x02aaaaaa  S7      : 0x00000987  
+S8      : 0x00289740  S9      : 0x00062468  S10     : 0x96e4f127  S11     : 0xffe4ee00  
+T3      : 0x00006400  T4      : 0x00000000  T5      : 0x00000032  T6      : 0x000065d0  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (31063) aud01: PERF: tx_rate=88424.9 (345.4 KiB/s) rx_rate=88424.9 (345.4 KiB/s) app_cpu=107.15%; write_err=0 read_err=0 rx_rms=35.8 peak=2439 write_avg=35us max=73us read_avg=145us max=174us[0m
+[0;32mI (31074) aud01: AUD-01 complete: tx=2661120 rx=2661120 write_err=0 read_err=0[0m
+[0;32mI (31230) main_task: Returned from app_main()[0m

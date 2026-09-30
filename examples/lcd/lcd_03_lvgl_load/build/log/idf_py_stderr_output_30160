@@ -1,0 +1,68 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\lcd\lcd_03_lvgl_load\build\lcd_03_lvgl_load.elf D:\ESP32S31\examples\lcd\lcd_03_lvgl_load\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x5000c876: [0;33mlv_obj_class_create_obj[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl/src/core/lv_obj_class.c[0m[0m:[1;31m98[0m
+[0m--- 0x5000c85e: [0;33mlv_obj_class_create_obj[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl/src/core/lv_obj_class.c[0m[0m:[1;31m96[0m
+[0m--- 0x2f811cea: [0;33musb_serial_device_tx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x5000c876: [0;33mlv_obj_class_create_obj[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl/src/core/lv_obj_class.c[0m[0m:[1;31m98[0m
+[0m--- 0x5000c85e: [0;33mlv_obj_class_create_obj[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl/src/core/lv_obj_class.c[0m[0m:[1;31m96[0m
+[0m--- 0x2f811cea: [0;33musb_serial_device_tx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x5000c876: [0;33mlv_obj_class_create_obj[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl/src/core/lv_obj_class.c[0m[0m:[1;31m98[0m
+[0m--- 0x5000c85e: [0;33mlv_obj_class_create_obj[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl/src/core/lv_obj_class.c[0m[0m:[1;31m96[0m
+[0m--- 0x2f811cea: [0;33musb_serial_device_tx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x5000c876: [0;33mlv_obj_class_create_obj[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl/src/core/lv_obj_class.c[0m[0m:[1;31m98[0m
+[0m--- 0x5000c85e: [0;33mlv_obj_class_create_obj[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl/src/core/lv_obj_class.c[0m[0m:[1;31m96[0m
+[0m--- 0x2f811cea: [0;33musb_serial_device_tx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/boo

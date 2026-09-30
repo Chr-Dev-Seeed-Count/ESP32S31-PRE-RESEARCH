@@ -1,0 +1,34 @@
+Command: ninja all
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\codec\aud\aud01_clock\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/codec/aud/aud01_clock/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/espressif__esp32_s31_korvo_1/CMakeFiles/__idf_espressif__esp32_s31_korvo_1.dir/src/bsp_audio.c.obj
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[6/11] Linking C static library esp-idf\espressif__esp32_s31_korvo_1\libespressif__esp32_s31_korvo_1.a
+[7/11] Linking C static library esp-idf\main\libmain.a
+[8/11] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/bt/host/nimble/Kconfig
+.in:1461: BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value 
+(only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:240: 
+FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:245: 
+FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+Skipping linker fragment parsing, fragment files unchanged
+[9/11] Linking CXX executable aud01_clock.elf
+[10/11] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-S31 image...
+Merged 3 ELF sections.
+Successfully created ESP32-S31 image.
+Generated D:/ESP32S31/examples/codec/aud/aud01_clock/build/aud01_clock.bin
+[11/11] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\codec\aud\aud01_clock\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32S31/examples/codec/aud/aud01_clock/build/partition_table/partition-table.bin D:/ESP32S31/examples/codec/aud/aud01_clock/build/aud01_clock.bin"
+aud01_clock.bin binary size 0x4a520 bytes. Smallest app partition is 0x100000 
+bytes. 0xb5ae0 bytes (71%) free.

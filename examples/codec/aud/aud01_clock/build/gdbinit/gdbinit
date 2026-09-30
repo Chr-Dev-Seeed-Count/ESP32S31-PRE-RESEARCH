@@ -1,0 +1,2 @@
+source D:/ESP32S31/examples/codec/aud/aud01_clock/build/gdbinit/symbols
+source D:/ESP32S31/examples/codec/aud/aud01_clock/build/gdbinit/connect

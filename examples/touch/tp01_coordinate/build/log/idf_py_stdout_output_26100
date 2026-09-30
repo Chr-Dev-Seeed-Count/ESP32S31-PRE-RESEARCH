@@ -1,0 +1,494 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\touch\tp01_coordinate\build\tp01_coordinate.elf D:\ESP32S31\examples\touch\tp01_coordinate\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 17:12:41[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c1e0h ( 49632) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c208 vaddr=2f000000 size=03e10h ( 15888) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=212e0h (135904) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041308 vaddr=2f003e10 size=0b3e4h ( 46052) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c6f4 vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp01_coordinate[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  4 2026 17:12:45[0m
+[0;32mI (686) app_init: ELF file SHA256:  8896efe88...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015660 len 00065950 (406 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 59K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp01: TP-01 coordinate accuracy; GT1151 800x480, I2C 400 kHz nominal[0m
+[0;32mI (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still[0m
+[0;32mI (832) tp01: TARGET CENTER: (400,240) in 1000 ms[0m
+[0;32mI (4343) tp01: RESULT CENTER: samples=0 missing=240 mean=(0.0,0.0) error_avg=0.00 px error_max=0.00 px INSUFFICIENT_CONTACT[0m
+[0;32mI (4343) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 17:12:41[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c1e0h ( 49632) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c208 vaddr=2f000000 size=03e10h ( 15888) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=212e0h (135904) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041308 vaddr=2f003e10 size=0b3e4h ( 46052) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c6f4 vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp01_coordinate[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  4 2026 17:12:45[0m
+[0;32mI (686) app_init: ELF file SHA256:  8896efe88...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015660 len 00065950 (406 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 59K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp01: TP-01 coordinate accuracy; GT1151 800x480, I2C 400 kHz nominal[0m
+[0;32mI (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still[0m
+[0;32mI (832) tp01: TARGET CENTER: (400,240) in 1000 ms[0m
+[0;32mI (4345) tp01: RESULT CENTER: samples=209 missing=0 mean=(386.9,233.2) error_avg=16.20 px error_max=18.60 px PASS[0m
+[0;32mI (4345) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms[0m
+[0;32mI (7858) tp01: RESULT TOP_LEFT: samples=175 missing=39 mean=(33.2,29.0) error_avg=16.01 px error_max=422.12 px PASS[0m
+[0;32mI (7858) tp01: TARGET TOP_RIGHT: (780,20) in 1000 ms[0m
+[0;32mI (11364) tp01: RESULT TOP_RIGHT: samples=160 missing=56 mean=(659.9,18.0) error_avg=122.28 px error_max=747.05 px PASS[0m
+[0;32mI (11364) tp01: TARGET BOTTOM_LEFT: (20,460) in 1000 ms[0m
+[0;32mI (14878) tp01: RESULT BOTTOM_LEFT: samples=165 missing=51 mean=(264.1,295.7) error_avg=302.09 px error_max=868.32 px PASS[0m
+[0;32mI (14878) tp01: TARGET BOTTOM_RIGHT: (780,460) in 1000 ms[0m
+[0;32mI (18385) tp01: RESULT BOTTOM_RIGHT: samples=133 missing=87 mean=(781.3,433.9) error_avg=32.38 px error_max=752.77 px PASS[0m
+[0;32mI (18385) tp01: TARGET TOP_EDGE: (400,20) in 1000 ms[0m
+[0;32mI (21895) tp01: RESULT TOP_EDGE: samples=172 missing=42 mean=(395.3,7.5) error_avg=19.75 px error_max=566.71 px PASS[0m
+[0;32mI (21895) tp01: TARGET BOTTOM_EDGE: (400,460) in 1000 ms[0m
+[0;32mI (25407) tp01: RESULT BOTTOM_EDGE: samples=209 missing=0 mean=(395.2,431.0) error_avg=29.44 px error_max=455.05 px PASS[0m
+[0;32mI (25407) tp01: TARGET LEFT_EDGE: (20,240) in 1000 ms[0m
+[0;32mI (28919) tp01: RESULT LEFT_EDGE: samples=209 missing=0 mean=(29.9,229.8) error_avg=16.07 px error_max=416.81 px PASS[0m
+[0;32mI (28919) tp01: TARGET RIGHT_EDGE: (780,240) in 1000 ms[0m
+[0;32mI (32431) tp01: RESULT RIGHT_EDGE: samples=209 missing=0 mean=(750.0,228.9) error_avg=33.38 px error_max=749.10 px PASS[0m
+[0;32mI (32431) tp01: TP-01 SUMMARY: targets=9 failed_targets=0 samples=1641 missing=275 mean_error=60.81 px[0m
+[0;32mI (32439) tp01: Record each point error; recalibrate or inspect panel alignment if edge/corner error is larger.[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 17:12:41[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c1e0h ( 49632) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c208 vaddr=2f000000 size=03e10h ( 15888) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=212e0h (135904) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041308 vaddr=2f003e10 size=0b3e4h ( 46052) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c6f4 vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (365) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp01_coordinate[0m
+[0;32mI (678) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  4 2026 17:12:45[0m
+[0;32mI (686) app_init: ELF file SHA256:  8896efe88...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (699) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (703) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015660 len 00065950 (406 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 59K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp01: TP-01 coordinate accuracy; GT1151 800x480, I2C 400 kHz nominal[0m
+[0;32mI (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still[0m
+[0;32mI (832) tp01: TARGET CENTER: (400,240) in 1000 ms[0m
+[0;32mI (4344) tp01: RESULT CENTER: samples=195 missing=16 mean=(398.8,233.9) error_avg=8.46 px error_max=347.83 px PASS[0m
+[0;32mI (4344) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms[0m
+[0;32mI (7855) tp01: RESULT TOP_LEFT: samples=209 missing=0 mean=(26.9,17.0) error_avg=9.22 px error_max=433.50 px PASS[0m
+[0;32mI (7855) tp01: TARGET TOP_RIGHT: (780,20) in 1000 ms[0m
+[0;32mI (11366) tp01: RESULT TOP_RIGHT: samples=209 missing=0 mean=(756.9,23.3) error_avg=23.49 px error_max=753.01 px PASS[0m
+[0;32mI (11366) tp01: TARGET BOTTOM_LEFT: (20,460) in 1000 ms[0m
+[0;32mI (14878) tp01: RESULT BOTTOM_LEFT: samples=209 missing=0 mean=(31.6,440.7) error_avg=23.36 px error_max=858.89 px PASS[0m
+[0;32mI (14878) tp01: TARGET BOTTOM_RIGHT: (780,460) in 1000 ms[0m
+[0;32mI (18382) tp01: RESULT BOTTOM_RIGHT: samples=203 missing=6 mean=(773.3,455.5) error_avg=9.91 px error_max=761.26 px PASS[0m
+[0;32mI (18382) tp01: TARGET TOP_EDGE: (400,20) in 1000 ms[0m
+[0;32mI (21894) tp01: RESULT TOP_EDGE: samples=209 missing=0 mean=(400.8,7.2) error_avg=17.71 px error_max=574.98 px PASS[0m
+[0;32mI (21894) tp01: TARGET BOTTOM_EDGE: (400,460) in 1000 ms[0m
+[0;32mI (25406) tp01: RESULT BOTTOM_EDGE: samples=209 missing=0 mean=(410.9,446.9) error_avg=17.66 px error_max=455.00 px PASS[0m
+[0;32mI (25406) tp01: TARGET LEFT_EDGE: (20,240) in 1000 ms[0m
+[0;32mI (28918) tp01: RESULT LEFT_EDGE: samples=209 missing=0 mean=(31.6,236.2) error_avg=13.50 px error_max=443.35 px PASS[0m
+[0;32mI (28918) tp01: TARGET RIGHT_EDGE: (780,240) in 1000 ms[0m
+[0;32mI (32430) tp01: RESULT RIGHT_EDGE: samples=209 missing=0 mean=(755.1,236.9) error_avg=25.19 px error_max=750.01 px PASS[0m
+[0;32mI (32430) tp01: TP-01 SUMMARY: targets=9 failed_targets=0 samples=1861 missing=22 mean_error=16.58 px[0m
+[0;32mI (32438) tp01: Record each point error; recalibrate or inspect panel alignment if edge/corner error is larger.[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 17:12:41[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c1e0h ( 49632) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c208 vaddr=2f000000 size=03e10h ( 15888) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=212e0h (135904) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041308 vaddr=2f003e10 size=0b3e4h ( 46052) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c6f4 vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp01_coordinate[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  4 2026 17:12:45[0m
+[0;32mI (686) app_init: ELF file SHA256:  8896efe88...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015660 len 00065950 (406 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 59K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp01: TP-01 coordinate accuracy; GT1151 800x480, I2C 400 kHz nominal[0m
+[0;32mI (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still[0m
+[0;32mI (832) tp01: TARGET CENTER: (400,240) in 1000 ms[0m
+[0;32mI (4345) tp01: RESULT CENTER: samples=209 missing=0 mean=(388.8,237.0) error_avg=14.98 px error_max=355.04 px PASS[0m
+[0;32mI (4345) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms[0m
+[0;32mI (7856) tp01: RESULT TOP_LEFT: samples=209 missing=0 mean=(22.7,24.0) error_avg=5.77 px error_max=426.35 px PASS[0m
+[0;32mI (7856) tp01: TARGET TOP_RIGHT: (780,20) in 1000 ms[0m
+[0;32mI (11367) tp01: RESULT TOP_RIGHT: samples=209 missing=0 mean=(753.5,32.0) error_avg=29.44 px error_max=758.01 px PASS[0m
+[0;32mI (11367) tp01: TARGET BOTTOM_LEFT: (20,460) in 1000 ms[0m
+[0;32mI (14879) tp01: RESULT BOTTOM_LEFT: samples=209 missing=0 mean=(32.3,436.4) error_avg=27.44 px error_max=852.26 px PASS[0m
+[0;32mI (14879) tp01: TARGET BOTTOM_RIGHT: (780,460) in 1000 ms[0m
+[0;32mI (18391) tp01: RESULT BOTTOM_RIGHT: samples=209 missing=0 mean=(768.4,446.2) error_avg=19.41 px error_max=752.52 px PASS[0m
+[0;32mI (18391) tp01: TARGET TOP_EDGE: (400,20) in 1000 ms[0m
+[0;32mI (21903) tp01: RESULT TOP_EDGE: samples=209 missing=0 mean=(398.8,22.9) error_avg=5.90 px error_max=566.32 px PASS[0m
+[0;32mI (21903) tp01: TARGET BOTTOM_EDGE: (400,460) in 1000 ms[0m
+[0;32mI (25409) tp01: RESULT BOTTOM_EDGE: samples=199 missing=11 mean=(383.6,435.3) error_avg=30.20 px error_max=439.01 px PASS[0m
+[0;32mI (25409) tp01: TARGET LEFT_EDGE: (20,240) in 1000 ms[0m
+[0;32mI (28921) tp01: RESULT LEFT_EDGE: samples=209 missing=0 mean=(23.8,221.4) error_avg=18.97 px error_max=25.50 px PASS[0m
+[0;32mI (28921) tp01: TARGET RIGHT_EDGE: (780,240) in 1000 ms[0m
+[0;32mI (32433) tp01: RESULT RIGHT_EDGE: samples=209 missing=0 mean=(775.1,246.1) error_avg=16.50 px error_max=759.38 px PASS[0m
+[0;32mI (32433) tp01: TP-01 SUMMARY: targets=9 failed_targets=0 samples=1871 missing=11 mean_error=18.67 px[0m
+[0;32mI (32441) tp01: Record each point error; recalibrate or inspect panel alignment if edge/corner error is larger.[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 17:12:41[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c1e0h ( 49632) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c208 vaddr=2f000000 size=03e10h ( 15888) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=212e0h (135904) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041308 vaddr=2f003e10 size=0b3e4h ( 46052) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c6f4 vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp01_coordinate[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  4 2026 17:12:45[0m
+[0;32mI (686) app_init: ELF file SHA256:  8896efe88...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015660 len 00065950 (406 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 59K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp01: TP-01 coordinate accuracy; GT1151 800x480, I2C 400 kHz nominal[0m
+[0;32mI (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still[0m
+[0;32mI (832) tp01: TARGET CENTER: (400,240) in 1000 ms[0m
+[0;32mI (4345) tp01: RESULT CENTER: samples=209 missing=0 mean=(400.3,232.5) error_avg=9.82 px error_max=371.00 px PASS[0m
+[0;32mI (4345) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms[0m
+[0;32mI (7856) tp01: RESULT TOP_LEFT: samples=209 missing=0 mean=(22.1,20.9) error_avg=4.16 px error_max=427.65 px PASS[0m
+[0;32mI (7856) tp01: TARGET TOP_RIGHT: (780,20) in 1000 ms[0m
+[0;32mI (11367) tp01: RESULT TOP_RIGHT: samples=209 missing=0 mean=(751.5,31.9) error_avg=31.23 px error_max=759.00 px PASS[0m
+[0;32mI (11367) tp01: TARGET BOTTOM_LEFT: (20,460) in 1000 ms[0m
+[0;32mI (14879) tp01: RESULT BOTTOM_LEFT: samples=209 missing=0 mean=(32.6,437.8) error_avg=26.25 px error_max=850.53 px PASS[0m
+[0;32mI (14879) tp01: TARGET BOTTOM_RIGHT: (780,460) in 1000 ms[0m
+[0;32mI (18391) tp01: RESULT BOTTOM_RIGHT: samples=209 missing=0 mean=(777.3,449.9) error_avg=13.63 px error_max=759.32 px PASS[0m
+[0;32mI (18391) tp01: TARGET TOP_EDGE: (400,20) in 1000 ms[0m
+[0;32mI (21903) tp01: RESULT TOP_EDGE: samples=209 missing=0 mean=(391.9,36.0) error_avg=19.87 px error_max=573.85 px PASS[0m
+[0;32mI (21903) tp01: TARGET BOTTOM_EDGE: (400,460) in 1000 ms[0m
+[0;32mI (25415) tp01: RESULT BOTTOM_EDGE: samples=209 missing=0 mean=(390.9,423.4) error_avg=37.84 px error_max=426.12 px PASS[0m
+[0;32mI (25415) tp01: TARGET LEFT_EDGE: (20,240) in 1000 ms[0m
+[0;32mI (28927) tp01: RESULT LEFT_EDGE: samples=209 missing=0 mean=(37.3,237.9) error_avg=18.22 px error_max=415.01 px PASS[0m
+[0;32mI (28927) tp01: TARGET RIGHT_EDGE: (780,240) in 1000 ms[0m
+[0;32mI (32439) tp01: RESULT RIGHT_EDGE: samples=209 missing=0 mean=(770.5,224.6) error_avg=20.04 px error_max=747.01 px PASS[0m
+[0;32mI (32439) tp01: TP-01 SUMMARY: targets=9 failed_targets=0 samples=1881 missing=0 mean_error=20.12 px[0m
+[0;32mI (32447) tp01: Record each point error; recalibrate or inspect panel alignment if edge/corner error is larger.[0m

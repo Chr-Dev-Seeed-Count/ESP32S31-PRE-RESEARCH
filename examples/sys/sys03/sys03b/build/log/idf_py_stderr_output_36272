@@ -1,0 +1,389 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\sys\sys03\sys03b\build\sys03b.elf D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f0002b6: [0;33m_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m501[0m
+[0m--- 0x2f0002a6: [0;33m_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m452[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006b4e: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40015118: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5770[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4000a74a: [0;33mapp_main[0m[0m at [0;32mD:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c[0m[0m:[1;31m100[0m
+[0m--- 0x4000a746: [0;33mapp_main[0m[0m at [0;32mD:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c[0m[0m:[1;31m99[0m
+[0m--- 0x2f80195a: [0;33mesprv_intc_int_enable[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006d0e: [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m559[0m
+[0m--- 0x2f006d96: [0;33mspinlock_acquire[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m124[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m545[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m529[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f0047ae: [0;33mtimer_ll_trigger_soft_capture[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h[0m[0m:[1;31m250[0m
+[0m--- (inlined by) [0;33mtimer_hal_capture_and_get_counter_value[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/timer_hal.c[0m[0m:[1;31m56[0m
+[0m--- 0x2f003454: [0;33mgptimer_default_isr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c[0m[0m:[1;31m459[0m
+[0m--- 0x2f0026c6: [0;33mon_alarm[0m[0m at [0;32mD:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c[0m[0m:[1;31m25[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006b4e: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40015118: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5770[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f808cb8: [0;33msystimer_hal_get_counter_value[0m[0m in [0;32mROM[0m
+[0m--- 0x2f00256e: [0;33mesp_timer_impl_get_time[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c[0m[0m:[1;31m72[0m
+[0m--- 0x2f0063c0: [0;33msystimer_ticks_to_us[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/port/esp32s31/systimer.c[0m[0m:[1;31m16[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4000a640: [0;33mreport_task[0m[0m at [0;32mD:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c[0m[0m:[1;31m56[0m
+[0m--- 0x2f00263c: [0;33musb_serial_jtag_sof_tick_hook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c[0m[0m:[1;31m48[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f808ca4: [0;33msystimer_hal_get_counter_value[0m[0m in [0;32mROM[0m
+[0m--- 0x2f00256e: [0;33mesp_timer_impl_get_time[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c[0m[0m:[1;31m72[0m
+[0m--- 0x2f0063c0: [0;33msystimer_ticks_to_us[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/port/esp32s31/systimer.c[0m[0m:[1;31m16[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006d0e: [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m559[0m
+[0m--- 0x2f006d96: [0;33mspinlock_acquire[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m124[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m545[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m529[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f808cae: [0;33msystimer_hal_get_counter_value[0m[0m in [0;32mROM[0m
+[0m--- 0x2f00256e: [0;33mesp_timer_impl_get_time[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c[0m[0m:[1;31m72[0m
+[0m--- 0x2f0063c0: [0;33msystimer_ticks_to_us[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/port/esp32s31/systimer.c[0m[0m:[1;31m16[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4001513c: [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5776[0m
+[0m--- 0x40015126: [0;33mrv_utils_get_core_id[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/include/riscv/rv_utils.h[0m[0m:[1;31m97[0m
+[0m--- (inlined by) [0;33mesp_cpu_get_core_id[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/include/esp_cpu.h[0m[0m:[1;31m138[0m
+[0m--- (inlined by) [0;33mxPortGetCoreID[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m456[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5773[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f808cba: [0;33msystimer_hal_get_counter_value[0m[0m in [0;32mROM[0m
+[0m--- 0x2f00256e: [0;33mesp_timer_impl_get_time[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c[0m[0m:[1;31m72[0m
+[0m--- 0x2f0063c0: [0;33msystimer_ticks_to_us[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/port/esp32s31/systimer.c[0m[0m:[1;31m16[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f808ca6: [0;33msystimer_hal_get_counter_value[0m[0m in [0;32mROM[0m
+[0m--- 0x2f00256e: [0;33mesp_timer_impl_get_time[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c[0m[0m:[1;31m72[0m
+[0m--- 0x2f0063c0: [0;33msystimer_ticks_to_us[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/port/esp32s31/systimer.c[0m[0m:[1;31m16[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f0002b6: [0;33m_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m501[0m
+[0m--- 0x2f0002a6: [0;33m_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m452[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006b4e: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40015118: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5770[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006bba: [0;33mvPortExitCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m574[0m
+[0m--- (inlined by) [0;33mvPortExitCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m561[0m
+[0m--- 0x2f007b74: [0;33mvTaskGenericNotifyGiveFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m6248[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00960c: [0;33m_global_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c[0m[0m:[1;31m60[0m
+[0m--- 0x2f0002c6: [0;33m_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m512[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006dcc: [0;33mspinlock_acquire[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m132[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m545[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m529[0m
+[0m--- 0x2f006dd6: [0;33mspinlock_acquire[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m133[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m545[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m529[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x400132cc: [0;33mvListInsert[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/list.c[0m[0m:[1;31m191[0m
+[0m--- 0x400142ea: [0;33mprvAddCurrentTaskToDelayedList[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m6413[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f0095e8: [0;33mintr_get_item[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c[0m[0m:[1;31m32[0m
+[0m--- 0x2f00961a: [0;33m_global_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c[0m[0m:[1;31m66[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006b4e: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40015118: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5770[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006d5e: [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m555[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m529[0m
+[0m--- 0x2f006d96: [0;33mspinlock_acquire[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m124[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m545[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m529[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006b4e: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40015118: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5770[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f0047ba: [0;33mtimer_ll_trigger_soft_capture[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h[0m[0m:[1;31m253[0m
+[0m--- (inlined by) [0;33mtimer_hal_capture_and_get_counter_value[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/timer_hal.c[0m[0m:[1;31m56[0m
+[0m--- 0x2f003454: [0;33mgptimer_default_isr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c[0m[0m:[1;31m459[0m
+[0m--- 0x2f0026c6: [0;33mon_alarm[0m[0m at [0;32mD:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c[0m[0m:[1;31m25[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006b4e: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40015118: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5770[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f003492: [0;33mtimer_ll_enable_alarm[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h[0m[0m:[1;31m181[0m
+[0m--- (inlined by) [0;33mgptimer_default_isr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c[0m[0m:[1;31m468[0m
+[0m--- 0x2f00346e: [0;33mgptimer_default_isr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c[0m[0m:[1;31m465[0m
+[0m--- 0x2f0026c6: [0;33mon_alarm[0m[0m at [0;32mD:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c[0m[0m:[1;31m25[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006b4e: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40015118: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5770[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4000a74a: [0;33mapp_main[0m[0m at [0;32mD:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c[0m[0m:[1;31m100[0m
+[0m--- 0x4000a746: [0;33mapp_main[0m[0m at [0;32mD:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c[0m[0m:[1;31m99[0m
+[0m--- 0x2f80195a: [0;33mesprv_intc_int_enable[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006f06: [0;33mrv_utils_set_intlevel_regval[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/include/esp_private/interrupt_clic.h[0m[0m:[1;31m171[0m
+[0m--- (inlined by) [0;33mxPortSetInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m499[0m
+[0m--- 0x2f006d14: [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m544[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m529[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f00490c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400024ee: [0;33mpanic_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f0002b6: [0;33m_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m501[0m
+[0m--- 0x2f0002a6: [0;33m_interrupt_handler[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m452[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f006b4e: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40015118: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mulTaskGenericNotifyTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5770[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[1;31m--- Error: ClearCommError failed (PermissionErr

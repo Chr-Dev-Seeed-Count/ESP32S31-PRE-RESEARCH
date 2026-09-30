@@ -1,0 +1,49 @@
+Command: cmake -G Ninja -B D:\ESP32S31\examples\touch\tp02_trajectory\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True -DCONFIGDEP_ENABLE=True D:\ESP32S31\examples\touch\tp02_trajectory
+-- IDF_TARGET is not set, guessed 'esp32s31' from sdkconfig 'D:/ESP32S31/examples/touch/tp02_trajectory/sdkconfig'
+-- Found Git: D:/Git/cmd/git.exe (found version "2.48.1.windows.1")
+-- Minimal build - ON
+-- esp-idf-configdep will be used for faster recompilation
+-- ccache will be used for faster recompilation
+-- Compiler launcher chain: esp-idf-configdep -> ccache
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s31
+NOTE: Skipping optional dependency: espressif/esp_h264
+NOTE: Skipping optional dependency: espressif/esp_ipa
+NOTE: Processing 16 dependencies:
+NOTE: [1/16] espressif/button (4.2.1)
+NOTE: [2/16] espressif/cmake_utilities (0.5.3)
+NOTE: [3/16] espressif/esp32_s31_korvo_1 (1.0.1)
+NOTE: [4/16] espressif/esp_cam_sensor (2.2.0)
+NOTE: [5/16] espressif/esp_codec_dev (1.5.11)
+NOTE: [6/16] espressif/esp_lcd_touch (1.2.1)
+NOTE: [7/16] espressif/esp_lcd_touch_gt1151 (1.1.1)
+NOTE: [8/16] espressif/esp_lvgl_port (2.9.0)
+NOTE: [9/16] espressif/esp_sccb_intf (0.0.9)
+NOTE: [10/16] espressif/esp_video (2.2.0)
+NOTE: [11/16] espressif/led_indicator (2.1.2)
+NOTE: [12/16] espressif/led_strip (3.0.3)
+NOTE: [13/16] espressif/usb (1.5.0)
+NOTE: [14/16] espressif/usb_host_uvc (2.5.2)
+NOTE: [15/16] lvgl/lvgl (9.5.0)
+NOTE: [16/16] idf (6.2.0)
+NOTE: Skipping optional dependency: espressif/esp_h264
+NOTE: Skipping optional dependency: espressif/esp_ipa
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file D:/ESP32S31/examples/touch/tp02_trajectory/sdkconfig
+-- Performing Test COMPILER_SUPPORTS_MTUNE_esp32s31
+-- Configuring incomplete, errors occurred!

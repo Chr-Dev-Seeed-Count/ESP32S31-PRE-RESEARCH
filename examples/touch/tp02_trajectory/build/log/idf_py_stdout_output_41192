@@ -1,0 +1,2412 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\touch\tp02_trajectory\build\tp02_trajectory.elf D:\ESP32S31\examples\touch\tp02_trajectory\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2819) tp02: RESULT FAST_LINE: samples=38 active=0.46 s sample_rate=90.3 Hz path=592 px max_step=46 large_steps=0[0m
+[0;32mI (2820) tp02: DIAG FAST_LINE: polls=781 read_err=0 no_point=123 short_dropouts=37 max_no_point=15806 us max_interval=20000 us interval_gt_30ms=0 read_avg=1112 us read_max=2810 us end=RELEASE[0m
+[0;32mI (2846) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3756) tp02: RESULT SWIPE: samples=82 active=0.91 s sample_rate=93.9 Hz path=2071 px max_step=79 large_steps=0[0m
+[0;32mI (3756) tp02: DIAG SWIPE: polls=313 read_err=0 no_point=231 short_dropouts=80 max_no_point=16154 us max_interval=20155 us interval_gt_30ms=0 read_avg=1440 us read_max=2815 us end=RELEASE[0m
+[0;32mI (3781) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (4751) tp02: RESULT LONG_PRESS: samples=82 active=0.97 s sample_rate=87.9 Hz path=1811 px max_step=117 large_steps=0[0m
+[0;32mI (4751) tp02: DIAG LONG_PRESS: polls=338 read_err=0 no_point=256 short_dropouts=81 max_no_point=23999 us max_interval=28000 us interval_gt_30ms=0 read_avg=1410 us read_max=2814 us end=RELEASE[0m
+[0;32mI (4777) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2777) tp02: RESULT FAST_LINE: samples=74 active=0.89 s sample_rate=86.9 Hz path=1867 px max_step=85 large_steps=0[0m
+[0;32mI (2777) tp02: DIAG FAST_LINE: polls=737 read_err=0 no_point=235 short_dropouts=73 max_no_point=24944 us max_interval=29000 us interval_gt_30ms=0 read_avg=1194 us read_max=2817 us end=RELEASE[0m
+[0;32mI (2804) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3889) tp02: RESULT SWIPE: samples=94 active=1.08 s sample_rate=89.7 Hz path=2815 px max_step=129 large_steps=1[0m
+[0;32mI (3889) tp02: DIAG SWIPE: polls=378 read_err=0 no_point=284 short_dropouts=92 max_no_point=25999 us max_interval=30000 us interval_gt_30ms=0 read_avg=1418 us read_max=2819 us end=RELEASE[0m
+[0;32mI (3916) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (4403) tp02: RESULT LONG_PRESS: samples=38 active=0.49 s sample_rate=84.2 Hz path=1439 px max_step=114 large_steps=0[0m
+[0;32mI (4403) tp02: DIAG LONG_PRESS: polls=172 read_err=0 no_point=134 short_dropouts=37 max_no_point=16152 us max_interval=20153 us interval_gt_30ms=0 read_avg=1375 us read_max=2763 us end=RELEASE[0m
+[0;32mI (4429) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (4844) tp02: RESULT DRAG: samples=35 active=0.41 s sample_rate=93.0 Hz path=1122 px max_step=121 large_steps=1[0m
+[0;32mI (4844) tp02: DIAG DRAG: polls=145 read_err=0 no_point=110 short_dropouts=33 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1406 us read_max=2805 us end=RELEASE[0m
+[0;32mI (4859) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2435) tp02: RESULT FAST_LINE: samples=65 active=0.78 s sample_rate=87.0 Hz path=1577 px max_step=79 large_steps=0[0m
+[0;32mI (2436) tp02: DIAG FAST_LINE: polls=608 read_err=0 no_point=212 short_dropouts=64 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1200 us read_max=2757 us end=RELEASE[0m
+[0;32mI (2463) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2930) tp02: RESULT SWIPE: samples=39 active=0.47 s sample_rate=90.2 Hz path=1353 px max_step=106 large_steps=0[0m
+[0;32mI (2931) tp02: DIAG SWIPE: polls=163 read_err=0 no_point=124 short_dropouts=38 max_no_point=26000 us max_interval=30000 us interval_gt_30ms=0 read_avg=1403 us read_max=2819 us end=RELEASE[0m
+[0;32mI (2958) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;33mW (12948) tp02: RESULT LONG_PRESS: WAIT_TIMEOUT (no touch received)[0m
+[0;32mI (12960) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2178) tp02: RESULT FAST_LINE: samples=31 active=0.39 s sample_rate=87.8 Hz path=839 px max_step=94 large_steps=0[0m
+[0;32mI (2178) tp02: DIAG FAST_LINE: polls=520 read_err=0 no_point=103 short_dropouts=30 max_no_point=15117 us max_interval=19000 us interval_gt_30ms=0 read_avg=1133 us read_max=2765 us end=RELEASE[0m
+[0;32mI (2202) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2762) tp02: RESULT SWIPE: samples=51 active=0.56 s sample_rate=97.8 Hz path=1514 px max_step=90 large_steps=0[0m
+[0;32mI (2763) tp02: DIAG SWIPE: polls=193 read_err=0 no_point=142 short_dropouts=50 max_no_point=16050 us max_interval=20004 us interval_gt_30ms=0 read_avg=1439 us read_max=2800 us end=RELEASE[0m
+[0;32mI (2789) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (4695) tp02: RESULT LONG_PRESS: samples=57 active=0.65 s sample_rate=93.0 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (4695) tp02: DIAG LONG_PRESS: polls=733 read_err=0 no_point=169 short_dropouts=56 max_no_point=17000 us max_interval=21000 us interval_gt_30ms=0 read_avg=1159 us read_max=2746 us end=RELEASE[0m
+[0;32mI (4721) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (6805) tp02: RESULT DRAG: samples=180 active=2.08 s sample_rate=87.9 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (6806) tp02: DIAG DRAG: polls=731 read_err=0 no_point=551 short_dropouts=178 max_no_point=24071 us max_interval=28071 us interval_gt_30ms=0 read_avg=1412 us read_max=2819 us end=RELEASE[0m
+[0;32mI (6820) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2547 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1492) tp02: RESULT SWIPE: samples=51 active=0.59 s sample_rate=92.5 Hz path=970 px max_step=59 large_steps=0[0m
+[0;32mI (1493) tp02: DIAG SWIPE: polls=203 read_err=0 no_point=152 short_dropouts=50 max_no_point=16999 us max_interval=21000 us interval_gt_30ms=0 read_avg=1418 us read_max=2759 us end=RELEASE[0m
+[0;32mI (1519) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (1848) tp02: RESULT LONG_PRESS: samples=28 active=0.33 s sample_rate=95.6 Hz path=480 px max_step=66 large_steps=0[0m
+[0;32mI (1849) tp02: DIAG LONG_PRESS: polls=113 read_err=0 no_point=85 short_dropouts=27 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1423 us read_max=2812 us end=RELEASE[0m
+[0;32mI (1876) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3530) tp02: RESULT DRAG: samples=115 active=1.37 s sample_rate=86.0 Hz path=3107 px max_step=82 large_steps=0[0m
+[0;32mI (3530) tp02: DIAG DRAG: polls=594 read_err=0 no_point=365 short_dropouts=114 max_no_point=25999 us max_interval=30000 us interval_gt_30ms=0 read_avg=1334 us read_max=2813 us end=RELEASE[0m
+[0;32mI (3545) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1052) tp02: RESULT FAST_LINE: samples=16 active=0.21 s sample_rate=94.1 Hz path=131 px max_step=63 large_steps=0[0m
+[0;32mI (1052) tp02: DIAG FAST_LINE: polls=75 read_err=0 no_point=59 short_dropouts=15 max_no_point=15000 us max_interval=19001 us interval_gt_30ms=0 read_avg=1370 us read_max=2777 us end=RELEASE[0m
+[0;32mI (1078) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2178) tp02: RESULT SWIPE: samples=56 active=0.65 s sample_rate=91.5 Hz path=396 px max_step=36 large_steps=0[0m
+[0;32mI (2178) tp02: DIAG SWIPE: polls=410 read_err=0 no_point=169 short_dropouts=55 max_no_point=17000 us max_interval=20888 us interval_gt_30ms=0 read_avg=1248 us read_max=2764 us end=RELEASE[0m
+[0;32mI (2202) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (4828) tp02: RESULT LONG_PRESS: samples=231 active=2.62 s sample_rate=89.2 Hz path=2284 px max_step=44 large_steps=0[0m
+[0;32mI (4828) tp02: DIAG LONG_PRESS: polls=911 read_err=0 no_point=680 short_dropouts=230 max_no_point=27000 us max_interval=31000 us interval_gt_30ms=1 read_avg=1426 us read_max=2816 us end=RELEASE[0m
+[0;32mI (4854) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (5191) tp02: RESULT DRAG: samples=28 active=0.34 s sample_rate=93.5 Hz path=479 px max_step=63 large_steps=0[0m
+[0;32mI (5192) tp02: DIAG DRAG: polls=119 read_err=0 no_point=91 short_dropouts=26 max_no_point=15999 us max_interval=19999 us interval_gt_30ms=0 read_avg=1399 us read_max=2771 us end=RELEASE[0m
+[0;32mI (5206) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2555 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3468) tp02: RESULT SWIPE: samples=35 active=0.49 s sample_rate=76.3 Hz path=659 px max_step=126 large_steps=2[0m
+[0;32mI (3469) tp02: DIAG SWIPE: polls=1016 read_err=0 no_point=141 short_dropouts=34 max_no_point=24128 us max_interval=28185 us interval_gt_30ms=0 read_avg=1094 us read_max=2815 us end=RELEASE[0m
+[0;32mI (3495) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (4865) tp02: RESULT LONG_PRESS: samples=38 active=0.44 s sample_rate=94.8 Hz path=567 px max_step=72 large_steps=0[0m
+[0;32mI (4865) tp02: DIAG LONG_PRESS: polls=534 read_err=0 no_point=118 short_dropouts=37 max_no_point=16150 us max_interval=20150 us interval_gt_30ms=0 read_avg=1149 us read_max=2764 us end=RELEASE[0m
+[0;32mI (4892) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (5285) tp02: RESULT DRAG: samples=3 active=0.07 s sample_rate=81.1 Hz path=385 px max_step=370 large_steps=1[0m
+[0;32mI (5285) tp02: DIAG DRAG: polls=156 read_err=0 no_point=24 short_dropouts=2 max_no_point=24000 us max_interval=27887 us interval_gt_30ms=0 read_avg=1072 us read_max=2556 us end=RELEASE[0m
+[0;32mI (5299) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2544 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1176) tp02: RESULT SWIPE: samples=5 active=0.09 s sample_rate=84.7 Hz path=57 px max_step=31 large_steps=0[0m
+[0;32mI (1177) tp02: DIAG SWIPE: polls=107 read_err=0 no_point=31 short_dropouts=4 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1114 us read_max=2763 us end=RELEASE[0m
+[0;32mI (1203) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (2257) tp02: RESULT LONG_PRESS: samples=93 active=1.05 s sample_rate=91.4 Hz path=1493 px max_step=50 large_steps=0[0m
+[0;32mI (2257) tp02: DIAG LONG_PRESS: polls=365 read_err=0 no_point=272 short_dropouts=91 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1430 us read_max=2815 us end=RELEASE[0m
+[0;32mI (2283) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3194) tp02: RESULT DRAG: samples=75 active=0.91 s sample_rate=85.9 Hz path=1033 px max_step=49 large_steps=0[0m
+[0;32mI (3194) tp02: DIAG DRAG: polls=317 read_err=0 no_point=242 short_dropouts=74 max_no_point=25000 us max_interval=29000 us interval_gt_30ms=0 read_avg=1403 us read_max=2815 us end=RELEASE[0m
+[0;32mI (3209) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (912) tp02: RESULT FAST_LINE: samples=5 active=0.07 s sample_rate=156.4 Hz path=74 px max_step=67 large_steps=0[0m
+[0;32mI (912) tp02: DIAG FAST_LINE: polls=25 read_err=0 no_point=20 short_dropouts=3 max_no_point=6000 us max_interval=10000 us interval_gt_30ms=0 read_avg=1328 us read_max=2582 us end=RELEASE[0m
+[0;32mI (938) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1841) tp02: RESULT SWIPE: samples=71 active=0.83 s sample_rate=89.5 Hz path=657 px max_step=30 large_steps=0[0m
+[0;32mI (1841) tp02: DIAG SWIPE: polls=318 read_err=0 no_point=217 short_dropouts=70 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1384 us read_max=2815 us end=RELEASE[0m
+[0;32mI (1866) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (2403) tp02: RESULT LONG_PRESS: samples=44 active=0.54 s sample_rate=87.8 Hz path=325 px max_step=34 large_steps=0[0m
+[0;32mI (2403) tp02: DIAG LONG_PRESS: polls=188 read_err=0 no_point=144 short_dropouts=42 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1401 us read_max=2810 us end=RELEASE[0m
+[0;32mI (2428) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2699) tp02: RESULT DRAG: samples=24 active=0.27 s sample_rate=102.8 Hz path=146 px max_step=19 large_steps=0[0m
+[0;32mI (2699) tp02: DIAG DRAG: polls=92 read_err=0 no_point=68 short_dropouts=22 max_no_point=15000 us max_interval=19000 us interval_gt_30ms=0 read_avg=1444 us read_max=2814 us end=RELEASE[0m
+[0;32mI (2714) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (365) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (376) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (678) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (699) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (703) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (707) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (758) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1170) tp02: RESULT FAST_LINE: samples=26 active=0.33 s sample_rate=89.7 Hz path=188 px max_step=51 large_steps=0[0m
+[0;32mI (1171) tp02: DIAG FAST_LINE: polls=115 read_err=0 no_point=89 short_dropouts=25 max_no_point=23000 us max_interval=27000 us interval_gt_30ms=0 read_avg=1382 us read_max=2779 us end=RELEASE[0m
+[0;32mI (1198) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2516) tp02: RESULT SWIPE: samples=92 active=1.09 s sample_rate=87.5 Hz path=837 px max_step=30 large_steps=0[0m
+[0;32mI (2516) tp02: DIAG SWIPE: polls=473 read_err=0 no_point=288 short_dropouts=91 max_no_point=26000 us max_interval=30000 us interval_gt_30ms=0 read_avg=1337 us read_max=2817 us end=RELEASE[0m
+[0;32mI (2540) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (4581) tp02: RESULT LONG_PRESS: samples=170 active=2.04 s sample_rate=84.8 Hz path=1516 px max_step=35 large_steps=0[0m
+[0;32mI (4581) tp02: DIAG LONG_PRESS: polls=717 read_err=0 no_point=547 short_dropouts=169 max_no_point=25000 us max_interval=29000 us interval_gt_30ms=0 read_avg=1401 us read_max=2818 us end=RELEASE[0m
+[0;32mI (4607) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (5135) tp02: RESULT DRAG: samples=46 active=0.53 s sample_rate=93.6 Hz path=310 px max_step=16 large_steps=0[0m
+[0;32mI (5136) tp02: DIAG DRAG: polls=183 read_err=0 no_point=137 short_dropouts=44 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1427 us read_max=2815 us end=RELEASE[0m
+[0;32mI (5151) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (979) tp02: RESULT FAST_LINE: samples=9 active=0.14 s sample_rate=91.7 Hz path=209 px max_step=152 large_steps=1[0m
+[0;32mI (979) tp02: DIAG FAST_LINE: polls=51 read_err=0 no_point=42 short_dropouts=8 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1304 us read_max=2746 us end=RELEASE[0m
+[0;32mI (1006) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3531) tp02: RESULT SWIPE: samples=177 active=2.08 s sample_rate=86.5 Hz path=5754 px max_step=117 large_steps=0[0m
+[0;32mI (3531) tp02: DIAG SWIPE: polls=902 read_err=0 no_point=544 short_dropouts=176 max_no_point=27000 us max_interval=31000 us interval_gt_30ms=1 read_avg=1342 us read_max=2820 us end=RELEASE[0m
+[0;32mI (3556) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (3637) tp02: RESULT LONG_PRESS: samples=5 active=0.08 s sample_rate=110.8 Hz path=170 px max_step=51 large_steps=0[0m
+[0;32mI (3638) tp02: DIAG LONG_PRESS: polls=29 read_err=0 no_point=24 short_dropouts=4 max_no_point=12000 us max_interval=16080 us interval_gt_30ms=0 read_avg=1325 us read_max=2814 us end=RELEASE[0m
+[0;32mI (3665) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (4002) tp02: RESULT DRAG: samples=25 active=0.34 s sample_rate=83.4 Hz path=829 px max_step=140 large_steps=1[0m
+[0;32mI (4002) tp02: DIAG DRAG: polls=123 read_err=0 no_point=98 short_dropouts=24 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1335 us read_max=2723 us end=RELEASE[0m
+[0;32mI (4017) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2556 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2553 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1221) tp02: RESULT SWIPE: samples=19 active=0.24 s sample_rate=95.0 Hz path=163 px max_step=32 large_steps=0[0m
+[0;32mI (1221) tp02: DIAG SWIPE: polls=118 read_err=0 no_point=68 short_dropouts=18 max_no_point=15879 us max_interval=20003 us interval_gt_30ms=0 read_avg=1279 us read_max=2729 us end=RELEASE[0m
+[0;32mI (1247) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (2332) tp02: RESULT LONG_PRESS: samples=57 active=0.75 s sample_rate=80.5 Hz path=545 px max_step=26 large_steps=0[0m
+[0;32mI (2332) tp02: DIAG LONG_PRESS: polls=405 read_err=0 no_point=210 short_dropouts=56 max_no_point=25999 us max_interval=30000 us interval_gt_30ms=0 read_avg=1253 us read_max=2813 us end=RELEASE[0m
+[0;32mI (2359) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2722) tp02: RESULT DRAG: samples=31 active=0.36 s sample_rate=94.7 Hz path=127 px max_step=26 large_steps=0[0m
+[0;32mI (2722) tp02: DIAG DRAG: polls=124 read_err=0 no_point=93 short_dropouts=30 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1426 us read_max=2814 us end=RELEASE[0m
+[0;32mI (2737) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2121) tp02: RESULT FAST_LINE: samples=100 active=1.18 s sample_rate=87.1 Hz path=4519 px max_step=158 large_steps=4[0m
+[0;32mI (2121) tp02: DIAG FAST_LINE: polls=451 read_err=0 no_point=314 short_dropouts=99 max_no_point=24999 us max_interval=28999 us interval_gt_30ms=0 read_avg=1378 us read_max=2786 us end=RELEASE[0m
+[0;32mI (2146) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3194) tp02: RESULT SWIPE: samples=88 active=1.05 s sample_rate=87.2 Hz path=4688 px max_step=187 large_steps=7[0m
+[0;32mI (3194) tp02: DIAG SWIPE: polls=367 read_err=0 no_point=279 short_dropouts=86 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1405 us read_max=2813 us end=RELEASE[0m
+[0;32mI (3218) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (3269) tp02: RESULT LONG_PRESS: samples=3 active=0.05 s sample_rate=211.0 Hz path=74 px max_step=48 large_steps=0[0m
+[0;32mI (3269) tp02: DIAG LONG_PRESS: polls=18 read_err=0 no_point=15 short_dropouts=1 max_no_point=6000 us max_interval=10000 us interval_gt_30ms=0 read_avg=1307 us read_max=2814 us end=RELEASE[0m
+[0;32mI (3296) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (4314) tp02: RESULT DRAG: samples=94 active=1.02 s sample_rate=95.8 Hz path=5057 px max_step=241 large_steps=3[0m
+[0;32mI (4314) tp02: DIAG DRAG: polls=351 read_err=0 no_point=257 short_dropouts=92 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1446 us read_max=2814 us end=RELEASE[0m
+[0;32mI (4329) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (365) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (376) cpu_start: Multicore app[0m
+[0;32mI (659) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (668) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (678) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (699) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (703) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (707) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (758) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1404) tp02: RESULT FAST_LINE: samples=46 active=0.56 s sample_rate=87.8 Hz path=2049 px max_step=444 large_steps=4[0m
+[0;32mI (1404) tp02: DIAG FAST_LINE: polls=196 read_err=0 no_point=150 short_dropouts=45 max_no_point=24999 us max_interval=28824 us interval_gt_30ms=0 read_avg=1401 us read_max=2812 us end=RELEASE[0m
+[0;32mI (1432) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1467) tp02: RESULT SWIPE: samples=1 active=0.03 s sample_rate=29.0 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (1467) tp02: DIAG SWIPE: polls=15 read_err=0 no_point=14 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1105 us read_max=2429 us end=RELEASE[0m
+[0;32mI (1491) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1049) tp02: RESULT FAST_LINE: samples=17 active=0.21 s sample_rate=101.8 Hz path=332 px max_step=65 large_steps=0[0m
+[0;32mI (1049) tp02: DIAG FAST_LINE: polls=73 read_err=0 no_point=56 short_dropouts=15 max_no_point=15999 us max_interval=20000 us interval_gt_30ms=0 read_avg=1381 us read_max=2807 us end=RELEASE[0m
+[0;32mI (1074) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3173) tp02: RESULT FAST_LINE: samples=194 active=2.29 s sample_rate=86.0 Hz path=3828 px max_step=78 large_steps=0[0m
+[0;32mI (3173) tp02: DIAG FAST_LINE: polls=815 read_err=0 no_point=606 short_dropouts=193 max_no_point=24999 us max_interval=29000 us interval_gt_30ms=0 read_avg=1403 us read_max=2816 us end=RELEASE[0m
+[0;32mI (3200) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (4302) tp02: RESULT SWIPE: samples=91 active=1.10 s sample_rate=85.5 Hz path=1604 px max_step=101 large_steps=0[0m
+[0;32mI (4302) tp02: DIAG SWIPE: polls=385 read_err=0 no_point=294 short_dropouts=90 max_no_point=23999 us max_interval=28000 us interval_gt_30ms=0 read_avg=1405 us read_max=2813 us end=RELEASE[0m
+[0;32mI (4328) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (4797) tp02: RESULT LONG_PRESS: samples=39 active=0.47 s sample_rate=90.1 Hz path=548 px max_step=64 large_steps=0[0m
+[0;32mI (4798) tp02: DIAG LONG_PRESS: polls=165 read_err=0 no_point=126 short_dropouts=38 max_no_point=24999 us max_interval=29000 us interval_gt_30ms=0 read_avg=1398 us read_max=2815 us end=RELEASE[0m
+[0;32mI (4824) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (7389) tp02: RESULT DRAG: samples=209 active=2.56 s sample_rate=82.7 Hz path=2367 px max_step=43 large_steps=0[0m
+[0;32mI (7389) tp02: DIAG DRAG: polls=899 read_err=0 no_point=690 short_dropouts=207 max_no_point=25999 us max_interval=29999 us interval_gt_30ms=0 read_avg=1395 us read_max=2815 us end=RELEASE[0m
+[0;32mI (7404) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2556 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2547 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1549) tp02: RESULT SWIPE: samples=25 active=0.36 s sample_rate=77.4 Hz path=470 px max_step=91 large_steps=0[0m
+[0;32mI (1550) tp02: DIAG SWIPE: polls=249 read_err=0 no_point=108 short_dropouts=24 max_no_point=26000 us max_interval=30000 us interval_gt_30ms=0 read_avg=1188 us read_max=2763 us end=RELEASE[0m
+[0;32mI (1575) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (2499) tp02: RESULT LONG_PRESS: samples=24 active=0.32 s sample_rate=86.3 Hz path=486 px max_step=62 large_steps=0[0m
+[0;32mI (2499) tp02: DIAG LONG_PRESS: polls=358 read_err=0 no_point=88 short_dropouts=23 max_no_point=26000 us max_interval=30000 us interval_gt_30ms=0 read_avg=1141 us read_max=2755 us end=RELEASE[0m
+[0;32mI (2526) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3539) tp02: RESULT DRAG: samples=29 active=0.37 s sample_rate=86.8 Hz path=403 px max_step=75 large_steps=0[0m
+[0;32mI (3540) tp02: DIAG DRAG: polls=393 read_err=0 no_point=104 short_dropouts=28 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1153 us read_max=2815 us end=RELEASE[0m
+[0;32mI (3555) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3962) tp02: RESULT FAST_LINE: samples=23 active=0.27 s sample_rate=100.4 Hz path=443 px max_step=61 large_steps=0[0m
+[0;32mI (3962) tp02: DIAG FAST_LINE: polls=1245 read_err=0 no_point=70 short_dropouts=22 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1072 us read_max=2786 us end=RELEASE[0m
+[0;32mI (3989) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (4181) tp02: RESULT SWIPE: samples=14 active=0.19 s sample_rate=89.6 Hz path=6 px max_step=3 large_steps=0[0m
+[0;32mI (4181) tp02: DIAG SWIPE: polls=68 read_err=0 no_point=54 short_dropouts=13 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1354 us read_max=2737 us end=RELEASE[0m
+[0;32mI (4205) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (365) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (678) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (699) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (703) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (758) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2699) tp02: RESULT FAST_LINE: samples=43 active=0.56 s sample_rate=82.1 Hz path=593 px max_step=106 large_steps=0[0m
+[0;32mI (2699) tp02: DIAG FAST_LINE: polls=729 read_err=0 no_point=156 short_dropouts=42 max_no_point=25000 us max_interval=28943 us interval_gt_30ms=0 read_avg=1127 us read_max=2822 us end=RELEASE[0m
+[0;32mI (2725) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (4715) tp02: RESULT SWIPE: samples=11 active=0.14 s sample_rate=103.8 Hz path=287 px max_step=50 large_steps=0[0m
+[0;32mI (4715) tp02: DIAG SWIPE: polls=799 read_err=0 no_point=41 short_dropouts=10 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1063 us read_max=2721 us end=RELEASE[0m
+[0;32mI (4740) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (5069) tp02: RESULT LONG_PRESS: samples=27 active=0.33 s sample_rate=92.7 Hz path=71 px max_step=66 large_steps=0[0m
+[0;32mI (5069) tp02: DIAG LONG_PRESS: polls=114 read_err=0 no_point=87 short_dropouts=26 max_no_point=15847 us max_interval=20000 us interval_gt_30ms=0 read_avg=1407 us read_max=2766 us end=RELEASE[0m
+[0;32mI (5095) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3895) tp02: RESULT FAST_LINE: samples=12 active=0.17 s sample_rate=90.2 Hz path=343 px max_step=123 large_steps=1[0m
+[0;32mI (3896) tp02: DIAG FAST_LINE: polls=1228 read_err=0 no_point=50 short_dropouts=11 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1057 us read_max=2746 us end=RELEASE[0m
+[0;32mI (3921) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (6602) tp02: RESULT SWIPE: samples=67 active=0.86 s sample_rate=81.5 Hz path=566 px max_step=25 large_steps=0[0m
+[0;32mI (6602) tp02: DIAG SWIPE: polls=1043 read_err=0 no_point=238 short_dropouts=66 max_no_point=24947 us max_interval=28999 us interval_gt_30ms=0 read_avg=1140 us read_max=2817 us end=RELEASE[0m
+[0;32mI (6629) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (8190) tp02: RESULT LONG_PRESS: samples=25 active=0.31 s sample_rate=89.9 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (8190) tp02: DIAG LONG_PRESS: polls=618 read_err=0 no_point=86 short_dropouts=24 max_no_point=25000 us max_interval=29000 us interval_gt_30ms=0 read_avg=1103 us read_max=2811 us end=RELEASE[0m
+[0;32mI (8215) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (8508) tp02: RESULT DRAG: samples=26 active=0.29 s sample_rate=102.3 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (8508) tp02: DIAG DRAG: polls=104 read_err=0 no_point=78 short_dropouts=24 max_no_point=15808 us max_interval=19933 us interval_gt_30ms=0 read_avg=1408 us read_max=2771 us end=RELEASE[0m
+[0;32mI (8522) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2553 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (2435) tp02: RESULT SWIPE: samples=94 active=1.19 s sample_rate=81.8 Hz path=1022 px max_step=51 large_steps=0[0m
+[0;32mI (2436) tp02: DIAG SWIPE: polls=561 read_err=0 no_point=326 short_dropouts=93 max_no_point=25000 us max_interval=28812 us interval_gt_30ms=0 read_avg=1291 us read_max=2772 us end=RELEASE[0m
+[0;32mI (2462) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (3286) tp02: RESULT LONG_PRESS: samples=71 active=0.82 s sample_rate=90.2 Hz path=586 px max_step=34 large_steps=0[0m
+[0;32mI (3286) tp02: DIAG LONG_PRESS: polls=286 read_err=0 no_point=215 short_dropouts=70 max_no_point=18000 us max_interval=21714 us interval_gt_30ms=0 read_avg=1419 us read_max=2817 us end=RELEASE[0m
+[0;32mI (3313) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (6912) tp02: RESULT DRAG: samples=305 active=3.60 s sample_rate=85.6 Hz path=2659 px max_step=59 large_steps=0[0m
+[0;32mI (6912) tp02: DIAG DRAG: polls=1260 read_err=0 no_point=955 short_dropouts=304 max_no_point=25000 us max_interval=29001 us interval_gt_30ms=0 read_avg=1407 us read_max=2815 us end=RELEASE[0m
+[0;32mI (6927) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1434) tp02: RESULT FAST_LINE: samples=50 active=0.59 s sample_rate=89.9 Hz path=627 px max_step=231 large_steps=1[0m
+[0;32mI (1435) tp02: DIAG FAST_LINE: polls=205 read_err=0 no_point=155 short_dropouts=49 max_no_point=23809 us max_interval=27934 us interval_gt_30ms=0 read_avg=1416 us read_max=2814 us end=RELEASE[0m
+[0;32mI (1461) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (364) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (677) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (728) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1558) tp02: RESULT FAST_LINE: samples=28 active=0.35 s sample_rate=88.6 Hz path=171 px max_step=20 large_steps=0[0m
+[0;32mI (1558) tp02: DIAG FAST_LINE: polls=271 read_err=0 no_point=95 short_dropouts=27 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1198 us read_max=2755 us end=RELEASE[0m
+[0;32mI (1583) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1742) tp02: RESULT SWIPE: samples=12 active=0.16 s sample_rate=99.3 Hz path=163 px max_step=47 large_steps=0[0m
+[0;32mI (1742) tp02: DIAG SWIPE: polls=54 read_err=0 no_point=42 short_dropouts=11 max_no_point=15022 us max_interval=19022 us interval_gt_30ms=0 read_avg=1397 us read_max=2757 us end=RELEASE[0m
+[0;32mI (1768) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (1990) tp02: RESULT LONG_PRESS: samples=15 active=0.22 s sample_rate=81.3 Hz path=34 px max_step=17 large_steps=0[0m
+[0;32mI (1990) tp02: DIAG LONG_PRESS: polls=80 read_err=0 no_point=65 short_dropouts=13 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1330 us read_max=2639 us end=RELEASE[0m
+[0;32mI (2017) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (3643) tp02: RESULT DRAG: samples=86 active=1.06 s sample_rate=84.2 Hz path=876 px max_step=50 large_steps=0[0m
+[0;32mI (3643) tp02: DIAG DRAG: polls=601 read_err=0 no_point=286 short_dropouts=85 max_no_point=24000 us max_interval=28000 us interval_gt_30ms=0 read_avg=1261 us read_max=2815 us end=RELEASE[0m
+[0;32mI (3658) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 11:03:13[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50030020 size=0c2a8h ( 49832) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001c2d0 vaddr=2f000000 size=03d48h ( 15688) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=214e0h (136416) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=00041508 vaddr=2f003d48 size=0b4ach ( 46252) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004c9bc vaddr=2f00f200 size=0427ch ( 17020) load[0m
+[0;32mI (156) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (167) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (168) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (169) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (174) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (178) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (182) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (187) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (191) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (196) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (200) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (205) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (209) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (365) mmu_psram: .rodata xip on psram[0m
+[0;32mI (375) mmu_psram: .text xip on psram[0m
+[0;32mI (375) cpu_start: Multicore app[0m
+[0;32mI (658) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (667) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (667) cpu_start: Pro cpu start user code[0m
+[0;32mI (667) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (669) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     tp02_trajectory[0m
+[0;32mI (678) app_init: App version:      1[0m
+[0;32mI (681) app_init: Compile time:     Sep  7 2026 11:03:19[0m
+[0;32mI (686) app_init: ELF file SHA256:  039cd23fd...[0m
+[0;32mI (690) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (699) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (703) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 2F015AF0 len 000654C0 (405 KiB): RAM[0m
+[0;32mI (718) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (723) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (729) esp_psram: Adding pool of 16128K of PSRAM memory to heap allocator[0m
+[0;32mI (735) esp_psram: Adding pool of 58K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (746) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (758) spi_flash: detected chip: generic[0m
+[0;32mI (761) spi_flash: flash io: qio[0m
+[0;32mI (764) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (770) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (777) main_task: Started on CPU0[0m
+[0;32mI (780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (788) main_task: Calling app_main()[0m
+[0;32mI (791) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (810) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (822) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;32mI (822) tp02: TP-02 continuous trajectory; poll=2 ms, interval warning=30 ms[0m
+[0;32mI (824) tp02: LCD: green trail + colored live marker; one gesture per test, then release[0m
+[0;32mI (842) tp02: TRAJECTORY FAST_LINE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (881) tp02: RESULT FAST_LINE: samples=1 active=0.04 s sample_rate=27.1 Hz path=0 px max_step=0 large_steps=0[0m
+[0;32mI (881) tp02: DIAG FAST_LINE: polls=16 read_err=0 no_point=15 short_dropouts=0 max_no_point=0 us max_interval=0 us interval_gt_30ms=0 read_avg=1115 us read_max=2556 us end=RELEASE[0m
+[0;32mI (905) tp02: TRAJECTORY SWIPE: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;32mI (1390) tp02: RESULT SWIPE: samples=34 active=0.38 s sample_rate=99.1 Hz path=378 px max_step=29 large_steps=0[0m
+[0;32mI (1390) tp02: DIAG SWIPE: polls=171 read_err=0 no_point=96 short_dropouts=33 max_no_point=16000 us max_interval=20000 us interval_gt_30ms=0 read_avg=1354 us read_max=2813 us end=RELEASE[0m
+[0;32mI (1415) tp02: TRAJECTORY LONG_PRESS: wait for finger (max 10000 ms), then hold for 3 s; LCD shows live point/trail[0m
+[0;32mI (2058) tp02: RESULT LONG_PRESS: samples=56 active=0.64 s sample_rate=92.2 Hz path=755 px max_step=59 large_steps=0[0m
+[0;32mI (2058) tp02: DIAG LONG_PRESS: polls=224 read_err=0 no_point=168 short_dropouts=54 max_no_point=17000 us max_interval=21000 us interval_gt_30ms=0 read_avg=1422 us read_max=2811 us end=RELEASE[0m
+[0;32mI (2084) tp02: TRAJECTORY DRAG: wait for finger (max 10000 ms), then perform one gesture and release; LCD shows live point/trail[0m
+[0;33mW (12076) tp02: RESULT DRAG: WAIT_TIMEOUT (no touch received)[0m
+[0;32mI (12076) tp02: TP-02 complete; `large_steps` indicate motion distance, not necessarily lost samples[0m

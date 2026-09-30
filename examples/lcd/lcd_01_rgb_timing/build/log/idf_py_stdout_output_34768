@@ -1,0 +1,61 @@
+Command: ninja all
+[1/6] Linking CXX executable lcd_01_rgb_timing.elf
+[2/6] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-S31 image...
+Merged 3 ELF sections.
+Successfully created ESP32-S31 image.
+Generated D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/build/lcd_01_rgb_timing.bin
+[3/6] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\lcd\lcd_01_rgb_timing\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/build/partition_table/partition-table.bin D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/build/lcd_01_rgb_timing.bin"
+lcd_01_rgb_timing.bin binary size 0x72d80 bytes. Smallest app partition is 
+0x100000 bytes. 0x8d280 bytes (55%) free.
+[4/6] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- No compiler launcher chain will be used.
+-- Building ESP-IDF components for target esp32s31
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/sdkconfig
+Default value for ESP_INT_WDT_TIMEOUT_MS in sdkconfig is 800 but it is 300 according to Kconfig.
+Using default value from sdkconfig (800).
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished with notifications
+NOTE: D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/Kconfig:281: ESP_INT_WDT_TIMEOUT_MS: Kconfig default value: 300, sdkconfig default value: 800
+HINT: This area reports issues with default values of the config options.
+For more information, please visit https://docs.espressif.com/projects/esp-idf-kconfig/en/latest/kconfiglib/configuration-report.html#default-value-mismatch
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/riscv/ld/rom.api.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/soc/esp32s31/ld/esp32s31.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt/esp32s31/rom.wdt.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer/esp32s31/rom.systimer.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.api.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.rvfp.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.version.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.libc.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_hal_ana_conv esp_hal_clock esp_hal_debug_assist esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_mspi esp_hal_pmu esp_hal_regi2c esp_hal_rtc_timer esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_rom esp_security esp_stdio esp_system esptool_py freertos hal log main micro-ecc partition_table riscv soc spi_flash
+-- Component paths: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader D:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support D:/Espressif-master/.espressif/master/esp-idf/components/efuse D:/Espressif-master/.espressif/master/esp-idf/components/esp_app_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_blockdev D:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_common D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ana_conv D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_clock D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_debug_assist D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_dma D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpio D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_mspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_pmu D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_regi2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_rtc_timer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_uart D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_usb D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt D:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom D:/Espressif-master/.espressif/master/esp-idf/components/esp_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_stdio D:/Espressif-master/.espressif/master/esp-idf/components/esp_system D:/Espressif-master/.espressif/master/esp-idf/components/esptool_py D:/Espressif-master/.espressif/master/esp-idf/components/freertos D:/Espressif-master/.espressif/master/esp-idf/components/hal D:/Espressif-master/.espressif/master/esp-idf/components/log D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/components/micro-ecc D:/Espressif-master/.espressif/master/esp-idf/components/partition_table D:/Espressif-master/.espressif/master/esp-idf/components/riscv D:/Espressif-master/.espressif/master/esp-idf/components/soc D:/Espressif-master/.espressif/master/esp-idf/components/spi_flash
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.memory.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.memory.ld.in
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.sections.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.sections.ld.in
+-- Configuring done (9.4s)
+-- Generating done (0.2s)
+-- Build files have been written to: D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/build/bootloader
+[1/2] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\lcd\lcd_01_rgb_timing\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[5/6] No install step for 'bootloader'
+[6/6] Completed 'bootloader'

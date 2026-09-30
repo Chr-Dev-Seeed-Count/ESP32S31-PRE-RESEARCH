@@ -1,0 +1,250 @@
+I (895) lcd_perf: START demo=LCD-01 pclk=30000000Hz htotal=928 vtotal=548 refresh=58.99Hz draw_lines=40 draw_double=0
+I (915) lcd_demo: READY test=1; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error
+I (915) main_task: Returned from app_main()
+I (5905) lcd_perf: PERF fps=337.89 flush_done=1692 avg_flush_us=3805 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (10905) lcd_perf: PERF fps=343.20 flush_done=3408 avg_flush_us=3761 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (15905) lcd_perf: PERF fps=343.20 flush_done=5124 avg_flush_us=3747 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (20905) lcd_perf: PERF fps=343.20 flush_done=6840 avg_flush_us=3740 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (25905) lcd_perf: PERF fps=343.20 flush_done=8556 avg_flush_us=3735 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (30905) lcd_perf: PERF fps=343.20 flush_done=10272 avg_flush_us=3733 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (35905) lcd_perf: PERF fps=343.20 flush_done=11988 avg_flush_us=3731 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (40905) lcd_perf: PERF fps=343.20 flush_done=13704 avg_flush_us=3730 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (45905) lcd_perf: PERF fps=343.20 flush_done=15420 avg_flush_us=3728 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (50905) lcd_perf: PERF fps=343.20 flush_done=17136 avg_flush_us=3727 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (55915) lcd_perf: PERF fps=342.52 flush_done=18852 avg_flush_us=3727 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (60915) lcd_perf: PERF fps=343.20 flush_done=20568 avg_flush_us=3726 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (65915) lcd_perf: PERF fps=343.20 flush_done=22284 avg_flush_us=3726 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (70925) lcd_perf: PERF fps=342.52 flush_done=24000 avg_flush_us=3725 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (75945) lcd_perf: PERF fps=344.49 flush_done=25728 avg_flush_us=3725 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (80945) lcd_perf: PERF fps=343.20 flush_done=27444 avg_flush_us=3724 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (85945) lcd_perf: PERF fps=343.20 flush_done=29160 avg_flush_us=3724 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (90945) lcd_perf: PERF fps=343.19 flush_done=30876 avg_flush_us=3724 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (95945) lcd_perf: PERF fps=343.20 flush_done=32592 avg_flush_us=3723 max_flush_us=110705 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+
+
+
+I (892) lcd_perf: START demo=LCD-01 pclk=50000000Hz htotal=928 vtotal=548 refresh=98.32Hz draw_lines=40 draw_double=0
+I (912) lcd_demo: READY test=1; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error
+I (912) main_task: Returned from app_main()
+I (5902) lcd_perf: PERF fps=347.78 flush_done=1740 avg_flush_us=3842 max_flush_us=109695 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+E (6002) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (6002) task_wdt:  - IDLE1 (CPU 1)
+E (6002) task_wdt: Tasks currently running:
+E (6002) task_wdt: CPU 0: IDLE0
+E (6002) task_wdt: CPU 1: lvgl
+E (6002) task_wdt: Print CPU 1 registers
+--- Stack dump detected
+Core  1 register dump:
+MEPC    : 0x2f001fcc  RA      : 0x2f001f68  SP      : 0x2f07d760  GP      : 0x2f00f288
+--- 0x2f001fcc: lock_release_generic at D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc/src/locks.c:211
+--- 0x2f001f68: lock_release_generic at D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc/src/locks.c:192
+TP      : 0x2f07d830  T0      : 0x23792379  T1      : 0x00000000  T2      : 0x00000000
+S0/FP   : 0x2f024864  S1      : 0x00000001  A0      : 0x2f07d8dc  A1      : 0x00000001
+A2      : 0x00000001  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x00000004
+A6      : 0x000001c4  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x004d9cd9
+S4      : 0x000006cc  S5      : 0xad2bf8f7  S6      : 0x0004c583  S7      : 0x00ee371c
+S8      : 0x00000f02  S9      : 0x0001ac7f  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x00000000  T4      : 0x0000000a  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000001
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (10922) lcd_perf: PERF fps=343.97 flush_done=3468 avg_flush_us=3835 max_flush_us=141352 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+E (11002) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (11002) task_wdt:  - IDLE1 (CPU 1)
+E (11002) task_wdt: Tasks currently running:
+E (11002) task_wdt: CPU 0: IDLE0
+E (11002) task_wdt: CPU 1: lvgl
+E (11002) task_wdt: Print CPU 1 registers
+Core  1 register dump:
+MEPC    : 0x2f80d304  RA      : 0x50008d20  SP      : 0x2f07d670  GP      : 0x2f00f288
+--- 0x2f80d304: memcpy in ROM
+--- 0x50008d20: rgb_panel_draw_bitmap at D:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c:761
+TP      : 0x2f07d830  T0      : 0xbc51bc51  T1      : 0xbc51bc51  T2      : 0xbc51bc51
+S0/FP   : 0x2f036250  S1      : 0x00000140  A0      : 0x500eab00  A1      : 0x2f0366d0
+A2      : 0x00000020  A3      : 0x500eb140  A4      : 0x500eb140  A5      : 0x500eaf80
+A6      : 0xbc51bc51  A7      : 0xbc51bc51  S2      : 0x50066880  S3      : 0x00000168
+S4      : 0x50007dea  S5      : 0x00000640  S6      : 0x0000014d  S7      : 0x500689c0
+--- 0x50007dea: lcd_perf_on_color_done at D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c:61
+S8      : 0x00000640  S9      : 0x500eab00  S10     : 0x00000140  S11     : 0x00000000
+T3      : 0xbc51bc51  T4      : 0xbc51bc51  T5      : 0xbc51bc51  T6      : 0xbc51bc51
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000001
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (15922) lcd_perf: PERF fps=347.85 flush_done=5208 avg_flush_us=3837 max_flush_us=141352 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+E (16002) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (16002) task_wdt:  - IDLE1 (CPU 1)
+E (16002) task_wdt: Tasks currently running:
+E (16002) task_wdt: CPU 0: IDLE0
+E (16002) task_wdt: CPU 1: lvgl
+E (16002) task_wdt: Print CPU 1 registers
+Core  1 register dump:
+MEPC    : 0x2f80d2dc  RA      : 0x50008d20  SP      : 0x2f07d670  GP      : 0x2f00f288
+--- 0x2f80d2dc: memcpy in ROM
+--- 0x50008d20: rgb_panel_draw_bitmap at D:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c:761
+TP      : 0x2f07d830  T0      : 0x014b014b  T1      : 0x014b014b  T2      : 0x014b014b
+S0/FP   : 0x2f033050  S1      : 0x00000118  A0      : 0x500d7f00  A1      : 0x2f033098
+A2      : 0x00000020  A3      : 0x500d8540  A4      : 0x500d8540  A5      : 0x500d7f48
+A6      : 0x000005f8  A7      : 0x014b014b  S2      : 0x50066880  S3      : 0x00000140
+S4      : 0x50007dea  S5      : 0x00000640  S6      : 0x0000011d  S7      : 0x500689c0
+--- 0x50007dea: lcd_perf_on_color_done at D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c:61
+S8      : 0x00000640  S9      : 0x500d7f00  S10     : 0x00000118  S11     : 0x00000000
+T3      : 0x014b014b  T4      : 0x014b014b  T5      : 0x014b014b  T6      : 0x014b014b
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000001
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (20922) lcd_perf: PERF fps=347.87 flush_done=6948 avg_flush_us=3838 max_flush_us=141352 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+E (21002) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (21002) task_wdt:  - IDLE1 (CPU 1)
+E (21002) task_wdt: Tasks currently running:
+E (21002) task_wdt: CPU 0: IDLE0
+E (21002) task_wdt: CPU 1: lvgl
+E (21002) task_wdt: Print CPU 1 registers
+Core  1 register dump:
+MEPC    : 0x2f00a626  RA      : 0x5004ff56  SP      : 0x2f07d720  GP      : 0x2f00f288
+--- 0x2f00a626: vPortClearInterruptMaskFromISR at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+--- 0x5004ff56: xQueueGenericSend at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1057
+TP      : 0x2f07d830  T0      : 0xdf9adf9a  T1      : 0x00000000  T2      : 0x00000000
+S0/FP   : 0x2f07d8dc  S1      : 0x2f07d928  A0      : 0x0000001f  A1      : 0x00000000
+A2      : 0x00000001  A3      : 0x2f0247b8  A4      : 0x00000000  A5      : 0x2f0247b4
+A6      : 0x000001c4  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000
+S4      : 0x00000000  S5      : 0x30641c68  S6      : 0x0004c583  S7      : 0x00ee371c
+S8      : 0x00000efe  S9      : 0x00022828  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x00000000  T4      : 0x0000000a  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000001
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (25922) lcd_perf: PERF fps=345.60 flush_done=8676 avg_flush_us=3832 max_flush_us=141352 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+E (26002) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (26002) task_wdt:  - IDLE1 (CPU 1)
+E (26002) task_wdt: Tasks currently running:
+E (26002) task_wdt: CPU 0: IDLE0
+E (26002) task_wdt: CPU 1: lvgl
+E (26002) task_wdt: Print CPU 1 registers
+Core  1 register dump:
+MEPC    : 0x2f80d304  RA      : 0x50008d20  SP      : 0x2f07d670  GP      : 0x2f00f288
+--- 0x2f80d304: memcpy in ROM
+--- 0x50008d20: rgb_panel_draw_bitmap at D:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c:761
+TP      : 0x2f07d830  T0      : 0xdf9adf9a  T1      : 0xdf9adf9a  T2      : 0xdf9adf9a
+S0/FP   : 0x2f0387d0  S1      : 0x00000190  A0      : 0x5010c480  A1      : 0x2f038a10
+A2      : 0x00000020  A3      : 0x5010cac0  A4      : 0x5010cac0  A5      : 0x5010c6c0
+A6      : 0xdf9adf9a  A7      : 0xdf9adf9a  S2      : 0x50066880  S3      : 0x000001b8
+S4      : 0x50007dea  S5      : 0x00000640  S6      : 0x000001a3  S7      : 0x500689c0
+--- 0x50007dea: lcd_perf_on_color_done at D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c:61
+S8      : 0x00000640  S9      : 0x5010c480  S10     : 0x00000190  S11     : 0x00000000
+T3      : 0xdf9adf9a  T4      : 0xdf9adf9a  T5      : 0xdf9adf9a  T6      : 0xdf9adf9a
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000001
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (30922) lcd_perf: PERF fps=348.00 flush_done=10416 avg_flush_us=3834 max_flush_us=141352 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+E (31002) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (31002) task_wdt:  - IDLE1 (CPU 1)
+E (31002) task_wdt: Tasks currently running:
+E (31002) task_wdt: CPU 0: IDLE0
+E (31002) task_wdt: CPU 1: lvgl
+E (31002) task_wdt: Print CPU 1 registers
+Core  1 register dump:
+MEPC    : 0x50019dd4  RA      : 0x50042802  SP      : 0x2f07cd30  GP      : 0x2f00f288
+--- 0x50019dd4: lv_color_16_16_mix at D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/misc/lv_color.c:328
+--- 0x50042802: lv_draw_sw_blend_color_to_rgb565 at D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c:376
+TP      : 0x2f07d830  T0      : 0x00ce00ce  T1      : 0x0002ff00  T2      : 0x00000000
+S0/FP   : 0x2f03a648  S1      : 0x00000000  A0      : 0x000000ce  A1      : 0x00008b1e
+A2      : 0x00000050  A3      : 0x8b1e0000  A4      : 0x0000ff50  A5      : 0x00000054
+A6      : 0x0000017f  A7      : 0x00000000  S2      : 0x2f016858  S3      : 0x000000ce
+S4      : 0x00000064  S5      : 0x00000064  S6      : 0x00000001  S7      : 0x00000640
+S8      : 0x00000000  S9      : 0x2f03a648  S10     : 0x0000000a  S11     : 0x000000ff
+T3      : 0x00000000  T4      : 0x00ffffff  T5      : 0x00ce00ce  T6      : 0x00ce00ce
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000001
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (35922) lcd_perf: PERF fps=348.00 flush_done=12156 avg_flush_us=3828 max_flush_us=141352 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+E (36002) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (36002) task_wdt:  - IDLE1 (CPU 1)
+E (36002) task_wdt: Tasks currently running:
+E (36002) task_wdt: CPU 0: IDLE0
+E (36002) task_wdt: CPU 1: lvgl
+E (36002) task_wdt: Print CPU 1 registers
+Core  1 register dump:
+MEPC    : 0x2f80d31c  RA      : 0x50008d20  SP      : 0x2f07d670  GP      : 0x2f00f288
+--- 0x2f80d31c: memcpy in ROM
+--- 0x50008d20: rgb_panel_draw_bitmap at D:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c:761
+TP      : 0x2f07d830  T0      : 0x4da74da7  T1      : 0x4da74da7  T2      : 0x4da74da7
+S0/FP   : 0x2f038e10  S1      : 0x00000140  A0      : 0x500ed6c0  A1      : 0x2f038fc0
+A2      : 0x00000020  A3      : 0x500edd00  A4      : 0x500edd00  A5      : 0x500ed870
+A6      : 0x4da74da7  A7      : 0x4da74da7  S2      : 0x50066880  S3      : 0x00000168
+S4      : 0x50007dea  S5      : 0x00000640  S6      : 0x00000154  S7      : 0x500689c0
+--- 0x50007dea: lcd_perf_on_color_done at D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c:61
+S8      : 0x00000640  S9      : 0x500ed6c0  S10     : 0x00000140  S11     : 0x00000000
+T3      : 0x4da74da7  T4      : 0x4da74da7  T5      : 0x4da74da7  T6      : 0x4da74da7
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000001
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (40922) lcd_perf: PERF fps=348.00 flush_done=13896 avg_flush_us=3830 max_flush_us=141352 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+E (41002) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (41002) task_wdt:  - IDLE1 (CPU 1)
+E (41002) task_wdt: Tasks currently running:
+E (41002) task_wdt: CPU 0: IDLE0
+E (41002) task_wdt: CPU 1: lvgl
+E (41002) task_wdt: Print CPU 1 registers
+Core  1 register dump:
+M
+
+
+
+I (895) lcd_perf: START demo=LCD-01 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=40 draw_double=0
+I (915) lcd_demo: READY test=1; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error
+I (915) main_task: Returned from app_main()
+I (5905) lcd_perf: PERF fps=337.89 flush_done=1692 avg_flush_us=3765 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (10905) lcd_perf: PERF fps=343.20 flush_done=3408 avg_flush_us=3724 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (15915) lcd_perf: PERF fps=342.51 flush_done=5124 avg_flush_us=3710 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (20915) lcd_perf: PERF fps=343.20 flush_done=6840 avg_flush_us=3703 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (25925) lcd_perf: PERF fps=342.52 flush_done=8556 avg_flush_us=3699 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (30925) lcd_perf: PERF fps=343.20 flush_done=10272 avg_flush_us=3696 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (35935) lcd_perf: PERF fps=342.52 flush_done=11988 avg_flush_us=3694 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (40935) lcd_perf: PERF fps=343.20 flush_done=13704 avg_flush_us=3693 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (45945) lcd_perf: PERF fps=342.52 flush_done=15420 avg_flush_us=3691 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (50945) lcd_perf: PERF fps=343.20 flush_done=17136 avg_flush_us=3691 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (55955) lcd_perf: PERF fps=342.52 flush_done=18852 avg_flush_us=3690 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (60955) lcd_perf: PERF fps=343.20 flush_done=20568 avg_flush_us=3689 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (65965) lcd_perf: PERF fps=342.52 flush_done=22284 avg_flush_us=3689 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (70965) lcd_perf: PERF fps=343.20 flush_done=24000 avg_flush_us=3688 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (75975) lcd_perf: PERF fps=342.52 flush_done=25716 avg_flush_us=3688 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (80975) lcd_perf: PERF fps=343.20 flush_done=27432 avg_flush_us=3688 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (85985) lcd_perf: PERF fps=342.52 flush_done=29148 avg_flush_us=3687 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (90985) lcd_perf: PERF fps=343.20 flush_done=30864 avg_flush_us=3687 max_flush_us=101129 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+
+I (895) lcd_perf: START demo=LCD-01 pclk=24000000Hz htotal=928 vtotal=548 refresh=47.19Hz draw_lines=40 draw_double=0
+I (915) lcd_demo: READY test=1; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error
+I (915) main_task: Returned from app_main()
+I (5905) lcd_perf: PERF fps=338.17 flush_done=1692 avg_flush_us=3799 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (10915) lcd_perf: PERF fps=342.24 flush_done=3408 avg_flush_us=3753 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (15915) lcd_perf: PERF fps=343.20 flush_done=5124 avg_flush_us=3739 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (20925) lcd_perf: PERF fps=342.52 flush_done=6840 avg_flush_us=3731 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (25925) lcd_perf: PERF fps=343.20 flush_done=8556 avg_flush_us=3727 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (30935) lcd_perf: PERF fps=342.52 flush_done=10272 avg_flush_us=3724 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (35935) lcd_perf: PERF fps=343.20 flush_done=11988 avg_flush_us=3722 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (40945) lcd_perf: PERF fps=342.52 flush_done=13704 avg_flush_us=3720 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (45945) lcd_perf: PERF fps=343.20 flush_done=15420 avg_flush_us=3719 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (50955) lcd_perf: PERF fps=342.52 flush_done=17136 avg_flush_us=3718 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (55955) lcd_perf: PERF fps=343.20 flush_done=18852 avg_flush_us=3718 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (60965) lcd_perf: PERF fps=342.51 flush_done=20568 avg_flush_us=3717 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (65965) lcd_perf: PERF fps=343.20 flush_done=22284 avg_flush_us=3717 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (70975) lcd_perf: PERF fps=342.52 flush_done=24000 avg_flush_us=3716 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (75975) lcd_perf: PERF fps=343.20 flush_done=25716 avg_flush_us=3716 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (80985) lcd_perf: PERF fps=342.51 flush_done=27432 avg_flush_us=3715 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (85985) lcd_perf: PERF fps=343.20 flush_done=29148 avg_flush_us=3715 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (90995) lcd_perf: PERF fps=342.51 flush_done=30864 avg_flush_us=3715 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (95995) lcd_perf: PERF fps=343.20 flush_done=32580 avg_flush_us=3714 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (101005) lcd_perf: PERF fps=342.52 flush_done=34296 avg_flush_us=3714 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (106005) lcd_perf: PERF fps=343.20 flush_done=36012 avg_flush_us=3714 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (111015) lcd_perf: PERF fps=342.52 flush_done=37728 avg_flush_us=3714 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (116015) lcd_perf: PERF fps=343.20 flush_done=39444 avg_flush_us=3714 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (121025) lcd_perf: PERF fps=342.52 flush_done=41160 avg_flush_us=3713 max_flush_us=110882 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+
+

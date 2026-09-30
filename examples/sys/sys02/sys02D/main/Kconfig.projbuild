@@ -1,0 +1,34 @@
+menu "SYS-02D dual-core memory parallel benchmark"
+
+config SYS02D_SCENARIO
+    int "Parallel memory scenario"
+    range 1 5
+    default 2
+    help
+        1: Core0 Flash read, Core1 PSRAM->PSRAM
+        2: Core0 SRAM->SRAM, Core1 SRAM->SRAM
+        3: Core0 PSRAM->PSRAM, Core1 PSRAM->PSRAM
+        4: Core0 PSRAM->PSRAM, Core1 SRAM->SRAM
+        5: Core0 SRAM->PSRAM, Core1 SRAM->PSRAM
+
+config SYS02D_BUFFER_KIB
+    int "Per-worker copy buffer size (KiB)"
+    range 4 128
+    default 64
+    help
+        Keep this equal to SYS-02B for a directly comparable baseline. D2
+        allocates four Internal RAM buffers, so 128 KiB is the safe maximum.
+
+config SYS02D_DURATION_MS
+    int "Measurement duration (ms)"
+    range 500 10000
+    default 2000
+
+config SYS02D_COPIES_PER_TIME_CHECK
+    int "Copies between time checks"
+    range 1 256
+    default 64
+    help
+        Keep 64 to match SYS-02B and amortize esp_timer_get_time overhead.
+
+endmenu

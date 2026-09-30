@@ -1,0 +1,20 @@
+menu "AUD-03 continuous playback"
+
+config AUD03_SAMPLE_RATE
+    int "Sample rate (Hz)"
+    range 8000 96000
+    default 48000
+config AUD03_BLOCK_FRAMES
+    int "Application block size (frames)"
+    range 16 4096
+    default 480
+config AUD03_TEST_SECONDS
+    int "Test duration (seconds)"
+    range 1 86400
+    default 30
+config AUD03_VOLUME
+    int "Codec output volume"
+    range 0 100
+    default 18
+
+endmenu

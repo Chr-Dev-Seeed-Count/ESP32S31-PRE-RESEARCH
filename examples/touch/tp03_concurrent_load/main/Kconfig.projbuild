@@ -1,0 +1,13 @@
+menu "TP-03 concurrent load"
+
+config TP03_STRESS_LEVEL
+    int "CPU stress level (0-100%)"
+    range 0 100
+    default 50
+    help
+        Controls the CPU duty cycle on both cores. 0 disables the burn;
+        100 targets about 95% busy time while preserving a small idle slice
+        for the task watchdog. Increase this value between runs to find the
+        touch-to-frame latency knee.
+
+endmenu

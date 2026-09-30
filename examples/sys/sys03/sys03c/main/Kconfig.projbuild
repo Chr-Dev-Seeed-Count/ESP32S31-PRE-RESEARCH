@@ -1,0 +1,18 @@
+menu "SYS-03C IPC benchmark"
+
+config SYS03C_TX_PERIOD_US
+    int "TX message period (us)"
+    range 0 1000000
+    default 1000
+    help
+        Interval between queue messages.  1000 us is 1 kmsg/s.  Set to 0
+        to send as fast as possible (the sender yields between attempts).
+
+config SYS03C_QUEUE_LENGTH
+    int "Queue length (messages)"
+    range 2 4096
+    default 64
+    help
+        Number of messages that can be buffered before xQueueSend fails.
+
+endmenu

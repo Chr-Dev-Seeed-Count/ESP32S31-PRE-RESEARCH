@@ -1,0 +1,2 @@
+source D:/ESP32S31/examples/touch/tp02_trajectory/build/bootloader/gdbinit/symbols
+source D:/ESP32S31/examples/touch/tp02_trajectory/build/bootloader/gdbinit/connect

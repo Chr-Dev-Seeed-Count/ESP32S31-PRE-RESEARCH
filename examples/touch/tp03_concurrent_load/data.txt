@@ -1,0 +1,12 @@
+10%
+I (61196) tp03: RESULT stress=10 samples=256 read_to_event_us[p50=2633 p95=4394 p99=4482 max=4536] read_to_frame_us[p50=19921 p95=32907 p99=36027 max=37188] cpu_load[0=12% 1=16%]
+20%
+I (61209) tp03: RESULT stress=20 samples=256 read_to_event_us[p50=2622 p95=4618 p99=5983 max=6138] read_to_frame_us[p50=19681 p95=33324 p99=36412 max=42164] cpu_load[0=21% 1=24%]
+
+40%
+I (61206) tp03: RESULT stress=40 samples=256 read_to_event_us[p50=3087 p95=8032 p99=8048 max=8060] read_to_frame_us[p50=15935 p95=33162 p99=35257 max=39889] cpu_load[0=40% 1=42%]
+
+60%
+I (61215) tp03: RESULT stress=60 samples=256 read_to_event_us[p50=7037 p95=8036 p99=8448 max=8456] read_to_frame_us[p50=18065 p95=33140 p99=37408 max=41464] cpu_load[0=58% 1=60%]
+90%
+I (61242) tp03: RESULT stress=95 samples=256 read_to_event_us[p50=9037 p95=9064 p99=9086 max=9098] read_to_frame_us[p50=9556 p95=29547 p99=37420 max=38454] cpu_load[0=91% 1=92%]

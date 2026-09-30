@@ -1,0 +1,22 @@
+Command: ninja all
+Loading defaults file D:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/sdkconfig.defaults...
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished successfully
+CMake Error at D:/Espressif-master/.espressif/master/esp-idf/tools/cmake/tool_version_check.cmake:36 (message):
+
+
+  Tool doesn't match supported version from list ['esp-16.1.0_20260609']:
+  D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+
+  Please try to run 'idf.py fullclean' to solve it.
+
+Call Stack (most recent call first):
+  D:/Espressif-master/.espressif/master/esp-idf/components/esp_common/project_include.cmake:12 (check_expected_tool_version)
+  D:/Espressif-master/.espressif/master/esp-idf/tools/cmake/build.cmake:519 (include)
+  D:/Espressif-master/.espressif/master/esp-idf/tools/cmake/build.cmake:836 (__build_process_project_includes)
+  D:/Espressif-master/.espressif/master/esp-idf/tools/cmake/project.cmake:904 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

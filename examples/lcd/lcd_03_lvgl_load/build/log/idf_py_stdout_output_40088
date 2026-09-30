@@ -1,0 +1,17 @@
+Command: ninja flash
+[1/5] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\lcd\lcd_03_lvgl_load\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/partition_table/partition-table.bin D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/lcd_03_lvgl_load.bin"
+lcd_03_lvgl_load.bin binary size 0x733a0 bytes. Smallest app partition is 
+0x100000 bytes. 0x8cc60 bytes (55%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\lcd\lcd_03_lvgl_load\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32s31 -p COM5 -b 460800 --before=default-reset --after=hard-reset --no-stub write-flash --flash-mode dio --flash-freq 80m --flash-size 2MB 0x2000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 lcd_03_lvgl_load.bin --diff-with bootloader/bootloader_flashed.bin partition_table/partition-table_flashed.bin lcd_03_lvgl_load_flashed.bin
+esptool v5.3.1
+Serial port COM5:
+Connecting................................
+[31mFAILED: [0mCMakeFiles/flash.util 
+C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\lcd\lcd_03_lvgl_load && D:\Espressif\tools\cmake\4.0.3\bin\cmake.exe -D IDF_PATH=D:/Espressif-master/.espressif/master/esp-idf -D SERIAL_TOOL=D:/Espressif/python_env/idf6.2_py3.13_env/Scripts/python.exe;-m;esptool;--chip;esp32s31 -D SERIAL_TOOL_ARGS=--before=default-reset;--after=hard-reset;--no-stub;write-flash;@flash_args -D SERIAL_TOOL_IS_WRITE_FLASH=1 -D SERIAL_TOOL_FLASH_ARGS_FILE=flash_args -D WORKING_DIRECTORY=D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build -P D:/Espressif-master/.espressif/master/esp-idf/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

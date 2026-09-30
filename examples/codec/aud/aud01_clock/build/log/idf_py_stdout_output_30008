@@ -1,0 +1,116 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\codec\aud\aud01_clock\build\aud01_clock.elf D:\ESP32S31\examples\codec\aud\aud01_clock\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x7d (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  1 2026 14:32:38[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=40030020 size=0ffe0h ( 65504) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00020008 vaddr=2f000000 size=0d858h ( 55384) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002d868 vaddr=2f00d880 size=027b0h ( 10160) load[0m
+[0;32mI (117) esp_image: segment 3: paddr=00030020 vaddr=40000020 size=296b0h (169648) map[0m
+[0;32mI (147) esp_image: segment 4: paddr=000596d8 vaddr=2f010030 size=00dfch (  3580) load[0m
+[0;32mI (153) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (153) boot: Disabling RNG early entropy source...[0m
+[0;32mI (166) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (166) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (166) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (167) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (172) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (176) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (180) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (185) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (189) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (194) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (198) oct_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (203) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (207) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (357) esp_psram: Found 16MB PSRAM device[0m
+[0;32mI (357) esp_psram: Speed: 200MHz[0m
+[0;32mI (358) cpu_start: Multicore app[0m
+[0;32mI (672) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (680) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (681) cpu_start: Pro cpu start user code[0m
+[0;32mI (681) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (683) app_init: Application information:[0m
+[0;32mI (686) app_init: Project name:     aud01_clock[0m
+[0;32mI (691) app_init: App version:      1[0m
+[0;32mI (694) app_init: Compile time:     Sep  1 2026 14:33:03[0m
+[0;32mI (699) app_init: ELF file SHA256:  26705654d...[0m
+[0;32mI (703) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (708) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (712) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (716) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (720) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (726) heap_init: At 2F0128A0 len 00068710 (417 KiB): RAM[0m
+[0;32mI (731) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (736) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (742) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (749) spi_flash: detected chip: generic[0m
+[0;32mI (752) spi_flash: flash io: dio[0m
+[0;32mI (755) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (761) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (768) coexist: coex firmware version: a830d28[0m
+[0;32mI (772) coexist: coexist rom version cdcf52b[0m
+[0;32mI (776) main_task: Started on CPU0[0m
+[0;32mI (791) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (792) main_task: Calling app_main()[0m
+[0;33mW (794) i2s_common: the rx channel on I2S1 is switched from master to slave for full-duplex mode[0m
+[0;32mI (824) ES8389: Work in Slave mode[0m
+[0;32mI (828) ES8389: Set internal reference signal[0m
+[0;32mI (851) ES8389: Work in Slave mode[0m
+[0;32mI (855) ES8389: Set internal reference signal[0m
+[0;32mI (857) I2S_IF: Paired data: 0x2f07e9ec, current mode: playback, paired in_enable: 0, paired out_enable: 0[0m
+[0;33mW (857) i2s_common: APLL is occupied already, it is working at 14745610 Hz while the expected frequency is 14745600 Hz[0m
+[0;33mW (867) i2s_common: Trying to work at 14745610 Hz...[0m
+[0;32mI (872) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (881) I2S_IF: STD: TX, sample_rate_hz: 19200, mclk_multiple: 384, clk_src: 19[0m
+[0;32mI (907) Adev_Codec: Open codec device OK[0m
+[0;32mI (907) I2S_IF: Current mode(record) and peer mode have same sample_rate 19200, channel 2, bits_per_sample 16[0m
+[0;33mW (909) i2s_common: APLL is occupied already, it is working at 14745610 Hz while the expected frequency is 14745600 Hz[0m
+[0;33mW (919) i2s_common: Trying to work at 14745610 Hz...[0m
+[0;32mI (924) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (933) I2S_IF: STD: RX, sample_rate_hz: 19200, mclk_multiple: 384, clk_src: 19[0m
+[0;32mI (958) Adev_Codec: Open codec device OK[0m
+[0;32mI (959) aud01: AUD-01: 19200 Hz, 16 bit, stereo, block=192 frames, 30 s[0m
+[0;32mI (959) aud01: Clock: source=APLL, MCLK=7372800 Hz; Scope: WS=19200 Hz; expected BCLK about 614400 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6[0m
+[0;32mI (1978) aud01: PERF: tx_rate=19592.7 (76.5 KiB/s) rx_rate=19592.7 (76.5 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=12us max=54us read_avg=9759us max=12482us[0m
+[0;32mI (2977) aud01: PERF: tx_rate=19397.3 (75.8 KiB/s) rx_rate=19397.3 (75.8 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=12us max=54us read_avg=9835us max=12482us[0m
+[0;32mI (3977) aud01: PERF: tx_rate=19331.8 (75.5 KiB/s) rx_rate=19331.8 (75.5 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=12us max=54us read_avg=9864us max=12482us[0m
+[0;32mI (4977) aud01: PERF: tx_rate=19298.9 (75.4 KiB/s) rx_rate=19298.9 (75.4 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=12us max=54us read_avg=9878us max=12482us[0m
+[0;32mI (5977) aud01: PERF: tx_rate=19279.2 (75.3 KiB/s) rx_rate=19279.2 (75.3 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=12us max=54us read_avg=9888us max=12483us[0m
+[0;32mI (6977) aud01: PERF: tx_rate=19266.0 (75.3 KiB/s) rx_rate=19266.0 (75.3 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=11us max=54us read_avg=9893us max=12483us[0m
+[0;32mI (7977) aud01: PERF: tx_rate=19256.6 (75.2 KiB/s) rx_rate=19256.6 (75.2 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=11us max=54us read_avg=9898us max=12483us[0m
+[0;32mI (8977) aud01: PERF: tx_rate=19249.5 (75.2 KiB/s) rx_rate=19249.5 (75.2 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=11us max=54us read_avg=9901us max=12483us[0m
+[0;32mI (9977) aud01: PERF: tx_rate=19244.0 (75.2 KiB/s) rx_rate=19244.0 (75.2 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=11us max=54us read_avg=9904us max=12483us[0m
+[0;32mI (10977) aud01: PERF: tx_rate=19239.6 (75.2 KiB/s) rx_rate=19239.6 (75.2 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=11us max=54us read_avg=9907us max=12484us[0m
+[0;32mI (11977) aud01: PERF: tx_rate=19236.0 (75.1 KiB/s) rx_rate=19236.0 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9908us max=12484us[0m
+[0;32mI (12977) aud01: PERF: tx_rate=19233.1 (75.1 KiB/s) rx_rate=19233.1 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9909us max=12484us[0m
+[0;32mI (13977) aud01: PERF: tx_rate=19230.5 (75.1 KiB/s) rx_rate=19230.5 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9910us max=12484us[0m
+[0;32mI (14977) aud01: PERF: tx_rate=19228.3 (75.1 KiB/s) rx_rate=19228.3 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9911us max=12484us[0m
+[0;32mI (15977) aud01: PERF: tx_rate=19226.5 (75.1 KiB/s) rx_rate=19226.5 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9912us max=12484us[0m
+[0;32mI (16977) aud01: PERF: tx_rate=19224.8 (75.1 KiB/s) rx_rate=19224.8 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9913us max=12484us[0m
+[0;32mI (17977) aud01: PERF: tx_rate=19223.4 (75.1 KiB/s) rx_rate=19223.4 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9914us max=12484us[0m
+[0;32mI (18977) aud01: PERF: tx_rate=19222.1 (75.1 KiB/s) rx_rate=19222.1 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9914us max=12484us[0m
+[0;32mI (19977) aud01: PERF: tx_rate=19220.9 (75.1 KiB/s) rx_rate=19220.9 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9915us max=12484us[0m
+[0;32mI (20977) aud01: PERF: tx_rate=19219.9 (75.1 KiB/s) rx_rate=19219.9 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9915us max=12484us[0m
+[0;32mI (21977) aud01: PERF: tx_rate=19218.9 (75.1 KiB/s) rx_rate=19218.9 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9916us max=12484us[0m
+[0;32mI (22977) aud01: PERF: tx_rate=19218.1 (75.1 KiB/s) rx_rate=19218.1 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9916us max=12484us[0m
+[0;32mI (23977) aud01: PERF: tx_rate=19217.3 (75.1 KiB/s) rx_rate=19217.3 (75.1 KiB/s) app_cpu=0.23%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=10us max=54us read_avg=9917us max=12484us[0m

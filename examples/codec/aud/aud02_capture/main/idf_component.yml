@@ -1,0 +1,3 @@
+dependencies:
+  esp32_s31_korvo_1:
+    version: "*"

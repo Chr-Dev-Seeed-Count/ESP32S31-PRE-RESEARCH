@@ -1,0 +1,2 @@
+source D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/bootloader/gdbinit/symbols
+source D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/bootloader/gdbinit/connect

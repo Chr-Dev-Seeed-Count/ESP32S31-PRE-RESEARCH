@@ -1,0 +1,23 @@
+Command: cmake -G Ninja -B D:\ESP32S31\examples\touch\tp02_trajectory\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True -DCONFIGDEP_ENABLE=True D:\ESP32S31\examples\touch\tp02_trajectory
+NOTE: D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+Loading defaults file D:/ESP32S31/examples/touch/tp02_trajectory/sdkconfig.defaults...
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished with notifications
+NOTE: D:/Espressif-master/.espressif/master/esp-idf/Kconfig:68: IDF_TARGET assigned multiple times: esp32s31 (user-set), esp32s31 (user-set) -> using esp32s31
+NOTE: D:/Espressif-master/.espressif/master/esp-idf/components/esp_psram\./esp32s31/Kconfig.spiram:1: SPIRAM assigned multiple times: y (user-set), y (user-set) -> using y
+HINT: Under normal circumstances, there should be only one (or none) assignment per config option. Multiple assignments mean somebody manually altered the sdkconfig file. If you edited the sdkconfig file intentionally, this area can be ignored.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error at D:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile):
+  Failed to configure test project build system.
+Call Stack (most recent call first):
+  D:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)
+  D:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)
+  D:/Espressif-master/.espressif/master/esp-idf/components/soc/project_include.cmake:88 (check_c_compiler_flag)
+  D:/Espressif-master/.espressif/master/esp-idf/tools/cmake/build.cmake:519 (include)
+  D:/Espressif-master/.espressif/master/esp-idf/tools/cmake/build.cmake:836 (__build_process_project_includes)
+  D:/Espressif-master/.espressif/master/esp-idf/tools/cmake/project.cmake:904 (idf_build_process)
+  CMakeLists.txt:4 (project)
+
+

@@ -1,0 +1,28 @@
+menu "AUD-05 clock reconfiguration and recovery"
+
+config AUD05_SAMPLE_RATE
+    int "Primary sample rate (Hz)"
+    range 8000 96000
+    default 48000
+config AUD05_ALT_RATE
+    int "Alternate sample rate (Hz)"
+    range 8000 96000
+    default 16000
+config AUD05_BLOCK_FRAMES
+    int "Application block size (frames)"
+    range 16 4096
+    default 480
+config AUD05_TEST_SECONDS
+    int "Time at each rate (seconds)"
+    range 1 3600
+    default 3
+config AUD05_RECOVERY_CYCLES
+    int "Number of close/reopen cycles"
+    range 1 10000
+    default 10
+config AUD05_VOLUME
+    int "Codec output volume"
+    range 0 100
+    default 12
+
+endmenu

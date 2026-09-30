@@ -1,0 +1,30 @@
+Command: ninja all
+[1/8] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\sys\sys02A\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/sys/sys02A/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[2/8] No install step for 'bootloader'
+[3/8] Completed 'bootloader'
+[4/8] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/bt/host/nimble/Kconfig
+.in:1461: BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value 
+(only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:240: 
+FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:245: 
+FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+[5/8] Building C object CMakeFiles/sys02a_capacity.elf.dir/project_elf_src_esp32s31.c.obj
+[6/8] Linking CXX executable sys02a_capacity.elf
+[7/8] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-S31 image...
+Merged 3 ELF sections.
+Successfully created ESP32-S31 image.
+Generated D:/ESP32S31/examples/sys/sys02A/build/sys02a_capacity.bin
+[8/8] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\sys\sys02A\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32S31/examples/sys/sys02A/build/partition_table/partition-table.bin D:/ESP32S31/examples/sys/sys02A/build/sys02a_capacity.bin"
+sys02a_capacity.bin binary size 0x2f240 bytes. Smallest app partition is 
+0x300000 bytes. 0x2d0dc0 bytes (94%) free.

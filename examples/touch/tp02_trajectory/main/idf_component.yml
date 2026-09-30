@@ -1,0 +1,4 @@
+dependencies:
+  esp32_s31_korvo_1: "*"
+  espressif/esp_lcd_touch_gt1151: "*"
+  idf: ">=5.4"

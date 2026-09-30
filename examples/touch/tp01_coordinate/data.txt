@@ -1,0 +1,91 @@
+I (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still
+I (832) tp01: TARGET CENTER: (400,240) in 1000 ms
+I (4345) tp01: RESULT CENTER: samples=209 missing=0 mean=(386.9,233.2) error_avg=16.20 px error_max=18.60 px PASS
+I (4345) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms
+I (7858) tp01: RESULT TOP_LEFT: samples=175 missing=39 mean=(33.2,29.0) error_avg=16.01 px error_max=422.12 px PASS
+I (7858) tp01: TARGET TOP_RIGHT: (780,20) in 1000 ms
+I (11364) tp01: RESULT TOP_RIGHT: samples=160 missing=56 mean=(659.9,18.0) error_avg=122.28 px error_max=747.05 px PASS
+I (11364) tp01: TARGET BOTTOM_LEFT: (20,460) in 1000 ms
+I (14878) tp01: RESULT BOTTOM_LEFT: samples=165 missing=51 mean=(264.1,295.7) error_avg=302.09 px error_max=868.32 px PASS
+I (14878) tp01: TARGET BOTTOM_RIGHT: (780,460) in 1000 ms
+I (18385) tp01: RESULT BOTTOM_RIGHT: samples=133 missing=87 mean=(781.3,433.9) error_avg=32.38 px error_max=752.77 px PASS
+I (18385) tp01: TARGET TOP_EDGE: (400,20) in 1000 ms
+I (21895) tp01: RESULT TOP_EDGE: samples=172 missing=42 mean=(395.3,7.5) error_avg=19.75 px error_max=566.71 px PASS
+I (21895) tp01: TARGET BOTTOM_EDGE: (400,460) in 1000 ms
+I (25407) tp01: RESULT BOTTOM_EDGE: samples=209 missing=0 mean=(395.2,431.0) error_avg=29.44 px error_max=455.05 px PASS
+I (25407) tp01: TARGET LEFT_EDGE: (20,240) in 1000 ms
+I (28919) tp01: RESULT LEFT_EDGE: samples=209 missing=0 mean=(29.9,229.8) error_avg=16.07 px error_max=416.81 px PASS
+I (28919) tp01: TARGET RIGHT_EDGE: (780,240) in 1000 ms
+I (32431) tp01: RESULT RIGHT_EDGE: samples=209 missing=0 mean=(750.0,228.9) error_avg=33.38 px error_max=749.10 px PASS
+I (32431) tp01: TP-01 SUMMARY: targets=9 failed_targets=0 samples=1641 missing=275 mean_error=60.81 px
+I (32439) tp01: Record each point error; recalibrate or inspect panel alignment if edge/corner error is larger.
+
+
+I (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still
+I (832) tp01: TARGET CENTER: (400,240) in 1000 ms
+I (4344) tp01: RESULT CENTER: samples=195 missing=16 mean=(398.8,233.9) error_avg=8.46 px error_max=347.83 px PASS
+I (4344) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms
+I (7855) tp01: RESULT TOP_LEFT: samples=209 missing=0 mean=(26.9,17.0) error_avg=9.22 px error_max=433.50 px PASS
+I (7855) tp01: TARGET TOP_RIGHT: (780,20) in 1000 ms
+I (11366) tp01: RESULT TOP_RIGHT: samples=209 missing=0 mean=(756.9,23.3) error_avg=23.49 px error_max=753.01 px PASS
+I (11366) tp01: TARGET BOTTOM_LEFT: (20,460) in 1000 ms
+I (14878) tp01: RESULT BOTTOM_LEFT: samples=209 missing=0 mean=(31.6,440.7) error_avg=23.36 px error_max=858.89 px PASS
+I (14878) tp01: TARGET BOTTOM_RIGHT: (780,460) in 1000 ms
+I (18382) tp01: RESULT BOTTOM_RIGHT: samples=203 missing=6 mean=(773.3,455.5) error_avg=9.91 px error_max=761.26 px PASS
+I (18382) tp01: TARGET TOP_EDGE: (400,20) in 1000 ms
+I (21894) tp01: RESULT TOP_EDGE: samples=209 missing=0 mean=(400.8,7.2) error_avg=17.71 px error_max=574.98 px PASS
+I (21894) tp01: TARGET BOTTOM_EDGE: (400,460) in 1000 ms
+I (25406) tp01: RESULT BOTTOM_EDGE: samples=209 missing=0 mean=(410.9,446.9) error_avg=17.66 px error_max=455.00 px PASS
+I (25406) tp01: TARGET LEFT_EDGE: (20,240) in 1000 ms
+I (28918) tp01: RESULT LEFT_EDGE: samples=209 missing=0 mean=(31.6,236.2) error_avg=13.50 px error_max=443.35 px PASS
+I (28918) tp01: TARGET RIGHT_EDGE: (780,240) in 1000 ms
+I (32430) tp01: RESULT RIGHT_EDGE: samples=209 missing=0 mean=(755.1,236.9) error_avg=25.19 px error_max=750.01 px PASS
+I (32430) tp01: TP-01 SUMMARY: targets=9 failed_targets=0 samples=1861 missing=22 mean_error=16.58 px
+I (32438) tp01: Record each point error; recalibrate or inspect panel alignment if edge/corner error is larger.
+
+
+I (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still
+I (832) tp01: TARGET CENTER: (400,240) in 1000 ms
+I (4345) tp01: RESULT CENTER: samples=209 missing=0 mean=(388.8,237.0) error_avg=14.98 px error_max=355.04 px PASS
+I (4345) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms
+I (7856) tp01: RESULT TOP_LEFT: samples=209 missing=0 mean=(22.7,24.0) error_avg=5.77 px error_max=426.35 px PASS
+I (7856) tp01: TARGET TOP_RIGHT: (780,20) in 1000 ms
+I (11367) tp01: RESULT TOP_RIGHT: samples=209 missing=0 mean=(753.5,32.0) error_avg=29.44 px error_max=758.01 px PASS
+I (11367) tp01: TARGET BOTTOM_LEFT: (20,460) in 1000 ms
+I (14879) tp01: RESULT BOTTOM_LEFT: samples=209 missing=0 mean=(32.3,436.4) error_avg=27.44 px error_max=852.26 px PASS
+I (14879) tp01: TARGET BOTTOM_RIGHT: (780,460) in 1000 ms
+I (18391) tp01: RESULT BOTTOM_RIGHT: samples=209 missing=0 mean=(768.4,446.2) error_avg=19.41 px error_max=752.52 px PASS
+I (18391) tp01: TARGET TOP_EDGE: (400,20) in 1000 ms
+I (21903) tp01: RESULT TOP_EDGE: samples=209 missing=0 mean=(398.8,22.9) error_avg=5.90 px error_max=566.32 px PASS
+I (21903) tp01: TARGET BOTTOM_EDGE: (400,460) in 1000 ms
+I (25409) tp01: RESULT BOTTOM_EDGE: samples=199 missing=11 mean=(383.6,435.3) error_avg=30.20 px error_max=439.01 px PASS
+I (25409) tp01: TARGET LEFT_EDGE: (20,240) in 1000 ms
+I (28921) tp01: RESULT LEFT_EDGE: samples=209 missing=0 mean=(23.8,221.4) error_avg=18.97 px error_max=25.50 px PASS
+I (28921) tp01: TARGET RIGHT_EDGE: (780,240) in 1000 ms
+I (32433) tp01: RESULT RIGHT_EDGE: samples=209 missing=0 mean=(775.1,246.1) error_avg=16.50 px error_max=759.38 px PASS
+I (32433) tp01: TP-01 SUMMARY: targets=9 failed_targets=0 samples=1871 missing=11 mean_error=18.67 px
+I (32441) tp01: Record each point error; recalibrate or inspect panel alignment if edge/corner error is larger.
+
+
+I (822) tp01: TP-01 coordinate accuracy; GT1151 800x480, I2C 400 kHz nominal
+I (824) tp01: A target marker is shown on the LCD; touch it with one finger and hold it still
+I (832) tp01: TARGET CENTER: (400,240) in 1000 ms
+I (4345) tp01: RESULT CENTER: samples=209 missing=0 mean=(400.3,232.5) error_avg=9.82 px error_max=371.00 px PASS
+I (4345) tp01: TARGET TOP_LEFT: (20,20) in 1000 ms
+I (7856) tp01: RESULT TOP_LEFT: samples=209 missing=0 mean=(22.1,20.9) error_avg=4.16 px error_max=427.65 px PASS
+I (7856) tp01: TARGET TOP_RIGHT: (780,20) in 1000 ms
+I (11367) tp01: RESULT TOP_RIGHT: samples=209 missing=0 mean=(751.5,31.9) error_avg=31.23 px error_max=759.00 px PASS
+I (11367) tp01: TARGET BOTTOM_LEFT: (20,460) in 1000 ms
+I (14879) tp01: RESULT BOTTOM_LEFT: samples=209 missing=0 mean=(32.6,437.8) error_avg=26.25 px error_max=850.53 px PASS
+I (14879) tp01: TARGET BOTTOM_RIGHT: (780,460) in 1000 ms
+I (18391) tp01: RESULT BOTTOM_RIGHT: samples=209 missing=0 mean=(777.3,449.9) error_avg=13.63 px error_max=759.32 px PASS
+I (18391) tp01: TARGET TOP_EDGE: (400,20) in 1000 ms
+I (21903) tp01: RESULT TOP_EDGE: samples=209 missing=0 mean=(391.9,36.0) error_avg=19.87 px error_max=573.85 px PASS
+I (21903) tp01: TARGET BOTTOM_EDGE: (400,460) in 1000 ms
+I (25415) tp01: RESULT BOTTOM_EDGE: samples=209 missing=0 mean=(390.9,423.4) error_avg=37.84 px error_max=426.12 px PASS
+I (25415) tp01: TARGET LEFT_EDGE: (20,240) in 1000 ms
+I (28927) tp01: RESULT LEFT_EDGE: samples=209 missing=0 mean=(37.3,237.9) error_avg=18.22 px error_max=415.01 px PASS
+I (28927) tp01: TARGET RIGHT_EDGE: (780,240) in 1000 ms
+I (32439) tp01: RESULT RIGHT_EDGE: samples=209 missing=0 mean=(770.5,224.6) error_avg=20.04 px error_max=747.01 px PASS
+I (32439) tp01: TP-01 SUMMARY: targets=9 failed_targets=0 samples=1881 missing=0 mean_error=20.12 px
+I (32447) tp01: Record each point error; recalibrate or inspect panel alignment if edge/corner error is larger.

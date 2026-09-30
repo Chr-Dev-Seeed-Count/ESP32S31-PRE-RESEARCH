@@ -1,0 +1,43 @@
+menu "OV3660 camera test suite"
+choice CAM_TEST_CASE
+    prompt "Test case"
+    default CAM_TEST_CAM01
+    config CAM_TEST_CAM01
+        bool "CAM-01 resolution and frame rate"
+    config CAM_TEST_CAM02
+        bool "CAM-02 pixel format and bandwidth"
+    config CAM_TEST_CAM03
+        bool "CAM-03 JPEG decode and PPA"
+    config CAM_TEST_CAM04
+        bool "CAM-04 camera to display handoff"
+    config CAM_TEST_CAM05
+        bool "CAM-05 illumination and AE recovery"
+    config CAM_TEST_CAM06
+        bool "CAM-06 motion, drops and recovery"
+endchoice
+
+config CAM_RUN_SECONDS
+    int "Seconds per measurement"
+    range 1 60
+    default 5
+
+config CAM_STRESS_LEVEL
+    int "CPU background stress level (0..10)"
+    range 0 10
+    default 0
+    help
+        Each core runs a bounded busy slice at task priority 2. Level 10 targets
+        about 90 percent busy time while still yielding often enough for the
+        camera/LCD tasks, idle task and task watchdog. The result line reports
+        the measured stress busy percentage for each core.
+
+config CAM_STRESS_PERIOD_US
+    int "Stress period (us)"
+    range 1000 20000
+    default 10000
+
+config CAM_BUFFER_COUNT
+    int "V4L2 MMAP buffer count"
+    range 2 6
+    default 4
+endmenu

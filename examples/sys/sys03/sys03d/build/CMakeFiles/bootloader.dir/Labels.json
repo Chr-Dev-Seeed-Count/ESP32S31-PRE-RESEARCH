@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "D:/ESP32S31/examples/sys/sys03/sys03d/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

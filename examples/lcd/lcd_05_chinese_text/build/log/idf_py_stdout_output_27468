@@ -1,0 +1,391 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\lcd\lcd_05_chinese_text\build\lcd_05_chinese_text.elf D:\ESP32S31\examples\lcd\lcd_05_chinese_text\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fbc
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 15:05:04[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=50058020 size=0e70ch ( 59148) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001e734 vaddr=2f000000 size=018e4h (  6372) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=51ae0h (334560) map[0m
+[0;32mI (159) esp_image: segment 3: paddr=00071b08 vaddr=2f0018e4 size=0d128h ( 53544) load[0m
+[0;32mI (171) esp_image: segment 4: paddr=0007ec38 vaddr=2f00ea80 size=04230h ( 16944) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (191) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (192) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (192) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (197) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (202) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (206) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (210) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (215) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (219) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (223) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (228) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (232) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (393) mmu_psram: .rodata xip on psram[0m
+[0;32mI (422) mmu_psram: .text xip on psram[0m
+[0;32mI (423) cpu_start: Multicore app[0m
+[0;32mI (744) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (753) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (753) cpu_start: Pro cpu start user code[0m
+[0;32mI (753) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (755) app_init: Application information:[0m
+[0;32mI (759) app_init: Project name:     lcd_05_chinese_text[0m
+[0;32mI (764) app_init: App version:      1[0m
+[0;32mI (767) app_init: Compile time:     Sep  4 2026 14:58:21[0m
+[0;32mI (772) app_init: ELF file SHA256:  c65379c5e...[0m
+[0;32mI (777) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (781) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (785) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (789) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (793) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (799) heap_init: At 2F0248B0 len 00056700 (345 KiB): RAM[0m
+[0;32mI (804) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (810) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (815) esp_psram: Adding pool of 15968K of PSRAM memory to heap allocator[0m
+[0;32mI (821) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (832) esp_psram: Adding pool of 6K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (844) spi_flash: detected chip: generic[0m
+[0;32mI (847) spi_flash: flash io: dio[0m
+[0;33mW (850) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (863) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (869) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (875) main_task: Started on CPU0[0m
+[0;32mI (878) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (886) main_task: Calling app_main()[0m
+[0;32mI (898) lcd_perf: START demo=LCD-05 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=40 draw_double=0[0m
+[0;32mI (911) lcd_demo: READY test=5; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error[0m
+[0;32mI (911) main_task: Returned from app_main()[0m
+[0;32mI (5924) lcd_perf: PERF fps=336.62 flush_done=1692 avg_flush_us=3788 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (10926) lcd_perf: PERF fps=352.66 flush_done=3456 avg_flush_us=3691 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (15926) lcd_perf: PERF fps=352.80 flush_done=5220 avg_flush_us=3660 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (20926) lcd_perf: PERF fps=352.80 flush_done=6984 avg_flush_us=3646 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (25926) lcd_perf: PERF fps=352.80 flush_done=8748 avg_flush_us=3637 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (30926) lcd_perf: PERF fps=352.80 flush_done=10512 avg_flush_us=3631 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (35946) lcd_perf: PERF fps=353.78 flush_done=12288 avg_flush_us=3627 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (40958) lcd_perf: PERF fps=351.96 flush_done=14052 avg_flush_us=3623 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (45958) lcd_perf: PERF fps=352.80 flush_done=15816 avg_flush_us=3621 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (50977) lcd_perf: PERF fps=353.86 flush_done=17592 avg_flush_us=3619 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fbc
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 15:05:04[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=50058020 size=0e70ch ( 59148) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001e734 vaddr=2f000000 size=018e4h (  6372) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=51ae0h (334560) map[0m
+[0;32mI (159) esp_image: segment 3: paddr=00071b08 vaddr=2f0018e4 size=0d128h ( 53544) load[0m
+[0;32mI (171) esp_image: segment 4: paddr=0007ec38 vaddr=2f00ea80 size=04230h ( 16944) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (191) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (192) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (192) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (197) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (202) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (206) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (210) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (215) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (219) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (223) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (228) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (232) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (390) mmu_psram: .rodata xip on psram[0m
+[0;32mI (418) mmu_psram: .text xip on psram[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (741) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (749) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (749) cpu_start: Pro cpu start user code[0m
+[0;32mI (749) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (751) app_init: Application information:[0m
+[0;32mI (755) app_init: Project name:     lcd_05_chinese_text[0m
+[0;32mI (760) app_init: App version:      1[0m
+[0;32mI (763) app_init: Compile time:     Sep  4 2026 14:58:21[0m
+[0;32mI (768) app_init: ELF file SHA256:  c65379c5e...[0m
+[0;32mI (773) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (777) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (781) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (785) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (789) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (795) heap_init: At 2F0248B0 len 00056700 (345 KiB): RAM[0m
+[0;32mI (800) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (806) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (811) esp_psram: Adding pool of 15968K of PSRAM memory to heap allocator[0m
+[0;32mI (818) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (829) esp_psram: Adding pool of 6K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (840) spi_flash: detected chip: generic[0m
+[0;32mI (843) spi_flash: flash io: dio[0m
+[0;33mW (846) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (859) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (865) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (872) main_task: Started on CPU0[0m
+[0;32mI (875) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (883) main_task: Calling app_main()[0m
+[0;32mI (895) lcd_perf: START demo=LCD-05 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=40 draw_double=0[0m
+[0;32mI (908) lcd_demo: READY test=5; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error[0m
+[0;32mI (908) main_task: Returned from app_main()[0m
+[0;32mI (5895) lcd_perf: PERF fps=335.97 flush_done=1680 avg_flush_us=3791 max_flush_us=112058 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fbc
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 15:05:04[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=50058020 size=0e70ch ( 59148) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001e734 vaddr=2f000000 size=018e4h (  6372) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=51ae0h (334560) map[0m
+[0;32mI (159) esp_image: segment 3: paddr=00071b08 vaddr=2f0018e4 size=0d128h ( 53544) load[0m
+[0;32mI (171) esp_image: segment 4: paddr=0007ec38 vaddr=2f00ea80 size=04230h ( 16944) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (191) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (192) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (192) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (197) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (202) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (206) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (210) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (215) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (219) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (223) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (228) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (232) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (390) mmu_psram: .rodata xip on psram[0m
+[0;32mI (418) mmu_psram: .text xip on psram[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (741) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (749) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (749) cpu_start: Pro cpu start user code[0m
+[0;32mI (750) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (751) app_init: Application information:[0m
+[0;32mI (755) app_init: Project name:     lcd_05_chinese_text[0m
+[0;32mI (760) app_init: App version:      1[0m
+[0;32mI (763) app_init: Compile time:     Sep  4 2026 14:58:21[0m
+[0;32mI (768) app_init: ELF file SHA256:  c65379c5e...[0m
+[0;32mI (773) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (777) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (781) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (785) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (789) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (795) heap_init: At 2F0248B0 len 00056700 (345 KiB): RAM[0m
+[0;32mI (800) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (806) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (811) esp_psram: Adding pool of 15968K of PSRAM memory to heap allocator[0m
+[0;32mI (818) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (829) esp_psram: Adding pool of 6K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (840) spi_flash: detected chip: generic[0m
+[0;32mI (843) spi_flash: flash io: dio[0m
+[0;33mW (846) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (859) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (865) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (872) main_task: Started on CPU0[0m
+[0;32mI (875) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (883) main_task: Calling app_main()[0m
+[0;32mI (895) lcd_perf: START demo=LCD-05 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=40 draw_double=0[0m
+[0;32mI (908) lcd_demo: READY test=5; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error[0m
+[0;32mI (908) main_task: Returned from app_main()[0m
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fbc
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 15:05:04[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=50058020 size=0e70ch ( 59148) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001e734 vaddr=2f000000 size=018e4h (  6372) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=51ae0h (334560) map[0m
+[0;32mI (159) esp_image: segment 3: paddr=00071b08 vaddr=2f0018e4 size=0d128h ( 53544) load[0m
+[0;32mI (171) esp_image: segment 4: paddr=0007ec38 vaddr=2f00ea80 size=04230h ( 16944) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (191) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (192) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (192) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (197) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (202) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (206) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (210) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (215) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (219) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (223) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (228) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (232) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (393) mmu_psram: .rodata xip on psram[0m
+[0;32mI (422) mmu_psram: .text xip on psram[0m
+[0;32mI (423) cpu_start: Multicore app[0m
+[0;32mI (744) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (753) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (753) cpu_start: Pro cpu start user code[0m
+[0;32mI (753) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (755) app_init: Application information:[0m
+[0;32mI (759) app_init: Project name:     lcd_05_chinese_text[0m
+[0;32mI (764) app_init: App version:      1[0m
+[0;32mI (767) app_init: Compile time:     Sep  4 2026 14:58:21[0m
+[0;32mI (772) app_init: ELF file SHA256:  c65379c5e...[0m
+[0;32mI (777) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (781) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (785) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (789) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (793) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (799) heap_init: At 2F0248B0 len 00056700 (345 KiB): RAM[0m
+[0;32mI (804) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (810) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (815) esp_psram: Adding pool of 15968K of PSRAM memory to heap allocator[0m
+[0;32mI (821) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (832) esp_psram: Adding pool of 6K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (844) spi_flash: detected chip: generic[0m
+[0;32mI (847) spi_flash: flash io: dio[0m
+[0;33mW (850) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (863) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (869) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (876) main_task: Started on CPU0[0m
+[0;32mI (879) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (887) main_task: Calling app_main()[0m
+[0;32mI (899) lcd_perf: START demo=LCD-05 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=40 draw_double=0[0m
+[0;32mI (912) lcd_demo: READY test=5; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error[0m
+[0;32mI (912) main_task: Returned from app_main()[0m
+[0;32mI (5925) lcd_perf: PERF fps=336.62 flush_done=1692 avg_flush_us=3788 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (10927) lcd_perf: PERF fps=352.66 flush_done=3456 avg_flush_us=3691 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (15927) lcd_perf: PERF fps=352.80 flush_done=5220 avg_flush_us=3660 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (20927) lcd_perf: PERF fps=352.80 flush_done=6984 avg_flush_us=3645 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (25927) lcd_perf: PERF fps=352.80 flush_done=8748 avg_flush_us=3637 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (30927) lcd_perf: PERF fps=352.80 flush_done=10512 avg_flush_us=3631 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (35927) lcd_perf: PERF fps=352.80 flush_done=12276 avg_flush_us=3627 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (40927) lcd_perf: PERF fps=352.80 flush_done=14040 avg_flush_us=3624 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (45927) lcd_perf: PERF fps=352.80 flush_done=15804 avg_flush_us=3621 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (50927) lcd_perf: PERF fps=352.80 flush_done=17568 avg_flush_us=3619 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (55927) lcd_perf: PERF fps=352.80 flush_done=19332 avg_flush_us=3618 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (60927) lcd_perf: PERF fps=352.80 flush_done=21096 avg_flush_us=3616 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (65927) lcd_perf: PERF fps=352.80 flush_done=22860 avg_flush_us=3615 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (70927) lcd_perf: PERF fps=352.80 flush_done=24624 avg_flush_us=3614 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (75927) lcd_perf: PERF fps=352.80 flush_done=26388 avg_flush_us=3613 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (80927) lcd_perf: PERF fps=352.80 flush_done=28152 avg_flush_us=3613 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (85927) lcd_perf: PERF fps=352.80 flush_done=29916 avg_flush_us=3612 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (90927) lcd_perf: PERF fps=352.80 flush_done=31680 avg_flush_us=3611 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (95927) lcd_perf: PERF fps=352.80 flush_done=33444 avg_flush_us=3611 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (100927) lcd_perf: PERF fps=352.80 flush_done=35208 avg_flush_us=3611 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (105927) lcd_perf: PERF fps=352.80 flush_done=36972 avg_flush_us=3610 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (110927) lcd_perf: PERF fps=352.80 flush_done=38736 avg_flush_us=3610 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (115927) lcd_perf: PERF fps=352.80 flush_done=40500 avg_flush_us=3609 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (120927) lcd_perf: PERF fps=352.80 flush_done=42264 avg_flush_us=3609 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (125927) lcd_perf: PERF fps=352.80 flush_done=44028 avg_flush_us=3609 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (130927) lcd_perf: PERF fps=352.80 flush_done=45792 avg_flush_us=3609 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (135927) lcd_perf: PERF fps=352.80 flush_done=47556 avg_flush_us=3608 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (140927) lcd_perf: PERF fps=352.80 flush_done=49320 avg_flush_us=3608 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (145927) lcd_perf: PERF fps=352.80 flush_done=51084 avg_flush_us=3608 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (150927) lcd_perf: PERF fps=352.80 flush_done=52848 avg_flush_us=3608 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (155927) lcd_perf: PERF fps=352.80 flush_done=54612 avg_flush_us=3607 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (160927) lcd_perf: PERF fps=352.80 flush_done=56376 avg_flush_us=3607 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (165927) lcd_perf: PERF fps=352.80 flush_done=58140 avg_flush_us=3607 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (170927) lcd_perf: PERF fps=352.80 flush_done=59904 avg_flush_us=3607 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (175927) lcd_perf: PERF fps=352.80 flush_done=61668 avg_flush_us=3607 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (180927) lcd_perf: PERF fps=352.80 flush_done=63432 avg_flush_us=3607 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (185927) lcd_perf: PERF fps=352.80 flush_done=65196 avg_flush_us=3607 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (190927) lcd_perf: PERF fps=352.80 flush_done=66960 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (195927) lcd_perf: PERF fps=352.80 flush_done=68724 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (200927) lcd_perf: PERF fps=352.80 flush_done=70488 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (205927) lcd_perf: PERF fps=352.80 flush_done=72252 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (210927) lcd_perf: PERF fps=352.80 flush_done=74016 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (215927) lcd_perf: PERF fps=352.80 flush_done=75780 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (220927) lcd_perf: PERF fps=352.80 flush_done=77544 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (225927) lcd_perf: PERF fps=352.80 flush_done=79308 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (230927) lcd_perf: PERF fps=352.80 flush_done=81072 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (235927) lcd_perf: PERF fps=352.80 flush_done=82836 avg_flush_us=3606 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (240927) lcd_perf: PERF fps=352.80 flush_done=84600 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (245927) lcd_perf: PERF fps=352.80 flush_done=86364 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (250927) lcd_perf: PERF fps=352.80 flush_done=88128 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (255927) lcd_perf: PERF fps=352.80 flush_done=89892 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (260927) lcd_perf: PERF fps=352.80 flush_done=91656 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (265946) lcd_perf: PERF fps=353.86 flush_done=93432 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (270959) lcd_perf: PERF fps=351.89 flush_done=95196 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (275959) lcd_perf: PERF fps=352.80 flush_done=96960 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (280959) lcd_perf: PERF fps=352.80 flush_done=98724 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (285959) lcd_perf: PERF fps=352.80 flush_done=100488 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (290959) lcd_perf: PERF fps=352.80 flush_done=102252 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (295959) lcd_perf: PERF fps=352.80 flush_done=104016 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (300959) lcd_perf: PERF fps=352.80 flush_done=105780 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (305959) lcd_perf: PERF fps=352.80 flush_done=107544 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (310959) lcd_perf: PERF fps=352.80 flush_done=109308 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m
+[0;32mI (315959) lcd_perf: PERF fps=352.80 flush_done=111072 avg_flush_us=3605 max_flush_us=112049 flush_err=0 heap=312143 psram=15611420 min_heap=275908[0m

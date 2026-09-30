@@ -1,0 +1,4 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 D:\ESP32S31\examples\lcd\lcd_05_chinese_text
+-- Component directory D:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_blockdev does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - ON
+-- Configuring incomplete, errors occurred!

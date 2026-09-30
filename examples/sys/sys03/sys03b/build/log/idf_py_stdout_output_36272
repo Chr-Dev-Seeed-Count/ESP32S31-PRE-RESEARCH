@@ -1,0 +1,1670 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\sys\sys03\sys03b\build\sys03b.elf D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x7d (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (120) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (126) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (133) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (133) boot: Disabling RNG early entropy source...[0m
+[0;32mI (145) cpu_start: Multicore app[0m
+[0;32mI (154) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (154) cpu_start: Pro cpu start user code[0m
+[0;32mI (154) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (156) app_init: Application information:[0m
+[0;32mI (160) app_init: Project name:     sys03b[0m
+[0;32mI (164) app_init: App version:      1[0m
+[0;32mI (167) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (172) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (176) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (181) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (185) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (189) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (193) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (199) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (204) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (215) spi_flash: detected chip: generic[0m
+[0;32mI (218) spi_flash: flash io: dio[0m
+[0;32mI (222) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (228) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (234) coexist: coex firmware version: a830d28[0m
+[0;32mI (238) coexist: coexist rom version cdcf52b[0m
+[0;32mI (243) main_task: Started on CPU0[0m
+[0;32mI (263) main_task: Calling app_main()[0m
+[0;32mI (263) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f0002b6  RA      : 0x2f0002a6  SP      : 0x2f00e5a0  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000008  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0xb8000017  A0      : 0x00000000  A1      : 0x00001300  
+A2      : 0x2d002000  A3      : 0x2f00f404  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x00001881  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+_interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:501
+501	    mv      a0, sp      /* argument 1, stack pointer */
+#0  _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:501
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x2f006b4e  RA      : 0x40015118  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x0000000a  A0      : 0x0000001f  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x00047621  
+S4      : 0x00000000  S5      : 0x0000c55f  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+521	    asm volatile ( "nop" );
+#0  vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+#1  0x2f006bfa in vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+#2  0x40015118 in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5768
+#3  0x4000a63c in report_task (arg=<optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x4000a74a  RA      : 0x4000a746  SP      : 0x2f0130f0  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x2f80195a  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x40023000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f404  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x4000a74a in app_main () at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:100
+100	}
+#0  0x4000a74a in app_main () at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:100
+#1  0x400079fe in main_task (args=<error reading variable: value has been optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/app_startup.c:206
+#2  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+Core  1 register dump:
+MEPC    : 0x2f006d0e  RA      : 0x2f006d96  SP      : 0x2f00eb60  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000fff  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x2f00afa0  S1      : 0x0000abab  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000001  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0xffffffff  
+S4      : 0x00000000  S5      : 0x0000c555  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f006d0e in xPortEnterCriticalTimeout (mux=mux@entry=0x2f00afa0 <reason_spinlock>, timeout=timeout@entry=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:559
+559	}
+#0  0x2f006d0e in xPortEnterCriticalTimeout (mux=mux@entry=0x2f00afa0 <reason_spinlock>, timeout=timeout@entry=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:559
+#1  0x2f002db4 in vPortEnterCriticalMultiCore (mux=0x2f00afa0 <reason_spinlock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:657
+#2  esp_crosscore_isr (arg=0x2f00f4cc <reason+4>) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/crosscore_int.c:58
+#3  0x2f009622 in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:67
+#4  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f0047ae  RA      : 0x2f003454  SP      : 0x2f00e570  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f07bf64  S1      : 0x2f07c010  A0      : 0x2f07bf88  A1      : 0x00000017  
+A2      : 0x80000000  A3      : 0x20580000  A4      : 0x00000000  A5      : 0x20580000  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x2f0026c6  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f0047ae in timer_ll_trigger_soft_capture (hw=0x20580000, timer_num=0) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h:250
+250	    hw->hw_timer[timer_num].update.tx_update = 1;
+#0  0x2f0047ae in timer_ll_trigger_soft_capture (hw=0x20580000, timer_num=0) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h:250
+#1  timer_hal_capture_and_get_counter_value (hal=hal@entry=0x2f07bf88) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/timer_hal.c:56
+#2  0x2f003454 in gptimer_default_isr (args=0x2f07bf64) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c:459
+#3  0x2f009622 in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:67
+#4  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x2f006b4e  RA      : 0x40015118  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x0000000a  A0      : 0x0000001f  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x0004762e  
+S4      : 0x00000000  S5      : 0x0000c552  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+521	    asm volatile ( "nop" );
+#0  vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+#1  0x2f006bfa in vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+#2  0x40015118 in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5768
+#3  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f808cb8  RA      : 0x2f00256e  SP      : 0x2f00e540  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f0063c0  S1      : 0x2f07c014  A0      : 0x2f00ee40  A1      : 0x00000000  
+A2      : 0x2f07befc  A3      : 0x00000001  A4      : 0x00000000  A5      : 0x20399000  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x2f07befc  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f808cb8 in ?? ()
+#0  0x2f808cb8 in ?? ()
+#1  0x2f00256e in esp_timer_impl_get_time () at D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72
+#2  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+Core  1 register dump:
+MEPC    : 0x4000a640  RA      : 0x2f00263c  SP      : 0x2f07be10  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00053b7e  S1      : 0x00000000  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x0004762e  
+S4      : 0x00000000  S5      : 0x0000c550  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x4000a640 in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:56
+56	        const int64_t now_us = esp_timer_get_time();
+#0  0x4000a640 in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:56
+#1  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f808ca4  RA      : 0x2f00256e  SP      : 0x2f00e540  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f0063c0  S1      : 0x2f07c014  A0      : 0x2f00ee40  A1      : 0x00000000  
+A2      : 0x2f07befc  A3      : 0x2f00f404  A4      : 0x00000000  A5      : 0x20399000  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x2f07befc  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f808ca4 in ?? ()
+#0  0x2f808ca4 in ?? ()
+#1  0x2f00256e in esp_timer_impl_get_time () at D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72
+#2  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+Core  1 register dump:
+MEPC    : 0x2f006d0e  RA      : 0x2f006d96  SP      : 0x2f07bde0  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x2f00af2c  S1      : 0x0000000a  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000001  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x0004762c  
+S4      : 0x00000000  S5      : 0x0000c553  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f006d0e in xPortEnterCriticalTimeout (mux=mux@entry=0x2f00af2c <xKernelLock>, timeout=292396, timeout@entry=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:559
+559	}
+#0  0x2f006d0e in xPortEnterCriticalTimeout (mux=mux@entry=0x2f00af2c <xKernelLock>, timeout=292396, timeout@entry=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:559
+#1  0x40015126 in vPortEnterCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:657
+#2  ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5770
+#3  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f808cae  RA      : 0x2f00256e  SP      : 0x2f00e540  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f0063c0  S1      : 0x2f07c014  A0      : 0x2f00ee40  A1      : 0x00000000  
+A2      : 0x2f07befc  A3      : 0x40000000  A4      : 0x60000000  A5      : 0x20399000  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x2f07befc  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f808cae in ?? ()
+#0  0x2f808cae in ?? ()
+#1  0x2f00256e in esp_timer_impl_get_time () at D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72
+#2  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+Core  1 register dump:
+MEPC    : 0x4001513c  RA      : 0x40015126  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x0000000a  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f07befc  A4      : 0x00000001  A5      : 0x00000014  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x0004762c  
+S4      : 0x00000000  S5      : 0x0000c553  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x4001513c in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5776
+5776	            ulReturn = pxCurrentTCBs[ xCurCoreID ]->ulNotifiedValue[ uxIndexToWait ];
+#0  0x4001513c in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5776
+#1  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#2  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f808cba  RA      : 0x2f00256e  SP      : 0x2f00e540  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f0063c0  S1      : 0x2f07c014  A0      : 0x2f00ee40  A1      : 0x00000000  
+A2      : 0x2f07befc  A3      : 0x00000001  A4      : 0x00000000  A5      : 0x20399000  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x2f07befc  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f808cba in ?? ()
+#0  0x2f808cba in ?? ()
+#1  0x2f00256e in esp_timer_impl_get_time () at D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72
+#2  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+Core  1 register dump:
+MEPC    : 0x2f808ca6  RA      : 0x2f00256e  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x2f0063c0  S1      : 0x00000000  A0      : 0x2f00ee40  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x20399000  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x0004762b  
+S4      : 0x00000000  S5      : 0x0000c553  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f808ca6 in ?? ()
+#0  0x2f808ca6 in ?? ()
+#1  0x2f00256e in esp_timer_impl_get_time () at D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72
+#2  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f0002b6  RA      : 0x2f0002a6  SP      : 0x2f00e5a0  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000008  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0xb8000017  A0      : 0x00000000  A1      : 0x00001300  
+A2      : 0x2d002000  A3      : 0x2f00f404  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x00001881  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+_interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:501
+501	    mv      a0, sp      /* argument 1, stack pointer */
+#0  _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:501
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x2f006b4e  RA      : 0x40015118  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x0000000a  A0      : 0x0000001f  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x0004762f  
+S4      : 0x00000000  S5      : 0x0000c552  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+521	    asm volatile ( "nop" );
+#0  vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+#1  0x2f006bfa in vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+#2  0x40015118 in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5768
+#3  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f006bba  RA      : 0x2f007b74  SP      : 0x2f00e520  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f07befc  S1      : 0x2f07bf4c  A0      : 0x2f00af2c  A1      : 0x00000008  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x0000007f  A5      : 0xb33fffff  
+A6      : 0x00047499  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x2f00e55c  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:574
+574	    BaseType_t nesting = port_uxCriticalNesting[coreID];
+#0  vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:574
+#1  vPortExitCriticalMultiCore (mux=mux@entry=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:561
+#2  0x2f007b74 in vTaskGenericNotifyGiveFromISR (xTaskToNotify=xTaskToNotify@entry=0x2f07befc, uxIndexToNotify=uxIndexToNotify@entry=0, pxHigherPriorityTaskWoken=pxHigherPriorityTaskWoken@entry=0x2f00e55c <xIsrStack+1468>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:6247
+#3  0x2f002778 in on_alarm (timer=<optimized out>, edata=<optimized out>, arg=0x2f07befc) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:42
+#4  0x2f0034a6 in gptimer_default_isr (args=0x2f07bf64) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c:473
+#5  0x2f009622 in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:67
+#6  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x2f00960c  RA      : 0x2f0002c6  SP      : 0x2f00eba0  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000fff  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000004  S1      : 0xb8000010  A0      : 0x2f00eba0  A1      : 0x00000010  
+A2      : 0x2d002000  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00001881  S3      : 0x0004762c  
+S4      : 0x00000000  S5      : 0x0000c556  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+_global_interrupt_handler (sp=788589472, mcause=16) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:60
+60	{
+#0  _global_interrupt_handler (sp=788589472, mcause=16) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:60
+#1  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f006dcc  RA      : 0x2f006dd6  SP      : 0x2f00e510  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f00af2c  S1      : 0x0000cdcd  A0      : 0x00000000  A1      : 0xb3400000  
+A2      : 0x0000cdcd  A3      : 0x2f00f404  A4      : 0x00000000  A5      : 0x0000abab  
+A6      : 0x0004749f  A7      : 0x00000000  S2      : 0x00000000  S3      : 0xffffffff  
+S4      : 0x0000007f  S5      : 0x0abd44f4  S6      : 0x0000001f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f006dcc in spinlock_acquire (lock=0x2f00af2c <xKernelLock>, timeout=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/include/spinlock.h:132
+132	        lock_set = esp_cpu_compare_and_set(&lock->owner, SPINLOCK_FREE, core_owner_id);
+#0  0x2f006dcc in spinlock_acquire (lock=0x2f00af2c <xKernelLock>, timeout=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/include/spinlock.h:132
+#1  xPortEnterCriticalTimeout (mux=0x2f00af2c <xKernelLock>, timeout=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:545
+#2  xPortEnterCriticalTimeout (mux=mux@entry=0x2f00af2c <xKernelLock>, timeout=timeout@entry=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:529
+#3  0x2f007b00 in vPortEnterCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:657
+#4  vTaskGenericNotifyGiveFromISR (xTaskToNotify=xTaskToNotify@entry=0x2f07befc, uxIndexToNotify=uxIndexToNotify@entry=0, pxHigherPriorityTaskWoken=pxHigherPriorityTaskWoken@entry=0x2f00e55c <xIsrStack+1468>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:6194
+#5  0x2f002778 in on_alarm (timer=<optimized out>, edata=<optimized out>, arg=0x2f07befc) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:42
+#6  0x2f0034a6 in gptimer_default_isr (args=0x2f07bf64) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c:473
+#7  0x2f009622 in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:67
+#8  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x400132cc  RA      : 0x400142ea  SP      : 0x2f07bde0  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x2f00f3e0  S1      : 0x00000002  A0      : 0x2f00dd98  A1      : 0x2f07bf00  
+A2      : 0x00000001  A3      : 0x0000000c  A4      : 0x2f00dda0  A5      : 0x2f00dda0  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x0000000c  S3      : 0x00000001  
+S4      : 0x00000000  S5      : 0x0000c552  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x400132cc in vListInsert (pxList=0x2f00dd98 <xDelayedTaskList1>, pxNewListItem=0x2f07bf00) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:191
+191	    pxNewListItem->pxNext->pxPrevious = pxNewListItem;
+#0  0x400132cc in vListInsert (pxList=0x2f00dd98 <xDelayedTaskList1>, pxNewListItem=0x2f07bf00) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:191
+#1  0x400142ea in prvAddCurrentTaskToDelayedList (xTicksToWait=xTicksToWait@entry=10, xCanBlockIndefinitely=xCanBlockIndefinitely@entry=1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:6408
+#2  0x400151b6 in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5749
+#3  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f0095e8  RA      : 0x2f00961a  SP      : 0x2f00e580  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0xb8000017  A0      : 0x2f00eee0  A1      : 0x00000017  
+A2      : 0x2d002000  A3      : 0x2f00f404  A4      : 0x00000000  A5      : 0x2f00eea8  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x00001881  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f0095e8 in intr_get_item (int_no=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:32
+32	}
+#0  0x2f0095e8 in intr_get_item (int_no=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:32
+#1  0x2f00961a in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:65
+#2  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x2f006b4e  RA      : 0x40015118  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x0000000a  A0      : 0x0000001f  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x0004762f  
+S4      : 0x00000000  S5      : 0x0000c552  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+521	    asm volatile ( "nop" );
+#0  vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+#1  0x2f006bfa in vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+#2  0x40015118 in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5768
+#3  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f006d5e  RA      : 0x2f006d96  SP      : 0x2f00e550  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f07c014  S1      : 0x0000cdcd  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x0000cdcd  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x2f00f410  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x00000000  S3      : 0xffffffff  
+S4      : 0x0000007f  S5      : 0x00000000  S6      : 0x0000001f  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f006d5e in xPortEnterCriticalTimeout (mux=0x2f07c014, timeout=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:555
+555	    if ( newNesting == 1 ) {
+#0  0x2f006d5e in xPortEnterCriticalTimeout (mux=0x2f07c014, timeout=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:555
+#1  xPortEnterCriticalTimeout (mux=mux@entry=0x2f07c014, timeout=timeout@entry=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:529
+#2  0x2f00346e in vPortEnterCriticalMultiCore (mux=0x2f07c014) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:657
+#3  gptimer_default_isr (args=0x2f07bf64) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c:464
+#4  0x2f009622 in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:67
+#5  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x2f006b4e  RA      : 0x40015118  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x0000000a  A0      : 0x0000001f  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x0004762e  
+S4      : 0x00000000  S5      : 0x0000c552  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+521	    asm volatile ( "nop" );
+#0  vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+#1  0x2f006bfa in vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+#2  0x40015118 in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5768
+#3  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f0047ba  RA      : 0x2f003454  SP      : 0x2f00e570  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f07bf64  S1      : 0x2f07c010  A0      : 0x2f07bf88  A1      : 0x00000017  
+A2      : 0x80000000  A3      : 0x20580000  A4      : 0x00000000  A5      : 0x80000000  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x2f0026c6  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f0047ba in timer_ll_trigger_soft_capture (hw=0x20580000, timer_num=0) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h:253
+253	    while (hw->hw_timer[timer_num].update.tx_update) {
+#0  0x2f0047ba in timer_ll_trigger_soft_capture (hw=0x20580000, timer_num=0) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h:253
+#1  timer_hal_capture_and_get_counter_value (hal=hal@entry=0x2f07bf88) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/timer_hal.c:56
+#2  0x2f003454 in gptimer_default_isr (args=0x2f07bf64) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c:459
+#3  0x2f009622 in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:67
+#4  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x2f006b4e  RA      : 0x40015118  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x0000000a  A0      : 0x0000001f  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x0004762b  
+S4      : 0x00000000  S5      : 0x0000c555  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+521	    asm volatile ( "nop" );
+#0  vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+#1  0x2f006bfa in vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+#2  0x40015118 in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5768
+#3  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f003492  RA      : 0x2f00346e  SP      : 0x2f00e570  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000fff  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x2f07bf64  S1      : 0x2f07c014  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f404  A4      : 0xe00a0400  A5      : 0x20580000  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x2f0026c6  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f003492 in timer_ll_enable_alarm (hw=0x0, timer_num=0, en=true) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h:181
+181	    hw->hw_timer[timer_num].config.tx_alarm_en = en;
+#0  0x2f003492 in timer_ll_enable_alarm (hw=0x0, timer_num=0, en=true) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg/esp32s31/include/hal/timer_ll.h:181
+#1  gptimer_default_isr (args=0x2f07bf64) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer/src/gptimer.c:468
+#2  0x2f009622 in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:67
+#3  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+Core  1 register dump:
+MEPC    : 0x2f006b4e  RA      : 0x40015118  SP      : 0x2f07be00  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x0000000a  A0      : 0x0000001f  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x0004762d  
+S4      : 0x00000000  S5      : 0x0000c552  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+521	    asm volatile ( "nop" );
+#0  vPortClearInterruptMaskFromISR (prev_int_level=31) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+#1  0x2f006bfa in vPortExitCriticalMultiCore (mux=0x2f00af2c <xKernelLock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+#2  0x40015118 in ulTaskGenericNotifyTake (uxIndexToWait=uxIndexToWait@entry=0, xClearCountOnExit=xClearCountOnExit@entry=1, xTicksToWait=xTicksToWait@entry=10) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5768
+#3  0x4000a63c in report_task (arg=<error reading variable: value has been optimized out>) at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:55
+#4  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x4000a74a  RA      : 0x4000a746  SP      : 0x2f0130f0  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x2f80195a  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x40023000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x2f00f404  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x4000a74a in app_main () at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:100
+100	}
+#0  0x4000a74a in app_main () at D:/ESP32S31/examples/sys/sys03/sys03b/main/app_main.c:100
+#1  0x400079fe in main_task (args=<error reading variable: value has been optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/app_startup.c:206
+#2  0x400132e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:264
+
+Core  1 register dump:
+MEPC    : 0x2f006f06  RA      : 0x2f006d14  SP      : 0x2f00eb60  GP      : 0x2f00b688  
+TP      : 0x2f07bec0  T0      : 0x00000fff  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x2f00afa0  S1      : 0x2f00f4cc  A0      : 0x0000007f  A1      : 0xffffffff  
+A2      : 0x2d002000  A3      : 0x2f00f408  A4      : 0x00000000  A5      : 0x2f00f000  
+A6      : 0x00000000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0xffffffff  
+S4      : 0x00000000  S5      : 0x0000c552  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+0x2f006f06 in rv_utils_set_intlevel_regval (intlevel=127) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/include/esp_private/interrupt_clic.h:171
+171	        return RV_SWAP_CSR(MINTTHRESH_CSR, intlevel);
+#0  0x2f006f06 in rv_utils_set_intlevel_regval (intlevel=127) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/include/esp_private/interrupt_clic.h:171
+#1  xPortSetInterruptMaskFromISR () at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:499
+#2  0x2f006d14 in xPortEnterCriticalTimeout (mux=0x2f00afa0 <reason_spinlock>, timeout=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:544
+#3  xPortEnterCriticalTimeout (mux=mux@entry=0x2f00afa0 <reason_spinlock>, timeout=timeout@entry=-1) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:529
+#4  0x2f002db4 in vPortEnterCriticalMultiCore (mux=0x2f00afa0 <reason_spinlock>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:657
+#5  esp_crosscore_isr (arg=0x2f00f4cc <reason+4>) at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/crosscore_int.c:58
+#6  0x2f009622 in _global_interrupt_handler (sp=<optimized out>, mcause=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/riscv/interrupt.c:67
+#7  0x2f0002c6 in _interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:506
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+
+
+ELF file SHA256: 2c360665d
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f00490c
+Core1 Saved PC:0x400024ee
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (32) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Aug 31 2026 16:09:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.0[0m
+[0;32mI (36) boot: efuse block revision: v0.0[0m
+[0;32mI (39) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (43) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a8a8h ( 43176) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a8d0 vaddr=2f000000 size=05748h ( 22344) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=15870h ( 88176) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00035898 vaddr=2f005748 size=0572ch ( 22316) load[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003afcc vaddr=2f00ae80 size=02c9ch ( 11420) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Multicore app[0m
+[0;32mI (159) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     sys03b[0m
+[0;32mI (169) app_init: App version:      1[0m
+[0;32mI (172) app_init: Compile time:     Aug 31 2026 16:10:19[0m
+[0;32mI (177) app_init: ELF file SHA256:  2c360665d...[0m
+[0;32mI (181) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 2F00F510 len 0006BAA0 (430 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (214) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;32mI (227) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (233) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) coexist: coex firmware version: a830d28[0m
+[0;32mI (243) coexist: coexist rom version cdcf52b[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+[0;32mI (268) sys03b: SYS-03B GPTimer interrupt start: 1 kHz[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x2f0002b6  RA      : 0x2f0002a6  SP      : 0x2f00e5a0  GP      : 0x2f00b688  
+TP      : 0x2f013180  T0      : 0x00000008  T1      : 0xfffffff0  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0xb8000017  A0      : 0x00000000  A1      : 0x00001300  
+A2      : 0x2d002000  A3      : 0x2f00f404  A4      : 0x00000000  A5      : 0x2f00f404  
+A6      : 0x00000001  A7      : 0x2f07bf98  S2      : 0x00001881  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20580000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader\bootloader.elf"
+_interrupt_handler () at D:/Espressif-master/.espressif/master/esp-idf/components/riscv\vectors.S:501
+501	    mv      a0, sp      /* argument 1, stack pointer */
+#0  _interrupt_handler () a

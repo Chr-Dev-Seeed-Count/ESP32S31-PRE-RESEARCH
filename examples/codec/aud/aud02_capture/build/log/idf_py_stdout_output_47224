@@ -1,0 +1,212 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- esp-idf-configdep will be used for faster recompilation
+-- ccache will be used for faster recompilation
+-- Compiler launcher chain: esp-idf-configdep -> ccache
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s31
+NOTE: Skipping optional dependency: espressif/esp_h264
+NOTE: Skipping optional dependency: espressif/esp_ipa
+NOTE: Processing 16 dependencies:
+NOTE: [1/16] espressif/button (4.2.1)
+NOTE: [2/16] espressif/cmake_utilities (0.5.3)
+NOTE: [3/16] espressif/esp32_s31_korvo_1 (1.0.1)
+NOTE: [4/16] espressif/esp_cam_sensor (2.2.0)
+NOTE: [5/16] espressif/esp_codec_dev (1.5.11)
+NOTE: [6/16] espressif/esp_lcd_touch (1.2.1)
+NOTE: [7/16] espressif/esp_lcd_touch_gt1151 (1.1.1)
+NOTE: [8/16] espressif/esp_lvgl_port (2.9.0)
+NOTE: [9/16] espressif/esp_sccb_intf (0.0.9)
+NOTE: [10/16] espressif/esp_video (2.2.0)
+NOTE: [11/16] espressif/led_indicator (2.1.2)
+NOTE: [12/16] espressif/led_strip (3.0.3)
+NOTE: [13/16] espressif/usb (1.5.0)
+NOTE: [14/16] espressif/usb_host_uvc (2.5.2)
+NOTE: [15/16] lvgl/lvgl (9.5.0)
+NOTE: [16/16] idf (6.2.0)
+NOTE: Skipping optional dependency: espressif/esp_h264
+NOTE: Skipping optional dependency: espressif/esp_ipa
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file D:/ESP32S31/examples/codec/aud/aud02_capture/sdkconfig
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/riscv/ld/rom.api.ld
+-- App "aud02_capture" version: 1
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer/esp32s31/rom.systimer.ld
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt/esp32s31/rom.wdt.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/memory.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/memory.ld.in
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/sections.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/sections.ld.in
+--   -> Applying ldgen processing: D:/ESP32S31/examples/codec/aud/aud02_capture/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.api.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.rvfp.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.version.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.phy.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.coexist.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.net80211.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.pp.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.libc.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/heap/port/esp32s31/ld/esp32s31.rom.heap.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/soc/esp32s31/ld/esp32s31.peripherals.ld
+-- BUTTON: 4.2.1
+-- LVGL version: 9.5.0
+-- ESP_CAM_SENSOR: 2.2.0
+-- ESP_VIDEO: 2.2.0
+-- LED_INDICATOR: 2.1.2
+-- Component idf::esp_trace will be linked with -Wl,--whole-archive
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_asrc_adapter esp_blockdev esp_blockdev_util esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_cordic esp_driver_dac esp_driver_dma esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_i3c esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ana_cmpr esp_hal_ana_conv esp_hal_asrc esp_hal_cam esp_hal_clock esp_hal_cordic esp_hal_debug_assist esp_hal_dma esp_hal_emac esp_hal_gpio esp_hal_gpspi esp_hal_i2c esp_hal_i2s esp_hal_i3c esp_hal_ieee802154 esp_hal_jpeg esp_hal_lcd esp_hal_ledc esp_hal_mcpwm esp_hal_mspi esp_hal_parlio esp_hal_pcnt esp_hal_pmu esp_hal_ppa esp_hal_regi2c esp_hal_rmt esp_hal_rtc_timer esp_hal_sd esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_touch_sens esp_hal_twai esp_hal_uart esp_hal_usb esp_hal_wdt esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_libc esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_riscv_trace esp_rom esp_security esp_stdio esp_system esp_timer esp_trace esp_usb_cdc_rom_console esp_wifi espcoredump espressif__button espressif__cmake_utilities espressif__esp32_s31_korvo_1 espressif__esp_cam_sensor espressif__esp_codec_dev espressif__esp_lcd_touch espressif__esp_lcd_touch_gt1151 espressif__esp_lvgl_port espressif__esp_sccb_intf espressif__esp_video espressif__led_indicator espressif__led_strip espressif__usb espressif__usb_host_uvc esptool_py fatfs freertos hal heap http_parser ieee802154 log lvgl__lvgl lwip main mbedtls nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity vfs wear_levelling wpa_supplicant
+-- Component paths: D:/Espressif-master/.espressif/master/esp-idf/components/app_trace D:/Espressif-master/.espressif/master/esp-idf/components/app_update D:/Espressif-master/.espressif/master/esp-idf/components/bootloader D:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support D:/Espressif-master/.espressif/master/esp-idf/components/bt D:/Espressif-master/.espressif/master/esp-idf/components/cmock D:/Espressif-master/.espressif/master/esp-idf/components/console D:/Espressif-master/.espressif/master/esp-idf/components/cxx D:/Espressif-master/.espressif/master/esp-idf/components/driver D:/Espressif-master/.espressif/master/esp-idf/components/efuse D:/Espressif-master/.espressif/master/esp-idf/components/esp-tls D:/Espressif-master/.espressif/master/esp-idf/components/esp_adc D:/Espressif-master/.espressif/master/esp-idf/components/esp_app_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_asrc_adapter D:/Espressif-master/.espressif/master/esp-idf/components/esp_blockdev D:/Espressif-master/.espressif/master/esp-idf/components/esp_blockdev_util D:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_coex D:/Espressif-master/.espressif/master/esp-idf/components/esp_common D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_ana_cmpr D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_bitscrambler D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_cam D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_cordic D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_dac D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_dma D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gpio D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gptimer D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_i2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_i2s D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_i3c D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_isp D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_jpeg D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_ledc D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_mcpwm D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_parlio D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_pcnt D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_ppa D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_rmt D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_sd_intf D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_sdio D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_sdm D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_sdmmc D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_sdspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_spi D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_touch_sens D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_tsens D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_twai D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_uart D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_usb_serial_jtag D:/Espressif-master/.espressif/master/esp-idf/components/esp_eth D:/Espressif-master/.espressif/master/esp-idf/components/esp_event D:/Espressif-master/.espressif/master/esp-idf/components/esp_gdbstub D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ana_cmpr D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ana_conv D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_asrc D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_cam D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_clock D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_cordic D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_debug_assist D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_dma D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_emac D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpio D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_i2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_i2s D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_i3c D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ieee802154 D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_jpeg D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_lcd D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ledc D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_mcpwm D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_mspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_parlio D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_pcnt D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_pmu D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ppa D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_regi2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_rmt D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_rtc_timer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_sd D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_touch_sens D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_twai D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_uart D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_usb D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt D:/Espressif-master/.espressif/master/esp-idf/components/esp_hid D:/Espressif-master/.espressif/master/esp-idf/components/esp_http_client D:/Espressif-master/.espressif/master/esp-idf/components/esp_http_server D:/Espressif-master/.espressif/master/esp-idf/components/esp_https_ota D:/Espressif-master/.espressif/master/esp-idf/components/esp_https_server D:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support D:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc D:/Espressif-master/.espressif/master/esp-idf/components/esp_local_ctrl D:/Espressif-master/.espressif/master/esp-idf/components/esp_mm D:/Espressif-master/.espressif/master/esp-idf/components/esp_netif D:/Espressif-master/.espressif/master/esp-idf/components/esp_netif_stack D:/Espressif-master/.espressif/master/esp-idf/components/esp_partition D:/Espressif-master/.espressif/master/esp-idf/components/esp_phy D:/Espressif-master/.espressif/master/esp-idf/components/esp_pm D:/Espressif-master/.espressif/master/esp-idf/components/esp_psram D:/Espressif-master/.espressif/master/esp-idf/components/esp_ringbuf D:/Espressif-master/.espressif/master/esp-idf/components/esp_riscv_trace D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom D:/Espressif-master/.espressif/master/esp-idf/components/esp_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_stdio D:/Espressif-master/.espressif/master/esp-idf/components/esp_system D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer D:/Espressif-master/.espressif/master/esp-idf/components/esp_trace D:/Espressif-master/.espressif/master/esp-idf/components/esp_usb_cdc_rom_console D:/Espressif-master/.espressif/master/esp-idf/components/esp_wifi D:/Espressif-master/.espressif/master/esp-idf/components/espcoredump D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__button D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__cmake_utilities D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__esp32_s31_korvo_1 D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__esp_cam_sensor D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__esp_codec_dev D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__esp_lcd_touch D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__esp_lcd_touch_gt1151 D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__esp_lvgl_port D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__esp_sccb_intf D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__esp_video D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__led_indicator D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__led_strip D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__usb D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/espressif__usb_host_uvc D:/Espressif-master/.espressif/master/esp-idf/components/esptool_py D:/Espressif-master/.espressif/master/esp-idf/components/fatfs D:/Espressif-master/.espressif/master/esp-idf/components/freertos D:/Espressif-master/.espressif/master/esp-idf/components/hal D:/Espressif-master/.espressif/master/esp-idf/components/heap D:/Espressif-master/.espressif/master/esp-idf/components/http_parser D:/Espressif-master/.espressif/master/esp-idf/components/ieee802154 D:/Espressif-master/.espressif/master/esp-idf/components/log D:/ESP32S31/examples/codec/aud/aud02_capture/managed_components/lvgl__lvgl D:/Espressif-master/.espressif/master/esp-idf/components/lwip D:/ESP32S31/examples/codec/aud/aud02_capture/main D:/Espressif-master/.espressif/master/esp-idf/components/mbedtls D:/Espressif-master/.espressif/master/esp-idf/components/nvs_flash D:/Espressif-master/.espressif/master/esp-idf/components/nvs_sec_provider D:/Espressif-master/.espressif/master/esp-idf/components/openthread D:/Espressif-master/.espressif/master/esp-idf/components/partition_table D:/Espressif-master/.espressif/master/esp-idf/components/protobuf-c D:/Espressif-master/.espressif/master/esp-idf/components/protocomm D:/Espressif-master/.espressif/master/esp-idf/components/pthread D:/Espressif-master/.espressif/master/esp-idf/components/riscv D:/Espressif-master/.espressif/master/esp-idf/components/rt D:/Espressif-master/.espressif/master/esp-idf/components/sdmmc D:/Espressif-master/.espressif/master/esp-idf/components/soc D:/Espressif-master/.espressif/master/esp-idf/components/spi_flash D:/Espressif-master/.espressif/master/esp-idf/components/spiffs D:/Espressif-master/.espressif/master/esp-idf/components/tcp_transport D:/Espressif-master/.espressif/master/esp-idf/components/ulp D:/Espressif-master/.espressif/master/esp-idf/components/unity D:/Espressif-master/.espressif/master/esp-idf/components/vfs D:/Espressif-master/.espressif/master/esp-idf/components/wear_levelling D:/Espressif-master/.espressif/master/esp-idf/components/wpa_supplicant
+-- Configuring done (33.6s)
+-- Generating done (1.6s)
+-- Build files have been written to: D:/ESP32S31/examples/codec/aud/aud02_capture/build
+[1/70] Preprocessing linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/memory.ld.in -> D:/ESP32S31/examples/codec/aud/aud02_capture/build/esp-idf/esp_system/ld/memory.ld
+[2/70] Preprocessing linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/sections.ld.in -> D:/ESP32S31/examples/codec/aud/aud02_capture/build/esp-idf/esp_system/ld/sections.ld.in
+[3/70] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/riscv/portasm.S.obj
+[4/70] Linking C static library esp-idf\freertos\libfreertos.a
+[5/70] Building ASM object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s31/sleep_fpu_asm.S.obj
+[6/70] Building ASM object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s31/sleep_cpu_asm.S.obj
+[7/70] Linking C static library esp-idf\esp_hw_support\libesp_hw_support.a
+[8/70] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- No compiler launcher chain will be used.
+-- Building ESP-IDF components for target esp32s31
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file D:/ESP32S31/examples/codec/aud/aud02_capture/sdkconfig
+Default value for ESP_INT_WDT_TIMEOUT_MS in sdkconfig is 800 but it is 300 according to Kconfig.
+Using default value from sdkconfig (800).
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished with notifications
+NOTE: D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/Kconfig:281: ESP_INT_WDT_TIMEOUT_MS: Kconfig default value: 300, sdkconfig default value: 800
+HINT: This area reports issues with default values of the config options.
+For more information, please visit https://docs.espressif.com/projects/esp-idf-kconfig/en/latest/kconfiglib/configuration-report.html#default-value-mismatch
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/riscv/ld/rom.api.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/soc/esp32s31/ld/esp32s31.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt/esp32s31/rom.wdt.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer/esp32s31/rom.systimer.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.api.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.rvfp.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.version.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.libc.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_hal_ana_conv esp_hal_clock esp_hal_debug_assist esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_mspi esp_hal_pmu esp_hal_regi2c esp_hal_rtc_timer esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_rom esp_security esp_stdio esp_system esptool_py freertos hal log main micro-ecc partition_table riscv soc spi_flash
+-- Component paths: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader D:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support D:/Espressif-master/.espressif/master/esp-idf/components/efuse D:/Espressif-master/.espressif/master/esp-idf/components/esp_app_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_blockdev D:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_common D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ana_conv D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_clock D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_debug_assist D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_dma D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpio D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_mspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_pmu D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_regi2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_rtc_timer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_uart D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_usb D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt D:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom D:/Espressif-master/.espressif/master/esp-idf/components/esp_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_stdio D:/Espressif-master/.espressif/master/esp-idf/components/esp_system D:/Espressif-master/.espressif/master/esp-idf/components/esptool_py D:/Espressif-master/.espressif/master/esp-idf/components/freertos D:/Espressif-master/.espressif/master/esp-idf/components/hal D:/Espressif-master/.espressif/master/esp-idf/components/log D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/components/micro-ecc D:/Espressif-master/.espressif/master/esp-idf/components/partition_table D:/Espressif-master/.espressif/master/esp-idf/components/riscv D:/Espressif-master/.espressif/master/esp-idf/components/soc D:/Espressif-master/.espressif/master/esp-idf/components/spi_flash
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.memory.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.memory.ld.in
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.sections.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.sections.ld.in
+-- Configuring done (12.1s)
+-- Generating done (0.3s)
+-- Build files have been written to: D:/ESP32S31/examples/codec/aud/aud02_capture/build/bootloader
+[1/2] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\codec\aud\aud02_capture\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/codec/aud/aud02_capture/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[9/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/ecp_curves_new.c.obj
+[10/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/chachapoly.c.obj
+[11/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/chacha20_neon.c.obj
+[12/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/bignum_mod.c.obj
+[13/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/ccm.c.obj
+[14/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/bignum_core.c.obj
+[15/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/poly1305.c.obj
+[16/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/gcm.c.obj
+[17/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/hmac_drbg.c.obj
+[18/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/entropy.c.obj
+[19/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/block_cipher.c.obj
+[20/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/md5.c.obj
+[21/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/entropy_poll.c.obj
+[22/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/aes.c.obj
+[23/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/cipher.c.obj
+[24/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/ctr_drbg.c.obj
+[25/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/ecp_curves.c.obj
+[26/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_aead.c.obj
+[27/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/aesni.c.obj
+[28/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/cmac.c.obj
+[29/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/ecp.c.obj
+[30/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/aesce.c.obj
+[31/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/bignum.c.obj
+[32/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/chacha20.c.obj
+[33/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/aria.c.obj
+[34/70] No install step for 'bootloader'
+[35/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/ecjpake.c.obj
+[36/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/bignum_mod_raw.c.obj
+[37/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/camellia.c.obj
+[38/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/ecdsa.c.obj
+[39/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/cipher_wrap.c.obj
+[40/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_cipher.c.obj
+[41/70] Completed 'bootloader'
+[42/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/sha256.c.obj
+[43/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/sha512.c.obj
+[44/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/ripemd160.c.obj
+[45/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/D_/Espressif-master/.espressif/master/esp-idf/components/mbedtls/port/ecc/esp_ecc.c.obj
+[46/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/rsa_alt_helpers.c.obj
+[47/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/sha1.c.obj
+[48/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_ecp.c.obj
+[49/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_hash.c.obj
+[50/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_ffdh.c.obj
+[51/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/sha3.c.obj
+[52/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_util_internal.c.obj
+[53/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/rsa.c.obj
+[54/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_xof.c.obj
+[55/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_mac.c.obj
+[56/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_pake.c.obj
+[57/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/src/psa_crypto_rsa.c.obj
+[58/70] Building C object esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/D_/Espressif-master/.espressif/master/esp-idf/components/mbedtls/port/ecc/ecc_alt.c.obj
+[59/70] Linking CXX static library esp-idf\mbedtls\mbedtls\tf-psa-crypto\drivers\builtin\libmbed-builtin.a
+[60/70] Linking CXX static library esp-idf\mbedtls\mbedtls\tf-psa-crypto\core\libtfpsacrypto.a
+[61/70] Building ASM object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/vectors_clic.S.obj
+[62/70] Building ASM object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/vectors.S.obj
+[63/70] Linking C static library esp-idf\riscv\libriscv.a
+[64/70] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[65/70] Linking C static library esp-idf\main\libmain.a
+[66/70] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/bt/host/nimble/Kconfig
+.in:1461: BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value 
+(only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:240: 
+FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:245: 
+FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+[67/70] Linking CXX executable aud02_capture.elf
+[68/70] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-S31 image...
+Merged 3 ELF sections.
+Successfully created ESP32-S31 image.
+Generated D:/ESP32S31/examples/codec/aud/aud02_capture/build/aud02_capture.bin
+[69/70] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\codec\aud\aud02_capture\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32S31/examples/codec/aud/aud02_capture/build/partition_table/partition-table.bin D:/ESP32S31/examples/codec/aud/aud02_capture/build/aud02_capture.bin"
+aud02_capture.bin binary size 0x48f30 bytes. Smallest app partition is 0x100000
+bytes. 0xb70d0 bytes (72%) free.

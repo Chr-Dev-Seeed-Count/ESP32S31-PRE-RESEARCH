@@ -1,0 +1,5 @@
+Command: cmake -G Ninja -B D:\ESP32S31\examples\lcd\lcd_05_chinese_text\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True -DCONFIGDEP_ENABLE=True D:\ESP32S31\examples\lcd\lcd_05_chinese_text
+Loading defaults file D:/ESP32S31/examples/lcd/lcd_05_chinese_text/sdkconfig.defaults...
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished successfully

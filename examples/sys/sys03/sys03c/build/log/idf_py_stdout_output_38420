@@ -1,0 +1,189 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\sys\sys03\sys03c\build\sys03c.elf D:\ESP32S31\examples\sys\sys03\sys03c\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x7d (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  1 2026 09:28:41[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a27ch ( 41596) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001a2a4 vaddr=2f000000 size=05d74h ( 23924) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=1436ch ( 82796) map[0m
+[0;32mI (119) esp_image: segment 3: paddr=00034394 vaddr=2f005d74 size=04f30h ( 20272) load[0m
+[0;32mI (125) esp_image: segment 4: paddr=000392cc vaddr=2f00ad00 size=02c8ch ( 11404) load[0m
+[0;32mI (131) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (132) boot: Disabling RNG early entropy source...[0m
+[0;32mI (144) cpu_start: Multicore app[0m
+[0;32mI (153) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (153) cpu_start: Pro cpu start user code[0m
+[0;32mI (153) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (155) app_init: Application information:[0m
+[0;32mI (159) app_init: Project name:     sys03c[0m
+[0;32mI (163) app_init: App version:      1[0m
+[0;32mI (166) app_init: Compile time:     Sep  1 2026 09:17:45[0m
+[0;32mI (171) app_init: ELF file SHA256:  77d80b6e7...[0m
+[0;32mI (176) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (184) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 2F00F340 len 0006BC70 (431 KiB): RAM[0m
+[0;32mI (203) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (215) spi_flash: detected chip: generic[0m
+[0;32mI (217) spi_flash: flash io: dio[0m
+[0;32mI (221) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (227) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (233) coexist: coex firmware version: a830d28[0m
+[0;32mI (238) coexist: coexist rom version cdcf52b[0m
+[0;32mI (242) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (262) sys03c: SYS-03C queue IPC start: tx_period=1000 us queue_length=64[0m
+[0;32mI (262) sys03c: TX task started on core=0[0m
+[0;32mI (5262) sys03c: TX core=0 period=1000 us attempts=5001 sent=64 drop=4937 drop_rate=98.720% rate=12.8 msg/s queue_max=64[0m
+[0;32mI (10262) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (15272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (20272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (25272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (30272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (35272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (40272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (45272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (50272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (55272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (60272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (65272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (70272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (75272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (80272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (85272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (90272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (95272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (100272) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (105272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (110272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (115272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (120272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (125272) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (130282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (135282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (140282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (145282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (150282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (155282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (160282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (165282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (170282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (175282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (180282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (185282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (190282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (195282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (200282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (205282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (210282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (215282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (220282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (225282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (230282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (235282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (240282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (245282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (250282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (255282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (260282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (265282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (270282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (275282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (280282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (285282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (290282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (295282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (300282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (305282) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (310282) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (315292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (320292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (325292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (330292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (335292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (340292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (345292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (350292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (355292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (360292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (365292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (370292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (375292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (380292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (385292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (390292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (395292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (400292) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (405292) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (410302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (415302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (420302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (425302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (430302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (435302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (440302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (445302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (450302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (455302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (460302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (465302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (470302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (475302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (480302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (485302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (490302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (495302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (500302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (505302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (510302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (515302) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (520302) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (525312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (530312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (535312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (540312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (545312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (550312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (555312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (560312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (565312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (570312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (575312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (580312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (585312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (590312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (595312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (600312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (605312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (610312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (615312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (620312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (625312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (630312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (635312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (640312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (645312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (650312) sys03c: TX core=0 period=1000 us attempts=5001 sent=0 drop=5001 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m
+[0;32mI (655312) sys03c: TX core=0 period=1000 us attempts=5000 sent=0 drop=5000 drop_rate=100.000% rate=0.0 msg/s queue_max=64[0m

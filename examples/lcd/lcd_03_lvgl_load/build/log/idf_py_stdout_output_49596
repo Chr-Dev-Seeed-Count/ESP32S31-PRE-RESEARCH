@@ -1,0 +1,189 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - ON
+-- esp-idf-configdep will be used for faster recompilation
+-- ccache will be used for faster recompilation
+-- Compiler launcher chain: esp-idf-configdep -> ccache
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s31
+NOTE: Processing 2 dependencies:
+NOTE: [1/2] lvgl/lvgl (9.5.0)
+NOTE: [2/2] idf (6.2.0)
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/sdkconfig
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/riscv/ld/rom.api.ld
+-- App "lcd_03_lvgl_load" version: 1
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer/esp32s31/rom.systimer.ld
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt/esp32s31/rom.wdt.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/memory.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/memory.ld.in
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/sections.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/sections.ld.in
+--   -> Applying ldgen processing: D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.api.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.rvfp.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.version.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.phy.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.coexist.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.net80211.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.pp.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.libc.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/heap/port/esp32s31/ld/esp32s31.rom.heap.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/soc/esp32s31/ld/esp32s31.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_driver_bitscrambler esp_driver_dma esp_driver_gpio esp_driver_i2c esp_driver_i2s esp_driver_parlio esp_driver_spi esp_hal_ana_conv esp_hal_clock esp_hal_debug_assist esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_i2c esp_hal_i2s esp_hal_lcd esp_hal_mspi esp_hal_parlio esp_hal_pmu esp_hal_regi2c esp_hal_rtc_timer esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_touch_sens esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_lcd esp_libc esp_mm esp_partition esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_stdio esp_system esp_timer esp_usb_cdc_rom_console esptool_py freertos hal heap log lvgl__lvgl main mbedtls partition_table pthread riscv soc spi_flash
+-- Component paths: D:/Espressif-master/.espressif/master/esp-idf/components/app_update D:/Espressif-master/.espressif/master/esp-idf/components/bootloader D:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support D:/Espressif-master/.espressif/master/esp-idf/components/cxx D:/Espressif-master/.espressif/master/esp-idf/components/efuse D:/Espressif-master/.espressif/master/esp-idf/components/esp_app_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_blockdev D:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_common D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_bitscrambler D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_dma D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_gpio D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_i2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_i2s D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_parlio D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_spi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ana_conv D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_clock D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_debug_assist D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_dma D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpio D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_i2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_i2s D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_lcd D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_mspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_parlio D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_pmu D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_regi2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_rtc_timer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_touch_sens D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_uart D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_usb D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt D:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support D:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc D:/Espressif-master/.espressif/master/esp-idf/components/esp_mm D:/Espressif-master/.espressif/master/esp-idf/components/esp_partition D:/Espressif-master/.espressif/master/esp-idf/components/esp_pm D:/Espressif-master/.espressif/master/esp-idf/components/esp_psram D:/Espressif-master/.espressif/master/esp-idf/components/esp_ringbuf D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom D:/Espressif-master/.espressif/master/esp-idf/components/esp_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_stdio D:/Espressif-master/.espressif/master/esp-idf/components/esp_system D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer D:/Espressif-master/.espressif/master/esp-idf/components/esp_usb_cdc_rom_console D:/Espressif-master/.espressif/master/esp-idf/components/esptool_py D:/Espressif-master/.espressif/master/esp-idf/components/freertos D:/Espressif-master/.espressif/master/esp-idf/components/hal D:/Espressif-master/.espressif/master/esp-idf/components/heap D:/Espressif-master/.espressif/master/esp-idf/components/log D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/managed_components/lvgl__lvgl D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/main D:/Espressif-master/.espressif/master/esp-idf/components/mbedtls D:/Espressif-master/.espressif/master/esp-idf/components/partition_table D:/Espressif-master/.espressif/master/esp-idf/components/pthread D:/Espressif-master/.espressif/master/esp-idf/components/riscv D:/Espressif-master/.espressif/master/esp-idf/components/soc D:/Espressif-master/.espressif/master/esp-idf/components/spi_flash
+-- Configuring done (17.7s)
+-- Generating done (0.8s)
+-- Build files have been written to: D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build
+[1/20] Preprocessing linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/memory.ld.in -> D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/esp-idf/esp_system/ld/memory.ld
+[2/20] Preprocessing linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/sections.ld.in -> D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/esp-idf/esp_system/ld/sections.ld.in
+[3/20] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/riscv/portasm.S.obj
+[4/20] Linking C static library esp-idf\freertos\libfreertos.a
+[5/20] Building ASM object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s31/sleep_fpu_asm.S.obj
+[6/20] Building ASM object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s31/sleep_cpu_asm.S.obj
+[7/20] Linking C static library esp-idf\esp_hw_support\libesp_hw_support.a
+[8/20] Building ASM object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/vectors.S.obj
+[9/20] Building ASM object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/vectors_clic.S.obj
+[10/20] Linking C static library esp-idf\riscv\libriscv.a
+[11/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lcd_perf_demo.c.obj
+[12/20] Linking C static library esp-idf\main\libmain.a
+[13/20] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- No compiler launcher chain will be used.
+-- Building ESP-IDF components for target esp32s31
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/sdkconfig
+Default value for ESP_INT_WDT_TIMEOUT_MS in sdkconfig is 800 but it is 300 according to Kconfig.
+Using default value from sdkconfig (800).
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished with notifications
+NOTE: D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/Kconfig:281: ESP_INT_WDT_TIMEOUT_MS: Kconfig default value: 300, sdkconfig default value: 800
+HINT: This area reports issues with default values of the config options.
+For more information, please visit https://docs.espressif.com/projects/esp-idf-kconfig/en/latest/kconfiglib/configuration-report.html#default-value-mismatch
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/riscv/ld/rom.api.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/soc/esp32s31/ld/esp32s31.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt/esp32s31/rom.wdt.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer/esp32s31/rom.systimer.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.api.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.rvfp.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.version.ld
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom/esp32s31/ld/esp32s31.rom.libc.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_hal_ana_conv esp_hal_clock esp_hal_debug_assist esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_mspi esp_hal_pmu esp_hal_regi2c esp_hal_rtc_timer esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_rom esp_security esp_stdio esp_system esptool_py freertos hal log main micro-ecc partition_table riscv soc spi_flash
+-- Component paths: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader D:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support D:/Espressif-master/.espressif/master/esp-idf/components/efuse D:/Espressif-master/.espressif/master/esp-idf/components/esp_app_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_blockdev D:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format D:/Espressif-master/.espressif/master/esp-idf/components/esp_common D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_ana_conv D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_clock D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_debug_assist D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_dma D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpio D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_gpspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_mspi D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_pmu D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_regi2c D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_rtc_timer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_systimer D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_timg D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_uart D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_usb D:/Espressif-master/.espressif/master/esp-idf/components/esp_hal_wdt D:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc D:/Espressif-master/.espressif/master/esp-idf/components/esp_rom D:/Espressif-master/.espressif/master/esp-idf/components/esp_security D:/Espressif-master/.espressif/master/esp-idf/components/esp_stdio D:/Espressif-master/.espressif/master/esp-idf/components/esp_system D:/Espressif-master/.espressif/master/esp-idf/components/esptool_py D:/Espressif-master/.espressif/master/esp-idf/components/freertos D:/Espressif-master/.espressif/master/esp-idf/components/hal D:/Espressif-master/.espressif/master/esp-idf/components/log D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/components/micro-ecc D:/Espressif-master/.espressif/master/esp-idf/components/partition_table D:/Espressif-master/.espressif/master/esp-idf/components/riscv D:/Espressif-master/.espressif/master/esp-idf/components/soc D:/Espressif-master/.espressif/master/esp-idf/components/spi_flash
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.memory.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.memory.ld.in
+-- Adding linker script D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.sections.ld.in
+--   -> Preprocessing .in script: D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/ld/esp32s31/bootloader.sections.ld.in
+-- Configuring done (10.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/bootloader
+[1/2] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\lcd\lcd_03_lvgl_load\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[14/20] No install step for 'bootloader'
+[15/20] Completed 'bootloader'
+[16/20] Generating esp-idf/esp_system/ld/sections.ld
+FAILED: esp-idf/esp_system/ld/sections.ld D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/esp-idf/esp_system/ld/sections.ld 
+C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\lcd\lcd_03_lvgl_load\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/tools/ldgen/ldgen.py --config D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/sdkconfig --fragments-list-file D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/ldgen_fragments --input D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/esp-idf/esp_system/ld/sections.ld.in --output D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/esp-idf/esp_system/ld/sections.ld --kconfig D:/Espressif-master/.espressif/master/esp-idf/Kconfig --env-file D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/config.env --libraries-file D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/ldgen_libraries --objdump D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe"
+Traceback (most recent call last):
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\entity.py", line 170, in _get_infos_from_file
+    results = parser.parse_string(info.content, parse_all=True)
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\pyparsing\core.py", line 1346, in parse_string
+    raise exc.with_traceback(None)
+pyparsing.exceptions.ParseException: Expected end of text, found '7'  (at char 16480), (line:267, col:3)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen.py", line 378, in <module>
+    main()
+    ~~~~^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen.py", line 374, in main
+    cli()
+    ~~~^^
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\rich_click\rich_command.py", line 216, in main
+    rv = self.invoke(ctx)
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen.py", line 354, in cli
+    _run(
+    ~~~~^
+        input_file=input_file,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        debug=debug,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen.py", line 241, in _run
+    mapping_rules = generation_model.generate(sections_infos, non_contiguous_sram)
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\generation.py", line 641, in generate
+    root_node.insert(entity, sections, target, flags, mutable, entities)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\generation.py", line 302, in insert
+    self.child_placement(entity, sections, target, flags, mutable, sections_db)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\generation.py", line 294, in child_placement
+    child.insert(entity, sections, target, flags, mutable, sections_db)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\generation.py", line 302, in insert
+    self.child_placement(entity, sections, target, flags, mutable, sections_db)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\generation.py", line 294, in child_placement
+    child.insert(entity, sections, target, flags, mutable, sections_db)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\generation.py", line 302, in insert
+    self.child_placement(entity, sections, target, flags, mutable, sections_db)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\generation.py", line 357, in child_placement
+    found_sections = sections_db.get_sections(self.parent.name, self.name)
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\entity.py", line 218, in get_sections
+    obj = self._match_obj(archive, obj)
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\entity.py", line 201, in _match_obj
+    objs = self.get_objects(archive)
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\entity.py", line 194, in get_objects
+    self._process_archive(archive)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\entity.py", line 182, in _process_archive
+    parsed = self._get_infos_from_file(stored)
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\entity.py", line 172, in _get_infos_from_file
+    raise ParseException('Unable to parse section info file ' + info.filename + '. ' + p.msg)
+pyparsing.exceptions.ParseException: Unable to parse section info file D:/ESP32S31/examples/lcd/lcd_03_lvgl_load/build/esp-idf/esp_psram/libesp_psram.a. Expected end of text  (at char 0), (line:1, col:1)
+ninja: build stopped: subcommand failed.

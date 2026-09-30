@@ -1,0 +1,2 @@
+source D:/ESP32S31/examples/touch/tp01_coordinate/build_marker_verify/bootloader/gdbinit/symbols
+source D:/ESP32S31/examples/touch/tp01_coordinate/build_marker_verify/bootloader/gdbinit/connect

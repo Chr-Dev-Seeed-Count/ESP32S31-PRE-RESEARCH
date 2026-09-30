@@ -1,0 +1,313 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\sys\sys03\sys03c\build\sys03c.elf D:\ESP32S31\examples\sys\sys03\sys03c\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x7d (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  1 2026 09:28:41[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a27ch ( 41596) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001a2a4 vaddr=2f000000 size=05d74h ( 23924) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=143b8h ( 82872) map[0m
+[0;32mI (119) esp_image: segment 3: paddr=000343e0 vaddr=2f005d74 size=04f30h ( 20272) load[0m
+[0;32mI (125) esp_image: segment 4: paddr=00039318 vaddr=2f00ad00 size=02c8ch ( 11404) load[0m
+[0;32mI (131) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (132) boot: Disabling RNG early entropy source...[0m
+[0;32mI (144) cpu_start: Multicore app[0m
+[0;32mI (153) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (153) cpu_start: Pro cpu start user code[0m
+[0;32mI (154) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (155) app_init: Application information:[0m
+[0;32mI (159) app_init: Project name:     sys03c[0m
+[0;32mI (163) app_init: App version:      1[0m
+[0;32mI (166) app_init: Compile time:     Sep  1 2026 09:17:45[0m
+[0;32mI (171) app_init: ELF file SHA256:  cddf660ed...[0m
+[0;32mI (176) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (184) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 2F00F340 len 0006BC70 (431 KiB): RAM[0m
+[0;32mI (203) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (209) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (215) spi_flash: detected chip: generic[0m
+[0;32mI (217) spi_flash: flash io: dio[0m
+[0;32mI (221) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (227) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (233) coexist: coex firmware version: a830d28[0m
+[0;32mI (238) coexist: coexist rom version cdcf52b[0m
+[0;32mI (242) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (262) sys03c: SYS-03C queue IPC start: tx_period=1000 us queue_length=64[0m
+[0;32mI (262) sys03c: TX task started on core=0[0m
+[0;32mI (262) sys03c: RX task started on core=1[0m
+[0;32mI (5262) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=4[0m
+[0;32mI (5272) sys03c: RX core=1 period=1000 us msgs=5005 gaps=0 latency_avg=9.85 us max=3765 throughput=1001.0 msg/s queue_max=3[0m
+[0;32mI (10262) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (10272) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.57 us max=5471 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (15272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (15272) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.57 us max=4543 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (20272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (20272) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.64 us max=5549 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (25272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (25272) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=12.98 us max=6550 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (30272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (30272) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=12.98 us max=6552 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (35272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=8[0m
+[0;32mI (35272) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=14.50 us max=7545 throughput=1000.0 msg/s queue_max=7[0m
+[0;32mI (40272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=8[0m
+[0;32mI (40272) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=14.49 us max=7552 throughput=1000.2 msg/s queue_max=7[0m
+[0;32mI (45272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=8[0m
+[0;32mI (45272) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=14.51 us max=7548 throughput=1000.2 msg/s queue_max=7[0m
+[0;32mI (50272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (50272) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=12.99 us max=6546 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (55272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=8[0m
+[0;32mI (55272) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=14.50 us max=7542 throughput=1000.2 msg/s queue_max=7[0m
+[0;32mI (60272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (60272) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=12.97 us max=6538 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (65272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (65272) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.01 us max=6552 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (70272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=8[0m
+[0;32mI (70272) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=14.46 us max=7549 throughput=1000.2 msg/s queue_max=7[0m
+[0;32mI (75272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=8[0m
+[0;32mI (75272) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=14.45 us max=7545 throughput=1000.0 msg/s queue_max=7[0m
+[0;32mI (80272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=8[0m
+[0;32mI (80282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=14.46 us max=7547 throughput=1000.2 msg/s queue_max=7[0m
+[0;32mI (85272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (85282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=12.96 us max=6551 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (90272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (90282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=12.95 us max=6545 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (95272) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (95282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.65 us max=5549 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (100272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (100282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.64 us max=5548 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (105272) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=5[0m
+[0;32mI (105282) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.69 us max=4712 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (110282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (110282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=10.71 us max=4723 throughput=1000.2 msg/s queue_max=4[0m
+[0;32mI (115282) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=5[0m
+[0;32mI (115282) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.71 us max=4726 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (120282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (120282) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.71 us max=4725 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (125282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (125282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.85 us max=5724 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (130282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (130282) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5724 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (135282) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (135282) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.21 us max=6721 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (140282) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (140282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6719 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (145282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (145282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.86 us max=5725 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (150282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (150282) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5727 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (155282) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (155282) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6719 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (160282) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (160292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.85 us max=5719 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (165282) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=5[0m
+[0;32mI (165292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=10.71 us max=4722 throughput=1000.2 msg/s queue_max=4[0m
+[0;32mI (170282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=4[0m
+[0;32mI (170292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=9.77 us max=3727 throughput=1000.0 msg/s queue_max=3[0m
+[0;32mI (175282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (175292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=10.61 us max=4636 throughput=1000.2 msg/s queue_max=4[0m
+[0;32mI (180282) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=5[0m
+[0;32mI (180292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.71 us max=4725 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (185282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (185292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=10.71 us max=4726 throughput=1000.2 msg/s queue_max=4[0m
+[0;32mI (190282) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (190292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.70 us max=4723 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (195282) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (195292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.85 us max=5712 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (200292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (200292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.70 us max=4722 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (205292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (205292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.85 us max=5719 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (210292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=5[0m
+[0;32mI (210292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.71 us max=4721 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (215292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (215292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.73 us max=4721 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (220292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (220292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.84 us max=5720 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (225292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (225292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6725 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (230292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (230292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.85 us max=5722 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (235292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (235292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.71 us max=4724 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (240292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (240292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.86 us max=5723 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (245292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (245292) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.71 us max=4725 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (250292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (250292) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.86 us max=5727 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (255292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (255302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.85 us max=5723 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (260292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (260302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.86 us max=5721 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (265292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (265302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.86 us max=5726 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (270292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (270302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.86 us max=5723 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (275292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (275302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.87 us max=5720 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (280292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (280302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.70 us max=4721 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (285292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (285302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.84 us max=5720 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (290292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (290302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.86 us max=5724 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (295292) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (295302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.69 us max=4720 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (300292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (300302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.87 us max=5723 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (305292) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=5[0m
+[0;32mI (305302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.69 us max=4724 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (310302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (310302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.72 us max=4721 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (315302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (315302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.86 us max=5720 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (320302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (320302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5716 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (325302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (325302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.18 us max=6718 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (330302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (330302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.19 us max=6716 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (335302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (335302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.18 us max=6718 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (340302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (340302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5724 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (345302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (345302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6717 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (350302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (350302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.86 us max=5722 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (355302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (355302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.86 us max=5718 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (360302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (360302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5724 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (365302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (365302) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.87 us max=5725 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (370302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (370302) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.86 us max=5725 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (375302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (375312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=10.71 us max=4722 throughput=1000.2 msg/s queue_max=4[0m
+[0;32mI (380302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=5[0m
+[0;32mI (380312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=10.71 us max=4723 throughput=1000.0 msg/s queue_max=4[0m
+[0;32mI (385302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (385312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.86 us max=5721 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (390302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (390312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5721 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (395302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (395312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.19 us max=6726 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (400302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (400312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.19 us max=6719 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (405302) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (405312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6723 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (410302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (410312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.19 us max=6718 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (415302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (415312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5719 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (420302) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (420312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5723 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (425312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (425312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5725 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (430312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (430312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.19 us max=6722 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (435312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (435312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5722 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (440312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (440312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.83 us max=5716 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (445312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (445312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.86 us max=5724 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (450312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (450312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.20 us max=6722 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (455312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (455312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.20 us max=6721 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (460312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (460312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6722 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (465312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (465312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.21 us max=6722 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (470312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (470312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.20 us max=6719 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (475312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (475312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.19 us max=6717 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (480312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (480312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5721 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (485312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (485312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.20 us max=6720 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (490312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (490312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.19 us max=6716 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (495312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (495312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.84 us max=5722 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (500312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=6[0m
+[0;32mI (500312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5725 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (505312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (505312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.87 us max=5721 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (510312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (510312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.20 us max=6720 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (515312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (515312) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.21 us max=6724 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (520312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=8[0m
+[0;32mI (520312) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=14.75 us max=7721 throughput=1000.2 msg/s queue_max=7[0m
+[0;32mI (525312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (525322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.22 us max=6724 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (530312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (530322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.86 us max=5726 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (535312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (535322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6725 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (540312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (540322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5724 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (545312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (545322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.21 us max=6719 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (550312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (550322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.21 us max=6722 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (555312) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (555322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.86 us max=5722 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (560312) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (560322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6720 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (565322) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (565322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5720 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (570322) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (570322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.17 us max=6712 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (575322) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (575322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.85 us max=5724 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (580322) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (580322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.84 us max=5725 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (585322) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (585322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.20 us max=6719 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (590322) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (590322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.19 us max=6720 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (595322) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (595322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6721 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (600322) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (600322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=11.86 us max=5725 throughput=1000.2 msg/s queue_max=5[0m
+[0;32mI (605322) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=6[0m
+[0;32mI (605322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=11.85 us max=5723 throughput=1000.0 msg/s queue_max=5[0m
+[0;32mI (610322) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (610322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.20 us max=6726 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (615322) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (615322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.19 us max=6719 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (620322) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (620322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.20 us max=6720 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (625322) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (625322) sys03c: RX core=1 period=1000 us msgs=5000 gaps=0 latency_avg=13.21 us max=6723 throughput=1000.0 msg/s queue_max=6[0m
+[0;32mI (630322) sys03c: TX core=0 period=1000 us attempts=5001 sent=5001 drop=0 drop_rate=0.000% rate=1000.2 msg/s queue_max=7[0m
+[0;32mI (630322) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.19 us max=6724 throughput=1000.2 msg/s queue_max=6[0m
+[0;32mI (635322) sys03c: TX core=0 period=1000 us attempts=5000 sent=5000 drop=0 drop_rate=0.000% rate=1000.0 msg/s queue_max=7[0m
+[0;32mI (635332) sys03c: RX core=1 period=1000 us msgs=5001 gaps=0 latency_avg=13.18 us max=6719 throughput=1000.2 msg/s queue_max=6[0m

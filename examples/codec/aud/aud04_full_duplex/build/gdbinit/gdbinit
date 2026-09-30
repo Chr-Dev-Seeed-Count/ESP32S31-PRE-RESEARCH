@@ -1,0 +1,2 @@
+source D:/ESP32S31/examples/codec/aud/aud04_full_duplex/build/gdbinit/symbols
+source D:/ESP32S31/examples/codec/aud/aud04_full_duplex/build/gdbinit/connect

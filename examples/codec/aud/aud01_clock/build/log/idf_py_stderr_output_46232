@@ -1,0 +1,14 @@
+Command: ninja flash
+
+A fatal error occurred: Could not open COM5, the port is busy or doesn't exist.
+(could not open port 'COM5': FileNotFoundError(2, '系统找不到指定的文件。', None, 2))
+
+Hint: Check if the port is correct and ESP connected
+
+CMake Error at D:/Espressif-master/.espressif/master/esp-idf/components/esptool_py/run_serial_tool.cmake:142 (message):
+  
+  D:/Espressif/python_env/idf6.2_py3.13_env/Scripts/python.exe;-m;esptool;--chip;esp32s31
+  failed.
+
+
+

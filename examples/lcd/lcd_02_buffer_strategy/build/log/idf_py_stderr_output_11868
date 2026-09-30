@@ -1,0 +1,17 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\lcd\lcd_02_buffer_strategy\build\lcd_02_buffer_strategy.elf D:\ESP32S31\examples\lcd\lcd_02_buffer_strategy\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a780: [0;33mvPortYield[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m694[0m
+[0m--- 0x2f00a776: [0;33mvPortYield[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m694[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x5000f60a: [0;33mlv_obj_get_style_space_bottom[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/managed_components/lvgl__lvgl/src/core/lv_obj_style.h[0m[0m:[1;31m366[0m
+[0m--- 0x5000f5fa: [0;33mlv_obj_get_style_border_side[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.h[0m[0m:[1;31m724[0m
+[0m--- (inlined by) [0;33mlv_obj_get_style_space_bottom[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/managed_components/lvgl__lvgl/src/core/lv_obj_style.h[0m[0m:[1;31m364[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m

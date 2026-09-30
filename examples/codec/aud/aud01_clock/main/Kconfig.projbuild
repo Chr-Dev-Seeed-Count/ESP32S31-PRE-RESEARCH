@@ -1,0 +1,16 @@
+menu "AUD-01 I2S clock baseline"
+
+config AUD01_SAMPLE_RATE
+    int "Sample rate (Hz)"
+    range 8000 192000
+    default 48000
+config AUD01_BLOCK_FRAMES
+    int "Application block size (frames)"
+    range 1 4096
+    default 480
+config AUD01_TEST_SECONDS
+    int "Test duration (seconds)"
+    range 1 86400
+    default 30
+
+endmenu

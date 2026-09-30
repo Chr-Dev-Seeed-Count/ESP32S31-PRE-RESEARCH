@@ -1,0 +1,857 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\lcd\lcd_06_jpeg_ui\build\lcd_06_jpeg_ui.elf D:\ESP32S31\examples\lcd\lcd_06_jpeg_ui\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fbc
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 15:48:59[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=50068020 size=12d24h ( 77092) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=00022d4c vaddr=2f000000 size=052cch ( 21196) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00028020 vaddr=50000020 size=64060h (409696) map[0m
+[0;32mI (177) esp_image: segment 3: paddr=0008c088 vaddr=2f0052cc size=09808h ( 38920) load[0m
+[0;32mI (186) esp_image: segment 4: paddr=00095898 vaddr=2f00eb00 size=04ef0h ( 20208) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (207) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (207) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (208) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (213) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (217) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (221) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (226) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (230) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (235) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (239) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (244) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (248) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (412) mmu_psram: .rodata xip on psram[0m
+[0;32mI (445) mmu_psram: .text xip on psram[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (766) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (774) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (775) cpu_start: Pro cpu start user code[0m
+[0;32mI (775) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (777) app_init: Application information:[0m
+[0;32mI (780) app_init: Project name:     lcd_06_jpeg_ui[0m
+[0;32mI (785) app_init: App version:      1[0m
+[0;32mI (788) app_init: Compile time:     Sep  4 2026 15:48:35[0m
+[0;32mI (793) app_init: ELF file SHA256:  b88a6ee95...[0m
+[0;32mI (798) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (802) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (806) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (810) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (814) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (820) heap_init: At 2F025600 len 000559B0 (342 KiB): RAM[0m
+[0;32mI (825) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (831) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (836) esp_psram: Adding pool of 15872K of PSRAM memory to heap allocator[0m
+[0;32mI (842) esp_psram: Adding pool of 15K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (854) esp_psram: Adding pool of 20K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (865) spi_flash: detected chip: generic[0m
+[0;32mI (868) spi_flash: flash io: dio[0m
+[0;33mW (871) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (884) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (890) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (897) main_task: Started on CPU0[0m
+[0;32mI (897) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (907) main_task: Calling app_main()[0m
+[0;32mI (927) lcd_perf: START demo=LCD-06 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=40 draw_double=0[0m
+[0;32mI (937) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (937) lcd_demo: JPEG decode time: 5706 us[0m
+[0;32mI (937) lcd_demo: READY test=6; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error[0m
+[0;32mI (947) main_task: Returned from app_main()[0m
+[0;32mI (2067) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (2067) lcd_demo: JPEG decode time: 5758 us[0m
+[0;32mI (3087) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (3087) lcd_demo: JPEG decode time: 5738 us[0m
+[0;32mI (4107) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (4107) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (5127) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (5127) lcd_demo: JPEG decode time: 5735 us[0m
+[0;32mI (5927) lcd_perf: PERF fps=28.79 flush_done=144 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (6147) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (6147) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (7167) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (7167) lcd_demo: JPEG decode time: 5734 us[0m
+[0;32mI (8187) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (8187) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (9207) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (9207) lcd_demo: JPEG decode time: 5723 us[0m
+[0;32mI (10227) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (10227) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (10927) lcd_perf: PERF fps=29.40 flush_done=291 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (11247) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (11247) lcd_demo: JPEG decode time: 5722 us[0m
+[0;32mI (12267) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (12267) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (13287) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (13287) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (14307) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (14307) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (15327) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (15327) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (15927) lcd_perf: PERF fps=29.40 flush_done=438 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (16347) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (16347) lcd_demo: JPEG decode time: 5746 us[0m
+[0;32mI (17367) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (17367) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (18387) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (18387) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (19407) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (19407) lcd_demo: JPEG decode time: 5729 us[0m
+[0;32mI (20427) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (20427) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (20927) lcd_perf: PERF fps=29.40 flush_done=585 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (21447) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (21447) lcd_demo: JPEG decode time: 5722 us[0m
+[0;32mI (22467) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (22467) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (23487) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (23487) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (24507) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (24507) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (25527) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (25527) lcd_demo: JPEG decode time: 5737 us[0m
+[0;32mI (25927) lcd_perf: PERF fps=29.40 flush_done=732 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (26547) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (26547) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (27567) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (27567) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (28587) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (28587) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (29607) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (29607) lcd_demo: JPEG decode time: 5726 us[0m
+[0;32mI (30627) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (30627) lcd_demo: JPEG decode time: 5724 us[0m
+[0;32mI (30927) lcd_perf: PERF fps=29.40 flush_done=879 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (31647) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (31647) lcd_demo: JPEG decode time: 5724 us[0m
+[0;32mI (32667) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (32667) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (33687) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (33687) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (34707) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (34707) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (35727) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (35727) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (35927) lcd_perf: PERF fps=29.40 flush_done=1026 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (36747) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (36747) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (37767) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (37767) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (38787) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (38787) lcd_demo: JPEG decode time: 5737 us[0m
+[0;32mI (39807) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (39807) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (40827) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (40827) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (40927) lcd_perf: PERF fps=29.58 flush_done=1174 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (41847) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (41847) lcd_demo: JPEG decode time: 5737 us[0m
+[0;32mI (42867) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (42867) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (43887) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (43887) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (44907) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (44907) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (45927) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (45927) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (45927) lcd_perf: PERF fps=29.40 flush_done=1321 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (46947) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (46947) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (47967) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (47967) lcd_demo: JPEG decode time: 5736 us[0m
+[0;32mI (48987) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (48987) lcd_demo: JPEG decode time: 5733 us[0m
+[0;32mI (50007) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (50007) lcd_demo: JPEG decode time: 5736 us[0m
+[0;32mI (50937) lcd_perf: PERF fps=29.36 flush_done=1468 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (51027) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (51027) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (52047) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (52047) lcd_demo: JPEG decode time: 5738 us[0m
+[0;32mI (53067) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (53067) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (54087) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (54087) lcd_demo: JPEG decode time: 5738 us[0m
+[0;32mI (55107) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (55107) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (55937) lcd_perf: PERF fps=29.40 flush_done=1615 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (56127) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (56127) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (57147) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (57147) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (58167) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (58167) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (59187) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (59187) lcd_demo: JPEG decode time: 5734 us[0m
+[0;32mI (60207) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (60207) lcd_demo: JPEG decode time: 5722 us[0m
+[0;32mI (60937) lcd_perf: PERF fps=29.40 flush_done=1762 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (61227) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (61227) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (62247) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (62247) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (63267) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (63267) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (64287) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (64287) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (65307) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (65307) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (65937) lcd_perf: PERF fps=29.40 flush_done=1909 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (66327) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (66327) lcd_demo: JPEG decode time: 5737 us[0m
+[0;32mI (67347) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (67347) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (68367) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (68367) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (69387) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (69387) lcd_demo: JPEG decode time: 5736 us[0m
+[0;32mI (70407) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (70407) lcd_demo: JPEG decode time: 5719 us[0m
+[0;32mI (70937) lcd_perf: PERF fps=29.40 flush_done=2056 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (71427) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (71427) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (72447) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (72447) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (73467) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (73467) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (74487) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (74487) lcd_demo: JPEG decode time: 5738 us[0m
+[0;32mI (75507) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (75507) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (75947) lcd_perf: PERF fps=29.34 flush_done=2203 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (76527) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (76527) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (77547) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (77547) lcd_demo: JPEG decode time: 5747 us[0m
+[0;32mI (78567) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (78567) lcd_demo: JPEG decode time: 5728 us[0m
+[0;32mI (79587) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (79587) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (80607) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (80607) lcd_demo: JPEG decode time: 5723 us[0m
+[0;32mI (80947) lcd_perf: PERF fps=29.60 flush_done=2351 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (81627) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (81627) lcd_demo: JPEG decode time: 5747 us[0m
+[0;32mI (82647) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (82647) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (83667) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (83667) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (84687) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (84687) lcd_demo: JPEG decode time: 5737 us[0m
+[0;32mI (85707) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (85707) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (85957) lcd_perf: PERF fps=29.34 flush_done=2498 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (86727) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (86727) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (87747) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (87747) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (88767) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (88767) lcd_demo: JPEG decode time: 5728 us[0m
+[0;32mI (89787) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (89787) lcd_demo: JPEG decode time: 5747 us[0m
+[0;32mI (90807) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (90807) lcd_demo: JPEG decode time: 5722 us[0m
+[0;32mI (90957) lcd_perf: PERF fps=29.40 flush_done=2645 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (91827) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (91827) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (92847) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (92847) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (93867) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (93867) lcd_demo: JPEG decode time: 5747 us[0m
+[0;32mI (94887) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (94887) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (95907) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (95907) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (95957) lcd_perf: PERF fps=29.40 flush_done=2792 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (96927) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (96927) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (97947) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (97947) lcd_demo: JPEG decode time: 5747 us[0m
+[0;32mI (98967) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (98967) lcd_demo: JPEG decode time: 5726 us[0m
+[0;32mI (99987) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (99987) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (100957) lcd_perf: PERF fps=29.40 flush_done=2939 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (101007) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (101007) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (102027) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (102027) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (103047) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (103047) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (104067) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (104067) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (105087) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (105087) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (105957) lcd_perf: PERF fps=29.40 flush_done=3086 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (106107) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (106107) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (107127) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (107127) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (108147) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (108147) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (109167) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (109167) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (110187) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (110187) lcd_demo: JPEG decode time: 5734 us[0m
+[0;32mI (110967) lcd_perf: PERF fps=29.34 flush_done=3233 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (111207) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (111207) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (112227) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (112227) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (113247) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (113247) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (114267) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (114267) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (115287) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (115287) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (115967) lcd_perf: PERF fps=29.60 flush_done=3381 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (116307) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (116307) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (117327) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (117327) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (118347) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (118347) lcd_demo: JPEG decode time: 5737 us[0m
+[0;32mI (119367) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (119367) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (120387) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (120387) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (120977) lcd_perf: PERF fps=29.34 flush_done=3528 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (121407) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (121407) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (122427) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (122427) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (123447) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (123447) lcd_demo: JPEG decode time: 5746 us[0m
+[0;32mI (124467) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (124467) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (125487) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (125487) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (125977) lcd_perf: PERF fps=29.40 flush_done=3675 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (126507) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (126507) lcd_demo: JPEG decode time: 5755 us[0m
+[0;32mI (127527) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (127527) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (128547) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (128547) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (129567) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (129567) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (130587) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (130587) lcd_demo: JPEG decode time: 5735 us[0m
+[0;32mI (130977) lcd_perf: PERF fps=29.40 flush_done=3822 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (131607) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (131607) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (132627) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (132627) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (133647) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (133647) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (134667) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (134667) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (135687) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (135687) lcd_demo: JPEG decode time: 5746 us[0m
+[0;32mI (135977) lcd_perf: PERF fps=29.40 flush_done=3969 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (136707) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (136707) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (137727) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (137727) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (138747) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (138747) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (139767) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (139767) lcd_demo: JPEG decode time: 5723 us[0m
+[0;32mI (140787) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (140787) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (140977) lcd_perf: PERF fps=29.40 flush_done=4116 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (141807) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (141807) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (142827) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (142827) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (143847) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (143847) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (144867) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (144867) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (145887) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (145887) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (145987) lcd_perf: PERF fps=29.34 flush_done=4263 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (146907) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (146907) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (147927) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (147927) lcd_demo: JPEG decode time: 5734 us[0m
+[0;32mI (148947) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (148947) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (149967) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (149967) lcd_demo: JPEG decode time: 5726 us[0m
+[0;32mI (150987) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (150987) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (150987) lcd_perf: PERF fps=29.59 flush_done=4411 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (152007) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (152007) lcd_demo: JPEG decode time: 5746 us[0m
+[0;32mI (153027) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (153027) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (154047) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (154047) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (155067) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (155067) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (155997) lcd_perf: PERF fps=29.35 flush_done=4558 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (156087) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (156087) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (157107) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (157107) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (158127) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (158127) lcd_demo: JPEG decode time: 5730 us[0m
+[0;32mI (159147) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (159147) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (160167) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (160167) lcd_demo: JPEG decode time: 5726 us[0m
+[0;32mI (160997) lcd_perf: PERF fps=29.40 flush_done=4705 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (161187) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (161187) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (162207) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (162207) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (163227) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (163227) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (164247) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (164247) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (165267) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (165267) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (165997) lcd_perf: PERF fps=29.40 flush_done=4852 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (166287) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (166287) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (167307) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (167307) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (168327) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (168327) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (169347) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (169347) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (170367) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (170367) lcd_demo: JPEG decode time: 5746 us[0m
+[0;32mI (170997) lcd_perf: PERF fps=29.40 flush_done=4999 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (171387) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (171387) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (172407) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (172407) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (173427) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (173427) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (174447) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (174447) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (175467) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (175467) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (175997) lcd_perf: PERF fps=29.40 flush_done=5146 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (176487) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (176487) lcd_demo: JPEG decode time: 5746 us[0m
+[0;32mI (177507) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (177507) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (178527) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (178527) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (179547) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (179547) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (180567) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (180567) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (181007) lcd_perf: PERF fps=29.34 flush_done=5293 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (181587) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (181587) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (182607) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (182607) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (183627) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (183627) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (184647) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (184647) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (185667) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (185667) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (186007) lcd_perf: PERF fps=29.60 flush_done=5441 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (186687) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (186687) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (187707) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (187707) lcd_demo: JPEG decode time: 5738 us[0m
+[0;32mI (188727) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (188727) lcd_demo: JPEG decode time: 5736 us[0m
+[0;32mI (189747) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (189747) lcd_demo: JPEG decode time: 5734 us[0m
+[0;32mI (190767) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (190767) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (191017) lcd_perf: PERF fps=29.34 flush_done=5588 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (191787) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (191787) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (192807) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (192807) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (193827) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (193827) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (194847) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (194847) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (195867) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (195867) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (196017) lcd_perf: PERF fps=29.40 flush_done=5735 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (196887) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (196887) lcd_demo: JPEG decode time: 5746 us[0m
+[0;32mI (197907) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (197907) lcd_demo: JPEG decode time: 5735 us[0m
+[0;32mI (198927) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (198927) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (199947) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (199947) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (200967) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (200967) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (201017) lcd_perf: PERF fps=29.40 flush_done=5882 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (201987) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (201987) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (203007) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (203007) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (204027) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (204027) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (205047) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (205047) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (206017) lcd_perf: PERF fps=29.40 flush_done=6029 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (206067) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (206067) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (207087) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (207087) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (208107) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (208107) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (209127) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (209127) lcd_demo: JPEG decode time: 5724 us[0m
+[0;32mI (210147) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (210147) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (211017) lcd_perf: PERF fps=29.40 flush_done=6176 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (211167) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (211167) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (212187) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (212187) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (213207) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (213207) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (214227) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (214227) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (215247) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (215247) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (216027) lcd_perf: PERF fps=29.34 flush_done=6323 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (216267) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (216267) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (217287) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (217287) lcd_demo: JPEG decode time: 5733 us[0m
+[0;32mI (218307) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (218307) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (219327) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (219327) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (220347) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (220347) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (221027) lcd_perf: PERF fps=29.60 flush_done=6471 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (221367) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (221367) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (222387) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (222387) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (223407) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (223407) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (224427) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (224427) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (225447) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (225447) lcd_demo: JPEG decode time: 5746 us[0m
+[0;32mI (226037) lcd_perf: PERF fps=29.34 flush_done=6618 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (226467) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (226467) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (227487) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (227487) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (228507) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (228507) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (229527) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (229527) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (230547) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (230547) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (231037) lcd_perf: PERF fps=29.40 flush_done=6765 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (231567) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (231567) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (232587) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (232587) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (233607) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (233607) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (234627) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (234627) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (235647) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (235647) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (236037) lcd_perf: PERF fps=29.40 flush_done=6912 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (236667) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (236667) lcd_demo: JPEG decode time: 5737 us[0m
+[0;32mI (237687) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (237687) lcd_demo: JPEG decode time: 5730 us[0m
+[0;32mI (238707) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (238707) lcd_demo: JPEG decode time: 5730 us[0m
+[0;32mI (239727) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (239727) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (240747) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (240747) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (241037) lcd_perf: PERF fps=29.40 flush_done=7059 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (241767) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (241767) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (242787) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (242787) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (243807) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (243807) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (244827) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (244827) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (245847) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (245847) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (246037) lcd_perf: PERF fps=29.40 flush_done=7206 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (246867) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (246867) lcd_demo: JPEG decode time: 5738 us[0m
+[0;32mI (247887) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (247887) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (248907) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (248907) lcd_demo: JPEG decode time: 5733 us[0m
+[0;32mI (249927) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (249927) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (250947) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (250947) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (251047) lcd_perf: PERF fps=29.34 flush_done=7353 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (251967) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (251967) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (252987) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (252987) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (254007) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (254007) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (255027) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (255027) lcd_demo: JPEG decode time: 5748 us[0m
+[0;32mI (256047) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (256047) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (256047) lcd_perf: PERF fps=29.59 flush_done=7501 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (257067) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (257067) lcd_demo: JPEG decode time: 5736 us[0m
+[0;32mI (258087) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (258087) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (259107) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (259107) lcd_demo: JPEG decode time: 5730 us[0m
+[0;32mI (260127) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (260127) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (261057) lcd_perf: PERF fps=29.35 flush_done=7648 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (261147) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (261147) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (262167) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (262167) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (263187) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (263187) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (264207) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (264207) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (265227) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (265227) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (266057) lcd_perf: PERF fps=29.40 flush_done=7795 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (266247) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (266247) lcd_demo: JPEG decode time: 5735 us[0m
+[0;32mI (267267) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (267267) lcd_demo: JPEG decode time: 5736 us[0m
+[0;32mI (268287) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (268287) lcd_demo: JPEG decode time: 5721 us[0m
+[0;32mI (269307) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (269307) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (270327) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (270327) lcd_demo: JPEG decode time: 5747 us[0m
+[0;32mI (271057) lcd_perf: PERF fps=29.40 flush_done=7942 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (271347) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (271347) lcd_demo: JPEG decode time: 5755 us[0m
+[0;32mI (272367) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (272367) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (273387) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (273387) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (274407) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (274407) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (275427) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (275427) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (276057) lcd_perf: PERF fps=29.40 flush_done=8089 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (276447) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (276447) lcd_demo: JPEG decode time: 5734 us[0m
+[0;32mI (277467) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (277467) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (278487) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (278487) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (279507) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (279507) lcd_demo: JPEG decode time: 5755 us[0m
+[0;32mI (280527) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (280527) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (281057) lcd_perf: PERF fps=29.40 flush_done=8236 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (281547) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (281547) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (282567) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (282567) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (283587) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (283587) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (284607) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (284607) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (285627) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (285627) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (286067) lcd_perf: PERF fps=29.34 flush_done=8383 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (286647) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (286647) lcd_demo: JPEG decode time: 5730 us[0m
+[0;32mI (287667) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (287667) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (288687) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (288687) lcd_demo: JPEG decode time: 5727 us[0m
+[0;32mI (289707) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (289707) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (290727) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (290727) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (291067) lcd_perf: PERF fps=29.60 flush_done=8531 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (291747) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (291747) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (292767) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (292767) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (293787) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (293787) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (294807) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (294807) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (295827) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (295827) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (296077) lcd_perf: PERF fps=29.34 flush_done=8678 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (296847) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (296847) lcd_demo: JPEG decode time: 5734 us[0m
+[0;32mI (297867) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (297867) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (298887) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (298887) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (299907) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (299907) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (300927) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (300927) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (301077) lcd_perf: PERF fps=29.40 flush_done=8825 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (301947) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (301947) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (302967) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (302967) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (303987) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (303987) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (305007) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (305007) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (306027) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (306027) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (306077) lcd_perf: PERF fps=29.40 flush_done=8972 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (307047) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (307047) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (308067) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (308067) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (309087) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (309087) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (310107) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (310107) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (311077) lcd_perf: PERF fps=29.40 flush_done=9119 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (311127) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (311127) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (312147) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (312147) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (313167) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (313167) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (314187) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (314187) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (315207) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (315207) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (316077) lcd_perf: PERF fps=29.40 flush_done=9266 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (316227) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (316227) lcd_demo: JPEG decode time: 5738 us[0m
+[0;32mI (317247) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (317247) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (318267) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (318267) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (319287) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (319287) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (320307) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (320307) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (321087) lcd_perf: PERF fps=29.34 flush_done=9413 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (321327) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (321327) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (322347) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (322347) lcd_demo: JPEG decode time: 5757 us[0m
+[0;32mI (323367) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (323367) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (324387) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (324387) lcd_demo: JPEG decode time: 5755 us[0m
+[0;32mI (325407) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (325407) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (326087) lcd_perf: PERF fps=29.60 flush_done=9561 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (326427) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (326427) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (327447) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (327447) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (328467) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (328467) lcd_demo: JPEG decode time: 5729 us[0m
+[0;32mI (329487) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (329487) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (330507) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (330507) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (331097) lcd_perf: PERF fps=29.34 flush_done=9708 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (331527) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (331527) lcd_demo: JPEG decode time: 5743 us[0m
+[0;32mI (332547) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (332547) lcd_demo: JPEG decode time: 5753 us[0m
+[0;32mI (333567) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (333567) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (334587) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (334587) lcd_demo: JPEG decode time: 5755 us[0m
+[0;32mI (335607) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (335607) lcd_demo: JPEG decode time: 5730 us[0m
+[0;32mI (336097) lcd_perf: PERF fps=29.40 flush_done=9855 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (336627) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (336627) lcd_demo: JPEG decode time: 5735 us[0m
+[0;32mI (337647) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (337647) lcd_demo: JPEG decode time: 5722 us[0m
+[0;32mI (338667) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (338667) lcd_demo: JPEG decode time: 5754 us[0m
+[0;32mI (339687) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (339687) lcd_demo: JPEG decode time: 5744 us[0m
+[0;32mI (340707) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (340707) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (341097) lcd_perf: PERF fps=29.40 flush_done=10002 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (341727) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (341727) lcd_demo: JPEG decode time: 5741 us[0m
+[0;32mI (342747) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (342747) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (343767) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (343767) lcd_demo: JPEG decode time: 5740 us[0m
+[0;32mI (344787) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (344787) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (345807) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (345807) lcd_demo: JPEG decode time: 5732 us[0m
+[0;32mI (346097) lcd_perf: PERF fps=29.40 flush_done=10149 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (346827) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (346827) lcd_demo: JPEG decode time: 5747 us[0m
+[0;32mI (347847) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (347847) lcd_demo: JPEG decode time: 5725 us[0m
+[0;32mI (348867) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (348867) lcd_demo: JPEG decode time: 5750 us[0m
+[0;32mI (349887) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (349887) lcd_demo: JPEG decode time: 5745 us[0m
+[0;32mI (350907) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (350907) lcd_demo: JPEG decode time: 5756 us[0m
+[0;32mI (351097) lcd_perf: PERF fps=29.40 flush_done=10296 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (351927) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (351927) lcd_demo: JPEG decode time: 5742 us[0m
+[0;32mI (352947) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (352947) lcd_demo: JPEG decode time: 5752 us[0m
+[0;32mI (353967) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (353967) lcd_demo: JPEG decode time: 5739 us[0m
+[0;32mI (354987) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (354987) lcd_demo: JPEG decode time: 5751 us[0m
+[0;32mI (356007) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (356007) lcd_demo: JPEG decode time: 5728 us[0m
+[0;32mI (356107) lcd_perf: PERF fps=29.34 flush_done=10443 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=370731 psram=14731888 min_heap=325064[0m
+[0;32mI (357017) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (357017) lcd_demo: JPEG decode time: 5749 us[0m
+[0;32mI (358037) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (358037) lcd_demo: JPEG decode time: 5733 us[0m
+[0;32mI (359057) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (359057) lcd_demo: JPEG decode time: 5731 us[0m
+[0;32mI (360077) lcd_demo: JPEG decoded 96x96 input=15223 output=18432[0m
+[0;32mI (360077) lcd_demo: JPEG decode time: 5748 us[0m

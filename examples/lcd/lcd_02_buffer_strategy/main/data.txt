@@ -1,0 +1,57 @@
+DRAW_BUF_LINES=40 DRAW_BUF_DOUBLE=n
+(892) lcd_perf: START demo=LCD-01 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=40 draw_double=0
+I (912) lcd_demo: READY test=1; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error
+I (912) main_task: Returned from app_main()
+I (5912) lcd_perf: PERF fps=339.40 flush_done=1704 avg_flush_us=3760 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (10912) lcd_perf: PERF fps=343.20 flush_done=3420 avg_flush_us=3720 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (15912) lcd_perf: PERF fps=343.20 flush_done=5136 avg_flush_us=3706 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (20922) lcd_perf: PERF fps=343.05 flush_done=6852 avg_flush_us=3700 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (25922) lcd_perf: PERF fps=342.88 flush_done=8568 avg_flush_us=3695 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (30922) lcd_perf: PERF fps=343.20 flush_done=10284 avg_flush_us=3693 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (35922) lcd_perf: PERF fps=343.20 flush_done=12000 avg_flush_us=3691 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (40942) lcd_perf: PERF fps=344.06 flush_done=13728 avg_flush_us=3689 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (45952) lcd_perf: PERF fps=343.00 flush_done=15444 avg_flush_us=3688 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (50952) lcd_perf: PERF fps=343.20 flush_done=17160 avg_flush_us=3687 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (55962) lcd_perf: PERF fps=342.20 flush_done=18876 avg_flush_us=3686 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (60962) lcd_perf: PERF fps=343.20 flush_done=20592 avg_flush_us=3686 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (65972) lcd_perf: PERF fps=342.52 flush_done=22308 avg_flush_us=3686 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+I (70972) lcd_perf: PERF fps=343.20 flush_done=24024 avg_flush_us=3685 max_flush_us=101187 flush_err=0 heap=312707 psram=15611676 min_heap=276472
+
+
+DRAW_BUF_LINES=80 DRAW_BUF_DOUBLE=n
+I (896) lcd_perf: START demo=LCD-01 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=80 draw_double=0
+I (916) lcd_demo: READY test=1; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error
+I (916) main_task: Returned from app_main()
+I (5896) lcd_perf: PERF fps=174.00 flush_done=870 avg_flush_us=7258 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (10916) lcd_perf: PERF fps=176.93 flush_done=1758 avg_flush_us=7178 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (15926) lcd_perf: PERF fps=176.10 flush_done=2640 avg_flush_us=7151 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (20926) lcd_perf: PERF fps=176.40 flush_done=3522 avg_flush_us=7138 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (25926) lcd_perf: PERF fps=176.40 flush_done=4404 avg_flush_us=7130 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (30946) lcd_perf: PERF fps=176.99 flush_done=5292 avg_flush_us=7125 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (35956) lcd_perf: PERF fps=175.95 flush_done=6174 avg_flush_us=7121 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (40976) lcd_perf: PERF fps=177.00 flush_done=7062 avg_flush_us=7119 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (45976) lcd_perf: PERF fps=176.30 flush_done=7944 avg_flush_us=7116 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (50976) lcd_perf: PERF fps=176.40 flush_done=8826 avg_flush_us=7115 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+I (55976) lcd_perf: PERF fps=176.40 flush_done=9708 avg_flush_us=7113 max_flush_us=105326 flush_err=0 heap=248195 psram=15611676 min_heap=211960
+
+DRAW_BUF_LINES=160 DRAW_BUF_DOUBLE=n
+I (896) lcd_perf: START demo=LCD-01 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=160 draw_double=0
+I (906) lcd_demo: READY test=1; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error
+I (916) main_task: Returned from app_main()
+I (5896) lcd_perf: PERF fps=87.00 flush_done=435 avg_flush_us=14403 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (10916) lcd_perf: PERF fps=88.50 flush_done=879 avg_flush_us=14249 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (15926) lcd_perf: PERF fps=88.02 flush_done=1320 avg_flush_us=14195 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (20926) lcd_perf: PERF fps=88.20 flush_done=1761 avg_flush_us=14171 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (25926) lcd_perf: PERF fps=88.20 flush_done=2202 avg_flush_us=14155 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (30946) lcd_perf: PERF fps=88.53 flush_done=2646 avg_flush_us=14145 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (35946) lcd_perf: PERF fps=88.12 flush_done=3087 avg_flush_us=14138 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (40946) lcd_perf: PERF fps=88.20 flush_done=3528 avg_flush_us=14133 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (45946) lcd_perf: PERF fps=88.20 flush_done=3969 avg_flush_us=14128 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (50946) lcd_perf: PERF fps=88.20 flush_done=4410 avg_flush_us=14125 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (55946) lcd_perf: PERF fps=88.20 flush_done=4851 avg_flush_us=14122 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (60946) lcd_perf: PERF fps=88.20 flush_done=5292 avg_flush_us=14120 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (65966) lcd_perf: PERF fps=88.52 flush_done=5736 avg_flush_us=14118 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (70966) lcd_perf: PERF fps=88.13 flush_done=6177 avg_flush_us=14116 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (75966) lcd_perf: PERF fps=88.20 flush_done=6618 avg_flush_us=14115 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (80966) lcd_perf: PERF fps=88.20 flush_done=7059 avg_flush_us=14113 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936
+I (85966) lcd_perf: PERF fps=88.20 flush_done=7500 avg_flush_us=14112 max_flush_us=109143 flush_err=0 heap=119171 psram=15611676 min_heap=82936

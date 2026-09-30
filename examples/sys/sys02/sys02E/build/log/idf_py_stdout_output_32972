@@ -1,0 +1,6 @@
+Command: ninja all
+[1/1240] Extracting error codes for ulp
+[2/1240] Generating project_elf_src_esp32s31.c
+[3/1240] Generating error code table for ulp
+[4/1240] Preprocessing linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/memory.ld.in -> D:/ESP32S31/examples/sys/sys02E/build/esp-idf/esp_system/ld/memory.ld
+[5/1240] Preprocessing linker script D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/ld/esp32s31/sections.ld.in -> D:/ESP32S31/examples/sys/sys02E/build/esp-idf/esp_system/ld/sections.ld.in

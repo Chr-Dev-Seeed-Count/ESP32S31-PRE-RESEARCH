@@ -1,0 +1,54 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\touch\tp03_concurrent_load\build\tp03_concurrent_load.elf D:\ESP32S31\examples\touch\tp03_concurrent_load\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x5005bd46: [0;33mlv_draw_sw_blend_color_to_rgb565[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c[0m[0m:[1;31m371[0m
+[0m--- 0x5005be3e: [0;33mlv_draw_sw_blend_color_to_rgb565[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c[0m[0m:[1;31m377[0m
+[0m--- 0x2f8220f6: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f82161e: [0;33msum[0m[0m in [0;32mROM[0m
+[0m--- 0x500f33c4: [0;33m__kernel_sin[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f82157e: [0;33m_rvfp__adddf3[0m[0m in [0;32mROM[0m
+[0m--- 0x500f3c0e: [0;33m__rem_pio2[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f809570: [0;33mmulti_heap_malloc_impl[0m[0m in [0;32mROM[0m
+[0m--- 0x2f00126a: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m228[0m
+[0m--- 0x2f80956e: [0;33mmulti_heap_malloc_impl[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x5002861a: [0;33mlv_area_move[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/misc/lv_area.c[0m[0m:[1;31m88[0m
+[0m--- 0x5004b6dc: [0;33mlv_draw_sw_blend[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend.c[0m[0m:[1;31m109[0m
+[0m--- 0x2f8220f6: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x5005bb9e: [0;33mlv_draw_sw_blend_color_to_rgb565[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c[0m[0m:[1;31m298[0m
+[0m--- 0x5005bb3c: [0;33mlv_draw_sw_blend_color_to_rgb565[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c[0m[0m:[1;31m260[0m
+[0m--- 0x2f8220f6: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x5001b84e: [0;33mget_prop_core[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/core/lv_obj_style.c[0m[0m:[1;31m847[0m
+[0m--- 0x5001b904: [0;33mget_selector_style_prop[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/core/lv_obj_style.c[0m[0m:[1;31m1199[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f00ddac: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- (inlined by) [0;33mvPortExitCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m585[0m
+[0m--- 0x500ff6f0: [0;33mvPortEnterCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h[0m[0m:[1;31m657[0m
+[0m--- (inlined by) [0;33mxQueueReceive[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1549[0m
+[0m--- 0x2f00d9de: [0;33mprocess_image_header[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/image_process.c[0m[0m:[1;31m126[0m
+[0m--- (inlined by) [0;33mimage_process[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/image_process.c[0m[0m:[1;31m235[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f821706: [0;33mdenormal_or_str_canc[0m[0m in [0;32mROM[0m
+[0m--- 0x500f3ba8: [0;33m__rem_pio2[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x5005bd36: [0;33mlv_draw_sw_blend_color_to_rgb565[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c[0m[0m:[1;31m375[0m
+[0m--- 0x5005be3e: [0;33mlv_draw_sw_blend_color_to_rgb565[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c[0m[0m:[1;31m377[0m
+[0m--- 0x2f8220f6: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x5002bb10: [0;33mlv_memset[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/stdlib/clib/lv_string_clib.c[0m[0m:[1;31m45[0m
+[0m--- 0x500428de: [0;33mlv_draw_sw_fill[0m[0m at [0;32mD:/ESP32S31/examples/touch/tp03_concurrent_load/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_fill.c[0m[0m:[1;31m163[0m
+[0m--- 0x2f8220f6: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x2f800b0c: [0;33m__call_dfu_updater_end[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m

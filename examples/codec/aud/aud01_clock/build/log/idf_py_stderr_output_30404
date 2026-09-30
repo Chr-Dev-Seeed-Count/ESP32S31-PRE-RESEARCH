@@ -1,0 +1,31 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\codec\aud\aud01_clock\build\aud01_clock.elf D:\ESP32S31\examples\codec\aud\aud01_clock\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f81b5d8: [0;33m__clzsi2[0m[0m in [0;32mROM[0m
+[0m--- 0x2f820362: [0;33m__floatunsidf[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f009038: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- (inlined by) [0;33mvPortExitCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m585[0m
+[0m--- 0x4002746c: [0;33mxQueueGenericSend[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1168[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f009038: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- (inlined by) [0;33mvPortExitCriticalMultiCore[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m585[0m
+[0m--- 0x40027922: [0;33mxQueueSemaphoreTake[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1963[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f81fd8a: [0;33m__subdf3[0m[0m in [0;32mROM[0m
+[0m--- 0x2f81cd5c: [0;33m__fixunssfdi[0m[0m in [0;32mROM[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4001f09e: [0;33m_sinf[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4000b2e8: [0;33mmake_tone[0m[0m at [0;32mD:/ESP32S31/examples/codec/aud/aud01_clock/main/app_main.c[0m[0m:[1;31m21[0m
+[0m--- (inlined by) [0;33mapp_main[0m[0m at [0;32mD:/ESP32S31/examples/codec/aud/aud01_clock/main/app_main.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4000b626: [0;33mapp_main[0m[0m at [0;32mD:/ESP32S31/examples/codec/aud/aud01_clock/main/app_main.c[0m[0m:[1;31m67[0m
+[0m--- 0x4000b35a: [0;33mapp_main[0m[0m at [0;32mD:/ESP32S31/examples/codec/aud/aud01_clock/main/app_main.c[0m[0m:[1;31m64[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m

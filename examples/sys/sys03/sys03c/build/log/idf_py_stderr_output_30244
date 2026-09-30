@@ -1,0 +1,27 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\sys\sys03\sys03c\build\sys03c.elf D:\ESP32S31\examples\sys\sys03\sys03c\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File [35m"D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py"[0m, line [35m11[0m, in [35m<module>[0m
+    sys.exit([31msubprocess.run[0m[1;31m([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:])[0m.returncode)
+             [31m~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\EDY\AppData\Local\Programs\Python\Python313\Lib\subprocess.py"[0m, line [35m556[0m, in [35mrun[0m
+    stdout, stderr = [31mprocess.communicate[0m[1;31m(input, timeout=timeout)[0m
+                     [31m~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\EDY\AppData\Local\Programs\Python\Python313\Lib\subprocess.py"[0m, line [35m1214[0m, in [35mcommunicate[0m
+    [31mself.wait[0m[1;31m()[0m
+    [31m~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"C:\Users\EDY\AppData\Local\Programs\Python\Python313\Lib\subprocess.py"[0m, line [35m1280[0m, in [35mwait[0m
+    return [31mself._wait[0m[1;31m(timeout=timeout)[0m
+           [31m~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\EDY\AppData\Local\Programs\Python\Python313\Lib\subprocess.py"[0m, line [35m1606[0m, in [35m_wait[0m
+    result = _winapi.WaitForSingleObject(self._handle,
+                                         timeout_millis)
+[1;35mKeyboardInterrupt[0m

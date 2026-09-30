@@ -1,0 +1,361 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\touch\tp03_concurrent_load\build\tp03_concurrent_load.elf D:\ESP32S31\examples\touch\tp03_concurrent_load\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x1840
+load:0x2f06a2b0,len:0xd98
+load:0x2f06cfb0,len:0x308c
+entry 0x2f06a2ba
+[0;32mI (26) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  7 2026 18:01:30[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot: efuse block revision: v0.0[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32s31: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (82) boot:  3 storage          Unknown data     01 82 00310000 00c00000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=50110020 size=2c74ch (182092) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0003c774 vaddr=2e000000 size=00024h (    36) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0003c7a0 vaddr=2f000000 size=03878h ( 14456) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00040020 vaddr=50000020 size=101f60h (1056608) map[0m
+[0;32mI (309) esp_image: segment 4: paddr=00141f88 vaddr=2f003878 size=12d60h ( 77152) load[0m
+[0;32mI (325) esp_image: segment 5: paddr=00154cf0 vaddr=2f016600 size=06400h ( 25600) load[0m
+[0;32mI (337) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (337) boot: Disabling RNG early entropy source...[0m
+[0;32mI (348) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (348) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (349) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (349) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (354) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (359) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (363) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (368) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (372) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (376) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (381) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (386) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (390) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (552) mmu_psram: .rodata xip on psram[0m
+[0;32mI (609) mmu_psram: .text xip on psram[0m
+[0;32mI (609) cpu_start: Multicore app[0m
+[0;32mI (874) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (883) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (883) cpu_start: Pro cpu start user code[0m
+[0;32mI (883) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (885) app_init: Application information:[0m
+[0;32mI (889) app_init: Project name:     tp03_concurrent_load[0m
+[0;32mI (894) app_init: App version:      1[0m
+[0;32mI (897) app_init: Compile time:     Sep  7 2026 18:01:49[0m
+[0;32mI (902) app_init: ELF file SHA256:  f1a6144ba...[0m
+[0;32mI (906) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (911) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (915) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (919) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (923) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (929) heap_init: At 2F023DA0 len 00057210 (348 KiB): RAM[0m
+[0;32mI (934) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (939) heap_init: At 2E000024 len 00007FC4 (31 KiB): RTCRAM[0m
+[0;32mI (945) esp_psram: Adding pool of 15104K of PSRAM memory to heap allocator[0m
+[0;32mI (951) esp_psram: Adding pool of 56K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (962) esp_psram: Adding pool of 14K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (974) spi_flash: detected chip: generic[0m
+[0;32mI (977) spi_flash: flash io: qio[0m
+[0;32mI (980) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (987) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (993) main_task: Started on CPU0[0m
+[0;32mI (996) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1004) main_task: Calling app_main()[0m
+[0;32mI (1007) LVGL: Starting LVGL task[0m
+[0;32mI (1010) ESP32-S31-Korvo-1: Initialize RGB panel[0m
+[0;32mI (1030) ESP32-S31-Korvo-1: Display initialized with resolution 800x480[0m
+[0;32mI (1045) gt1151: IC version: GT1158_000101(Patch)_0102(Mask)_00(SensorID)[0m
+[0;33mW (1056) ESP32-S31-Korvo-1: This board doesn't support to change brightness of LCD[0m
+[0;32mI (1146) pp: pp rom version: 395df10[0m
+[0;32mI (1146) net80211: net80211 rom version: 395df10[0m
+[0;32mI (1199) wifi:wifi driver task: 2f04756c, prio:23, stack:6656, core=0[0m
+[0;32mI (1204) wifi:wifi firmware version: b1875ae[0m
+[0;32mI (1204) wifi:wifi certification version: v7.0[0m
+[0;32mI (1204) wifi:config NVS flash: enabled[0m
+[0;32mI (1206) wifi:config nano formatting: disabled[0m
+[0;32mI (1211) wifi:mac_version:HAL_MAC_ESP32AX_764,ut_version:N, band mode:0x1[0m
+[0;32mI (1217) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1222) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1226) wifi:Init management short buffer num: 32[0m
+[0;32mI (1231) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1235) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1239) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (1245) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1249) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1253) wifi_init: rx ba win: 6[0m
+[0;32mI (1255) wifi_init: accept mbox: 6[0m
+[0;32mI (1259) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1262) wifi_init: udp mbox: 6[0m
+[0;32mI (1265) wifi_init: tcp mbox: 6[0m
+[0;32mI (1267) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1271) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1274) wifi_init: tcp mss: 1440[0m
+[0;32mI (1277) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1281) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1287) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (1341) phy_init: phy_version 100,dd4c590,Jul 14 2026,10:33:03[0m
+[0;33mW (1434) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (1434) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (1434) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (1438) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (1443) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (1448) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (1453) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (1459) wifi:(phy)rate:0x8(    48Mbps), pwr:18, txing:18[0m
+[0;33mW (1464) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (1469) wifi:(phy)rate:0xa(    12Mbps), pwr:20, txing:20[0m
+[0;33mW (1474) wifi:(phy)rate:0xb(     6Mbps), pwr:20, txing:20[0m
+[0;33mW (1479) wifi:(phy)rate:0xc(    54Mbps), pwr:18, txing:18[0m
+[0;33mW (1484) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (1489) wifi:(phy)rate:0xe(    18Mbps), pwr:20, txing:20[0m
+[0;33mW (1494) wifi:(phy)rate:0xf(     9Mbps), pwr:20, txing:20[0m
+[0;33mW (1500) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:20, bw40:19), txing:20[0m
+[0;33mW (1506) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:20, bw40:19), txing:20[0m
+[0;33mW (1512) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:20, bw40:19), txing:20[0m
+[0;33mW (1518) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:20, bw40:19), txing:20[0m
+[0;33mW (1525) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:19, bw40:18), txing:19[0m
+[0;33mW (1531) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:19, bw40:18), txing:19[0m
+[0;33mW (1537) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:18, bw40:17), txing:18[0m
+[0;33mW (1543) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:18, bw40:17), txing:18[0m
+[0;33mW (1550) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:16, bw40:16), txing:16[0m
+[0;33mW (1556) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:15, bw40:15), txing:15[0m
+[0;32mI (1562) wifi:11ax coex: WDEVAX_PTI0(0x04000000), WDEVAX_PTI1(0x0000a0cc).[0m
+
+[0;32mI (1569) wifi:mode : sta (30:ed:a0:f3:d9:34)[0m
+[0;32mI (1573) wifi:enable tsf[0m
+[0;32mI (1576) tp03: Wi-Fi stack started (no AP credentials; control-plane load only)[0m
+[0;32mI (1583) tp03: Camera start: ESP_OK[0m
+[0;33mW (1636) i2s_common: the rx channel on I2S1 is switched from master to slave for full-duplex mode[0m
+[0;32mI (1638) tp03: TP-03 starts LCD/LVGL + Wi-Fi + camera init + speaker + PSRAM load for 60 s[0m
+[0;32mI (1642) main_task: Returned from app_main()[0m
+[0;32mI (1730) ES8389: Work in Slave mode[0m
+[0;32mI (1734) ES8389: Set internal reference signal[0m
+[0;32mI (1740) I2S_IF: Paired data: 0x2f05410c, current mode: playback, paired in_enable: 0, paired out_enable: 0[0m
+[0;32mI (1740) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (1757) I2S_IF: STD: TX, sample_rate_hz: 48000, mclk_multiple: 384, clk_src: 18[0m
+[0;32mI (1782) Adev_Codec: Open codec device OK[0m
+[0;32mI (6666) tp03: PERF: t=5007ms touch_pressed_samples=0lock_misses=178poll_gap_max=23411us ui_ticks=74psram_copies=190audio_frames=125280heap_int=222935 heap_psram=13602436[0m
+[1;31mE (6798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (6798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (6798) task_wdt: Tasks currently running:[0m
+[1;31mE (6798) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (6798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (6798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x5005bd46  RA      : 0x5005be3e  SP      : 0x2f07c470  GP      : 0x2f016e08  
+TP      : 0x2f07d040  T0      : 0x2f8220f6  T1      : 0x00000137  T2      : 0x000000fc  
+S0/FP   : 0x0000e71c  S1      : 0x50220fb0  A0      : 0x0000ffff  A1      : 0x0000ffff  
+A2      : 0x00000000  A3      : 0x07e0f81f  A4      : 0x07c0f01e  A5      : 0x00000000  
+A6      : 0x00000030  A7      : 0x00010000  S2      : 0x2f04f028  S3      : 0x00000030  
+S4      : 0x00000032  S5      : 0x00000000  S6      : 0x00000640  S7      : 0x50220f8c  
+S8      : 0x50220ff0  S9      : 0x00000000  S10     : 0x0000ffff  S11     : 0x2f04f03a  
+T3      : 0x00000106  T4      : 0x2f04f05a  T5      : 0xffffffff  T6      : 0x000000ff  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (11686) tp03: PERF: t=10027ms touch_pressed_samples=20lock_misses=352poll_gap_max=150793us ui_ticks=137psram_copies=395audio_frames=234720heap_int=222895 heap_psram=13602436[0m
+[1;31mE (11798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (11798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (11798) task_wdt: Tasks currently running:[0m
+[1;31mE (11798) task_wdt: CPU 0: tp03_audio[0m
+[1;31mE (11798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (11798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f82161e  RA      : 0x500f33c4  SP      : 0x2f0508a0  GP      : 0x2f016e08  
+TP      : 0x2f051110  T0      : 0x0000002a  T1      : 0x00000001  T2      : 0x00000200  
+S0/FP   : 0x3fbacee9  S1      : 0xf37b5477  A0      : 0xc7866976  A1      : 0xffebef92  
+A2      : 0x20126e20  A3      : 0x0011964e  A4      : 0x78936ebc  A5      : 0x001fffff  
+A6      : 0x000003ed  A7      : 0x80000000  S2      : 0x1675a611  S3      : 0x3f867576  
+S4      : 0x4c968754  S5      : 0x3f52d0a8  S6      : 0x1333fd9a  S7      : 0x3f810fed  
+S8      : 0x20126e20  S9      : 0x3c51964e  S10     : 0x20126e20  S11     : 0x3c41964e  
+T3      : 0x08076c88  T4      : 0xb7bbb000  T5      : 0x00000000  T6      : 0x00007000  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (16706) tp03: PERF: t=15048ms touch_pressed_samples=81lock_misses=527poll_gap_max=150793us ui_ticks=195psram_copies=627audio_frames=287520heap_int=222651 heap_psram=13602436[0m
+[1;31mE (16798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (16798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (16798) task_wdt: Tasks currently running:[0m
+[1;31mE (16798) task_wdt: CPU 0: tp03_audio[0m
+[1;31mE (16798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (16798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f82157e  RA      : 0x500f3c0e  SP      : 0x2f050870  GP      : 0x2f016e08  
+TP      : 0x2f051110  T0      : 0x00000011  T1      : 0x00000000  T2      : 0x00000200  
+S0/FP   : 0x2f0508f0  S1      : 0x40d039f1  A0      : 0x76b40000  A1      : 0xbfbc2604  
+A2      : 0x3fa9514f  A3      : 0x3fbc260f  A4      : 0x4b000000  A5      : 0xffe00000  
+A6      : 0x3fa00000  A7      : 0x80000000  S2      : 0x40c4a900  S3      : 0x00000000  
+S4      : 0xbfbc2604  S5      : 0x76b40000  S6      : 0xa29e9600  S7      : 0x3ea591ea  
+S8      : 0x0000040d  S9      : 0x00002952  S10     : 0x3fa9514f  S11     : 0xbfbc260f  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x0000a29a  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (21721) tp03: PERF: t=20062ms touch_pressed_samples=81lock_misses=702poll_gap_max=150793us ui_ticks=253psram_copies=860audio_frames=340320heap_int=222651 heap_psram=13602436[0m
+[1;31mE (21798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (21798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (21798) task_wdt: Tasks currently running:[0m
+[1;31mE (21798) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (21798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (21798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f809570  RA      : 0x2f00126a  SP      : 0x2f07c610  GP      : 0x2f016e08  
+TP      : 0x2f07d040  T0      : 0x2f80956e  T1      : 0xfffffff0  T2      : 0x00ff0000  
+S0/FP   : 0x2f024490  S1      : 0x2f024000  A0      : 0x2f023da0  A1      : 0x000000c0  
+A2      : 0x00000004  A3      : 0x00000000  A4      : 0x00001800  A5      : 0x00001800  
+A6      : 0x00000000  A7      : 0x01000000  S2      : 0x00000003  S3      : 0x00000004  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x000000c0  S7      : 0x0000004c  
+S8      : 0x00000000  S9      : 0x000000ff  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x80000000  T4      : 0x00000009  T5      : 0x00010000  T6      : 0x2f07e3a8  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (26736) tp03: PERF: t=25077ms touch_pressed_samples=81lock_misses=877poll_gap_max=150793us ui_ticks=311psram_copies=1093audio_frames=394560heap_int=222687 heap_psram=13602436[0m
+[1;31mE (26798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (26798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (26798) task_wdt: Tasks currently running:[0m
+[1;31mE (26798) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (26798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (26798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x5002861a  RA      : 0x5004b6dc  SP      : 0x2f07c4f0  GP      : 0x2f016e08  
+TP      : 0x2f07d040  T0      : 0x2f8220f6  T1      : 0x000001ca  T2      : 0x000000fc  
+S0/FP   : 0x2f07c5f4  S1      : 0x2f026b48  A0      : 0x2f07c530  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x000001ca  A4      : 0x00000196  A5      : 0x00000196  
+A6      : 0x0000019b  A7      : 0x0000019b  S2      : 0x00000640  S3      : 0x00000001  
+S4      : 0x0000017b  S5      : 0x0000000a  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x000000fc  S9      : 0x2f02697c  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x0000019b  T4      : 0x2f026977  T5      : 0x00000004  T6      : 0x000000ff  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (31749) tp03: PERF: t=30089ms touch_pressed_samples=81lock_misses=1051poll_gap_max=150793us ui_ticks=369psram_copies=1326audio_frames=449280heap_int=222743 heap_psram=13602436[0m
+[1;31mE (31798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (31798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (31798) task_wdt: Tasks currently running:[0m
+[1;31mE (31798) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (31798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (31798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x5005bb9e  RA      : 0x5005bb3c  SP      : 0x2f07c720  GP      : 0x2f016e08  
+TP      : 0x2f07d040  T0      : 0x2f8220f6  T1      : 0x0000031f  T2      : 0x00ff0000  
+S0/FP   : 0x0000f7be  S1      : 0x000000ff  A0      : 0x000001d2  A1      : 0x502b28a0  
+A2      : 0x502b28c0  A3      : 0x502b2262  A4      : 0xf7bef7be  A5      : 0x502b26c0  
+A6      : 0x00000310  A7      : 0x00000640  S2      : 0x00000000  S3      : 0x2f07c794  
+S4      : 0x00000320  S5      : 0x000001e0  S6      : 0x00000000  S7      : 0x502b2280  
+S8      : 0x2f07dc30  S9      : 0x000000ff  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x0002ff00  T5      : 0x00000000  T6      : 0x2f07e3ec  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (36761) tp03: PERF: t=35102ms touch_pressed_samples=81lock_misses=1226poll_gap_max=150793us ui_ticks=427psram_copies=1559audio_frames=501120heap_int=222651 heap_psram=13602436[0m
+[1;31mE (36798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (36798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (36798) task_wdt: Tasks currently running:[0m
+[1;31mE (36798) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (36798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (36798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x5001b84e  RA      : 0x5001b904  SP      : 0x2f07cd30  GP      : 0x2f016e08  
+TP      : 0x2f07d040  T0      : 0x04000000  T1      : 0x2f07f0ec  T2      : 0x00ff0000  
+S0/FP   : 0x000000ff  S1      : 0xffffffff  A0      : 0x00000004  A1      : 0x00000000  
+A2      : 0x00000023  A3      : 0x2f07cd68  A4      : 0x40000000  A5      : 0x00000000  
+A6      : 0x2f07f0c8  A7      : 0x01000000  S2      : 0x00000000  S3      : 0x2f07cd68  
+S4      : 0x00000030  S5      : 0x00000003  S6      : 0x2f01e000  S7      : 0xffffffe1  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000100  T4      : 0x00010000  T5      : 0x00000000  T6      : 0x2f041a94  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (41773) tp03: PERF: t=40114ms touch_pressed_samples=81lock_misses=1400poll_gap_max=150793us ui_ticks=485psram_copies=1792audio_frames=554400heap_int=222899 heap_psram=13602436[0m
+[1;31mE (41798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (41798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (41798) task_wdt: Tasks currently running:[0m
+[1;31mE (41798) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (41798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (41798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f00ddac  RA      : 0x500ff6f0  SP      : 0x2f07cc60  GP      : 0x2f016e08  
+TP      : 0x2f07d040  T0      : 0x00000000  T1      : 0x2f00d9de  T2      : 0x00000000  
+S0/FP   : 0x5013cfd8  S1      : 0x00000001  A0      : 0x5013cfd8  A1      : 0x20586014  
+A2      : 0x20586010  A3      : 0x2f023ab8  A4      : 0x00000000  A5      : 0x0000001f  
+A6      : 0x2f01cd54  A7      : 0x00009f65  S2      : 0x5013cf84  S3      : 0x5013ce84  
+S4      : 0x2f07ccbc  S5      : 0x5013ce84  S6      : 0x0000000a  S7      : 0x00009f4c  
+S8      : 0x5013ce84  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0xffffe01f  T4      : 0x00000011  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (46789) tp03: PERF: t=45129ms touch_pressed_samples=81lock_misses=1575poll_gap_max=150793us ui_ticks=543psram_copies=2024audio_frames=607680heap_int=222687 heap_psram=13602436[0m
+[1;31mE (46798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (46798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (46798) task_wdt: Tasks currently running:[0m
+[1;31mE (46798) task_wdt: CPU 0: tp03_audio[0m
+[1;31mE (46798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (46798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x2f821706  RA      : 0x500f3ba8  SP      : 0x2f050870  GP      : 0x2f016e08  
+TP      : 0x2f051110  T0      : 0x00000000  T1      : 0x00000020  T2      : 0x00000200  
+S0/FP   : 0x2f0508f0  S1      : 0x40e119bd  A0      : 0x00000000  A1      : 0x0000b888  
+A2      : 0x00000001  A3      : 0xffe94489  A4      : 0x00000020  A5      : 0x00100000  
+A6      : 0x000003e9  A7      : 0x00000000  S2      : 0x40d5c600  S3      : 0x00000000  
+S4      : 0xbfe1ed90  S5      : 0x03660000  S6      : 0x3eb6bb77  S7      : 0xa447a3bc  
+S8      : 0x0000040e  S9      : 0x00005718  S10     : 0x03660000  S11     : 0xbfe1ed90  
+T3      : 0x00000000  T4      : 0xce600000  T5      : 0x00000000  T6      : 0x000044d2  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (51798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (51798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (51798) task_wdt: Tasks currently running:[0m
+[1;31mE (51798) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (51798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (51798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x5005bd36  RA      : 0x5005be3e  SP      : 0x2f07c470  GP      : 0x2f016e08  
+TP      : 0x2f07d040  T0      : 0x2f8220f6  T1      : 0x00000112  T2      : 0x000000fc  
+S0/FP   : 0x0000e71c  S1      : 0x501b4c1e  A0      : 0x0000ffff  A1      : 0x0000ffff  
+A2      : 0x00000000  A3      : 0x07e0f81f  A4      : 0x07c0f01e  A5      : 0x0000df00  
+A6      : 0x00000030  A7      : 0x00010000  S2      : 0x2f02694c  S3      : 0x00000030  
+S4      : 0x00000032  S5      : 0x00000000  S6      : 0x00000640  S7      : 0x501b4bc2  
+S8      : 0x501b4c26  S9      : 0x00000000  S10     : 0x0000ffff  S11     : 0x2f02697a  
+T3      : 0x000000e1  T4      : 0x2f02697e  T5      : 0xffffffff  T6      : 0x000000ff  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (51899) tp03: PERF: t=50144ms touch_pressed_samples=81lock_misses=1750poll_gap_max=150793us ui_ticks=601psram_copies=2257audio_frames=658080heap_int=222651 heap_psram=13602436[0m
+[1;31mE (56798) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (56798) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (56798) task_wdt: Tasks currently running:[0m
+[1;31mE (56798) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (56798) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (56798) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x5002bb10  RA      : 0x500428de  SP      : 0x2f07c570  GP      : 0x2f016e08  
+TP      : 0x2f07d040  T0      : 0x2f8220f6  T1      : 0x2f800b0c  T2      : 0x000000fc  
+S0/FP   : 0x2f02694c  S1      : 0x00000000  A0      : 0x2f02694c  A1      : 0x000000ff  
+A2      : 0x00000030  A3      : 0x07e0f81f  A4      : 0x00000099  A5      : 0x00000001  
+A6      : 0x0000002e  A7      : 0x00010000  S2      : 0x000000ae  S3      : 0x00000001  
+S4      : 0x0000009f  S5      : 0x0000000a  S6      : 0x00000000  S7      : 0x00000030  
+S8      : 0x000000fc  S9      : 0x2f02697c  S10     : 0x00000000  S11     : 0x00000006  
+T3      : 0x0000005e  T4      : 0x2f02697c  T5      : 0xffffffff  T6      : 0x000000ff  
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (56897) tp03: PERF: t=55157ms touch_pressed_samples=81lock_misses=1924poll_gap_max=150793us ui_ticks=659psram_copies=2489audio_frames=708960heap_int=222651 heap_psram=13602436[0m

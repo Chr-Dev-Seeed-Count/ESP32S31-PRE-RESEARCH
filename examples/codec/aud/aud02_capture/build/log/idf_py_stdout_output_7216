@@ -1,0 +1,63 @@
+Command: ninja all
+[1/7] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\codec\aud\aud02_capture\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/codec/aud/aud02_capture/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[2/7] No install step for 'bootloader'
+[3/7] Completed 'bootloader'
+[4/7] Generating esp-idf/esp_system/ld/sections.ld
+FAILED: esp-idf/esp_system/ld/sections.ld D:/ESP32S31/examples/codec/aud/aud02_capture/build/esp-idf/esp_system/ld/sections.ld 
+C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\codec\aud\aud02_capture\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/tools/ldgen/ldgen.py --config D:/ESP32S31/examples/codec/aud/aud02_capture/sdkconfig --fragments-list-file D:/ESP32S31/examples/codec/aud/aud02_capture/build/ldgen_fragments --input D:/ESP32S31/examples/codec/aud/aud02_capture/build/esp-idf/esp_system/ld/sections.ld.in --output D:/ESP32S31/examples/codec/aud/aud02_capture/build/esp-idf/esp_system/ld/sections.ld --kconfig D:/Espressif-master/.espressif/master/esp-idf/Kconfig --env-file D:/ESP32S31/examples/codec/aud/aud02_capture/build/config.env --libraries-file D:/ESP32S31/examples/codec/aud/aud02_capture/build/ldgen_libraries --objdump D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe"
+Traceback (most recent call last):
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\pyparsing\core.py", line 956, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, pre_loc, do_actions)
+                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\pyparsing\core.py", line 2751, in parseImpl
+    if instring[loc] == self.firstMatchChar and instring.startswith(
+       ~~~~~~~~^^^^^
+IndexError: string index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\entity.py", line 139, in add_sections_info
+    results = parser.parse_string(first_line, parse_all=True)
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\pyparsing\core.py", line 1346, in parse_string
+    raise exc.with_traceback(None)
+pyparsing.exceptions.ParseException: Expected 'In archive'  (at char 0), (line:1, col:1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen.py", line 378, in <module>
+    main()
+    ~~~~^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen.py", line 374, in main
+    cli()
+    ~~~^^
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\rich_click\rich_command.py", line 216, in main
+    rv = self.invoke(ctx)
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Espressif\python_env\idf6.2_py3.13_env\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen.py", line 354, in cli
+    _run(
+    ~~~~^
+        input_file=input_file,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        debug=debug,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen.py", line 188, in _run
+    sections_infos.add_sections_info(dump)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Espressif-master\.espressif\master\esp-idf\tools\ldgen\ldgen\entity.py", line 141, in add_sections_info
+    raise ParseException('Parsing sections info for library ' + sections_info_dump.name + ' failed. ' + p.msg)
+pyparsing.exceptions.ParseException: Parsing sections info for library D:/ESP32S31/examples/codec/aud/aud02_capture/build/esp-idf/esp_hal_sd/libesp_hal_sd.a failed. Expected 'In archive'  (at char 0), (line:1, col:1)
+ninja: build stopped: subcommand failed.

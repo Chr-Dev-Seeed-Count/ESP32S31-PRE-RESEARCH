@@ -1,0 +1,103 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\codec\aud\aud02_capture\build\aud02_capture.elf D:\ESP32S31\examples\codec\aud\aud02_capture\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fb8
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 17:55:53[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=40030020 size=0fd30h ( 64816) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001fd58 vaddr=2f000000 size=002c0h (   704) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=40000020 size=28400h (164864) map[0m
+[0;32mI (133) esp_image: segment 3: paddr=00048428 vaddr=2f0002c0 size=0d598h ( 54680) load[0m
+[0;32mI (145) esp_image: segment 4: paddr=000559c8 vaddr=2f00d880 size=035ach ( 13740) load[0m
+[0;32mI (153) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (153) boot: Disabling RNG early entropy source...[0m
+[0;32mI (164) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (164) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (165) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (166) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (170) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (175) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (179) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (184) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (188) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (192) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (197) oct_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (202) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (206) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (361) esp_psram: Found 16MB PSRAM device[0m
+[0;32mI (361) esp_psram: Speed: 200MHz[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (682) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (690) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (691) cpu_start: Pro cpu start user code[0m
+[0;32mI (691) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (693) app_init: Application information:[0m
+[0;32mI (696) app_init: Project name:     aud02_capture[0m
+[0;32mI (701) app_init: App version:      1[0m
+[0;32mI (704) app_init: Compile time:     Sep  4 2026 17:56:09[0m
+[0;32mI (709) app_init: ELF file SHA256:  d135412fa...[0m
+[0;32mI (714) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (718) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (722) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (726) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (730) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (736) heap_init: At 2F0128A0 len 00068710 (417 KiB): RAM[0m
+[0;32mI (741) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (747) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (752) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (759) spi_flash: detected chip: generic[0m
+[0;32mI (762) spi_flash: flash io: dio[0m
+[0;32mI (766) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (771) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (778) coexist: coex firmware version: a830d28[0m
+[0;32mI (782) coexist: coexist rom version cdcf52b[0m
+[0;32mI (787) main_task: Started on CPU0[0m
+[0;32mI (802) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (803) main_task: Calling app_main()[0m
+[0;33mW (805) i2s_common: the rx channel on I2S1 is switched from master to slave for full-duplex mode[0m
+[0;32mI (835) ES8389: Work in Slave mode[0m
+[0;32mI (839) ES8389: Set internal reference signal[0m
+[0;32mI (841) I2S_IF: Paired data: 0x2f07e5e8, current mode: record, paired in_enable: 0, paired out_enable: 0[0m
+[0;33mW (841) i2s_common: APLL is occupied already, it is working at 36864013 Hz while the expected frequency is 36864000 Hz[0m
+[0;33mW (851) i2s_common: Trying to work at 36864013 Hz...[0m
+[0;32mI (856) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (865) I2S_IF: STD: RX, sample_rate_hz: 48000, mclk_multiple: 384, clk_src: 19[0m
+[0;33mW (872) i2s_common: APLL is occupied already, it is working at 36864013 Hz while the expected frequency is 36864000 Hz[0m
+[0;33mW (882) i2s_common: Trying to work at 36864013 Hz...[0m
+[0;32mI (887) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (896) I2S_IF: STD: TX, sample_rate_hz: 48000, mclk_multiple: 384, clk_src: 19[0m
+[0;32mI (921) Adev_Codec: Open codec device OK[0m
+[0;32mI (921) aud02: AUD-02: 48000 Hz, stereo, gain=20 dB, block=128 frames, 30 s[0m
+[0;32mI (921) aud02: Clock: source=APLL, MCLK=18432000 Hz, BCLK about 1536000 Hz, GPIO BCLK=3 WS=4 DIN=6[0m
+[0;32mI (1933) aud02: PERF: rate=48944.0Hz blocks=384 read_err=0 avg=2582us max=4967us rms=25.2/33.7 peak=124/166 clip=0/0[0m
+[0;32mI (2933) aud02: PERF: rate=48473.1Hz blocks=759 read_err=0 avg=2607us max=4967us rms=23.1/28.4 peak=124/166 clip=0/0[0m
+[0;32mI (3933) aud02: PERF: rate=48315.6Hz blocks=1134 read_err=0 avg=2615us max=4967us rms=22.3/26.3 peak=124/166 clip=0/0[0m
+[0;32mI (4933) aud02: PERF: rate=48236.8Hz blocks=1509 read_err=0 avg=2620us max=4967us rms=22.1/25.4 peak=124/166 clip=0/0[0m
+[0;32mI (5933) aud02: PERF: rate=48189.5Hz blocks=1884 read_err=0 avg=2622us max=4967us rms=22.2/25.1 peak=124/166 clip=0/0[0m
+[0;32mI (6933) aud02: PERF: rate=48158.0Hz blocks=2259 read_err=0 avg=2624us max=4967us rms=22.2/24.8 peak=124/166 clip=0/0[0m
+[0;32mI (7933) aud02: PERF: rate=48135.4Hz blocks=2634 read_err=0 avg=2625us max=4967us rms=22.5/24.8 peak=124/166 clip=0/0[0m
+[0;32mI (8933) aud02: PERF: rate=48118.5Hz blocks=3009 read_err=0 avg=2626us max=4967us rms=22.4/24.5 peak=124/166 clip=0/0[0m
+[0;32mI (9933) aud02: PERF: rate=48105.4Hz blocks=3384 read_err=0 avg=2627us max=4967us rms=22.3/24.3 peak=124/166 clip=0/0[0m
+[0;32mI (10933) aud02: PERF: rate=48094.9Hz blocks=3759 read_err=0 avg=2627us max=4967us rms=22.4/24.3 peak=124/166 clip=0/0[0m
+[0;32mI (11933) aud02: PERF: rate=48086.2Hz blocks=4134 read_err=0 avg=2628us max=4967us rms=24.8/26.6 peak=332/343 clip=0/0[0m
+[0;32mI (12933) aud02: PERF: rate=48079.1Hz blocks=4509 read_err=0 avg=2628us max=4967us rms=24.7/26.5 peak=332/343 clip=0/0[0m
+[0;32mI (13933) aud02: PERF: rate=48073.0Hz blocks=4884 read_err=0 avg=2629us max=4967us rms=24.6/26.4 peak=332/343 clip=0/0[0m
+[0;32mI (14933) aud02: PERF: rate=48067.8Hz blocks=5259 read_err=0 avg=2629us max=4967us rms=2

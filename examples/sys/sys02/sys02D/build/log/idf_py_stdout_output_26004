@@ -1,0 +1,5 @@
+Command: ninja flash
+[1/5] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\sys\sys02D\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32S31/examples/sys/sys02D/build/partition_table/partition-table.bin D:/ESP32S31/examples/sys/sys02D/build/sys02d_parallel_memory.bin"
+sys02d_parallel_memory.bin binary size 0x30070 bytes. Smallest app partition is
+0x300000 bytes. 0x2cff90 bytes (94%) free.
+[2/5] Performing build step for 'bootloader'

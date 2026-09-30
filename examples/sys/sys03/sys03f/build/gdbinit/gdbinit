@@ -1,0 +1,2 @@
+source D:/ESP32S31/examples/sys/sys03/sys03f/build/gdbinit/symbols
+source D:/ESP32S31/examples/sys/sys03/sys03f/build/gdbinit/connect

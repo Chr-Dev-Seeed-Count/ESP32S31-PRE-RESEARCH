@@ -1,0 +1,20 @@
+menu "AUD-02 dual microphone capture"
+
+config AUD02_SAMPLE_RATE
+    int "Sample rate (Hz)"
+    range 8000 192000
+    default 48000
+config AUD02_BLOCK_FRAMES
+    int "Application block size (frames)"
+    range 16 4096
+    default 480
+config AUD02_TEST_SECONDS
+    int "Test duration (seconds)"
+    range 1 86400
+    default 30
+config AUD02_MIC_GAIN_DB
+    int "Microphone PGA gain (dB)"
+    range 0 42
+    default 20
+
+endmenu

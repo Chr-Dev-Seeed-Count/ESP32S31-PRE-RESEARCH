@@ -1,0 +1,168 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\lcd\lcd_02_buffer_strategy\build\lcd_02_buffer_strategy.elf D:\ESP32S31\examples\lcd\lcd_02_buffer_strategy\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x500081d2: [0;33mlcd_perf_port_init[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/main/lcd_perf_port.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x500081d2: [0;33mlcd_perf_port_init[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/main/lcd_perf_port.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x500081d2: [0;33mlcd_perf_port_init[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/main/lcd_perf_port.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x500081d2: [0;33mlcd_perf_port_init[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/main/lcd_perf_port.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\ESP32S31\\examples\\lcd\\lcd_02_buffer_strategy\\build\\lcd_02_buffer_strategy.elf', '-ex', 'add-symbol-file D:\\\\ESP32S31\\\\examples\\\\lcd\\\\lcd_02_buffer_strategy\\\\build\\\\bootloader\\\\bootloader.elf', '-ex', 'target remote | "D:\\\\Espressif\\\\python_env\\\\idf6.2_py3.13_env\\\\Scripts\\\\python.exe" -m esp_idf_panic_decoder --target esp32s31 "C:\\\\Users\\\\EDY\\\\AppData\\\\Local\\\\Temp\\\\tmppkwwd_gw"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:\\ESP32S31\\examples\\lcd\\lcd_02_buffer_strategy\\build\\bootloader\\bootloader.elf"\r\nTraceback (most recent call last):\r\n  File \x1b[35m"<frozen runpy>"\x1b[0m, line \x1b[35m203\x1b[0m, in \x1b[35m_run_module_as_main\x1b[0m\r\n  File \x1b[35m"<frozen runpy>"\x1b[0m, line \x1b[35m88\x1b[0m, in \x1b[35m_run_code\x1b[0m\r\n  File \x1b[35m"D:\\Espressif\\python_env\\idf6.2_py3.13_env\\Lib\\site-packages\\esp_idf_panic_decoder\\__main__.py"\x1b[0m, line \x1b[35m4\x1b[0m, in \x1b[35m<module>\x1b[0m\r\n    \x1b[31mmain\x1b[0m\x1b[1;31m()\x1b[0m\r\n    \x1b[31m~~~~\x1b[0m\x1b[1;31m^^\x1b[0m\r\n  File \x1b[35m"D:\\Espressif\\python_env\\idf6.2_py3.13_env\\Lib\\site-packages\\esp_idf_panic_decoder\\gdb_panic_server.py"\x1b[0m, line \x1b[35m276\x1b[0m, in \x1b[35mmain\x1b[0m\r\n    panic_info = PANIC_OUTPUT_PARSERS.get(args.target, PANIC_OUTPUT_PARSERS[\'default\'])(args.input_file.read())\r\n  File \x1b[35m"D:\\Espressif\\python_env\\idf6.2_py3.13_env\\Lib\\site-packages\\esp_idf_panic_decoder\\gdb_panic_server.py"\x1b[0m, line \x1b[35m130\x1b[0m, in \x1b[35mparse_idf_riscv_panic_output\x1b[0m\r\n    raise ValueError("Couldn\'t parse panic handler output")\r\nRemote communication error.  Target disconnected: could not peek into pipe (error 109): \xb9\xdc\xb5\xc0\xd2\xd1\xbd\xe1\xca\xf8\xa1\xa3\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x500081d2: [0;33mlcd_perf_port_init[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/main/lcd_perf_port.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x500081d2: [0;33mlcd_perf_port_init[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/main/lcd_perf_port.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x500081d2: [0;33mlcd_perf_port_init[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/main/lcd_perf_port.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x500081d2: [0;33mlcd_perf_port_init[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_02_buffer_strategy/main/lcd_perf_port.c[0m[0m:[1;31m179[0m
+[0m--- 0x2f009dcf: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m38[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f00a39e: [0;33mpanic_abort[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m496[0m
+[0m--- 0x2f009dd6: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x2f004b20: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/hal/esp32s31/include/hal/cpu_utility_ll.h[0m[0m:[1;31m25[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x2f004c5a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m
+Traceback (most recent call last):
+  File [35m"D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py"[0m, line [35m11[0m, in [35m<module>[0m
+    sys.exit([31msubprocess.run[0m[1;31m([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:])[0m.returncode)
+             [31m~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\EDY\AppData\Local\Programs\Python\Python313\Lib\subprocess.py"[0m, line [35m556[0m, in [35mrun[0m
+    stdout, stderr = [31mprocess.communicate[0m[1;31m(input, timeout=timeout)[0m
+                     [31m~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\EDY\AppData\Local\Programs\Python\Python313\Lib\subprocess.py"[0m, line [35m1214[0m, in [35mcommunicate[0m
+    [31mself.wait[0m[1;31m()[0m
+    [31m~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"C:\Users\EDY\AppData\Local\Programs\Python\Python313\Lib\subprocess.py"[0m, line [35m1280[0m, in [35mwait[0m
+    return [31mself._wait[0m[1;31m(timeout=timeout)[0m
+           [31m~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\EDY\AppData\Local\Programs\Python\Python313\Lib\subprocess.py"[0m, line [35m1606[0m, in [35m_wait[0m
+    result = _winapi.WaitForSingleObject(self._handle,
+                                         timeout_millis)
+[1;35mKeyboardInterrupt[0m

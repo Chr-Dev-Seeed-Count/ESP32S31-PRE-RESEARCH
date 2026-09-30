@@ -1,0 +1,121 @@
+menu "LCD/LVGL Performance Common"
+    config LCD_TEST_ID
+        int "LCD test number (fixed for this demo)"
+        range 1 6
+        default 2
+    config LCD_PERF_TIMER_PERIOD_MS
+        int "Synthetic load timer period (ms)"
+        range 1 1000
+        default 16
+    config LCD_PERF_ANIM_STEP
+        int "Animation step"
+        range 1 360
+        default 7
+    config LCD_PERF_BUFFER_OBJECTS
+        int "LCD-02 moving objects"
+        range 1 256
+        default 24
+    config LCD_PERF_WIDGET_COUNT
+        int "LCD-03 widget count"
+        range 1 256
+        default 48
+    config LCD_PERF_TEARING_LAYERS
+        int "LCD-04 alpha layers"
+        range 1 32
+        default 8
+    config LCD_PERF_TEXT_LENGTH
+        int "LCD-05 generated UTF-8 text length"
+        range 64 4096
+        default 1800
+    config LCD_PERF_TEXT_SCROLL_PX
+        int "LCD-05 scroll pixels per tick"
+        range 1 100
+        default 4
+    choice LCD_PERF_JPEG_ROTATE
+        prompt "LCD-06 JPEG rotation"
+        default LCD_PERF_JPEG_ROTATE_0
+        config LCD_PERF_JPEG_ROTATE_0
+            bool "0 degrees"
+        config LCD_PERF_JPEG_ROTATE_90
+            bool "90 degrees"
+        config LCD_PERF_JPEG_ROTATE_180
+            bool "180 degrees"
+        config LCD_PERF_JPEG_ROTATE_270
+            bool "270 degrees"
+    endchoice
+    config LCD_PERF_JPEG_ROTATE
+        int
+        default 0 if LCD_PERF_JPEG_ROTATE_0
+        default 1 if LCD_PERF_JPEG_ROTATE_90
+        default 2 if LCD_PERF_JPEG_ROTATE_180
+        default 3 if LCD_PERF_JPEG_ROTATE_270
+    config LCD_PERF_JPEG_ROTATE_STEP
+        int "LCD-06 UI rotation step (0.1 degree)"
+        range 0 360
+        default 15
+    config LCD_PERF_JPEG_SCALE
+        int "LCD-06 JPEG square scale (0 disables)"
+        range 0 800
+        default 0
+    config LCD_PERF_JPEG_REDECODE
+        bool "LCD-06 continuously re-decode JPEG"
+        default n
+    config LCD_PERF_JPEG_REDECODE_PERIOD_MS
+        int "JPEG re-decode period (ms)"
+        range 1 60000
+        default 1000
+    config LCD_PERF_PCLK_HZ
+        int "RGB PCLK frequency (Hz)"
+        range 6000000 30000000
+        default 18000000
+    config LCD_PERF_HSYNC_PULSE
+        int "HSYNC pulse width"
+        range 1 128
+        default 40
+    config LCD_PERF_HBP
+        int "HSYNC back porch"
+        range 1 256
+        default 40
+    config LCD_PERF_HFP
+        int "HSYNC front porch"
+        range 1 256
+        default 48
+    config LCD_PERF_VSYNC_PULSE
+        int "VSYNC pulse width"
+        range 1 128
+        default 23
+    config LCD_PERF_VBP
+        int "VSYNC back porch"
+        range 1 256
+        default 32
+    config LCD_PERF_VFP
+        int "VSYNC front porch"
+        range 1 256
+        default 13
+    choice LCD_PERF_BUFFER_MODE
+        prompt "RGB frame buffer mode"
+        default LCD_PERF_BUFFER_MODE_SINGLE
+        config LCD_PERF_BUFFER_MODE_SINGLE
+            bool "Single frame buffer + partial LVGL"
+        config LCD_PERF_BUFFER_MODE_DOUBLE
+            bool "Double frame buffer + direct LVGL"
+        config LCD_PERF_BUFFER_MODE_BOUNCE
+            bool "Single frame buffer + bounce buffers"
+    endchoice
+    config LCD_PERF_DRAW_BUF_LINES
+        int "LVGL partial draw buffer lines"
+        range 2 480
+        default 40
+    config LCD_PERF_DRAW_BUF_DOUBLE
+        bool "Use two LVGL partial draw buffers"
+        default n
+    config LCD_PERF_BOUNCE_LINES
+        int "Bounce buffer lines"
+        range 2 120
+        default 20
+        depends on LCD_PERF_BUFFER_MODE_BOUNCE
+    config LCD_PERF_LOG_PERIOD_MS
+        int "Performance log period (ms)"
+        range 1000 60000
+        default 5000
+endmenu

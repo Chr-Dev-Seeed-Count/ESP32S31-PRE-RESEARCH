@@ -1,0 +1,275 @@
+固定块时长，提高刷新频率
+16k 160
+ (925) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+I (934) I2S_IF: STD: RX, sample_rate_hz: 16000, mclk_multiple: 384, clk_src: 19
+I (958) Adev_Codec: Open codec device OK
+I (959) aud01: AUD-01: 16000 Hz, 16 bit, stereo, block=160 frames, 30 s
+I (959) aud01: Clock: source=APLL, MCLK=6144000 Hz; Scope: WS=16000 Hz; expected BCLK about 512000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1976) aud01: PERF: tx_rate=16367.8 (63.9 KiB/s) rx_rate=16367.8 (63.9 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=1409.5 peak=8371 write_avg=9us max=69us read_avg=9742us max=14984us
+I (2981) aud01: PERF: tx_rate=16144.3 (63.1 KiB/s) rx_rate=16144.3 (63.1 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=1004.2 peak=8371 write_avg=8us max=69us read_avg=9852us max=14984us
+I (3971) aud01: PERF: tx_rate=16096.7 (62.9 KiB/s) rx_rate=16096.7 (62.9 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=823.4 peak=8371 write_avg=8us max=69us read_avg=9874us max=14984us
+I (4976) aud01: PERF: tx_rate=16092.4 (62.9 KiB/s) rx_rate=16092.4 (62.9 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=712.9 peak=8371 write_avg=8us max=69us read_avg=9873us max=14984us
+I (5981) aud01: PERF: tx_rate=16057.9 (62.7 KiB/s) rx_rate=16057.9 (62.7 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=638.3 peak=8371 write_avg=8us max=69us read_avg=9893us max=14984us
+I (6971) aud01: PERF: tx_rate=16048.4 (62.7 KiB/s) rx_rate=16048.4 (62.7 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=583.7 peak=8371 write_avg=8us max=69us read_avg=9897us max=14984us
+I (7976) aud01: PERF: tx_rate=16052.9 (62.7 KiB/s) rx_rate=16052.9 (62.7 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=540.2 peak=8371 write_avg=8us max=69us read_avg=9893us max=14984us
+I (8981) aud01: PERF: tx_rate=16036.3 (62.6 KiB/s) rx_rate=16036.3 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=505.6 peak=8371 write_avg=8us max=69us read_avg=9903us max=14984us
+I (9971) aud01: PERF: tx_rate=16032.3 (62.6 KiB/s) rx_rate=16032.3 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=477.1 peak=8371 write_avg=8us max=69us read_avg=9905us max=14984us
+I (10976) aud01: PERF: tx_rate=16037.0 (62.6 KiB/s) rx_rate=16037.0 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=452.5 peak=8371 write_avg=8us max=69us read_avg=9902us max=14984us
+I (11981) aud01: PERF: tx_rate=16026.4 (62.6 KiB/s) rx_rate=16026.4 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=431.6 peak=8371 write_avg=8us max=69us read_avg=9908us max=14984us
+I (12971) aud01: PERF: tx_rate=16024.2 (62.6 KiB/s) rx_rate=16024.2 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=413.6 peak=8371 write_avg=8us max=69us read_avg=9909us max=14984us
+I (13976) aud01: PERF: tx_rate=16028.5 (62.6 KiB/s) rx_rate=16028.5 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=397.3 peak=8371 write_avg=8us max=69us read_avg=9906us max=14984us
+I (14981) aud01: PERF: tx_rate=16020.7 (62.6 KiB/s) rx_rate=16020.7 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=382.9 peak=8371 write_avg=8us max=69us read_avg=9910us max=14984us
+I (15971) aud01: PERF: tx_rate=16019.4 (62.6 KiB/s) rx_rate=16019.4 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=370.1 peak=8371 write_avg=8us max=69us read_avg=9911us max=14984us
+I (16976) aud01: PERF: tx_rate=16023.2 (62.6 KiB/s) rx_rate=16023.2 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=358.4 peak=8371 write_avg=8us max=69us read_avg=9908us max=14984us
+I (17981) aud01: PERF: tx_rate=16017.1 (62.6 KiB/s) rx_rate=16017.1 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=347.7 peak=8371 write_avg=8us max=69us read_avg=9912us max=14984us
+I (18971) aud01: PERF: tx_rate=16016.2 (62.6 KiB/s) rx_rate=16016.2 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=338.1 peak=8371 write_avg=8us max=69us read_avg=9912us max=14984us
+I (19976) aud01: PERF: tx_rate=16019.5 (62.6 KiB/s) rx_rate=16019.5 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=329.1 peak=8371 write_avg=8us max=69us read_avg=9910us max=14984us
+I (20981) aud01: PERF: tx_rate=16014.5 (62.6 KiB/s) rx_rate=16014.5 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=320.9 peak=8371 write_avg=8us max=69us read_avg=9913us max=14984us
+I (21971) aud01: PERF: tx_rate=16013.9 (62.6 KiB/s) rx_rate=16013.9 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=313.3 peak=8371 write_avg=8us max=69us read_avg=9913us max=14984us
+I (22976) aud01: PERF: tx_rate=16016.9 (62.6 KiB/s) rx_rate=16016.9 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=306.1 peak=8371 write_avg=8us max=69us read_avg=9911us max=14984us
+I (23981) aud01: PERF: tx_rate=16012.6 (62.5 KiB/s) rx_rate=16012.6 (62.5 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=299.4 peak=8371 write_avg=8us max=69us read_avg=9914us max=14984us
+I (24971) aud01: PERF: tx_rate=16012.1 (62.5 KiB/s) rx_rate=16012.1 (62.5 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=293.2 peak=8371 write_avg=8us max=69us read_avg=9914us max=14984us
+I (25976) aud01: PERF: tx_rate=16014.8 (62.6 KiB/s) rx_rate=16014.8 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=287.3 peak=8371 write_avg=8us max=69us read_avg=9912us max=14984us
+I (26981) aud01: PERF: tx_rate=16011.2 (62.5 KiB/s) rx_rate=16011.2 (62.5 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=281.7 peak=8371 write_avg=8us max=69us read_avg=9914us max=14984us
+I (27971) aud01: PERF: tx_rate=16010.8 (62.5 KiB/s) rx_rate=16010.8 (62.5 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=276.6 peak=8371 write_avg=8us max=69us read_avg=9915us max=14984us
+I (28976) aud01: PERF: tx_rate=16013.3 (62.6 KiB/s) rx_rate=16013.3 (62.6 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=271.6 peak=8371 write_avg=8us max=69us read_avg=9913us max=14984us
+I (29981) aud01: PERF: tx_rate=16010.0 (62.5 KiB/s) rx_rate=16010.0 (62.5 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=266.9 peak=8371 write_avg=8us max=69us read_avg=9915us max=14984us
+I (30971) aud01: PERF: tx_rate=16009.7 (62.5 KiB/s) rx_rate=16009.7 (62.5 KiB/s) app_cpu=0.20%; write_err=0 read_err=0 rx_rms=262.5 peak=8371 write_avg=8us max=69us read_avg=9915us max=14984us
+I (30977) aud01: AUD-01 complete: tx=480320 rx=480320 write_err=0 read_err=0
+I (31132) main_task: Returned from app_main()
+
+32k 320
+I (959) aud01: AUD-01: 32000 Hz, 16 bit, stereo, block=320 frames, 30 s
+I (959) aud01: Clock: source=APLL, MCLK=12288000 Hz; Scope: WS=32000 Hz; expected BCLK about 1024000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1976) aud01: PERF: tx_rate=32740.3 (127.9 KiB/s) rx_rate=32740.3 (127.9 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2943us max=8002us read_avg=6788us max=6991us
+I (2973) aud01: PERF: tx_rate=32411.8 (126.6 KiB/s) rx_rate=32411.8 (126.6 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2956us max=8002us read_avg=6859us max=6991us
+I (3971) aud01: PERF: tx_rate=32301.6 (126.2 KiB/s) rx_rate=32301.6 (126.2 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2960us max=8002us read_avg=6883us max=6991us
+I (4976) aud01: PERF: tx_rate=32186.0 (125.7 KiB/s) rx_rate=32186.0 (125.7 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2966us max=8002us read_avg=6910us max=6991us
+I (5973) aud01: PERF: tx_rate=32164.9 (125.6 KiB/s) rx_rate=32164.9 (125.6 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2967us max=8002us read_avg=6915us max=6991us
+I (6971) aud01: PERF: tx_rate=32150.9 (125.6 KiB/s) rx_rate=32150.9 (125.6 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2968us max=8002us read_avg=6918us max=6991us
+I (7976) aud01: PERF: tx_rate=32106.4 (125.4 KiB/s) rx_rate=32106.4 (125.4 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2971us max=8002us read_avg=6928us max=6991us
+I (8973) aud01: PERF: tx_rate=32103.1 (125.4 KiB/s) rx_rate=32103.1 (125.4 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2970us max=8002us read_avg=6929us max=6991us
+I (9971) aud01: PERF: tx_rate=32100.6 (125.4 KiB/s) rx_rate=32100.6 (125.4 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2970us max=8002us read_avg=6929us max=6991us
+I (10976) aud01: PERF: tx_rate=32074.5 (125.3 KiB/s) rx_rate=32074.5 (125.3 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2972us max=8002us read_avg=6935us max=6991us
+I (11973) aud01: PERF: tx_rate=32075.0 (125.3 KiB/s) rx_rate=32075.0 (125.3 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2972us max=8002us read_avg=6935us max=6991us
+I (12971) aud01: PERF: tx_rate=32075.5 (125.3 KiB/s) rx_rate=32075.5 (125.3 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2971us max=8002us read_avg=6935us max=6991us
+I (13976) aud01: PERF: tx_rate=32057.3 (125.2 KiB/s) rx_rate=32057.3 (125.2 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2972us max=8002us read_avg=6939us max=6991us
+I (14973) aud01: PERF: tx_rate=32059.0 (125.2 KiB/s) rx_rate=32059.0 (125.2 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2972us max=8002us read_avg=6939us max=6991us
+I (15971) aud01: PERF: tx_rate=32060.4 (125.2 KiB/s) rx_rate=32060.4 (125.2 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=2972us max=8002us read_avg=6938us max=6991us
+I (16976) aud01: PERF: tx_rate=32046.6 (125.2 KiB/s) rx_rate=32046.6 (125.2 KiB/s) app_cpu=0.38%; write_err=0 read_err=0 rx_rms=0.0 peak=0 wri
+
+44.1k 441
+I (958) aud01: AUD-01: 44100 Hz, 16 bit, stereo, block=441 frames, 30 s
+I (959) aud01: Clock: source=APLL, MCLK=16934400 Hz; Scope: WS=44100 Hz; expected BCLK about 1411200 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1969) aud01: PERF: tx_rate=44967.4 (175.7 KiB/s) rx_rate=44967.4 (175.7 KiB/s) app_cpu=0.54%; write_err=0 read_err=0 rx_rms=502.3 peak=5426 write_avg=6888us max=7959us read_avg=2861us max=2926us
+I (2970) aud01: PERF: tx_rate=44503.7 (173.8 KiB/s) rx_rate=44503.7 (173.8 KiB/s) app_cpu=0.54%; write_err=0 read_err=0 rx_rms=357.2 peak=5426 write_avg=6951us max=7959us read_avg=2887us max=2926us
+I (3977) aud01: PERF: tx_rate=44415.5 (173.5 KiB/s) rx_rate=44415.5 (173.5 KiB/s) app_cpu=0.54%; write_err=0 read_err=0 rx_rms=291.9 peak=5426 write_avg=6957us max=7959us read_avg=2896us max=2926us
+I (4978) aud01: PERF: tx_rate=44321.8 (173.1 KiB/s) rx_rate=44321.8 (173.1 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=253.3 peak=5426 write_avg=6972us max=7959us read_avg=2901us max=2926us
+I (5969) aud01: PERF: tx_rate=44273.6 (172.9 KiB/s) rx_rate=44273.6 (172.9 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=227.1 peak=5426 write_avg=6980us max=7959us read_avg=2904us max=2926us
+I (6970) aud01: PERF: tx_rate=44234.7 (172.8 KiB/s) rx_rate=44234.7 (172.8 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=207.5 peak=5426 write_avg=6986us max=7960us read_avg=2905us max=2926us
+I (7977) aud01: PERF: tx_rate=44235.5 (172.8 KiB/s) rx_rate=44235.5 (172.8 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=192.2 peak=5426 write_avg=6984us max=7960us read_avg=2907us max=2926us
+I (8978) aud01: PERF: tx_rate=44211.1 (172.7 KiB/s) rx_rate=44211.1 (172.7 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=180.0 peak=5426 write_avg=6988us max=7960us read_avg=2908us max=2926us
+I (9969) aud01: PERF: tx_rate=44196.5 (172.6 KiB/s) rx_rate=44196.5 (172.6 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=170.0 peak=5426 write_avg=6990us max=7960us read_avg=2908us max=2926us
+I (10970) aud01: PERF: tx_rate=44180.9 (172.6 KiB/s) rx_rate=44180.9 (172.6 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=161.4 peak=5426 write_avg=6994us max=7960us read_avg=2909us max=2926us
+I (11977) aud01: PERF: tx_rate=44186.3 (172.6 KiB/s) rx_rate=44186.3 (172.6 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=153.9 peak=5426 write_avg=6991us max=7960us read_avg=2909us max=2926us
+I (12978) aud01: PERF: tx_rate=44174.1 (172.6 KiB/s) rx_rate=44174.1 (172.6 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=147.5 peak=5426 write_avg=6993us max=7960us read_avg=2910us max=2926us
+I (13969) aud01: PERF: tx_rate=44166.8 (172.5 KiB/s) rx_rate=44166.8 (172.5 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=141.9 peak=5426 write_avg=6995us max=7960us read_avg=2910us max=2926us
+I (14970) aud01: PERF: tx_rate=44157.8 (172.5 KiB/s) rx_rate=44157.8 (172.5 KiB/s) app_cpu=0.53%; write_err=0 read_err=0 rx_rms=136.9 peak=5426 write_avg=6997us max=7960us read_avg=2911us max=2926us
+
+48k 480
+W (857) i2s_common: APLL is occupied already, it is working at 36864013 Hz while the expected frequency is 36864000 Hz
+W (867) i2s_common: Trying to work at 36864013 Hz...
+I (872) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+I (881) I2S_IF: STD: TX, sample_rate_hz: 48000, mclk_multiple: 384, clk_src: 19
+I (907) Adev_Codec: Open codec device OK
+I (907) I2S_IF: Current mode(record) and peer mode have same sample_rate 48000, channel 2, bits_per_sample 16
+W (909) i2s_common: APLL is occupied already, it is working at 36864013 Hz while the expected frequency is 36864000 Hz
+W (919) i2s_common: Trying to work at 36864013 Hz...
+I (924) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+I (933) I2S_IF: STD: RX, sample_rate_hz: 48000, mclk_multiple: 384, clk_src: 19
+I (958) Adev_Codec: Open codec device OK
+I (958) aud01: AUD-01: 48000 Hz, 16 bit, stereo, block=480 frames, 30 s
+I (959) aud01: Clock: source=APLL, MCLK=18432000 Hz; Scope: WS=48000 Hz; expected BCLK about 1536000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1978) aud01: PERF: tx_rate=48957.8 (191.2 KiB/s) rx_rate=48957.8 (191.2 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=627.7 peak=6734 write_avg=9677us max=9926us read_avg=70us max=106us
+I (2978) aud01: PERF: tx_rate=48481.2 (189.4 KiB/s) rx_rate=48481.2 (189.4 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=447.5 peak=6734 write_avg=9765us max=9926us read_avg=70us max=106us
+I (3978) aud01: PERF: tx_rate=48321.4 (188.8 KiB/s) rx_rate=48321.4 (188.8 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=366.6 peak=6734 write_avg=9796us max=9926us read_avg=69us max=106us
+I (4978) aud01: PERF: tx_rate=48241.2 (188.4 KiB/s) rx_rate=48241.2 (188.4 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=318.1 peak=6734 write_avg=9811us max=9926us read_avg=69us max=106us
+I (5978) aud01: PERF: tx_rate=48193.1 (188.3 KiB/s) rx_rate=48193.1 (188.3 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=285.0 peak=6734 write_avg=9821us max=9926us read_avg=69us max=106us
+I (6978) aud01: PERF: tx_rate=48161.0 (188.1 KiB/s) rx_rate=48161.0 (188.1 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=260.5 peak=6734 write_avg=9828us max=9926us read_avg=69us max=106us
+I (7978) aud01: PERF: tx_rate=48138.0 (188.0 KiB/s) rx_rate=48138.0 (188.0 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=241.4 peak=6734 write_avg=9832us max=9926us read_avg=69us max=106us
+I (8978) aud01: PERF: tx_rate=48120.8 (188.0 KiB/s) rx_rate=48120.8 (188.0 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=226.1 peak=6734 write_avg=9835us max=9926us read_avg=69us max=106us
+I (9978) aud01: PERF: tx_rate=48107.4 (187.9 KiB/s) rx_rate=48107.4 (187.9 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=213.3 peak=6734 write_avg=9838us max=9926us read_avg=69us max=106us
+I (10978) aud01: PERF: tx_rate=48096.7 (187.9 KiB/s) rx_rate=48096.7 (187.9 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=202.6 peak=6734 write_avg=9840us max=9926us read_avg=69us max=106us
+I (11978) aud01: PERF: tx_rate=48087.9 (187.8 KiB/s) rx_rate=48087.9 (187.8 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=193.3 peak=6734 write_avg=9842us max=9926us read_avg=69us max=106us
+I (12978) aud01: PERF: tx_rate=48080.6 (187.8 KiB/s) rx_rate=48080.6 (187.8 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=185.2 peak=6734 write_avg=9843us max=9926us read_avg=69us max=106us
+I (13978) aud01: PERF: tx_rate=48074.4 (187.8 KiB/s) rx_rate=48074.4 (187.8 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=178.1 peak=6734 write_avg=9844us max=9926us read_avg=69us max=106us
+I (14978) aud01: PERF: tx_rate=48069.1 (187.8 KiB/s) rx_rate=48069.1 (187.8 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=171.8 peak=6734 write_avg=9845us max=9926us read_avg=69us max=106us
+I (15978) aud01: PERF: tx_rate=48064.5 (187.8 KiB/s) rx_rate=48064.5 (187.8 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=166.1 peak=6734 write_avg=9846us max=9926us read_avg=69us max=106us
+I (16978) aud01: PERF: tx_rate=48060.5 (187.7 KiB/s) rx_rate=48060.5 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=160.9 peak=6734 write_avg=9847us max=9926us read_avg=69us max=106us
+I (17978) aud01: PERF: tx_rate=48056.9 (187.7 KiB/s) rx_rate=48056.9 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=156.2 peak=6734 write_avg=9847us max=9926us read_avg=69us max=106us
+I (18978) aud01: PERF: tx_rate=48053.8 (187.7 KiB/s) rx_rate=48053.8 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=152.0 peak=6734 write_avg=9848us max=9926us read_avg=69us max=106us
+I (19978) aud01: PERF: tx_rate=48051.0 (187.7 KiB/s) rx_rate=48051.0 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=148.0 peak=6734 write_avg=9849us max=9926us read_avg=69us max=106us
+I (20978) aud01: PERF: tx_rate=48048.4 (187.7 KiB/s) rx_rate=48048.4 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=144.4 peak=6734 write_avg=9849us max=9926us read_avg=69us max=106us
+I (21978) aud01: PERF: tx_rate=48046.1 (187.7 KiB/s) rx_rate=48046.1 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=141.0 peak=6734 write_avg=9850us max=9926us read_avg=69us max=106us
+I (22978) aud01: PERF: tx_rate=48044.0 (187.7 KiB/s) rx_rate=48044.0 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=137.9 peak=6734 write_avg=9850us max=9926us read_avg=69us max=106us
+I (23978) aud01: PERF: tx_rate=48042.1 (187.7 KiB/s) rx_rate=48042.1 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=135.0 peak=6734 write_avg=9850us max=9926us read_avg=69us max=106us
+I (24978) aud01: PERF: tx_rate=48040.4 (187.7 KiB/s) rx_rate=48040.4 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=132.3 peak=6734 write_avg=9851us max=9926us read_avg=69us max=106us
+I (25978) aud01: PERF: tx_rate=48038.8 (187.7 KiB/s) rx_rate=48038.8 (187.7 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=129.7 peak=6734 write_avg=9851us max=9926us read_avg=69us max=106us
+I (26978) aud01: PERF: tx_rate=48037.3 (187.6 KiB/s) rx_rate=48037.3 (187.6 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=127.3 peak=6734 write_avg=9851us max=9926us read_avg=69us max=106us
+I (27978) aud01: PERF: tx_rate=48035.9 (187.6 KiB/s) rx_rate=48035.9 (187.6 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=125.0 peak=6734 write_avg=9851us max=9926us read_avg=69us max=106us
+I (28978) aud01: PERF: tx_rate=48034.6 (187.6 KiB/s) rx_rate=48034.6 (187.6 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=122.8 peak=6734 write_avg=9852us max=9926us read_avg=69us max=106us
+I (29978) aud01: PERF: tx_rate=48033.4 (187.6 KiB/s) rx_rate=48033.4 (187.6 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=120.8 peak=6734 write_avg=9852us max=9926us read_avg=69us max=106us
+I (30978) aud01: PERF: tx_rate=48032.3 (187.6 KiB/s) rx_rate=48032.3 (187.6 KiB/s) app_cpu=0.57%; write_err=0 read_err=0 rx_rms=118.8 peak=6734 write_avg=9852us max=9926us read_avg=69us max=106us
+I (30984) aud01: AUD-01 complete: tx=1441440 rx=1441440 write_err=0 read_err=0
+I (31140) main_task: Returned from app_main()
+
+88.2k 882
+W (795) i2s_common: the rx channel on I2S1 is switched from master to slave for full-duplex mode
+I (825) ES8389: Work in Slave mode
+I (829) ES8389: Set internal reference signal
+I (852) ES8389: Work in Slave mode
+I (856) ES8389: Set internal reference signal
+I (858) I2S_IF: Paired data: 0x2f07f0dc, current mode: playback, paired in_enable: 0, paired out_enable: 0
+W (858) i2s_common: APLL is occupied already, it is working at 67737630 Hz while the expected frequency is 67737600 Hz
+W (868) i2s_common: Trying to work at 67737630 Hz...
+I (873) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+I (882) I2S_IF: STD: TX, sample_rate_hz: 88200, mclk_multiple: 384, clk_src: 19
+I (908) Adev_Codec: Open codec device OK
+I (908) I2S_IF: Current mode(record) and peer mode have same sample_rate 88200, channel 2, bits_per_sample 16
+W (910) i2s_common: APLL is occupied already, it is working at 67737630 Hz while the expected frequency is 67737600 Hz
+W (920) i2s_common: Trying to work at 67737630 Hz...
+I (925) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+I (934) I2S_IF: STD: RX, sample_rate_hz: 88200, mclk_multiple: 384, clk_src: 19
+I (959) Adev_Codec: Open codec device OK
+I (959) aud01: AUD-01: 88200 Hz, 16 bit, stereo, block=882 frames, 30 s
+I (960) aud01: Clock: source=APLL, MCLK=33868800 Hz; Scope: WS=88200 Hz; expected BCLK about 2822400 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1975) aud01: PERF: tx_rate=88568.3 (346.0 KiB/s) rx_rate=88568.3 (346.0 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9614us max=10635us read_avg=239us max=247us
+I (2974) aud01: PERF: tx_rate=88444.7 (345.5 KiB/s) rx_rate=88444.7 (345.5 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9645us max=10635us read_avg=239us max=247us
+I (3975) aud01: PERF: tx_rate=88323.4 (345.0 KiB/s) rx_rate=88323.4 (345.0 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9664us max=10635us read_avg=239us max=247us
+I (4974) aud01: PERF: tx_rate=88322.6 (345.0 KiB/s) rx_rate=88322.6 (345.0 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9666us max=10635us read_avg=239us max=248us
+I (5975) aud01: PERF: tx_rate=88274.1 (344.8 KiB/s) rx_rate=88274.1 (344.8 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9674us max=10635us read_avg=239us max=248us
+I (6974) aud01: PERF: tx_rate=88281.8 (344.9 KiB/s) rx_rate=88281.8 (344.9 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9674us max=10635us read_avg=239us max=248us
+I (7975) aud01: PERF: tx_rate=88253.0 (344.7 KiB/s) rx_rate=88253.0 (344.7 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9677us max=10636us read_avg=239us max=248us
+I (8974) aud01: PERF: tx_rate=88261.4 (344.8 KiB/s) rx_rate=88261.4 (344.8 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9677us max=10639us read_avg=239us max=248us
+I (9975) aud01: PERF: tx_rate=88241.3 (344.7 KiB/s) rx_rate=88241.3 (344.7 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9680us max=10640us read_avg=239us max=248us
+I (10974) aud01: PERF: tx_rate=88249.2 (344.7 KiB/s) rx_rate=88249.2 (344.7 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9680us max=10643us read_avg=239us max=249us
+I (11975) aud01: PERF: tx_rate=88233.8 (344.7 KiB/s) rx_rate=88233.8 (344.7 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9682us max=10643us read_avg=239us max=249us
+I (12974) aud01: PERF: tx_rate=88241.0 (344.7 KiB/s) rx_rate=88241.0 (344.7 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9681us max=10643us read_avg=239us max=249us
+I (13975) aud01: PERF: tx_rate=88228.6 (344.6 KiB/s) rx_rate=88228.6 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9682us max=10643us read_avg=239us max=249us
+I (14974) aud01: PERF: tx_rate=88235.2 (344.7 KiB/s) rx_rate=88235.2 (344.7 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9682us max=10643us read_avg=239us max=249us
+I (15975) aud01: PERF: tx_rate=88224.8 (344.6 KiB/s) rx_rate=88224.8 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9683us max=10643us read_avg=239us max=249us
+I (16974) aud01: PERF: tx_rate=88230.8 (344.7 KiB/s) rx_rate=88230.8 (344.7 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9683us max=10643us read_avg=239us max=249us
+I (17975) aud01: PERF: tx_rate=88221.9 (344.6 KiB/s) rx_rate=88221.9 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9684us max=10643us read_avg=239us max=249us
+I (18974) aud01: PERF: tx_rate=88227.4 (344.6 KiB/s) rx_rate=88227.4 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9683us max=10643us read_avg=239us max=249us
+I (19975) aud01: PERF: tx_rate=88219.7 (344.6 KiB/s) rx_rate=88219.7 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9684us max=10643us read_avg=239us max=249us
+I (20974) aud01: PERF: tx_rate=88224.7 (344.6 KiB/s) rx_rate=88224.7 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9683us max=10643us read_avg=239us max=249us
+I (21975) aud01: PERF: tx_rate=88217.8 (344.6 KiB/s) rx_rate=88217.8 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9684us max=10643us read_avg=239us max=249us
+I (22974) aud01: PERF: tx_rate=88222.4 (344.6 KiB/s) rx_rate=88222.4 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9684us max=10643us read_avg=239us max=249us
+I (23975) aud01: PERF: tx_rate=88216.3 (344.6 KiB/s) rx_rate=88216.3 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9685us max=10643us read_avg=239us max=249us
+I (24974) aud01: PERF: tx_rate=88220.6 (344.6 KiB/s) rx_rate=88220.6 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9684us max=10643us read_avg=239us max=249us
+I (25975) aud01: PERF: tx_rate=88215.0 (344.6 KiB/s) rx_rate=88215.0 (344.6 KiB/s) app_cpu=1.04%; write_err=0 read_err=0 rx_rms=0.0 peak=0 write_avg=9685us max=10643us read_avg=239us max=249us
+
+96k  960
+I (959) aud01: AUD-01: 96000 Hz, 16 bit, stereo, block=960 frames, 30 s
+I (959) aud01: Clock: source=APLL, MCLK=36864000 Hz; Scope: WS=96000 Hz; expected BCLK about 3072000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1976) aud01: PERF: tx_rate=96251.8 (376.0 KiB/s) rx_rate=96251.8 (376.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=88.9 peak=1436 write_avg=9727us max=9859us read_avg=136us max=174us
+I (2976) aud01: PERF: tx_rate=96126.4 (375.5 KiB/s) rx_rate=96126.4 (375.5 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=64.4 peak=1436 write_avg=9756us max=9860us read_avg=136us max=174us
+I (3976) aud01: PERF: tx_rate=96084.5 (375.3 KiB/s) rx_rate=96084.5 (375.3 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=53.7 peak=1436 write_avg=9767us max=9860us read_avg=136us max=174us
+I (4976) aud01: PERF: tx_rate=96063.4 (375.2 KiB/s) rx_rate=96063.4 (375.2 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=47.5 peak=1436 write_avg=9772us max=9861us read_avg=136us max=174us
+I (5976) aud01: PERF: tx_rate=96050.8 (375.2 KiB/s) rx_rate=96050.8 (375.2 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=43.7 peak=1436 write_avg=9777us max=9861us read_avg=136us max=174us
+I (6976) aud01: PERF: tx_rate=96042.4 (375.2 KiB/s) rx_rate=96042.4 (375.2 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=40.6 peak=1436 write_avg=9779us max=9861us read_avg=136us max=174us
+I (7976) aud01: PERF: tx_rate=96036.3 (375.1 KiB/s) rx_rate=96036.3 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=39.4 peak=1436 write_avg=9780us max=9861us read_avg=136us max=174us
+I (8976) aud01: PERF: tx_rate=96031.8 (375.1 KiB/s) rx_rate=96031.8 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=37.8 peak=1436 write_avg=9781us max=9861us read_avg=136us max=174us
+I (9976) aud01: PERF: tx_rate=96028.3 (375.1 KiB/s) rx_rate=96028.3 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=36.4 peak=1436 write_avg=9782us max=9861us read_avg=136us max=174us
+I (10976) aud01: PERF: tx_rate=96025.5 (375.1 KiB/s) rx_rate=96025.5 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=35.1 peak=1436 write_avg=9783us max=9861us read_avg=136us max=174us
+I (11976) aud01: PERF: tx_rate=96023.2 (375.1 KiB/s) rx_rate=96023.2 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=33.9 peak=1436 write_avg=9783us max=9861us read_avg=136us max=174us
+I (12976) aud01: PERF: tx_rate=96021.3 (375.1 KiB/s) rx_rate=96021.3 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=33.0 peak=1436 write_avg=9784us max=9861us read_avg=136us max=174us
+I (13976) aud01: PERF: tx_rate=96019.7 (375.1 KiB/s) rx_rate=96019.7 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=32.2 peak=1436 write_avg=9784us max=9861us read_avg=136us max=174us
+I (14976) aud01: PERF: tx_rate=96018.3 (375.1 KiB/s) rx_rate=96018.3 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=31.5 peak=1436 write_avg=9785us max=9861us read_avg=136us max=174us
+I (15976) aud01: PERF: tx_rate=96017.1 (375.1 KiB/s) rx_rate=96017.1 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=30.8 peak=1436 write_avg=9785us max=9861us read_avg=136us max=174us
+I (16976) aud01: PERF: tx_rate=96016.0 (375.1 KiB/s) rx_rate=96016.0 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=30.2 peak=1436 write_avg=9785us max=9861us read_avg=136us max=174us
+I (17976) aud01: PERF: tx_rate=96015.1 (375.1 KiB/s) rx_rate=96015.1 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=29.7 peak=1436 write_avg=9785us max=9861us read_avg=136us max=174us
+I (18976) aud01: PERF: tx_rate=96014.2 (375.1 KiB/s) rx_rate=96014.2 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=29.2 peak=1436 write_avg=9785us max=9862us read_avg=136us max=174us
+I (19976) aud01: PERF: tx_rate=96013.5 (375.1 KiB/s) rx_rate=96013.5 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=28.7 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (20976) aud01: PERF: tx_rate=96012.8 (375.1 KiB/s) rx_rate=96012.8 (375.1 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=28.4 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (21976) aud01: PERF: tx_rate=96012.2 (375.0 KiB/s) rx_rate=96012.2 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=28.0 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (22976) aud01: PERF: tx_rate=96011.7 (375.0 KiB/s) rx_rate=96011.7 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=27.7 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (23976) aud01: PERF: tx_rate=96011.2 (375.0 KiB/s) rx_rate=96011.2 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=27.4 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (24976) aud01: PERF: tx_rate=96010.7 (375.0 KiB/s) rx_rate=96010.7 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=27.2 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (25976) aud01: PERF: tx_rate=96010.3 (375.0 KiB/s) rx_rate=96010.3 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=27.0 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (26976) aud01: PERF: tx_rate=96009.9 (375.0 KiB/s) rx_rate=96009.9 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=26.9 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (27976) aud01: PERF: tx_rate=96009.6 (375.0 KiB/s) rx_rate=96009.6 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=26.7 peak=1436 write_avg=9786us max=9862us read_avg=136us max=174us
+I (28976) aud01: PERF: tx_rate=96009.2 (375.0 KiB/s) rx_rate=96009.2 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=26.5 peak=1436 write_avg=9787us max=9862us read_avg=136us max=174us
+I (29976) aud01: PERF: tx_rate=96008.9 (375.0 KiB/s) rx_rate=96008.9 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=26.3 peak=1436 write_avg=9787us max=9862us read_avg=136us max=174us
+I (30976) aud01: PERF: tx_rate=96008.6 (375.0 KiB/s) rx_rate=96008.6 (375.0 KiB/s) app_cpu=1.15%; write_err=0 read_err=0 rx_rms=26.2 peak=1436 write_avg=9787us max=9862us read_avg=136us max=174us
+I (30982) aud01: AUD-01 complete: tx=2880960 rx=2880960 write_err=0 read_err=0
+I (31138) main_task: Returned from app_main()
+
+192k 1920
+
+I (806) main_task: Calling app_main()
+E (807) i2s_common: The required APLL frequency exceed its maximum value
+E (812) i2s_std: i2s_std_calculate_clock(76): sample rate is too large
+E (818) i2s_std: i2s_std_set_clock(100): clock calculate failed
+E (824) i2s_std: i2s_channel_init_std_mode(341): initialize channel failed while setting clock
+E (832) ESP32-S31-Korvo-1: bsp_audio_init(61): I2S channel initialization failed
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x4000ba18
+--- 0x4000ba18: app_main at D:/ESP32S31/examples/codec/aud/aud01_clock/main/app_main.c:63
+file: "./main/app_main.c" line 63
+func: app_main
+expression: bsp_audio_init(&i2s_cfg)
+
+abort() was called at PC 0x2f008cfd on core 0
+--- 0x2f008cfd: _esp_error_check_failed at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c:38
+--- Stack dump detected
+Core  0 register dump:
+MEPC    : 0x2f008d4c  RA      : 0x2f008d06  SP      : 0x2f016230  GP      : 0x2f00e088
+--- 0x2f008d4c: panic_abort at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c:496
+--- 0x2f008d06: esp_vApplicationTickHook at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/freertos_hooks.c:31
+TP      : 0x2f0164c0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130
+S0/FP   : 0x2f01626c  S1      : 0x2f01626c  A0      : 0x2f01626c  A1      : 0x2f01624e
+A2      : 0x00000000  A3      : 0x2f012000  A4      : 0x00000001  A5      : 0x2f012000
+A6      : 0x2f016219  A7      : 0x76757473  S2      : 0x2f016250  S3      : 0x00000000
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938
+MSTATUS : 0x00011881  MTVEC   : 0x2f000003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+
+
+--- Backtrace:
+
+
+add symbol table from file "D:\ESP32S31\examples\codec\aud\aud01_clock\build\bootloader\bootloader.elf"
+panic_abort (details=details@entry=0x2f01626c "abort() was called at PC 0x2f008cfd on core 0") at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c:496
+496         asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x2f01626c "abort() was called at PC 0x2f008cfd on core 0") at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/panic.c:496
+#1  0x2f008d06 in esp_system_abort (details=details@entry=0x2f01626c "abort() was called at PC 0x2f008cfd on core 0") at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x2f007c96 in abort () at D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc/src/abort.c:38
+#3  0x2f008d00 in _esp_error_check_failed (rc=<optimized out>, file=file@entry=0x40035e8c "", line=line@entry=63, function=function@entry=0x4003d6a4 <__func__.0> "", expression=expression@entry=0x40035ea0 "") at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/esp_err.c:38
+#4  0x4000ba1c in app_main () at D:/ESP32S31/examples/codec/aud/aud01_clock/main/app_main.c:63
+#5  0x40007b38 in main_task (args=<optimized out>) at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/app_startup.c:206
+#6  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: a204423fe
+
+Rebooting...
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0xc (SW_CPU_RESET),boot:0x7d (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x2f000bae
+--- 0x2f000bae: esp_restart_noos_inner at D:/Espressif-master/.espressif/master/esp-idf/components/esp_system/port/soc/esp32s31/system_internal.c:91
+Core1 Saved PC:0x2f005554
+--- 0x2f005554: esp_cpu_wait_for_intr at D:/Espressif-master/.espressif/master/esp-idf/components/esp_hw_support/cpu.c:57
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+--- 0x2f06a2b0: esp_bootloader_get_description at D:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:38
+load:0x2f06cfb0,len:0x2fb8
+--- 0x2f06cfb0: is_xmc_chip_strict at D:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:915
+entry 0x2f06a2ba
+--- 0x2f06a2ba: call_start_cpu0 at D:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_star

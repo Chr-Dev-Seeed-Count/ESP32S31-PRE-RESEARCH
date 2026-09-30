@@ -1,0 +1,32 @@
+Command: ninja all
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[2/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\sys\sys03\sys03b\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/sys/sys03/sys03b/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[3/9] Linking C static library esp-idf\main\libmain.a
+[4/9] No install step for 'bootloader'
+[5/9] Completed 'bootloader'
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/bt/host/nimble/Kconfig
+.in:1461: BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value 
+(only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:240: 
+FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+NOTE: 
+D:/Espressif-master/.espressif/master/esp-idf/components/fatfs/Kconfig:245: 
+FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+Skipping linker fragment parsing, fragment files unchanged
+[7/9] Linking CXX executable sys03b.elf
+[8/9] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-S31 image...
+Merged 3 ELF sections.
+Successfully created ESP32-S31 image.
+Generated D:/ESP32S31/examples/sys/sys03/sys03b/build/sys03b.bin
+[9/9] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\sys\sys03\sys03b\build && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32S31/examples/sys/sys03/sys03b/build/partition_table/partition-table.bin D:/ESP32S31/examples/sys/sys03/sys03b/build/sys03b.bin"
+sys03b.bin binary size 0x2dc90 bytes. Smallest app partition is 0x100000 bytes.
+0xd2370 bytes (82%) free.

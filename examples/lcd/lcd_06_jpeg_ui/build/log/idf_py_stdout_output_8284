@@ -1,0 +1,3 @@
+Command: cmake -G Ninja -B D:\ESP32S31\examples\lcd\lcd_06_jpeg_ui\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32s31 -DCCACHE_ENABLE=True -DCONFIGDEP_ENABLE=True D:\ESP32S31\examples\lcd\lcd_06_jpeg_ui
+-- Existing sdkconfig 'D:/ESP32S31/examples/lcd/lcd_06_jpeg_ui/sdkconfig' renamed to 'D:/ESP32S31/examples/lcd/lcd_06_jpeg_ui/sdkconfig.old'.
+-- Found Git: D:/Git/cmd/git.exe (found version "2.48.1.windows.1")

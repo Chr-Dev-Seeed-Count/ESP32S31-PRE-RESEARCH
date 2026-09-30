@@ -1,0 +1,2 @@
+source D:/ESP32S31/examples/sys/sys02B/build/bootloader/gdbinit/symbols
+source D:/ESP32S31/examples/sys/sys02B/build/bootloader/gdbinit/connect

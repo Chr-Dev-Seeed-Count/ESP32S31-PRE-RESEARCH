@@ -1,0 +1,76 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\lcd\lcd_01_rgb_timing\build\lcd_01_rgb_timing.elf D:\ESP32S31\examples\lcd\lcd_01_rgb_timing\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x2f06a2b0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m38[0m
+[0m--- 0x2f06cfb0: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m915[0m
+[0m--- 0x2f06a2ba: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x2f001fcc: [0;33mlock_release_generic[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_libc/src/locks.c[0m[0m:[1;31m211[0m
+[0m--- 0x2f001f68: [0;33mlock_release_generic[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_libc/src/locks.c[0m[0m:[1;31m192[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d304: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d2dc: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f00a626: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x5004ff56: [0;33mxQueueGenericSend[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1057[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d304: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x50019dd4: [0;33mlv_color_16_16_mix[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/misc/lv_color.c[0m[0m:[1;31m328[0m
+[0m--- 0x50042802: [0;33mlv_draw_sw_blend_color_to_rgb565[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c[0m[0m:[1;31m376[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d31c: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x50010090: [0;33mlv_obj_get_scrollbar_area[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/core/lv_obj_scroll.c[0m[0m:[1;31m501[0m
+[0m--- 0x5001007c: [0;33mlv_obj_get_scrollbar_area[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/core/lv_obj_scroll.c[0m[0m:[1;31m490[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f00a780: [0;33mvPortYield[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m694[0m
+[0m--- 0x2f00a776: [0;33mvPortYield[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m694[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d324: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x50014a7e: [0;33mlv_draw_buf_goto_xy[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m376[0m
+[0m--- 0x500145dc: [0;33mlv_draw_layer_go_to_xy[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m525[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d31c: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d324: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x5001bf52: [0;33mlv_timer_exec[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m382[0m
+[0m--- 0x5001c026: [0;33mlv_timer_handler[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d328: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x50039b80: [0;33mlv_draw_sw_blend[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend.c[0m[0m:[1;31m93[0m
+[0m--- 0x50039b72: [0;33mlv_draw_sw_blend[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/draw/sw/blend/lv_draw_sw_blend.c[0m[0m:[1;31m86[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f80d2dc: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x50008d20: [0;33mrgb_panel_draw_bitmap[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/esp_lcd/rgb/esp_lcd_panel_rgb.c[0m[0m:[1;31m761[0m
+[0m--- 0x50007dea: [0;33mlcd_perf_on_color_done[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/main/lcd_perf_port.c[0m[0m:[1;31m61[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x50019152: [0;33mlv_area_get_size[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/misc/lv_area.c[0m[0m:[1;31m73[0m
+[0m--- 0x5000b64c: [0;33mdraw_scrollbar[0m[0m at [0;32mD:/ESP32S31/examples/lcd/lcd_01_rgb_timing/managed_components/lvgl__lvgl/src/core/lv_obj.c[0m[0m:[1;31m788[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x2f00a780: [0;33mvPortYield[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m694[0m
+[0m--- 0x2f00a776: [0;33mvPortYield[0m[0m at [0;32mD:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m694[0m
+[0m--- 0x2f000003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m

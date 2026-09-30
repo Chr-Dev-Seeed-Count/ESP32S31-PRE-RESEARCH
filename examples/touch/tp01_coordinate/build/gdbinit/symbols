@@ -1,0 +1,20 @@
+# Load esp32s31 ROM ELF symbols
+define target hookpost-remote
+set confirm off
+  # if $_streq((char *) 0x2f8488e0, "Dec 18 2025")
+  if (*(int*) 0x2f8488e0) == 0x20636544 && (*(int*) 0x2f8488e4) == 0x32203831 && (*(int*) 0x2f8488e8) == 0x353230
+    add-symbol-file D:/Espressif/tools/esp-rom-elfs/20260528/esp32s31_rev0_rom.elf
+  else
+    echo Warning: Unknown esp32s31 ROM revision.\n
+  end
+set confirm on
+end
+
+
+# Load bootloader symbols
+set confirm off
+    add-symbol-file D:/ESP32S31/examples/touch/tp01_coordinate/build/bootloader/bootloader.elf
+set confirm on
+
+# Load application symbols
+file D:/ESP32S31/examples/touch/tp01_coordinate/build/tp01_coordinate.elf

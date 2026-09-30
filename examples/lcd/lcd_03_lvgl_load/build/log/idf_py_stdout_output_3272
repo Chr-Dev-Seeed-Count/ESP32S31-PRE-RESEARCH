@@ -1,0 +1,390 @@
+Command: D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:\Espressif-master\.espressif\master\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32s31 --revision 0 --decode-panic backtrace D:\ESP32S31\examples\lcd\lcd_03_lvgl_load\build\lcd_03_lvgl_load.elf D:\ESP32S31\examples\lcd\lcd_03_lvgl_load\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe' 'D:\Espressif-master\.espressif\master\esp-idf\tools\idf.py' '--preview' '-p' 'COM5'
+ESP-ROM:esp32s31-20251218
+Build:Dec 18 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x2f0740c0,len:0x16e8
+load:0x2f06a2b0,len:0xc64
+load:0x2f06cfb0,len:0x2fbc
+entry 0x2f06a2ba
+[0;32mI (25) boot: ESP-IDF 08e0d30a-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Sep  4 2026 11:40:02[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (29) boot: efuse block revision: v0.0[0m
+[0;32mI (33) boot.esp32s31: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32s31: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s31: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=50058020 size=0e6d4h ( 59092) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001e6fc vaddr=2f000000 size=0191ch (  6428) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00020020 vaddr=50000020 size=51be0h (334816) map[0m
+[0;32mI (159) esp_image: segment 3: paddr=00071c08 vaddr=2f00191c size=0d0f8h ( 53496) load[0m
+[0;32mI (171) esp_image: segment 4: paddr=0007ed08 vaddr=2f00ea80 size=04230h ( 16944) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) oct_psram: vendor id    : 0x1a (UNKNOWN)[0m
+[0;32mI (191) oct_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (191) oct_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (192) oct_psram: dev id       : 0x00 (generation 1)[0m
+[0;32mI (197) oct_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (202) oct_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (206) oct_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (210) oct_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (215) oct_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (219) oct_psram: BitMode      : 0x00 (X8 Mode)[0m
+[0;32mI (223) oct_psram: Readlatency  : 0x06 (18 cycles@Fixed)[0m
+[0;32mI (228) oct_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (232) MSPI Timing: Enter psram timing tuning[0m
+I esp_psram: Found 16MB PSRAM device
+I esp_psram: Speed: 250MHz
+[0;32mI (393) mmu_psram: .rodata xip on psram[0m
+[0;32mI (422) mmu_psram: .text xip on psram[0m
+[0;32mI (423) cpu_start: Multicore app[0m
+[0;32mI (745) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (753) cpu_start: GPIO 59 and 58 are used as console UART I/O pins[0m
+[0;32mI (753) cpu_start: Pro cpu start user code[0m
+[0;32mI (753) cpu_start: cpu freq: 320000000 Hz[0m
+[0;32mI (755) app_init: Application information:[0m
+[0;32mI (759) app_init: Project name:     lcd_03_lvgl_load[0m
+[0;32mI (764) app_init: App version:      1[0m
+[0;32mI (767) app_init: Compile time:     Sep  4 2026 11:40:04[0m
+[0;32mI (772) app_init: ELF file SHA256:  cb241cb80...[0m
+[0;32mI (777) app_init: ESP-IDF:          08e0d30a-dirty[0m
+[0;32mI (781) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (785) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (789) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (793) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (799) heap_init: At 2F0248A0 len 00056710 (345 KiB): RAM[0m
+[0;32mI (804) heap_init: At 2F07AFB0 len 000041C0 (16 KiB): RAM[0m
+[0;32mI (809) heap_init: At 2E000000 len 00007FE8 (31 KiB): RTCRAM[0m
+[0;32mI (815) esp_psram: Adding pool of 15968K of PSRAM memory to heap allocator[0m
+[0;32mI (821) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator[0m
+[0;32mI (832) esp_psram: Adding pool of 6K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (844) spi_flash: detected chip: generic[0m
+[0;32mI (847) spi_flash: flash io: dio[0m
+[0;33mW (850) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (862) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (869) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (875) main_task: Started on CPU0[0m
+[0;32mI (875) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (885) main_task: Calling app_main()[0m
+[0;32mI (905) lcd_perf: START demo=LCD-03 pclk=18000000Hz htotal=928 vtotal=548 refresh=35.40Hz draw_lines=40 draw_double=0[0m
+[0;32mI (915) lcd_demo: READY test=3; increase CONFIG_LCD_PERF_* until FPS/flush errors or visual first error[0m
+[0;32mI (915) main_task: Returned from app_main()[0m
+[0;32mI (3915) lcd_perf: PERF fps=28.58 flush_done=86 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (6915) lcd_perf: PERF fps=29.31 flush_done=174 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (9915) lcd_perf: PERF fps=29.33 flush_done=262 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (12925) lcd_perf: PERF fps=29.59 flush_done=351 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (15925) lcd_perf: PERF fps=29.31 flush_done=439 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (18925) lcd_perf: PERF fps=29.33 flush_done=527 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (21935) lcd_perf: PERF fps=29.59 flush_done=616 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (24935) lcd_perf: PERF fps=29.31 flush_done=704 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (27935) lcd_perf: PERF fps=29.33 flush_done=792 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (30945) lcd_perf: PERF fps=29.59 flush_done=881 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (33945) lcd_perf: PERF fps=29.31 flush_done=969 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (36945) lcd_perf: PERF fps=29.33 flush_done=1057 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (39955) lcd_perf: PERF fps=29.57 flush_done=1146 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (42955) lcd_perf: PERF fps=29.33 flush_done=1234 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (45955) lcd_perf: PERF fps=29.33 flush_done=1322 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (48965) lcd_perf: PERF fps=29.59 flush_done=1411 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (51965) lcd_perf: PERF fps=29.31 flush_done=1499 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (54965) lcd_perf: PERF fps=29.33 flush_done=1587 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (57975) lcd_perf: PERF fps=29.59 flush_done=1676 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (60975) lcd_perf: PERF fps=29.31 flush_done=1764 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (63975) lcd_perf: PERF fps=29.33 flush_done=1852 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (66985) lcd_perf: PERF fps=29.59 flush_done=1941 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (69985) lcd_perf: PERF fps=29.31 flush_done=2029 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (72985) lcd_perf: PERF fps=29.33 flush_done=2117 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (75995) lcd_perf: PERF fps=29.59 flush_done=2206 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (78995) lcd_perf: PERF fps=29.31 flush_done=2294 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (81995) lcd_perf: PERF fps=29.33 flush_done=2382 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (85005) lcd_perf: PERF fps=29.59 flush_done=2471 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (88005) lcd_perf: PERF fps=29.31 flush_done=2559 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (91005) lcd_perf: PERF fps=29.33 flush_done=2647 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (94015) lcd_perf: PERF fps=29.59 flush_done=2736 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (97015) lcd_perf: PERF fps=29.31 flush_done=2824 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (100015) lcd_perf: PERF fps=29.33 flush_done=2912 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (103025) lcd_perf: PERF fps=29.59 flush_done=3001 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (106025) lcd_perf: PERF fps=29.31 flush_done=3089 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (109025) lcd_perf: PERF fps=29.33 flush_done=3177 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (112035) lcd_perf: PERF fps=29.59 flush_done=3266 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (115035) lcd_perf: PERF fps=29.31 flush_done=3354 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (118035) lcd_perf: PERF fps=29.33 flush_done=3442 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (121045) lcd_perf: PERF fps=29.59 flush_done=3531 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (124045) lcd_perf: PERF fps=29.31 flush_done=3619 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (127045) lcd_perf: PERF fps=29.33 flush_done=3707 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (130055) lcd_perf: PERF fps=29.59 flush_done=3796 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (133055) lcd_perf: PERF fps=29.31 flush_done=3884 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (136055) lcd_perf: PERF fps=29.33 flush_done=3972 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (139065) lcd_perf: PERF fps=29.58 flush_done=4061 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (142065) lcd_perf: PERF fps=29.32 flush_done=4149 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (145065) lcd_perf: PERF fps=29.33 flush_done=4237 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (148075) lcd_perf: PERF fps=29.59 flush_done=4326 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (151075) lcd_perf: PERF fps=29.31 flush_done=4414 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (154075) lcd_perf: PERF fps=29.33 flush_done=4502 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (157085) lcd_perf: PERF fps=29.59 flush_done=4591 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (160085) lcd_perf: PERF fps=29.31 flush_done=4679 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (163085) lcd_perf: PERF fps=29.33 flush_done=4767 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (166095) lcd_perf: PERF fps=29.59 flush_done=4856 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (169095) lcd_perf: PERF fps=29.31 flush_done=4944 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (172095) lcd_perf: PERF fps=29.33 flush_done=5032 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (175105) lcd_perf: PERF fps=29.59 flush_done=5121 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (178105) lcd_perf: PERF fps=29.31 flush_done=5209 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (181105) lcd_perf: PERF fps=29.33 flush_done=5297 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (184115) lcd_perf: PERF fps=29.59 flush_done=5386 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (187115) lcd_perf: PERF fps=29.31 flush_done=5474 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (190115) lcd_perf: PERF fps=29.33 flush_done=5562 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (193125) lcd_perf: PERF fps=29.59 flush_done=5651 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (196125) lcd_perf: PERF fps=29.31 flush_done=5739 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (199125) lcd_perf: PERF fps=29.33 flush_done=5827 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (202135) lcd_perf: PERF fps=29.59 flush_done=5916 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (205135) lcd_perf: PERF fps=29.31 flush_done=6004 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (208135) lcd_perf: PERF fps=29.33 flush_done=6092 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (211145) lcd_perf: PERF fps=29.59 flush_done=6181 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (214145) lcd_perf: PERF fps=29.31 flush_done=6269 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (217145) lcd_perf: PERF fps=29.33 flush_done=6357 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (220155) lcd_perf: PERF fps=29.59 flush_done=6446 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (223155) lcd_perf: PERF fps=29.31 flush_done=6534 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (226155) lcd_perf: PERF fps=29.33 flush_done=6622 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (229165) lcd_perf: PERF fps=29.59 flush_done=6711 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (232165) lcd_perf: PERF fps=29.31 flush_done=6799 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (235165) lcd_perf: PERF fps=29.33 flush_done=6887 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (238175) lcd_perf: PERF fps=29.58 flush_done=6976 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (241175) lcd_perf: PERF fps=29.32 flush_done=7064 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (244175) lcd_perf: PERF fps=29.33 flush_done=7152 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (247185) lcd_perf: PERF fps=29.59 flush_done=7241 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (250185) lcd_perf: PERF fps=29.31 flush_done=7329 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (253185) lcd_perf: PERF fps=29.33 flush_done=7417 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (256195) lcd_perf: PERF fps=29.59 flush_done=7506 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (259195) lcd_perf: PERF fps=29.31 flush_done=7594 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (262195) lcd_perf: PERF fps=29.33 flush_done=7682 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (265205) lcd_perf: PERF fps=29.59 flush_done=7771 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (268205) lcd_perf: PERF fps=29.31 flush_done=7859 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (271205) lcd_perf: PERF fps=29.33 flush_done=7947 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (274215) lcd_perf: PERF fps=29.59 flush_done=8036 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (277215) lcd_perf: PERF fps=29.31 flush_done=8124 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (280215) lcd_perf: PERF fps=29.33 flush_done=8212 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (283225) lcd_perf: PERF fps=29.59 flush_done=8301 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (286225) lcd_perf: PERF fps=29.31 flush_done=8389 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (289225) lcd_perf: PERF fps=29.33 flush_done=8477 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (292235) lcd_perf: PERF fps=29.59 flush_done=8566 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (295235) lcd_perf: PERF fps=29.31 flush_done=8654 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (298235) lcd_perf: PERF fps=29.33 flush_done=8742 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (301245) lcd_perf: PERF fps=29.59 flush_done=8831 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (304245) lcd_perf: PERF fps=29.31 flush_done=8919 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (307245) lcd_perf: PERF fps=29.33 flush_done=9007 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (310255) lcd_perf: PERF fps=29.59 flush_done=9096 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (313255) lcd_perf: PERF fps=29.31 flush_done=9184 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (316255) lcd_perf: PERF fps=29.33 flush_done=9272 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (319265) lcd_perf: PERF fps=29.59 flush_done=9361 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (322265) lcd_perf: PERF fps=29.31 flush_done=9449 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (325265) lcd_perf: PERF fps=29.33 flush_done=9537 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (328275) lcd_perf: PERF fps=29.59 flush_done=9626 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (331275) lcd_perf: PERF fps=29.31 flush_done=9714 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (334275) lcd_perf: PERF fps=29.33 flush_done=9802 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (337285) lcd_perf: PERF fps=29.59 flush_done=9891 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (340285) lcd_perf: PERF fps=29.32 flush_done=9979 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (343285) lcd_perf: PERF fps=29.33 flush_done=10067 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (346295) lcd_perf: PERF fps=29.59 flush_done=10156 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (349295) lcd_perf: PERF fps=29.31 flush_done=10244 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (352295) lcd_perf: PERF fps=29.33 flush_done=10332 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (355305) lcd_perf: PERF fps=29.59 flush_done=10421 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (358305) lcd_perf: PERF fps=29.31 flush_done=10509 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (361305) lcd_perf: PERF fps=29.33 flush_done=10597 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (364315) lcd_perf: PERF fps=29.59 flush_done=10686 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (367315) lcd_perf: PERF fps=29.31 flush_done=10774 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (370315) lcd_perf: PERF fps=29.33 flush_done=10862 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (373325) lcd_perf: PERF fps=29.59 flush_done=10951 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (376325) lcd_perf: PERF fps=29.31 flush_done=11039 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (379325) lcd_perf: PERF fps=29.33 flush_done=11127 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (382335) lcd_perf: PERF fps=29.59 flush_done=11216 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (385335) lcd_perf: PERF fps=29.31 flush_done=11304 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (388335) lcd_perf: PERF fps=29.33 flush_done=11392 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (391345) lcd_perf: PERF fps=29.59 flush_done=11481 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (394345) lcd_perf: PERF fps=29.31 flush_done=11569 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (397345) lcd_perf: PERF fps=29.33 flush_done=11657 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (400355) lcd_perf: PERF fps=29.59 flush_done=11746 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (403355) lcd_perf: PERF fps=29.31 flush_done=11834 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (406355) lcd_perf: PERF fps=29.33 flush_done=11922 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (409365) lcd_perf: PERF fps=29.59 flush_done=12011 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (412365) lcd_perf: PERF fps=29.31 flush_done=12099 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (415365) lcd_perf: PERF fps=29.33 flush_done=12187 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (418375) lcd_perf: PERF fps=29.59 flush_done=12276 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (421375) lcd_perf: PERF fps=29.31 flush_done=12364 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (424375) lcd_perf: PERF fps=29.33 flush_done=12452 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (427385) lcd_perf: PERF fps=29.59 flush_done=12541 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (430385) lcd_perf: PERF fps=29.31 flush_done=12629 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (433385) lcd_perf: PERF fps=29.33 flush_done=12717 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (436395) lcd_perf: PERF fps=29.59 flush_done=12806 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (439395) lcd_perf: PERF fps=29.31 flush_done=12894 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (442395) lcd_perf: PERF fps=29.33 flush_done=12982 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (445405) lcd_perf: PERF fps=29.59 flush_done=13071 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (448405) lcd_perf: PERF fps=29.31 flush_done=13159 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (451405) lcd_perf: PERF fps=29.33 flush_done=13247 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (454415) lcd_perf: PERF fps=29.59 flush_done=13336 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (457415) lcd_perf: PERF fps=29.31 flush_done=13424 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (460415) lcd_perf: PERF fps=29.33 flush_done=13512 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (463425) lcd_perf: PERF fps=29.59 flush_done=13601 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (466425) lcd_perf: PERF fps=29.31 flush_done=13689 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (469425) lcd_perf: PERF fps=29.33 flush_done=13777 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (472435) lcd_perf: PERF fps=29.59 flush_done=13866 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (475435) lcd_perf: PERF fps=29.31 flush_done=13954 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (478435) lcd_perf: PERF fps=29.33 flush_done=14042 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (481445) lcd_perf: PERF fps=29.59 flush_done=14131 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (484445) lcd_perf: PERF fps=29.31 flush_done=14219 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (487445) lcd_perf: PERF fps=29.33 flush_done=14307 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (490455) lcd_perf: PERF fps=29.59 flush_done=14396 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (493455) lcd_perf: PERF fps=29.31 flush_done=14484 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (496455) lcd_perf: PERF fps=29.33 flush_done=14572 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (499465) lcd_perf: PERF fps=29.59 flush_done=14661 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (502465) lcd_perf: PERF fps=29.31 flush_done=14749 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (505465) lcd_perf: PERF fps=29.33 flush_done=14837 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (508475) lcd_perf: PERF fps=29.59 flush_done=14926 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (511475) lcd_perf: PERF fps=29.31 flush_done=15014 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (514475) lcd_perf: PERF fps=29.33 flush_done=15102 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (517485) lcd_perf: PERF fps=29.59 flush_done=15191 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (520485) lcd_perf: PERF fps=29.31 flush_done=15279 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (523485) lcd_perf: PERF fps=29.33 flush_done=15367 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (526495) lcd_perf: PERF fps=29.59 flush_done=15456 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (529495) lcd_perf: PERF fps=29.31 flush_done=15544 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (532495) lcd_perf: PERF fps=29.33 flush_done=15632 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (535505) lcd_perf: PERF fps=29.59 flush_done=15721 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (538505) lcd_perf: PERF fps=29.31 flush_done=15809 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (541505) lcd_perf: PERF fps=29.33 flush_done=15897 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (544515) lcd_perf: PERF fps=29.57 flush_done=15986 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (547515) lcd_perf: PERF fps=29.33 flush_done=16074 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (550515) lcd_perf: PERF fps=29.33 flush_done=16162 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (553525) lcd_perf: PERF fps=29.59 flush_done=16251 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (556525) lcd_perf: PERF fps=29.31 flush_done=16339 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (559525) lcd_perf: PERF fps=29.33 flush_done=16427 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (562535) lcd_perf: PERF fps=29.59 flush_done=16516 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (565535) lcd_perf: PERF fps=29.31 flush_done=16604 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (568535) lcd_perf: PERF fps=29.33 flush_done=16692 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (571545) lcd_perf: PERF fps=29.59 flush_done=16781 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (574545) lcd_perf: PERF fps=29.31 flush_done=16869 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (577545) lcd_perf: PERF fps=29.33 flush_done=16957 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (580555) lcd_perf: PERF fps=29.59 flush_done=17046 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (583555) lcd_perf: PERF fps=29.31 flush_done=17134 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (586555) lcd_perf: PERF fps=29.33 flush_done=17222 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (589565) lcd_perf: PERF fps=29.59 flush_done=17311 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (592565) lcd_perf: PERF fps=29.31 flush_done=17399 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (595565) lcd_perf: PERF fps=29.33 flush_done=17487 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (598575) lcd_perf: PERF fps=29.59 flush_done=17576 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (601575) lcd_perf: PERF fps=29.31 flush_done=17664 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (604575) lcd_perf: PERF fps=29.33 flush_done=17752 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (607585) lcd_perf: PERF fps=29.59 flush_done=17841 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (610585) lcd_perf: PERF fps=29.31 flush_done=17929 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (613585) lcd_perf: PERF fps=29.33 flush_done=18017 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (616595) lcd_perf: PERF fps=29.59 flush_done=18106 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (619595) lcd_perf: PERF fps=29.31 flush_done=18194 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (622595) lcd_perf: PERF fps=29.33 flush_done=18282 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (625605) lcd_perf: PERF fps=29.59 flush_done=18371 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (628605) lcd_perf: PERF fps=29.31 flush_done=18459 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (631605) lcd_perf: PERF fps=29.33 flush_done=18547 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (634615) lcd_perf: PERF fps=29.59 flush_done=18636 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (637615) lcd_perf: PERF fps=29.31 flush_done=18724 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (640615) lcd_perf: PERF fps=29.33 flush_done=18812 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (643625) lcd_perf: PERF fps=29.57 flush_done=18901 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (646625) lcd_perf: PERF fps=29.33 flush_done=18989 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (649625) lcd_perf: PERF fps=29.33 flush_done=19077 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (652635) lcd_perf: PERF fps=29.59 flush_done=19166 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (655635) lcd_perf: PERF fps=29.31 flush_done=19254 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (658635) lcd_perf: PERF fps=29.33 flush_done=19342 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (661645) lcd_perf: PERF fps=29.59 flush_done=19431 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (664645) lcd_perf: PERF fps=29.31 flush_done=19519 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (667645) lcd_perf: PERF fps=29.33 flush_done=19607 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (670655) lcd_perf: PERF fps=29.59 flush_done=19696 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (673655) lcd_perf: PERF fps=29.31 flush_done=19784 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (676655) lcd_perf: PERF fps=29.33 flush_done=19872 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (679665) lcd_perf: PERF fps=29.59 flush_done=19961 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (682665) lcd_perf: PERF fps=29.31 flush_done=20049 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (685665) lcd_perf: PERF fps=29.33 flush_done=20137 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (688675) lcd_perf: PERF fps=29.59 flush_done=20226 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (691675) lcd_perf: PERF fps=29.31 flush_done=20314 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (694675) lcd_perf: PERF fps=29.33 flush_done=20402 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (697685) lcd_perf: PERF fps=29.59 flush_done=20491 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (700685) lcd_perf: PERF fps=29.31 flush_done=20579 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (703685) lcd_perf: PERF fps=29.33 flush_done=20667 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (706695) lcd_perf: PERF fps=29.59 flush_done=20756 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (709695) lcd_perf: PERF fps=29.31 flush_done=20844 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (712695) lcd_perf: PERF fps=29.33 flush_done=20932 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (715705) lcd_perf: PERF fps=29.59 flush_done=21021 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (718705) lcd_perf: PERF fps=29.31 flush_done=21109 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (721705) lcd_perf: PERF fps=29.33 flush_done=21197 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (724715) lcd_perf: PERF fps=29.59 flush_done=21286 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (727715) lcd_perf: PERF fps=29.31 flush_done=21374 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (730715) lcd_perf: PERF fps=29.33 flush_done=21462 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (733725) lcd_perf: PERF fps=29.59 flush_done=21551 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (736725) lcd_perf: PERF fps=29.31 flush_done=21639 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (739725) lcd_perf: PERF fps=29.33 flush_done=21727 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (742735) lcd_perf: PERF fps=29.58 flush_done=21816 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (745735) lcd_perf: PERF fps=29.32 flush_done=21904 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (748735) lcd_perf: PERF fps=29.33 flush_done=21992 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (751745) lcd_perf: PERF fps=29.59 flush_done=22081 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (754745) lcd_perf: PERF fps=29.31 flush_done=22169 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (757745) lcd_perf: PERF fps=29.33 flush_done=22257 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (760755) lcd_perf: PERF fps=29.59 flush_done=22346 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (763755) lcd_perf: PERF fps=29.31 flush_done=22434 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (766755) lcd_perf: PERF fps=29.33 flush_done=22522 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (769765) lcd_perf: PERF fps=29.59 flush_done=22611 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (772765) lcd_perf: PERF fps=29.31 flush_done=22699 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (775765) lcd_perf: PERF fps=29.33 flush_done=22787 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (778775) lcd_perf: PERF fps=29.59 flush_done=22876 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (781775) lcd_perf: PERF fps=29.31 flush_done=22964 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (784775) lcd_perf: PERF fps=29.33 flush_done=23052 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (787785) lcd_perf: PERF fps=29.59 flush_done=23141 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (790785) lcd_perf: PERF fps=29.31 flush_done=23229 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (793785) lcd_perf: PERF fps=29.33 flush_done=23317 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (796795) lcd_perf: PERF fps=29.59 flush_done=23406 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (799795) lcd_perf: PERF fps=29.31 flush_done=23494 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (802795) lcd_perf: PERF fps=29.33 flush_done=23582 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (805805) lcd_perf: PERF fps=29.59 flush_done=23671 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (808805) lcd_perf: PERF fps=29.31 flush_done=23759 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (811805) lcd_perf: PERF fps=29.33 flush_done=23847 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (814815) lcd_perf: PERF fps=29.59 flush_done=23936 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (817815) lcd_perf: PERF fps=29.31 flush_done=24024 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (820815) lcd_perf: PERF fps=29.33 flush_done=24112 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (823825) lcd_perf: PERF fps=29.59 flush_done=24201 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (826825) lcd_perf: PERF fps=29.31 flush_done=24289 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (829825) lcd_perf: PERF fps=29.33 flush_done=24377 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (832835) lcd_perf: PERF fps=29.59 flush_done=24466 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (835835) lcd_perf: PERF fps=29.31 flush_done=24554 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (838835) lcd_perf: PERF fps=29.33 flush_done=24642 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (841845) lcd_perf: PERF fps=29.58 flush_done=24731 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (844845) lcd_perf: PERF fps=29.32 flush_done=24819 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (847845) lcd_perf: PERF fps=29.33 flush_done=24907 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (850855) lcd_perf: PERF fps=29.59 flush_done=24996 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (853855) lcd_perf: PERF fps=29.31 flush_done=25084 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (856855) lcd_perf: PERF fps=29.33 flush_done=25172 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (859865) lcd_perf: PERF fps=29.59 flush_done=25261 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (862865) lcd_perf: PERF fps=29.31 flush_done=25349 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (865865) lcd_perf: PERF fps=29.33 flush_done=25437 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (868875) lcd_perf: PERF fps=29.59 flush_done=25526 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (871875) lcd_perf: PERF fps=29.31 flush_done=25614 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (874875) lcd_perf: PERF fps=29.33 flush_done=25702 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (877885) lcd_perf: PERF fps=29.59 flush_done=25791 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (880885) lcd_perf: PERF fps=29.31 flush_done=25879 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (883885) lcd_perf: PERF fps=29.33 flush_done=25967 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (886895) lcd_perf: PERF fps=29.59 flush_done=26056 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (889895) lcd_perf: PERF fps=29.31 flush_done=26144 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (892895) lcd_perf: PERF fps=29.33 flush_done=26232 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (895905) lcd_perf: PERF fps=29.59 flush_done=26321 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (898905) lcd_perf: PERF fps=29.31 flush_done=26409 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (901905) lcd_perf: PERF fps=29.33 flush_done=26497 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (904915) lcd_perf: PERF fps=29.59 flush_done=26586 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (907915) lcd_perf: PERF fps=29.31 flush_done=26674 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (910915) lcd_perf: PERF fps=29.33 flush_done=26762 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (913925) lcd_perf: PERF fps=29.59 flush_done=26851 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (916925) lcd_perf: PERF fps=29.31 flush_done=26939 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (919925) lcd_perf: PERF fps=29.33 flush_done=27027 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (922935) lcd_perf: PERF fps=29.59 flush_done=27116 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (925935) lcd_perf: PERF fps=29.31 flush_done=27204 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (928935) lcd_perf: PERF fps=29.33 flush_done=27292 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m
+[0;32mI (931945) lcd_perf: PERF fps=29.59 flush_done=27381 avg_flush_us=0 max_flush_us=0 flush_err=0 heap=374187 psram=14843288 min_heap=337952[0m

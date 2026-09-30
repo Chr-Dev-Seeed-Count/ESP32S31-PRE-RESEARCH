@@ -1,0 +1,5 @@
+-mno-cm-popret
+-mabi=ilp32f
+-march=rv32imafcb_zicsr_zifencei_zcb_zcmp_zcmt_xesploop_xespv
+-mtune=esp32s31
+-specs=picolibc.specs

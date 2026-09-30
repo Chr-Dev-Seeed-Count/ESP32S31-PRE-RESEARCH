@@ -1,0 +1,378 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\ESP32S31\examples\sys\sys02B\build\bootloader && D:\Espressif\python_env\idf6.2_py3.13_env\Scripts\python.exe D:/Espressif-master/.espressif/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 D:/ESP32S31/examples/sys/sys02B/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5360 bytes. 0xca0 bytes (13%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj 
+esp-idf-configdep ccache D:\Espressif\tools\riscv32-esp-elf\esp-16.1.0_20260609\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe @esp-idf\main\CMakeFiles\__idf_main.dir\app_main.c.obj.rsp -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\app_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -c D:/ESP32S31/examples/sys/sys02B/main/app_main.c
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c: In function 'app_main':
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:55:22: error: too few arguments to function 'heap_caps_malloc'; expected 2, have 1
+   55 |     uint8_t *int_a = heap_caps_malloc(TEST_BYTES, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+      |                      ^~~~~~~~~~~~~~~~
+In file included from D:/ESP32S31/examples/sys/sys02B/main/app_main.c:6:
+D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:103:7: note: declared here
+  103 | void *heap_caps_malloc(size_t size, uint32_t caps);
+      |       ^~~~~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:42:38: error: expected identifier or '(' before numeric constant
+   42 | #define MALLOC_CAP_INTERNAL         (1<<11) ///< Memory must be internal; specifically it should not disappear when flash/spiram cache is switched off
+      |                                      ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:55:51: note: in expansion of macro 'MALLOC_CAP_INTERNAL'
+   55 |     uint8_t *int_a = heap_caps_malloc(TEST_BYTES, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:56:22: error: too few arguments to function 'heap_caps_malloc'; expected 2, have 1
+   56 |     uint8_t *int_b = heap_caps_malloc(TEST_BYTES, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+      |                      ^~~~~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:103:7: note: declared here
+  103 | void *heap_caps_malloc(size_t size, uint32_t caps);
+      |       ^~~~~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:42:38: error: expected identifier or '(' before numeric constant
+   42 | #define MALLOC_CAP_INTERNAL         (1<<11) ///< Memory must be internal; specifically it should not disappear when flash/spiram cache is switched off
+      |                                      ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:56:51: note: in expansion of macro 'MALLOC_CAP_INTERNAL'
+   56 |     uint8_t *int_b = heap_caps_malloc(TEST_BYTES, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:57:21: error: too few arguments to function 'heap_caps_malloc'; expected 2, have 1
+   57 |     uint8_t *ps_a = heap_caps_malloc(TEST_BYTES, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+      |                     ^~~~~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:103:7: note: declared here
+  103 | void *heap_caps_malloc(size_t size, uint32_t caps);
+      |       ^~~~~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:41:38: error: expected identifier or '(' before numeric constant
+   41 | #define MALLOC_CAP_SPIRAM           (1<<10) ///< Memory must be in SPI RAM
+      |                                      ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:57:50: note: in expansion of macro 'MALLOC_CAP_SPIRAM'
+   57 |     uint8_t *ps_a = heap_caps_malloc(TEST_BYTES, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+      |                                                  ^~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:58:21: error: too few arguments to function 'heap_caps_malloc'; expected 2, have 1
+   58 |     uint8_t *ps_b = heap_caps_malloc(TEST_BYTES, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+      |                     ^~~~~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:103:7: note: declared here
+  103 | void *heap_caps_malloc(size_t size, uint32_t caps);
+      |       ^~~~~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:41:38: error: expected identifier or '(' before numeric constant
+   41 | #define MALLOC_CAP_SPIRAM           (1<<10) ///< Memory must be in SPI RAM
+      |                                      ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:58:50: note: in expansion of macro 'MALLOC_CAP_SPIRAM'
+   58 |     uint8_t *ps_b = heap_caps_malloc(TEST_BYTES, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+      |                                                  ^~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:13:31: error: expected ';' before ')' token
+   13 | #define TEST_BYTES 33U * 1024U)
+      |                               ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:65:28: note: in expansion of macro 'TEST_BYTES'
+   65 |     for (size_t i = 0; i < TEST_BYTES; ++i) {
+      |                            ^~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:65:5: error: this 'for' clause does not guard... [-Werror=misleading-indentation]
+   65 |     for (size_t i = 0; i < TEST_BYTES; ++i) {
+      |     ^~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:65:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   65 |     for (size_t i = 0; i < TEST_BYTES; ++i) {
+      |                                        ^~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:65:42: error: 'i' undeclared (first use in this function)
+   65 |     for (size_t i = 0; i < TEST_BYTES; ++i) {
+      |                                          ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:65:42: note: each undeclared identifier is reported only once for each function it appears in
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:65:43: error: expected ';' before ')' token
+   65 |     for (size_t i = 0; i < TEST_BYTES; ++i) {
+      |                                           ^
+      |                                           ;
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:65:43: error: expected statement before ')' token
+In file included from D:/ESP32S31/examples/sys/sys02B/main/app_main.c:7:
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:78: error: right-hand operand of comma expression has no effect [-Werror=unused-value]
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |                                                                              ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:220:178: error: expected ';' before ')' token
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                                  ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:220:178: error: expected statement before ')' token
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:78: error: right-hand operand of comma expression has no effect [-Werror=unused-value]
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |                                                                              ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:221:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:221:178: error: expected ';' before ')' token
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                                  ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:221:178: error: expected statement before ')' token
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:78: error: right-hand operand of comma expression has no effect [-Werror=unused-value]
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |                                                                              ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:222:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  222 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:222:178: error: expected ';' before ')' token
+  222 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                                  ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:222:178: error: expected statement before ')' token
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:78: error: right-hand operand of comma expression has no effect [-Werror=unused-value]
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |                                                                              ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:223:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  223 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:223:178: error: expected ';' before ')' token
+  223 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                                  ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:223:178: error: expected statement before ')' token
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:78: error: right-hand operand of comma expression has no effect [-Werror=unused-value]
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |                                                                              ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:224:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  224 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:224:178: error: expected ';' before ')' token
+  224 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                                  ^
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:224:178: error: expected statement before ')' token
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:70:5: note: in expansion of macro 'ESP_LOGI'
+   70 |     ESP_LOGI(TAG, "SYS-02B start: buffer=%u bytes duration=%d ms", TEST_BYTES, TEST_MS);
+      |     ^~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:13:31: error: expected '}' before ')' token
+   13 | #define TEST_BYTES 33U * 1024U)
+      |                               ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:72:36: note: in expansion of macro 'TEST_BYTES'
+   72 |         {"INT->INT", int_b, int_a, TEST_BYTES},
+      |                                    ^~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:72:9: note: to match this '{'
+   72 |         {"INT->INT", int_b, int_a, TEST_BYTES},
+      |         ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:13:31: error: expected '}' before ')' token
+   13 | #define TEST_BYTES 33U * 1024U)
+      |                               ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:72:36: note: in expansion of macro 'TEST_BYTES'
+   72 |         {"INT->INT", int_b, int_a, TEST_BYTES},
+      |                                    ^~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:71:33: note: to match this '{'
+   71 |     const copy_case_t cases[] = {
+      |                                 ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:13:31: error: expected ',' or ';' before ')' token
+   13 | #define TEST_BYTES 33U * 1024U)
+      |                               ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:72:36: note: in expansion of macro 'TEST_BYTES'
+   72 |         {"INT->INT", int_b, int_a, TEST_BYTES},
+      |                                    ^~~~~~~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:72:47: error: expected expression before ',' token
+   72 |         {"INT->INT", int_b, int_a, TEST_BYTES},
+      |                                               ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:72:47: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:71:23: warning: unused variable 'cases' [-Wunused-variable]
+   71 |     const copy_case_t cases[] = {
+      |                       ^~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c: At top level:
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:73:48: error: expected identifier or '(' before ',' token
+   73 |         {"INT->PSRAM", ps_b, int_a, TEST_BYTES},
+      |                                                ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:74:48: error: expected identifier or '(' before ',' token
+   74 |         {"PSRAM->INT", int_b, ps_a, TEST_BYTES},
+      |                                                ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:75:49: error: expected identifier or '(' before ',' token
+   75 |         {"PSRAM->PSRAM", ps_b, ps_a, TEST_BYTES},
+      |                                                 ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:77:5: error: expected identifier or '(' before 'for'
+   77 |     for (size_t i = 0; i < sizeof(cases) / sizeof(cases[0]); ++i) {
+      |     ^~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:77:26: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   77 |     for (size_t i = 0; i < sizeof(cases) / sizeof(cases[0]); ++i) {
+      |                          ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:77:62: error: expected identifier or '(' before '++' token
+   77 |     for (size_t i = 0; i < sizeof(cases) / sizeof(cases[0]); ++i) {
+      |                                                              ^~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:5: error: data definition has no type or storage class [-Werror]
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |     ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:5: error: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:5: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:5: error: conflicting types for 'free'; have 'int()'
+In file included from D:/ESP32S31/examples/sys/sys02B/main/app_main.c:4:
+D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/picolibc/include/string.h:119:7: note: previous declaration of 'free' with type 'void(void *)'
+  119 | void  free(void *) __nothrow; /* for __malloc_like */
+      |       ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:18: error: data definition has no type or storage class [-Werror]
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |                  ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:18: error: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:5: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |     ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:18: error: conflicting types for 'free'; have 'int()'
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |                  ^~~~
+D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/picolibc/include/string.h:119:7: note: previous declaration of 'free' with type 'void(void *)'
+  119 | void  free(void *) __nothrow; /* for __malloc_like */
+      |       ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:31: error: data definition has no type or storage class [-Werror]
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |                               ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:31: error: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:5: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |     ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:31: error: conflicting types for 'free'; have 'int()'
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |                               ^~~~
+D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/picolibc/include/string.h:119:7: note: previous declaration of 'free' with type 'void(void *)'
+  119 | void  free(void *) __nothrow; /* for __malloc_like */
+      |       ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:43: error: data definition has no type or storage class [-Werror]
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |                                           ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:43: error: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:5: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |     ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:81:43: error: conflicting types for 'free'; have 'int()'
+   81 |     free(int_a); free(int_b); free(ps_a); free(ps_b);
+      |                                           ^~~~
+D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/picolibc/include/string.h:119:7: note: previous declaration of 'free' with type 'void(void *)'
+  119 | void  free(void *) __nothrow; /* for __malloc_like */
+      |       ^~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:36: error: expected identifier or '(' before 'do'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                    ^~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:82:5: note: in expansion of macro 'ESP_LOGI'
+   82 |     ESP_LOGI(TAG, "SYS-02B complete");
+      |     ^~~~~~~~
+D:/Espressif-master/.espressif/master/esp-idf/components/log/include/esp_log.h:127:106: error: expected identifier or '(' before 'while'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                                                                                          ^~~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:82:5: note: in expansion of macro 'ESP_LOGI'
+   82 |     ESP_LOGI(TAG, "SYS-02B complete");
+      |     ^~~~~~~~
+In file included from D:/Espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/picolibc/include/stdio.h:45,
+                 from D:/Espressif-master/.espressif/master/esp-idf/components/esp_libc/platform_include/stdio.h:17,
+                 from D:/Espressif-master/.espressif/master/esp-idf/components/esp_common/include/esp_err.h:10,
+                 from D:/Espressif-master/.espressif/master/esp-idf/components/heap/include/esp_heap_caps.h:13:
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:83:17: error: expected declaration specifiers or '...' before '(' token
+   83 |     vTaskDelete(NULL);
+      |                 ^~~~
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:84:1: error: expected identifier or '(' before '}' token
+   84 | }
+      | ^
+D:/ESP32S31/examples/sys/sys02B/main/app_main.c:32:13: warning: 'run_copy' defined but not used [-Wunused-function]
+   32 | static void run_copy(const copy_case_t *test)
+      |             ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+configdep.c:684: in main: exec_process exited with error code: 1
+ninja: build stopped: subcommand failed.

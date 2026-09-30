@@ -1,0 +1,10 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 D:\ESP32S31\examples\touch\tp03_concurrent_load
+CMake Error at D:/Espressif/frameworks/esp-idf-v5.5.5/tools/cmake/targets.cmake:169 (message):
+  Toolchain file
+  D:/Espressif/frameworks/esp-idf-v5.5.5/tools/cmake/toolchain-esp32s31.cmake
+  not found
+Call Stack (most recent call first):
+  D:/Espressif/frameworks/esp-idf-v5.5.5/tools/cmake/project.cmake:588 (__target_set_toolchain)
+  CMakeLists.txt:4 (project)
+
+

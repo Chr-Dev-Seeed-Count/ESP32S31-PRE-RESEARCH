@@ -1,0 +1,7 @@
+-specs=picolibc.specs
+-mno-cm-popret
+-mabi=ilp32f
+-march=rv32imafcb_zicsr_zifencei_zcb_zcmp_zcmt_xesploop_xespv
+-mtune=esp32s31
+-fno-rtti
+-ftrivial-auto-var-init=uninitialized

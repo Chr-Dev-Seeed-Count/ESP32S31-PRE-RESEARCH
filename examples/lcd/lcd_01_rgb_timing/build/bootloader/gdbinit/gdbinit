@@ -1,0 +1,2 @@
+source D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/build/bootloader/gdbinit/symbols
+source D:/ESP32S31/examples/lcd/lcd_01_rgb_timing/build/bootloader/gdbinit/connect

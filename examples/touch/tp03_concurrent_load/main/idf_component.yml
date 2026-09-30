@@ -1,0 +1,8 @@
+dependencies:
+  esp32_s31_korvo_1: "*"
+  espressif/esp_lcd_touch_gt1151: "*"
+  espressif/esp_lvgl_port: "^2"
+  lvgl/lvgl: ">=8,<10"
+  esp_codec_dev: "*"
+  esp_video: "*"
+  idf: ">=5.4"

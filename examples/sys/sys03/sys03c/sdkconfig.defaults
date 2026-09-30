@@ -1,0 +1,7 @@
+CONFIG_IDF_TARGET="esp32s31"
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_SYS03C_TX_PERIOD_US=1000
+CONFIG_SYS03C_QUEUE_LENGTH=64
+# Microsecond-rate TX uses a deliberate busy-wait. Do not let the idle task
+# watchdog reset this benchmark while measuring the IPC saturation point.
+# CONFIG_ESP_TASK_WDT_CHECK_IDLE_TASK_CPU0 is not set

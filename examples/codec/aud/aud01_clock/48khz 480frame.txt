@@ -1,0 +1,458 @@
+48khz 480frame
+I (19934) aud01: PERF: tx_rate=48050.4 rx_rate=48050.4 write_err=0 read_err=0 rx_rms=343.1 peak=15017 write_avg=2957us read_avg=1823us
+I (20934) aud01: PERF: tx_rate=48047.9 rx_rate=48047.9 write_err=0 read_err=0 rx_rms=334.5 peak=15017 write_avg=2956us read_avg=1823us
+I (21934) aud01: PERF: tx_rate=48045.6 rx_rate=48045.6 write_err=0 read_err=0 rx_rms=326.5 peak=15017 write_avg=2956us read_avg=1823us
+I (22934) aud01: PERF: tx_rate=48043.5 rx_rate=48043.5 write_err=0 read_err=0 rx_rms=319.0 peak=15017 write_avg=2955us read_avg=1823us
+I (23934) aud01: PERF: tx_rate=48041.6 rx_rate=48041.6 write_err=0 read_err=0 rx_rms=312.1 peak=15017 write_avg=2955us read_avg=1823us
+I (24934) aud01: PERF: tx_rate=48039.9 rx_rate=48039.9 write_err=0 read_err=0 rx_rms=305.5 peak=15017 write_avg=2955us read_avg=1824us
+I (25934) aud01: PERF: tx_rate=48038.3 rx_rate=48038.3 write_err=0 read_err=0 rx_rms=299.4 peak=15017 write_avg=2955us read_avg=1824us
+I (26934) aud01: PERF: tx_rate=48036.8 rx_rate=48036.8 write_err=0 read_err=0 rx_rms=293.6 peak=15017 write_avg=2955us read_avg=1824us
+I (27934) aud01: PERF: tx_rate=48035.5 rx_rate=48035.5 write_err=0 read_err=0 rx_rms=288.2 peak=15017 write_avg=2955us read_avg=1824us
+I (28934) aud01: PERF: tx_rate=48034.2 rx_rate=48034.2 write_err=0 read_err=0 rx_rms=283.0 peak=15017 write_avg=2955us read_avg=1824us
+I (29934) aud01: PERF: tx_rate=48033.0 rx_rate=48033.0 write_err=0 read_err=0 rx_rms=278.1 peak=15017 write_avg=2955us read_avg=1824us
+I (30934) aud01: PERF: tx_rate=48031.9 rx_rate=48031.9 write_err=0 read_err=0 rx_rms=273.5 peak=15017 write_avg=2955us read_avg=1824us
+I (30935) aud01: AUD-01 complete: tx=1440960 rx=1440960 write_err=0 read_err=0
+
+480khz 240frame
+ (15934) aud01: PERF: tx_rate=48079.9 rx_rate=48079.9 write_err=0 read_err=0 rx_rms=380.5 peak=14617 write_avg=606us read_avg=1770us
+I (16934) aud01: PERF: tx_rate=48074.9 rx_rate=48074.9 write_err=0 read_err=0 rx_rms=368.6 peak=14617 write_avg=607us read_avg=1770us
+I (17934) aud01: PERF: tx_rate=48070.5 rx_rate=48070.5 write_err=0 read_err=0 rx_rms=357.6 peak=14617 write_avg=606us read_avg=1771us
+I (18934) aud01: PERF: tx_rate=48066.6 rx_rate=48066.6 write_err=0 read_err=0 rx_rms=347.6 peak=14617 write_avg=606us read_avg=1771us
+I (19934) aud01: PERF: tx_rate=48063.1 rx_rate=48063.1 write_err=0 read_err=0 rx_rms=338.4 peak=14617 write_avg=606us read_avg=1771us
+I (20934) aud01: PERF: tx_rate=48059.9 rx_rate=48059.9 write_err=0 read_err=0 rx_rms=329.9 peak=14617 write_avg=606us read_avg=1772us
+I (21934) aud01: PERF: tx_rate=48057.1 rx_rate=48057.1 write_err=0 read_err=0 rx_rms=322.0 peak=14617 write_avg=606us read_avg=1772us
+I (22934) aud01: PERF: tx_rate=48054.5 rx_rate=48054.5 write_err=0 read_err=0 rx_rms=314.7 peak=14617 write_avg=606us read_avg=1772us
+I (23934) aud01: PERF: tx_rate=48052.1 rx_rate=48052.1 write_err=0 read_err=0 rx_rms=307.9 peak=14617 write_avg=606us read_avg=1772us
+I (24934) aud01: PERF: tx_rate=48049.9 rx_rate=48049.9 write_err=0 read_err=0 rx_rms=301.4 peak=14617 write_avg=606us read_avg=1772us
+I (25934) aud01: PERF: tx_rate=48047.9 rx_rate=48047.9 write_err=0 read_err=0 rx_rms=295.4 peak=14617 write_avg=606us read_avg=1773us
+I (26934) aud01: PERF: tx_rate=48046.1 rx_rate=48046.1 write_err=0 read_err=0 rx_rms=289.7 peak=14617 write_avg=606us read_avg=1773us
+I (27934) aud01: PERF: tx_rate=48044.4 rx_rate=48044.4 write_err=0 read_err=0 rx_rms=284.3 peak=14617 write_avg=606us read_avg=1773us
+I (28934) aud01: PERF: tx_rate=48042.8 rx_rate=48042.8 write_err=0 read_err=0 rx_rms=279.3 peak=14617 write_avg=606us read_avg=1773us
+I (29934) aud01: PERF: tx_rate=48041.3 rx_rate=48041.3 write_err=0 read_err=0 rx_rms=274.5 peak=14617 write_avg=606us read_avg=1773us
+I (30934) aud01: PERF: tx_rate=48039.9 rx_rate=48039.9 write_err=0 read_err=0 rx_rms=269.9 peak=14617 write_avg=606us read_avg=1773us
+I (30935) aud01: AUD-01 complete: tx=1441200 rx=1441200 write_err=0 read_err=0
+I (31091) main_task: Returned from app_main()
+
+480khz 120frame
+I (17934) aud01: PERF: tx_rate=48056.4 rx_rate=48056.4 write_err=0 read_err=0 rx_rms=367.6 peak=14956 write_avg=986us read_avg=193us
+I (18934) aud01: PERF: tx_rate=48053.3 rx_rate=48053.3 write_err=0 read_err=0 rx_rms=357.3 peak=14956 write_avg=987us read_avg=193us
+I (19934) aud01: PERF: tx_rate=48050.5 rx_rate=48050.5 write_err=0 read_err=0 rx_rms=347.9 peak=14956 write_avg=987us read_avg=193us
+I (20934) aud01: PERF: tx_rate=48047.9 rx_rate=48047.9 write_err=0 read_err=0 rx_rms=339.1 peak=14956 write_avg=987us read_avg=193us
+I (21934) aud01: PERF: tx_rate=48045.7 rx_rate=48045.7 write_err=0 read_err=0 rx_rms=331.0 peak=14956 write_avg=987us read_avg=193us
+I (22934) aud01: PERF: tx_rate=48043.6 rx_rate=48043.6 write_err=0 read_err=0 rx_rms=323.5 peak=14956 write_avg=987us read_avg=193us
+I (23934) aud01: PERF: tx_rate=48041.7 rx_rate=48041.7 write_err=0 read_err=0 rx_rms=316.4 peak=14956 write_avg=987us read_avg=193us
+I (24934) aud01: PERF: tx_rate=48039.9 rx_rate=48039.9 write_err=0 read_err=0 rx_rms=309.8 peak=14956 write_avg=987us read_avg=193us
+I (25934) aud01: PERF: tx_rate=48038.4 rx_rate=48038.4 write_err=0 read_err=0 rx_rms=303.6 peak=14956 write_avg=987us read_avg=193us
+I (26934) aud01: PERF: tx_rate=48036.9 rx_rate=48036.9 write_err=0 read_err=0 rx_rms=297.8 peak=14956 write_avg=987us read_avg=193us
+I (27934) aud01: PERF: tx_rate=48035.5 rx_rate=48035.5 write_err=0 read_err=0 rx_rms=292.3 peak=14956 write_avg=987us read_avg=192us
+I (28934) aud01: PERF: tx_rate=48034.2 rx_rate=48034.2 write_err=0 read_err=0 rx_rms=287.1 peak=14956 write_avg=987us read_avg=192us
+I (29934) aud01: PERF: tx_rate=48033.1 rx_rate=48033.1 write_err=0 read_err=0 rx_rms=282.1 peak=14956 write_avg=987us read_avg=192us
+I (30934) aud01: PERF: tx_rate=48032.0 rx_rate=48032.0 write_err=0 read_err=0 rx_rms=277.4 peak=14956 write_avg=987us read_avg=192us
+I (30935) aud01: AUD-01 complete: tx=1440960 rx=1440960 write_err=0 read_err=0
+I (31091) main_task: Returned from app_main()
+
+480khz 64frame
+I (928) aud01: Scope: WS=48000 Hz; expected BCLK about 1536000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1934) aud01: PERF: tx_rate=48828.7 rx_rate=48828.7 write_err=0 read_err=0 rx_rms=1509.6 peak=15096 write_avg=286us read_avg=318us
+I (2934) aud01: PERF: tx_rate=48414.4 rx_rate=48414.4 write_err=0 read_err=0 rx_rms=1072.3 peak=15096 write_avg=291us read_avg=324us
+I (3934) aud01: PERF: tx_rate=48276.2 rx_rate=48276.2 write_err=0 read_err=0 rx_rms=876.9 peak=15096 write_avg=292us read_avg=326us
+I (4934) aud01: PERF: tx_rate=48207.2 rx_rate=48207.2 write_err=0 read_err=0 rx_rms=760.1 peak=15096 write_avg=293us read_avg=326us
+I (5934) aud01: PERF: tx_rate=48165.7 rx_rate=48165.7 write_err=0 read_err=0 rx_rms=680.2 peak=15096 write_avg=293us read_avg=327us
+I (6934) aud01: PERF: tx_rate=48138.1 rx_rate=48138.1 write_err=0 read_err=0 rx_rms=621.2 peak=15096 write_avg=294us read_avg=327us
+I (7934) aud01: PERF: tx_rate=48118.4 rx_rate=48118.4 write_err=0 read_err=0 rx_rms=575.3 peak=15096 write_avg=294us read_avg=328us
+I (8934) aud01: PERF: tx_rate=48103.6 rx_rate=48103.6 write_err=0 read_err=0 rx_rms=538.4 peak=15096 write_avg=294us read_avg=328us
+I (9934) aud01: PERF: tx_rate=48092.1 rx_rate=48092.1 write_err=0 read_err=0 rx_rms=507.7 peak=15096 write_avg=295us read_avg=328us
+I (10934) aud01: PERF: tx_rate=48082.9 rx_rate=48082.9 write_err=0 read_err=0 rx_rms=481.8 peak=15096 write_avg=295us read_avg=328us
+I (11934) aud01: PERF: tx_rate=48075.3 rx_rate=48075.3 write_err=0 read_err=0 rx_rms=459.5 peak=15096 write_avg=295us read_avg=328us
+I (12934) aud01: PERF: tx_rate=48069.1 rx_rate=48069.1 write_err=0 read_err=0 rx_rms=440.0 peak=15096 write_avg=295us read_avg=328us
+I (13934) aud01: PERF: tx_rate=48063.7 rx_rate=48063.7 write_err=0 read_err=0 rx_rms=422.9 peak=15096 write_avg=295us read_avg=328us
+I (14934) aud01: PERF: tx_rate=48059.2 rx_rate=48059.2 write_err=0 read_err=0 rx_rms=407.7 peak=15096 write_avg=295us read_avg=328us
+I (15934) aud01: PERF: tx_rate=48055.2 rx_rate=48055.2 write_err=0 read_err=0 rx_rms=393.9 peak=15096 write_avg=295us read_avg=328us
+I (16934) aud01: PERF: tx_rate=48051.8 rx_rate=48051.8 write_err=0 read_err=0 rx_rms=381.6 peak=15096 write_avg=295us read_avg=328us
+I (17934) aud01: PERF: tx_rate=48048.7 rx_rate=48048.7 write_err=0 read_err=0 rx_rms=370.3 peak=15096 write_avg=294us read_avg=328us
+I (18934) aud01: PERF: tx_rate=48046.0 rx_rate=48046.0 write_err=0 read_err=0 rx_rms=359.9 peak=15096 write_avg=294us read_avg=328us
+I (19934) aud01: PERF: tx_rate=48043.6 rx_rate=48043.6 write_err=0 read_err=0 rx_rms=350.4 peak=15096 write_avg=294us read_avg=328us
+I (20934) aud01: PERF: tx_rate=48041.4 rx_rate=48041.4 write_err=0 read_err=0 rx_rms=341.6 peak=15096 write_avg=294us read_avg=328us
+I
+480khz 32frame
+I (928) aud01: AUD-01: 48000 Hz, 16 bit, stereo, block=32 frames, 30 s
+I (928) aud01: Scope: WS=48000 Hz; expected BCLK about 1536000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1934) aud01: PERF: tx_rate=48762.9 rx_rate=48762.9 write_err=0 read_err=0 rx_rms=1491.0 peak=15064 write_avg=77us read_avg=213us
+I (2934) aud01: PERF: tx_rate=48381.5 rx_rate=48381.5 write_err=0 read_err=0 rx_rms=1058.7 peak=15064 write_avg=78us read_avg=217us
+I (3934) aud01: PERF: tx_rate=48254.3 rx_rate=48254.3 write_err=0 read_err=0 rx_rms=866.3 peak=15064 write_avg=78us read_avg=219us
+I (4934) aud01: PERF: tx_rate=48190.7 rx_rate=48190.7 write_err=0 read_err=0 rx_rms=750.9 peak=15064 write_avg=78us read_avg=219us
+I (5934) aud01: PERF: tx_rate=48152.6 rx_rate=48152.6 write_err=0 read_err=0 rx_rms=672.0 peak=15064 write_avg=78us read_avg=220us
+I (6934) aud01: PERF: tx_rate=48127.2 rx_rate=48127.2 write_err=0 read_err=0 rx_rms=613.7 peak=15064 write_avg=78us read_avg=220us
+I (7934) aud01: PERF: tx_rate=48109.0 rx_rate=48109.0 write_err=0 read_err=0 rx_rms=568.4 peak=15064 write_avg=78us read_avg=220us
+I (8934) aud01: PERF: tx_rate=48095.4 rx_rate=48095.4 write_err=0 read_err=0 rx_rms=531.9 peak=15064 write_avg=78us read_avg=220us
+I (9934) aud01: PERF: tx_rate=48084.8 rx_rate=48084.8 write_err=0 read_err=0 rx_rms=501.6 peak=15064 write_avg=78us read_avg=220us
+I (10934) aud01: PERF: tx_rate=48076.3 rx_rate=48076.3 write_err=0 read_err=0 rx_rms=476.0 peak=15064 write_avg=78us read_avg=220us
+I (11934) aud01: PERF: tx_rate=48069.4 rx_rate=48069.4 write_err=0 read_err=0 rx_rms=454.0 peak=15064 write_avg=78us read_avg=220us
+I
+
+480khz 16frame
+ (928) aud01: AUD-01: 48000 Hz, 16 bit, stereo, block=16 frames, 30 s
+I (928) aud01: Scope: WS=48000 Hz; expected BCLK about 1536000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1934) aud01: PERF: tx_rate=48749.0 rx_rate=48749.0 write_err=0 read_err=0 rx_rms=1489.2 peak=15315 write_avg=37us read_avg=97us
+I (2934) aud01: PERF: tx_rate=48374.5 rx_rate=48374.5 write_err=0 read_err=0 rx_rms=1057.3 peak=15315 write_avg=37us read_avg=99us
+I (3934) aud01: PERF: tx_rate=48249.7 rx_rate=48249.7 write_err=0 read_err=0 rx_rms=864.8 peak=15315 write_avg=37us read_avg=100us
+I (4934) aud01: PERF: tx_rate=48187.3 rx_rate=48187.3 write_err=0 read_err=0 rx_rms=749.7 peak=15315 write_avg=37us read_avg=100us
+I (5934) aud01: PERF: tx_rate=48149.8 rx_rate=48149.8 write_err=0 read_err=0 rx_rms=671.0 peak=15315 write_avg=37us read_avg=100us
+I (6934) aud01: PERF: tx_rate=48124.8 rx_rate=48124.8 write_err=0 read_err=0 rx_rms=612.8 peak=15315 write_avg=37us read_avg=100us
+I (7934) aud01: PERF: tx_rate=48107.0 rx_rate=48107.0 write_err=0 read_err=0 rx_rms=567.6 peak=15315 write_avg=37us read_avg=100us
+I (8934) aud01: PERF: tx_rate=48093.6 rx_rate=48093.6 write_err=0 read_err=0 rx_rms=531.1 peak=15315 write_avg=37us read_avg=101us
+I (9934) aud01: PERF: tx_rate=48083.2 rx_rate=48083.2 write_err=0 read_err=0 rx_rms=500.9 peak=15315 write_avg=37us read_avg=101us
+I (10934) aud01: PERF: tx_rate=48074.9 rx_rate=48074.9 write_err=0 read_err=0 rx_rms=475.3 peak=15315 write_avg=37us read_avg=101us
+I (11934) aud01: PERF: tx_rate=48068.1 rx_rate=48068.1 write_err=0 read_err=0 rx_rms=453.3 peak=15315 write_avg=37us read_avg=101us
+I (12934) aud01: PERF: tx_rate=48062.4 rx_rate=48062.4 write_err=0 read_err=0 rx_rms=434.1 peak=15315 write_avg=37us read_avg=101us
+I (13934) aud01: PERF: tx_rate=48057.6 rx_rate=48057.6 write_err=0 read_err=0 rx_rms=417.2 peak=15315 write_avg=37us read_avg=101us
+I (14934) aud01: PERF: tx_rate=48053.5 rx_rate=48053.5 write_err=0 read_err=0 rx_rms=402.1 peak=15315 write_avg=37us read_avg=101us
+I (15934) aud01: PERF: tx_rate=48049.9 rx_rate=48049.9 write_err=0 read_err=0 rx_rms=388.6 peak=15315 write_avg=37us read_avg=101us
+I
+
+480khz 1frame
+I (928) aud01: AUD-01: 48000 Hz, 16 bit, stereo, block=1 frames, 30 s
+I (928) aud01: Scope: WS=48000 Hz; expected BCLK about 1536000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1935) aud01: PERF: tx_rate=24467.8 rx_rate=24467.8 write_err=0 read_err=0 rx_rms=1448.1 peak=14430 write_avg=13us read_avg=5us
+I (2935) aud01: PERF: tx_rate=24520.0 rx_rate=24520.0 write_err=0 read_err=0 rx_rms=1023.2 peak=14430 write_avg=13us read_avg=5us
+I (3935) aud01: PERF: tx_rate=24537.8 rx_rate=24537.8 write_err=0 read_err=0 rx_rms=835.3 peak=14430 write_avg=13us read_avg=5us
+I (4935) aud01: PERF: tx_rate=24532.5 rx_rate=24532.5 write_err=0 read_err=0 rx_rms=723.9 peak=14430 write_avg=13us read_avg=5us
+E (5929) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (5929) task_wdt:  - IDLE0 (CPU 0)
+E (5929) task_wdt: Tasks currently running:
+E (5929) task_wdt: CPU 0: main
+E (5929) task_wdt: CPU 1: IDLE1
+E (5929) task_wdt: Print CPU 0 (current core) registers
+--- Stack dump detected
+Core  0 register dump:
+MEPC    : 0x4001f37a  RA      : 0x4001f08a  SP      : 0x2f016360  GP      : 0x2f00e088
+--- 0x4001f37a: __kernel_cosf at ??:?
+--- 0x4001f08a: _sinf at ??:?
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x0f000000  T2      : 0x0000ffff
+S0/FP   : 0x00000000  S1      : 0x00187fa8  A0      : 0x00000001  A1      : 0x00000000
+A2      : 0x7f800000  A3      : 0x4003d000  A4      : 0x4003d000  A5      : 0x3e8602c0
+A6      : 0x00000000  A7      : 0x00000421  S2      : 0x000a2131  S3      : 0x00000000
+S4      : 0x2f07b320  S5      : 0x000a2131  S6      : 0x00187fa8  S7      : 0xcaaa0b1e
+S8      : 0x00000000  S9      : 0x0001dea6  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x00006000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (6066) aud01: PERF: tx_rate=23879.7 rx_rate=23879.7 write_err=0 read_err=0 rx_rms=648.0 peak=14430 write_avg=13us read_avg=5us
+I (6935) aud01: PERF: tx_rate=23914.6 rx_rate=23914.6 write_err=0 read_err=0 rx_rms=598.9 peak=14430 write_avg=13us read_avg=5us
+I (7935) aud01: PERF: tx_rate=23985.4 rx_rate=23985.4 write_err=0 read_err=0 rx_rms=553.8 peak=14430 write_avg=13us read_avg=5us
+I (8935) aud01: PERF: tx_rate=24034.7 rx_rate=24034.7 write_err=0 read_err=0 rx_rms=517.6 peak=14430 write_avg=13us read_avg=5us
+I (9935) aud01: PERF: tx_rate=24076.9 rx_rate=24076.9 write_err=0 read_err=0 rx_rms=487.6 peak=14430 write_avg=13us read_avg=5us
+E (10929) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (10929) task_wdt:  - IDLE0 (CPU 0)
+E (10929) task_wdt: Tasks currently running:
+E (10929) task_wdt: CPU 0: main
+E (10929) task_wdt: CPU 1: IDLE1
+E (10929) task_wdt: Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x2f808cae  RA      : 0x2f002826  SP      : 0x2f016360  GP      : 0x2f00e088
+--- 0x2f808cae: systimer_hal_get_counter_value in ROM
+--- 0x2f002826: esp_timer_impl_get_time at D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x01800000  T2      : 0x0000ffff
+S0/FP   : 0x00000000  S1      : 0x00306931  A0      : 0x2f012190  A1      : 0x00000000
+A2      : 0xffffffff  A3      : 0x40000000  A4      : 0x60000000  A5      : 0x20399000
+A6      : 0x00000000  A7      : 0xffea0014  S2      : 0x009b73c7  S3      : 0x00000000
+S4      : 0x2f07b320  S5      : 0x0013ea00  S6      : 0x00306931  S7      : 0xb5541b9a
+S8      : 0x00000000  S9      : 0x0003ad32  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x00006000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (11027) aud01: PERF: tx_rate=23873.0 rx_rate=23873.0 write_err=0 read_err=0 rx_rms=462.5 peak=14430 write_avg=13us read_avg=5us
+I (11935) aud01: PERF: tx_rate=23903.0 rx_rate=23903.0 write_err=0 read_err=0 rx_rms=442.9 peak=14430 write_avg=13us read_avg=5us
+I (12935) aud01: PERF: tx_rate=23964.2 rx_rate=23964.2 write_err=0 read_err=0 rx_rms=423.6 peak=14430 write_avg=13us read_avg=5us
+I (13935) aud01: PERF: tx_rate=24015.8 rx_rate=24015.8 write_err=0 read_err=0 rx_rms=406.6 peak=14430 write_avg=13us read_avg=5us
+I (14935) aud01: PERF: tx_rate=24057.8 rx_rate=24057.8 write_err=0 read_err=0 rx_rms=391.6 peak=14430 write_avg=13us read_avg=5us
+E (15929) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (15929) task_wdt:  - IDLE0 (CPU 0)
+E (15929) task_wdt: Tasks currently running:
+E (15929) task_wdt: CPU 0: main
+E (15929) task_wdt: CPU 1: IDLE1
+E (15929) task_wdt: Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x2f808cba  RA      : 0x2f002826  SP      : 0x2f016360  GP      : 0x2f00e088
+--- 0x2f808cba: systimer_hal_get_counter_value in ROM
+--- 0x2f002826: esp_timer_impl_get_time at D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x0000ffff
+S0/FP   : 0x00000000  S1      : 0x004854fe  A0      : 0x2f012190  A1      : 0x00000000
+A2      : 0x00000001  A3      : 0x00000001  A4      : 0x00000000  A5      : 0x20399000
+A6      : 0x2f07b85d  A7      : 0xff64ff64  S2      : 0x001f5a89  S3      : 0x00000000
+S4      : 0x2f07b320  S5      : 0x001f5a89  S6      : 0x00000000  S7      : 0xfffe2990
+S8      : 0x00000000  S9      : 0x00058350  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x22800000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (16027) aud01: PERF: tx_rate=23938.2 rx_rate=23938.2 write_err=0 read_err=0 rx_rms=378.2 peak=14430 write_avg=13us read_avg=5us
+I (16935) aud01: PERF: tx_rate=23961.9 rx_rate=23961.9 write_err=0 read_err=0 rx_rms=367.2 peak=14430 write_avg=13us read_avg=5us
+I (17935) aud01: PERF: tx_rate=24001.5 rx_rate=24001.5 write_err=0 read_err=0 rx_rms=356.0 peak=14430 write_avg=13us read_avg=5us
+I (18935) aud01: PERF: tx_rate=24036.4 rx_rate=24036.4 write_err=0 read_err=0 rx_rms=345.8 peak=14430 write_avg=13us read_avg=5us
+I (19935) aud01: PERF: tx_rate=24066.6 rx_rate=24066.6 write_err=0 read_err=0 rx_rms=336.4 peak=14430 write_avg=13us read_avg=5us
+E (20929) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (20929) task_wdt:  - IDLE0 (CPU 0)
+E (20929) task_wdt: Tasks currently running:
+E (20929) task_wdt: CPU 0: main
+E (20929) task_wdt: CPU 1: IDLE1
+E (20929) task_wdt: Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x40027342  RA      : 0x40012734  SP      : 0x2f0162f0  GP      : 0x2f00e088
+--- 0x40027342: xQueueGenericSend at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:936
+--- 0x40012734: i2s_channel_write at D:/Espressif-master/.espressif/master/esp-idf/components/esp_driver_i2s/i2s_common.c:1653
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x0aa00000  T2      : 0x0000ffff
+S0/FP   : 0x50000fa8  S1      : 0x00000000  A0      : 0x50000fa8  A1      : 0x00000000
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000007  A5      : 0x00000004
+A6      : 0x2f07c7ad  A7      : 0xfcb0fcb0  S2      : 0x00000000  S3      : 0x2f07b324
+S4      : 0x00000000  S5      : 0x000003e8  S6      : 0x00000002  S7      : 0xe552e207
+S8      : 0x00000001  S9      : 0x000759ea  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x00006000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (21027) aud01: PERF: tx_rate=23977.2 rx_rate=23977.2 write_err=0 read_err=0 rx_rms=327.8 peak=14430 write_avg=13us read_avg=5us
+I (21935) aud01: PERF: tx_rate=23990.7 rx_rate=23990.7 write_err=0 read_err=0 rx_rms=320.6 peak=14430 write_avg=13us read_avg=5us
+I (22935) aud01: PERF: tx_rate=24016.9 rx_rate=24016.9 write_err=0 read_err=0 rx_rms=313.1 peak=14430 write_avg=13us read_avg=5us
+I (23935) aud01: PERF: tx_rate=24041.5 rx_rate=24041.5 write_err=0 read_err=0 rx_rms=306.2 peak=14430 write_avg=13us read_avg=5us
+I (24935) aud01: PERF: tx_rate=24064.0 rx_rate=24064.0 write_err=0 read_err=0 rx_rms=299.6 peak=14430 write_avg=13us read_avg=5us
+E (25929) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (25929) task_wdt:  - IDLE0 (CPU 0)
+E (25929) task_wdt: Tasks currently running:
+E (25929) task_wdt: CPU 0: main
+E (25929) task_wdt: CPU 1: IDLE1
+E (25929) task_wdt: Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x4001f35a  RA      : 0x4001f08a  SP      : 0x2f016360  GP      : 0x2f00e088
+--- 0x4001f35a: __kernel_cosf at ??:?
+--- 0x4001f08a: _sinf at ??:?
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x03600000  T2      : 0x0000ffff
+S0/FP   : 0x00000000  S1      : 0x0079b9af  A0      : 0x00000001  A1      : 0x00000000
+A2      : 0x7f800000  A3      : 0x4003d000  A4      : 0x4003d000  A5      : 0x3f48fca0
+A6      : 0x00000000  A7      : 0x00000421  S2      : 0x0034c087  S3      : 0x00000000
+S4      : 0x2f07b320  S5      : 0x0034c087  S6      : 0x0079b9af  S7      : 0xdffcf032
+S8      : 0x00000000  S9      : 0x00092f6a  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x00006000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (26028) aud01: PERF: tx_rate=23989.4 rx_rate=23989.4 write_err=0 read_err=0 rx_rms=293.5 peak=14430 write_avg=13us read_avg=5us
+I (26935) aud01: PERF: tx_rate=23999.4 rx_rate=23999.4 write_err=0 read_err=0 rx_rms=288.3 peak=14430 write_avg=13us read_avg=5us
+I (27935) aud01: PERF: tx_rate=24020.0 rx_rate=24020.0 write_err=0 read_err=0 rx_rms=282.9 peak=14430 write_avg=13us read_avg=5us
+I (28935) aud01: PERF: tx_rate=24040.3 rx_rate=24040.3 write_err=0 read_err=0 rx_rms=277.7 peak=14430 write_avg=13us read_avg=5us
+I (29935) aud01: PERF: tx_rate=24058.3 rx_rate=24058.3 write_err=0 read_err=0 rx_rms=272.8 peak=14430 write_avg=13us read_avg=5us
+E (30929) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (30929) task_wdt:  - IDLE0 (CPU 0)
+E (30929) task_wdt: Tasks currently running:
+E (30929) task_wdt: CPU 0: main
+E (30929) task_wdt: CPU 1: IDLE1
+E (30929) task_wdt: Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x2f808cb6  RA      : 0x2f002826  SP      : 0x2f016360  GP      : 0x2f00e088
+--- 0x2f808cb6: systimer_hal_get_counter_value in ROM
+--- 0x2f002826: esp_timer_impl_get_time at D:/Espressif-master/.espressif/master/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x05a00000  T2      : 0x0000ffff
+S0/FP   : 0x00000000  S1      : 0x01cca0c0  A0      : 0x2f012190  A1      : 0x00000000
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x00000000  A5      : 0x20399000
+A6      : 0x2f07b865  A7      : 0x04870487  S2      : 0x003eae18  S3      : 0x00000000
+S4      : 0x2f07b320  S5      : 0x003eae18  S6      : 0x0091a92c  S7      : 0x3aa6fe67
+S8      : 0x00000000  S9      : 0x000b04cb  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x00007000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (31027) aud01: PERF: tx_rate=23996.5 rx_rate=23996.5 write_err=0 read_err=0 rx_rms=268.2 peak=14430 write_avg=13us read_avg=5us
+I (31039) aud01: AUD-01 complete: tx=722123 rx=722123 write_err=0 read_err=0
+I (31194) main_task: Returned from app_main()
+
+I (928) aud01: AUD-01: 48000 Hz, 16 bit, stereo, block=8 frames, 30 s
+I (928) aud01: Scope: WS=48000 Hz; expected BCLK about 1536000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1934) aud01: PERF: tx_rate=48728.4 rx_rate=48728.4 write_err=0 read_err=0 rx_rms=1510.2 peak=15038 write_avg=17us read_avg=41us
+I (2934) aud01: PERF: tx_rate=48364.3 rx_rate=48364.3 write_err=0 read_err=0 rx_rms=1072.1 peak=15038 write_avg=17us read_avg=42us
+I (3934) aud01: PERF: tx_rate=48242.8 rx_rate=48242.8 write_err=0 read_err=0 rx_rms=876.7 peak=15038 write_avg=17us read_avg=42us
+I (4934) aud01: PERF: tx_rate=48182.1 rx_rate=48182.1 write_err=0 read_err=0 rx_rms=759.9 peak=15038 write_avg=17us read_avg=42us
+I (5934) aud01: PERF: tx_rate=48145.7 rx_rate=48145.7 write_err=0 read_err=0 rx_rms=680.0 peak=15038 write_avg=17us read_avg=42us
+I (6934) aud01: PERF: tx_rate=48121.4 rx_rate=48121.4 write_err=0 read_err=0 rx_rms=621.0 peak=15038 write_avg=17us read_avg=42us
+I (7934) aud01: PERF: tx_rate=48104.1 rx_rate=48104.1 write_err=0 read_err=0 rx_rms=575.1 peak=15038 write_avg=17us read_avg=42us
+I (8934) aud01: PERF: tx_rate=48091.1 rx_rate=48091.1 write_err=0 read_err=0 rx_rms=538.2 peak=15038 write_avg=17us read_avg=42us
+I (9934) aud01: PERF: tx_rate=48080.9 rx_rate=48080.9 write_err=0 read_err=0 rx_rms=507.5 peak=15038 write_avg=17us read_avg=43us
+I (10934) aud01: PERF: tx_rate=48072.9 rx_rate=48072.9 write_err=0 read_err=0 rx_rms=481.6 peak=15038 write_avg=17us read_avg=43us
+I (11934) aud01: PERF: tx_rate=48066.2 rx_rate=48066.2 write_err=0 read_err=0 rx_rms=459.3 peak=15038 write_avg=17us read_avg=43us
+I (12934) aud01: PERF: tx_rate=48060.7 rx_rate=48060.7 write_err=0 read_err=0 rx_rms=439.8 peak=15038 write_avg=17us read_avg=43us
+I (13934) aud01: PERF: tx_rate=48056.0 rx_rate=48056.0 write_err=0 read_err=0 rx_rms=422.6 peak=15038 write_avg=17us read_avg=43us
+I (14934) aud01: PERF: tx_rate=48052.0 rx_rate=48052.0 write_err=0 read_err=0 rx_rms=407.4 peak=15038 write_avg=17us read_avg=43us
+I (15934) aud01: PERF: tx_rate=48048.6 rx_rate=48048.6 write_err=0 read_err=0 rx_rms=393.6 peak=15038 write_avg=17us read_avg=43us
+I (16934) aud01: PERF: tx_rate=48045.5 rx_rate=48045.5 write_err=0 read_err=0 rx_rms=381.2 peak=15038 write_avg=17us read_avg=42us
+I (17934) aud01: PERF: tx_rate=48042.9 rx_rate=48042.9 write_err=0 read_err=0 rx_rms=369.9 peak=15038 write_avg=17us read_avg=42us
+I (18934) aud01: PERF: tx_rate=48040.5 rx_rate=48040.5 write_err=0 read_err=0 rx_rms=359.6 peak=15038 write_avg=16us read_avg=42us
+I (19934) aud01: PERF: tx_rate=48038.3 rx_rate=48038.3 write_err=0 read_err=0 rx_rms=350.1 peak=15038 write_avg=16us read_avg=42us
+I (20934) aud01: PERF: tx_rate=48036.4 rx_rate=48036.4 write_err=0 read_err=0 rx_rms=341.3 peak=15038 write_avg=16us read_avg=42us
+I (21934) aud01: PERF: tx_rate=48034.7 rx_rate=48034.7 write_err=0 read_err=0 rx_rms=333.2 peak=15038 write_avg=16us read_avg=42us
+I (22934) aud01: PERF: tx_rate=48033.1 rx_rate=48033.1 write_err=0 read_err=0 rx_rms=325.6 peak=15038 write_avg=16us read_avg=42us
+I (23934) aud01: PERF: tx_rate=48031.7 rx_rate=48031.7 write_err=0 read_err=0 rx_rms=318.5 peak=15038 write_avg=16us read_avg=42us
+I (24934) aud01: PERF: tx_rate=48030.4 rx_rate=48030.4 write_err=0 read_err=0 rx_rms=311.9 peak=15038 write_avg=16us read_avg=42us
+I (25934) aud01: PERF: tx_rate=48029.1 rx_rate=48029.1 write_err=0 read_err=0 rx_rms=305.8 peak=15038 write_avg=16us read_avg=42us
+I (26934) aud01: PERF: tx_rate=48028.0 rx_rate=48028.0 write_err=0 read_err=0 rx_rms=300.0 peak=15038 write_avg=16us read_avg=42us
+I (27934) aud01: PERF: tx_rate=48027.0 rx_rate=48027.0 write_err=0 read_err=0 rx_rms=294.5 peak=15038 write_avg=16us read_avg=42us
+I (28934) aud01: PERF: tx_rate=48026.0 rx_rate=48026.0 write_err=0 read_err=0 rx_rms=289.2 peak=15038 write_avg=16us read_avg=42us
+I (29934) aud01: PERF: tx_rate=48025.1 rx_rate=48025.1 write_err=0 read_err=0 rx_rms=284.2 peak=15038 write_avg=16us read_avg=42us
+I (30934) aud01: PERF: tx_rate=48024.3 rx_rate=48024.3 write_err=0 read_err=0 rx_rms=279.5 peak=15038 write_avg=16us read_avg=42us
+I (30935) aud01: AUD-01 complete: tx=1440736 rx=1440736 write_err=0 read_err=0
+I (31091) main_task: Returned from app_main()
+
+I (941) aud01: AUD-01: 48000 Hz, 16 bit, stereo, block=4 frames, 30 s
+I (941) aud01: Scope: WS=48000 Hz; expected BCLK about 1536000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1947) aud01: PERF: tx_rate=48718.5 rx_rate=48718.5 write_err=0 read_err=0 rx_rms=1512.2 peak=15053 write_avg=11us read_avg=13us
+I (2947) aud01: PERF: tx_rate=48359.3 rx_rate=48359.3 write_err=0 read_err=0 rx_rms=1073.7 peak=15053 write_avg=12us read_avg=13us
+I (3947) aud01: PERF: tx_rate=48239.5 rx_rate=48239.5 write_err=0 read_err=0 rx_rms=878.0 peak=15053 write_avg=12us read_avg=13us
+I (4947) aud01: PERF: tx_rate=48179.7 rx_rate=48179.7 write_err=0 read_err=0 rx_rms=761.1 peak=15053 write_avg=12us read_avg=13us
+I (5947) aud01: PERF: tx_rate=48143.7 rx_rate=48143.7 write_err=0 read_err=0 rx_rms=681.4 peak=15053 write_avg=12us read_avg=13us
+I (6947) aud01: PERF: tx_rate=48119.8 rx_rate=48119.8 write_err=0 read_err=0 rx_rms=622.4 peak=15053 write_avg=12us read_avg=13us
+I (7947) aud01: PERF: tx_rate=48102.7 rx_rate=48102.7 write_err=0 read_err=0 rx_rms=576.6 peak=15053 write_avg=12us read_avg=13us
+I (8947) aud01: PERF: tx_rate=48089.8 rx_rate=48089.8 write_err=0 read_err=0 rx_rms=539.7 peak=15053 write_avg=12us read_avg=13us
+I (9947) aud01: PERF: tx_rate=48079.9 rx_rate=48079.9 write_err=0 read_err=0 rx_rms=509.0 peak=15053 write_avg=12us read_avg=13us
+I (10947) aud01: PERF: tx_rate=48071.9 rx_rate=48071.9 write_err=0 read_err=0 rx_rms=483.2 peak=15053 write_avg=12us read_avg=13us
+I (11947) aud01: PERF: tx_rate=48065.3 rx_rate=48065.3 write_err=0 read_err=0 rx_rms=461.0 peak=15053 write_avg=12us read_avg=13us
+I (12947) aud01: PERF: tx_rate=48059.9 rx_rate=48059.9 write_err=0 read_err=0 rx_rms=441.7 peak=15053 write_avg=12us read_avg=13us
+I (13947) aud01: PERF: tx_rate=48055.3 rx_rate=48055.3 write_err=0 read_err=0 rx_rms=424.6 peak=15053 write_avg=12us read_avg=13us
+I (14947) aud01: PERF: tx_rate=48051.3 rx_rate=48051.3 write_err=0 read_err=0 rx_rms=409.2 peak=15053 write_avg=12us read_avg=13us
+I (15947) aud01: PERF: tx_rate=48047.9 rx_rate=48047.9 write_err=0 read_err=0 rx_rms=395.4 peak=15053 write_avg=12us read_avg=13us
+I (16947) aud01: PERF: tx_rate=48044.9 rx_rate=48044.9 write_err=0 read_err=0 rx_rms=382.9 peak=15053 write_avg=12us read_avg=13us
+I (17947) aud01: PERF: tx_rate=48042.3 rx_rate=48042.3 write_err=0 read_err=0 rx_rms=371.6 peak=15053 write_avg=12us read_avg=13us
+I (18947) aud01: PERF: tx_rate=48039.9 rx_rate=48039.9 write_err=0 read_err=0 rx_rms=361.2 peak=15053 write_avg=12us read_avg=13us
+I (19947) aud01: PERF: tx_rate=48037.8 rx_rate=48037.8 write_err=0 read_err=0 rx_rms=351.6 peak=15053 write_avg=12us read_avg=13us
+I (20947) aud01: PERF: tx_rate=48035.9 rx_rate=48035.9 write_err=0 read_err=0 rx_rms=342.7 peak=15053 write_avg=12us read_avg=13us
+I (21947) aud01: PERF: tx_rate=48034.2 rx_rate=48034.2 write_err=0 read_err=0 rx_rms=334.5 peak=15053 write_avg=12us read_avg=13us
+I (22947) aud01: PERF: tx_rate=48032.7 rx_rate=48032.7 write_err=0 read_err=0 rx_rms=326.9 peak=15053 write_avg=12us read_avg=13us
+I (23947) aud01: PERF: tx_rate=48031.2 rx_rate=48031.2 write_err=0 read_err=0 rx_rms=319.8 peak=15053 write_avg=12us read_avg=13us
+I (24947) aud01: PERF: tx_rate=48029.9 rx_rate=48029.9 write_err=0 read_err=0 rx_rms=313.1 peak=15053 write_avg=12us read_avg=13us
+I (25947) aud01: PERF: tx_rate=48028.7 rx_rate=48028.7 write_err=0 read_err=0 rx_rms=306.9 peak=15053 write_avg=12us read_avg=13us
+I (26947) aud01: PERF: tx_rate=48027.6 rx_rate=48027.6 write_err=0 read_err=0 rx_rms=301.0 peak=15053 write_avg=12us read_avg=13us
+I (27947) aud01: PERF: tx_rate=48026.6 rx_rate=48026.6 write_err=0 read_err=0 rx_rms=295.4 peak=15053 write_avg=12us read_avg=13us
+I (28947) aud01: PERF: tx_rate=48025.7 rx_rate=48025.7 write_err=0 read_err=0 rx_rms=290.2 peak=15053 write_avg=12us read_avg=13us
+I (29947) aud01: PERF: tx_rate=48024.8 rx_rate=48024.8 write_err=0 read_err=0 rx_rms=285.2 peak=15053 write_avg=12us read_avg=13us
+I (30947) aud01: PERF: tx_rate=48024.0 rx_rate=48024.0 write_err=0 read_err=0 rx_rms=280.5 peak=15053 write_avg=12us read_avg=13us
+I (30948) aud01: AUD-01 complete: tx=1440728 rx=1440728 write_err=0 read_err=0
+I (31104) main_task: Returned from app_main()
+
+ (927) Adev_Codec: Open codec device OK
+I (928) aud01: AUD-01: 48000 Hz, 16 bit, stereo, block=2 frames, 30 s
+I (928) aud01: Scope: WS=48000 Hz; expected BCLK about 1536000 Hz; GPIO BCLK=3 WS=4 DOUT=5 DIN=6
+I (1934) aud01: PERF: tx_rate=47609.9 rx_rate=47609.9 write_err=0 read_err=0 rx_rms=1898.2 peak=19139 write_avg=7us read_avg=5us
+I (2934) aud01: PERF: tx_rate=47601.3 rx_rate=47601.3 write_err=0 read_err=0 rx_rms=1342.5 peak=19139 write_avg=7us read_avg=5us
+I (3934) aud01: PERF: tx_rate=47583.4 rx_rate=47583.4 write_err=0 read_err=0 rx_rms=1096.4 peak=19139 write_avg=7us read_avg=5us
+I (4934) aud01: PERF: tx_rate=47550.4 rx_rate=47550.4 write_err=0 read_err=0 rx_rms=950.0 peak=19139 write_avg=7us read_avg=5us
+E (5928) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (5928) task_wdt:  - IDLE0 (CPU 0)
+E (5928) task_wdt: Tasks currently running:
+E (5928) task_wdt: CPU 0: main
+E (5928) task_wdt: CPU 1: IDLE1
+E (5928) task_wdt: Print CPU 0 (current core) registers
+--- Stack dump detected
+Core  0 register dump:
+MEPC    : 0x2f81b5d8  RA      : 0x2f820362  SP      : 0x2f016300  GP      : 0x2f00e088
+--- 0x2f81b5d8: __clzsi2 in ROM
+--- 0x2f820362: __floatunsidf in ROM
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x0000ffff
+S0/FP   : 0x66f16800  S1      : 0x43b4f0b4  A0      : 0x66f16800  A1      : 0x43b4f0b4
+A2      : 0x06000000  A3      : 0x0004f0b4  A4      : 0x43b4f0b4  A5      : 0x43b4f0b4
+A6      : 0x00000000  A7      : 0x0000003c  S2      : 0x06000000  S3      : 0xfaa97596
+S4      : 0x00004ac3  S5      : 0x2f07b320  S6      : 0xd5542028  S7      : 0xf42aa2fc
+S8      : 0x000910f3  S9      : 0x00000005  S10     : 0x000cf8e5  S11     : 0x0000004f
+T3      : 0x00005380  T4      : 0x00000000  T5      : 0x00000042  T6      : 0x000085a0
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (6065) aud01: PERF: tx_rate=46280.4 rx_rate=46280.4 write_err=0 read_err=0 rx_rms=850.4 peak=19139 write_avg=7us read_avg=5us
+I (6934) aud01: PERF: tx_rate=46383.6 rx_rate=46383.6 write_err=0 read_err=0 rx_rms=785.6 peak=19139 write_avg=7us read_avg=5us
+I (7934) aud01: PERF: tx_rate=46559.0 rx_rate=46559.0 write_err=0 read_err=0 rx_rms=726.0 peak=19139 write_avg=7us read_avg=5us
+I (8934) aud01: PERF: tx_rate=46688.3 rx_rate=46688.3 write_err=0 read_err=0 rx_rms=678.3 peak=19139 write_avg=7us read_avg=5us
+I (9934) aud01: PERF: tx_rate=46785.2 rx_rate=46785.2 write_err=0 read_err=0 rx_rms=638.9 peak=19139 write_avg=7us read_avg=5us
+E (10928) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (10928) task_wdt:  - IDLE0 (CPU 0)
+E (10928) task_wdt: Tasks currently running:
+E (10928) task_wdt: CPU 0: main
+E (10928) task_wdt: CPU 1: IDLE1
+E (10928) task_wdt: Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x2f009038  RA      : 0x4002746c  SP      : 0x2f0162d0  GP      : 0x2f00e088
+--- 0x2f009038: vPortClearInterruptMaskFromISR at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+--- (inlined by) vPortExitCriticalMultiCore at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+--- 0x4002746c: xQueueGenericSend at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1168
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x03600000  T2      : 0x0000ffff
+S0/FP   : 0x50001174  S1      : 0x00000000  A0      : 0x500011c0  A1      : 0x00000000
+A2      : 0x00000000  A3      : 0x2f0127a0  A4      : 0x00000000  A5      : 0x0000001f
+A6      : 0x2f07b32d  A7      : 0xfff30008  S2      : 0x00000000  S3      : 0x00000000
+S4      : 0x00000000  S5      : 0x000003e8  S6      : 0x00000002  S7      : 0x0eaf3552
+S8      : 0x00000001  S9      : 0x00000005  S10     : 0x00199858  S11     : 0x00000050
+T3      : 0x00006000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (11026) aud01: PERF: tx_rate=46404.3 rx_rate=46404.3 write_err=0 read_err=0 rx_rms=605.9 peak=19139 write_avg=7us read_avg=5us
+I (11934) aud01: PERF: tx_rate=46451.5 rx_rate=46451.5 write_err=0 read_err=0 rx_rms=580.1 peak=19139 write_avg=7us read_avg=5us
+I (12934) aud01: PERF: tx_rate=46534.1 rx_rate=46534.1 write_err=0 read_err=0 rx_rms=555.0 peak=19139 write_avg=7us read_avg=5us
+I (13934) aud01: PERF: tx_rate=46610.2 rx_rate=46610.2 write_err=0 read_err=0 rx_rms=532.8 peak=19139 write_avg=7us read_avg=5us
+I (14934) aud01: PERF: tx_rate=46676.4 rx_rate=46676.4 write_err=0 read_err=0 rx_rms=513.1 peak=19139 write_avg=7us read_avg=5us
+E (15928) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (15928) task_wdt:  - IDLE0 (CPU 0)
+E (15928) task_wdt: Tasks currently running:
+E (15928) task_wdt: CPU 0: main
+E (15928) task_wdt: CPU 1: IDLE1
+E (15928) task_wdt: Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x2f009038  RA      : 0x40027922  SP      : 0x2f0162d0  GP      : 0x2f00e088
+--- 0x2f009038: vPortClearInterruptMaskFromISR at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:521
+--- (inlined by) vPortExitCriticalMultiCore at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:585
+--- 0x40027922: xQueueSemaphoreTake at D:/Espressif-master/.espressif/master/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1963
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x0000ffff
+S0/FP   : 0x50001174  S1      : 0x00000001  A0      : 0x500011c0  A1      : 0x00000000
+A2      : 0x00000001  A3      : 0x2f0127a0  A4      : 0x00000000  A5      : 0x0000001f
+A6      : 0x2f07b821  A7      : 0xfe35fe35  S2      : 0x00000000  S3      : 0x2f07b330
+S4      : 0x00000000  S5      : 0x000003e8  S6      : 0xf551c506  S7      : 0x23bcd1c4
+S8      : 0x001c4bc1  S9      : 0x00000005  S10     : 0x002647b4  S11     : 0x00000050
+T3      : 0x1d000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (16026) aud01: PERF: tx_rate=46424.9 rx_rate=46424.9 write_err=0 read_err=0 rx_rms=495.6 peak=19139 write_avg=7us read_avg=5us
+I (16934) aud01: PERF: tx_rate=46450.3 rx_rate=46450.3 write_err=0 read_err=0 rx_rms=481.3 peak=19139 write_avg=7us read_avg=5us
+I (17934) aud01: PERF: tx_rate=46505.9 rx_rate=46505.9 write_err=0 read_err=0 rx_rms=466.7 peak=19139 write_avg=7us read_avg=5us
+I (18934) aud01: PERF: tx_rate=46558.6 rx_rate=46558.6 write_err=0 read_err=0 rx_rms=453.3 peak=19139 write_avg=7us read_avg=5us
+I (19934) aud01: PERF: tx_rate=46603.3 rx_rate=46603.3 write_err=0 read_err=0 rx_rms=441.1 peak=19139 write_avg=7us read_avg=5us
+E (20928) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (20928) task_wdt:  - IDLE0 (CPU 0)
+E (20928) task_wdt: Tasks currently running:
+E (20928) task_wdt: CPU 0: main
+E (20928) task_wdt: CPU 1: IDLE1
+E (20928) task_wdt: Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x2f81fd8a  RA      : 0x2f81cd5c  SP      : 0x2f0162f0  GP      : 0x2f00e088
+--- 0x2f81fd8a: __subdf3 in ROM
+--- 0x2f81cd5c: __fixunssfdi in ROM
+TP      : 0x2f0164c0  T0      : 0x00000000  T1      : 0x00000001  T2      : 0x0000ffff
+S0/FP   : 0x0000043a  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x000007ff
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x0000043a  A5      : 0x00000000
+A6      : 0x0048d43d  A7      : 0x0048d43d  S2      : 0xa0000000  S3      : 0x00000000
+S4      : 0x00004ac3  S5      : 0x2f07b320  S6      : 0x4aa5ec56  S7      : 0x39792ada
+S8      : 0x0026ac2f  S9      : 0x00000005  S10     : 0x0032f72b  S11     : 0x00000050
+T3      : 0x00006400  T4      : 0x00000000  T5      : 0x0000006a  T6      : 0x0000d43d
+MSTATUS : 0x00001889  MTVEC   : 0x2f000003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de
+--- 0x2f000003: _vector_table at ??:?
+MHARTID : 0x00000000
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+I (21026) aud01: PERF: tx_rate=46416.4 rx_rate=46416.4 write_err=0 read_err=0 rx_rms=429.8 peak=19139 write_avg=7us read_avg=5us
+I (21934) aud01: PERF: tx_rate=46437.8 rx_rate=46437.8 write_err=0 read_err=0 rx_rms=420.3 peak=19139 write_avg=7us read_avg=5us
+I
+
